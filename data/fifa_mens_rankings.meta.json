@@ -1,0 +1,17 @@
+{
+  "source": {
+    "schedules": "https://api.fifa.com/api/v3/rankingschedules/all?type=0&gender=1&idClient=64e9afa8-c5c0-413d-882b-bc9e6a81e264&language=en",
+    "rankingsBySchedule": "https://api.fifa.com/api/v3/rankingsbyschedule?rankingScheduleId={schedule_id}&language=en"
+  },
+  "generatedAt": "2026-06-14T14:16:30.936Z",
+  "releaseCount": 347,
+  "rawRowCount": 70436,
+  "rowCount": 70426,
+  "droppedDuplicateRows": 10,
+  "videoTopN": 8,
+  "videoPoolN": 40,
+  "quarterReleaseCount": 131,
+  "firstReleaseDate": "1992-12-31",
+  "latestReleaseDate": "2026-06-11",
+  "note": "FIFA rankings are available by official release date, not guaranteed once per calendar month. Use official_date/year/month for monthly grouping. Duplicate schedule/country rows from the source API are dropped from the cleaned CSV."
+}

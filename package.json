@@ -1,0 +1,35 @@
+{
+  "name": "quadrillion-shorts",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts QuadrillionShort out/quadrillion-short.mp4",
+    "poster": "remotion still src/index.ts QuadrillionShort out/poster.png --frame=540",
+    "render:race": "remotion render src/index.ts QuadrillionShort out/ranking-race.mp4",
+    "poster:race": "remotion still src/index.ts QuadrillionShort out/ranking-race.png --frame=540",
+    "data:fifa": "node scripts/fetch-fifa-rankings.mjs",
+    "render:bitcoin": "remotion render src/index.ts BitcoinHistory out/bitcoin-history.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
+    "render:bitcoin:4k": "remotion render src/index.ts BitcoinHistory out/bitcoin-history-4k.mp4 --codec=h264 --crf=14 --x264-preset=slow --pixel-format=yuv420p --scale=2",
+    "poster:bitcoin": "remotion still src/index.ts BitcoinHistory out/bitcoin-history.png --frame=922",
+    "render:nasdaq": "remotion render src/index.ts NasdaqHistory out/nasdaq-history.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
+    "poster:nasdaq": "remotion still src/index.ts NasdaqHistory out/nasdaq-history.png --frame=1317",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lightweight-charts": "^5.2.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-is": "^19.2.7",
+    "recharts": "^3.8.1",
+    "remotion": "^4.0.477"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.477",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-is": "^19",
+    "typescript": "^6.0.3"
+  }
+}
