@@ -5,8 +5,8 @@ const FIFA_API_BASE = 'https://api.fifa.com/api/v3';
 const MEN_RANKING_SCHEDULES_URL =
   `${FIFA_API_BASE}/rankingschedules/all?type=0&gender=1&idClient=64e9afa8-c5c0-413d-882b-bc9e6a81e264&language=en`;
 const RANKINGS_BY_SCHEDULE_URL = `${FIFA_API_BASE}/rankingsbyschedule`;
-const DATA_DIR = path.resolve('data');
-const GENERATED_SOURCE_DIR = path.resolve('src/generated');
+const DATA_DIR = path.resolve('data/fifa-ranking-race');
+const GENERATED_SOURCE_DIR = path.resolve('src/projects/fifa-ranking-race/generated');
 const TOP_N = 8;
 const VIDEO_POOL_N = 40;
 

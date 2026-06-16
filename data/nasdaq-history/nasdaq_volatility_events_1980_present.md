@@ -8,7 +8,7 @@
 
 - 월간 등락률: 월말 종가 대비 전월말 종가 변화율.
 - 월중폭: 해당 월 고가와 저가의 차이. 계산식은 `(high / low - 1) * 100`.
-- 가격 데이터: `data/nasdaq_monthly_prices.csv`.
+- 가격 데이터: `data/nasdaq-history/nasdaq_monthly_prices.csv`.
 - 데이터 범위: 1980-04부터 2026-06까지.
 - 최신 월인 2026-06은 2026-06-12 종가까지 반영된 부분월 데이터다.
 
@@ -205,8 +205,8 @@
 
 ## 참고 출처
 
-- Local data file: `data/nasdaq_monthly_prices.csv`
-- Local generated TypeScript data: `src/generated/nasdaqMonthlyCandles.ts`
+- Local data file: `data/nasdaq-history/nasdaq_monthly_prices.csv`
+- Local generated TypeScript data: `src/projects/nasdaq-history/generated/nasdaqMonthlyCandles.ts`
 - Nasdaq COMP page: https://www.nasdaq.com/market-activity/index/comp
 - Nasdaq largest daily changes: https://en.wikipedia.org/wiki/List_of_largest_daily_changes_in_the_Nasdaq_Composite
 - Dot-com bubble: https://en.wikipedia.org/wiki/Dot-com_bubble
@@ -218,4 +218,3 @@
 - Long-Term Capital Management: https://en.wikipedia.org/wiki/Long-Term_Capital_Management
 - 1990 oil price shock: https://en.wikipedia.org/wiki/1990_oil_price_shock
 - AP, 2025-04-03 market summary: https://apnews.com/article/6f7c844f6fbdff738395b6f3eb795b40
-

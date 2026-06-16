@@ -19,8 +19,8 @@ import {
   type BitcoinCandle,
   type BitcoinEvent,
   type BitcoinIntroEvent,
-} from './bitcoinHistoryData';
-import { SHORTS_PLATFORM_TOP_CLEARANCE } from './script';
+} from './data';
+import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
 
 type EventWithFrame = BitcoinEvent & {
   frame: number;

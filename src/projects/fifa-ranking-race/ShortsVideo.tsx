@@ -12,7 +12,8 @@ import {
   type ChartEntity,
   type ChartSnapshot,
 } from './chartRace';
-import { chartVideoConfig, SHORTS_PLATFORM_TOP_CLEARANCE, type ChartVideoEvent } from './script';
+import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
+import { chartVideoConfig, type ChartVideoEvent } from './config';
 
 const countryColorOverrides: Record<string, string> = {
   ARG: '#6EC6FF',

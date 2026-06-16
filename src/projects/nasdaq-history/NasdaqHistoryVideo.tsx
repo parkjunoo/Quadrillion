@@ -18,8 +18,8 @@ import {
   nasdaqVideoConfig,
   type NasdaqCandle,
   type NasdaqEvent,
-} from './nasdaqHistoryData';
-import { SHORTS_PLATFORM_TOP_CLEARANCE } from './script';
+} from './data';
+import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
 
 type EventWithFrame = NasdaqEvent & {
   frame: number;

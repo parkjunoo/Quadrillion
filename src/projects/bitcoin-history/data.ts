@@ -33,7 +33,8 @@ export const bitcoinVideoConfig = {
   exchangeRateSourceUrl: 'https://api.frankfurter.app/latest?from=USD&to=KRW',
   dataSource:
     'Investing.com BTC/USD daily historical table, aggregated into 3-day candles; pre-market 2009-2010 milestones use documented approximate values',
-  dataWorkbook: '/Users/junsoo/00_project/Quadrillion/outputs/btc_element_analysis/btc_price_element_analysis_3day.xlsx',
+  dataWorkbook:
+    '/Users/junsoo/00_project/Quadrillion/outputs/bitcoin-history/btc-element-analysis/btc_price_element_analysis_3day.xlsx',
 };
 
 export const bitcoinIntroEvents: BitcoinIntroEvent[] = [

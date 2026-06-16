@@ -28,8 +28,8 @@ export const nasdaqVideoConfig = {
   durationInSeconds: 60,
   visibleCandles: 72,
   dataSource:
-    'NASDAQ Composite monthly OHLC table parsed into data/nasdaq_monthly_prices.csv',
-  eventSource: 'data/nasdaq_volatility_events_1980_present.md',
+    'NASDAQ Composite monthly OHLC table parsed into data/nasdaq-history/nasdaq_monthly_prices.csv',
+  eventSource: 'data/nasdaq-history/nasdaq_volatility_events_1980_present.md',
   latestDataNote:
     '2026-06 is a partial month in the local source table and should be rechecked before publishing.',
   summary: nasdaqMonthlyPriceSummary,
@@ -69,7 +69,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       credit: 'Carol M. Highsmith / Library of Congress, public domain',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:No_Known_Restrictions_Trading_Floor,_New_York_Stock_Exchange_(Highsmith_LOC)_(6718386525).jpg',
-      src: 'images/nasdaq-events/black-monday.jpg',
+      src: 'projects/nasdaq-history/images/events/black-monday.jpg',
     },
     stat: '-27.23% month | 57.33% intramonth range',
     tone: 'bearish',
@@ -84,7 +84,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       credit: 'Bank of Russia note image, public domain under Russian official symbol rules',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:Banknote_5_rubles_(1997)_front.jpg',
-      src: 'images/nasdaq-events/russia-ltcm.jpg',
+      src: 'projects/nasdaq-history/images/events/russia-ltcm.jpg',
     },
     stat: '-19.93% month',
     tone: 'bearish',
@@ -98,7 +98,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       alt: 'Nasdaq MarketSite in Times Square',
       credit: 'ajay_suresh, CC BY 2.0',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg',
-      src: 'images/nasdaq-events/dot-com.jpg',
+      src: 'projects/nasdaq-history/images/events/dot-com.jpg',
     },
     stat: '-15.57% month | 41.70% intramonth range',
     tone: 'bearish',
@@ -113,7 +113,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       credit: 'Bri Rodriguez / FEMA, public domain',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:FEMA_-_5691_-_Photograph_by_Bri_Rodriguez_taken_on_09-27-2001_in_New_York.jpg',
-      src: 'images/nasdaq-events/nine-eleven.jpg',
+      src: 'projects/nasdaq-history/images/events/nine-eleven.jpg',
     },
     stat: '-16.98% month',
     tone: 'bearish',
@@ -128,7 +128,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       credit: 'David Shankbone, CC BY-SA 3.0',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:Lehman_Brothers_Times_Square_by_David_Shankbone.jpg',
-      src: 'images/nasdaq-events/credit-freeze.jpg',
+      src: 'projects/nasdaq-history/images/events/credit-freeze.jpg',
     },
     stat: '-17.73% month | 39.46% intramonth range',
     tone: 'bearish',
@@ -142,7 +142,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       alt: 'CDC illustration of SARS-CoV-2',
       credit: 'Alissa Eckert, MS; Dan Higgins, MAM / CDC, public domain',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:SARS-CoV-2_without_background.png',
-      src: 'images/nasdaq-events/covid-crash.png',
+      src: 'projects/nasdaq-history/images/events/covid-crash.png',
     },
     stat: '-10.12% month | 36.78% intramonth range',
     tone: 'bearish',
@@ -156,7 +156,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       alt: 'Federal Reserve Eccles Building in 1937',
       credit: 'Board of Governors of the Federal Reserve System, public domain',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:US_Federal_Reserve_Eccles_Building_1937.jpg',
-      src: 'images/nasdaq-events/policy-rebound.jpg',
+      src: 'projects/nasdaq-history/images/events/policy-rebound.jpg',
     },
     stat: '+15.45% month',
     tone: 'bullish',
@@ -171,7 +171,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       credit: 'DerFussi, CC BY-SA 3.0',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:Washington_D.C._-_Federal_Reserve_0001-0003_HDR.jpg',
-      src: 'images/nasdaq-events/rate-shock.jpg',
+      src: 'projects/nasdaq-history/images/events/rate-shock.jpg',
     },
     stat: '-13.26% month',
     tone: 'bearish',
@@ -186,7 +186,7 @@ export const nasdaqEvents: NasdaqEvent[] = [
       credit: 'Downtowngal, CC BY-SA 4.0',
       sourceUrl:
         'https://commons.wikimedia.org/wiki/File:Container_ship_NYK_Themis_at_the_Port_of_Los_Angeles.jpg',
-      src: 'images/nasdaq-events/tariff-whipsaw.jpg',
+      src: 'projects/nasdaq-history/images/events/tariff-whipsaw.jpg',
     },
     stat: '+0.85% month | 19.84% intramonth range',
     tone: 'neutral',

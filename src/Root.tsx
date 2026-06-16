@@ -1,10 +1,11 @@
 import { Composition } from 'remotion';
-import { BitcoinHistoryVideo } from './BitcoinHistoryVideo';
-import { NasdaqHistoryVideo } from './NasdaqHistoryVideo';
-import { ShortsVideo } from './ShortsVideo';
-import { chartVideoConfig, VIDEO_FPS, VIDEO_HEIGHT, VIDEO_WIDTH } from './script';
-import { bitcoinVideoConfig } from './bitcoinHistoryData';
-import { nasdaqVideoConfig } from './nasdaqHistoryData';
+import { BitcoinHistoryVideo } from './projects/bitcoin-history/BitcoinHistoryVideo';
+import { bitcoinVideoConfig } from './projects/bitcoin-history/data';
+import { chartVideoConfig } from './projects/fifa-ranking-race/config';
+import { ShortsVideo } from './projects/fifa-ranking-race/ShortsVideo';
+import { nasdaqVideoConfig } from './projects/nasdaq-history/data';
+import { NasdaqHistoryVideo } from './projects/nasdaq-history/NasdaqHistoryVideo';
+import { VIDEO_FPS, VIDEO_HEIGHT, VIDEO_WIDTH } from './shared/video';
 
 export const RemotionRoot = () => {
   return (

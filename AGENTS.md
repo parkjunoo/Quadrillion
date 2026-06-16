@@ -1,6 +1,6 @@
 # Agent Notes for Quadrillion
 
-This repository is a Remotion-based vertical data video project. Future agents should treat it as a video-generation codebase, not a normal web app.
+This repository is a Remotion-based vertical data video project. Treat it as a video-generation codebase, not a normal web app.
 
 ## Project Purpose
 
@@ -8,14 +8,15 @@ Quadrillion creates 1080x1920 short-form chart videos for YouTube Shorts, Reels,
 
 The current Remotion compositions are:
 
-- `QuadrillionShort`: a CSV-driven ranking race video.
-- `BitcoinHistory`: a Bitcoin daily candlestick history video with event callouts.
+- `QuadrillionShort`: a CSV-driven FIFA men ranking race video.
+- `BitcoinHistory`: a Bitcoin 3-day candlestick history video with event callouts.
+- `NasdaqHistory`: a NASDAQ Composite monthly candlestick history video with event cards.
 
 ## Core Stack
 
 - Remotion renders React components into video frames.
 - React 19 is used for the visual composition layer.
-- Recharts is used for the ranking race coordinate system.
+- SVG is used directly for the ranking race line chart.
 - TradingView Lightweight Charts is used for candlestick charts.
 - TypeScript strict mode is enabled.
 - Yarn 4 is the package manager, with `nodeLinker: node-modules`.
@@ -27,30 +28,57 @@ Use these commands from the repository root:
 ```bash
 yarn dev
 yarn typecheck
+yarn data:fifa
 yarn poster
 yarn render
 yarn poster:race
 yarn render:race
 yarn poster:bitcoin
 yarn render:bitcoin
+yarn render:bitcoin:4k
+yarn poster:nasdaq
+yarn render:nasdaq
 ```
 
 Run `yarn typecheck` after code changes. For docs-only changes, typecheck is optional.
+
+## Topic Project Layout
+
+Keep each video topic in its own project folder.
+
+- Source code: `src/projects/<topic>/`
+- Topic data: `data/<topic>/`
+- Analysis outputs, workbooks, previews: `outputs/<topic>/`
+- Rendered stills/videos: `out/<topic>/`
+- Static topic assets: `public/projects/<topic>/...`
+
+Shared video constants, frame geometry, and Shorts safe-area values belong in `src/shared/`.
+
+Current topic folders:
+
+- `src/projects/fifa-ranking-race/`
+- `src/projects/bitcoin-history/`
+- `src/projects/nasdaq-history/`
+
+When adding a new video, create a topic folder and keep its config/data/UI local to that folder. Register the composition in `src/Root.tsx`, import shared frame constants from `src/shared/video.ts`, and add render scripts that write to `out/<topic>/`.
 
 ## Important Files
 
 - `src/index.ts`: Remotion entrypoint.
 - `src/Root.tsx`: registers Remotion compositions.
-- `src/script.ts`: shared video constants and ranking race CSV/config.
-- `src/chartRace.ts`: CSV parsing, snapshot building, frame-by-frame ranking interpolation.
-- `src/ShortsVideo.tsx`: ranking race video UI.
-- `src/bitcoinHistoryData.ts`: Bitcoin sample candles/events and config.
-- `src/BitcoinHistoryVideo.tsx`: candlestick video UI, playback schedule, event overlays.
+- `src/shared/video.ts`: shared 1080x1920, FPS, aspect ratio, and Shorts safe-area constants.
+- `src/projects/fifa-ranking-race/config.ts`: ranking race title, units, duration, source, events, and CSV binding.
+- `src/projects/fifa-ranking-race/chartRace.ts`: CSV parsing, snapshot building, frame-by-frame ranking interpolation.
+- `src/projects/fifa-ranking-race/ShortsVideo.tsx`: ranking race video UI.
+- `src/projects/bitcoin-history/data.ts`: Bitcoin candles, event data, and config.
+- `src/projects/bitcoin-history/BitcoinHistoryVideo.tsx`: Bitcoin candlestick video UI, playback schedule, event overlays.
+- `src/projects/nasdaq-history/data.ts`: Nasdaq candles/events/config.
+- `src/projects/nasdaq-history/NasdaqHistoryVideo.tsx`: Nasdaq candlestick video UI and news cards.
 - `README.md`: human-facing project documentation.
 
 ## Required Data Format: Ranking Race
 
-Ranking race videos need repeated observations for each item over time. The current implementation expects CSV text in `chartVideoConfig.csv`.
+Ranking race videos need repeated observations for each item over time. The current FIFA implementation expects CSV text in `chartVideoConfig.csv` from `src/projects/fifa-ranking-race/config.ts`.
 
 Required CSV headers:
 
@@ -69,12 +97,14 @@ year,name,code,region,value,color
 
 Field meanings:
 
-- `year`: numeric time point. The current UI labels this as a year.
-- `name`: full display name shown beside the bar.
+- `year`: numeric time point.
+- `name`: full display name shown beside the line/bar.
 - `code`: stable item ID and short badge label.
-- `region`: grouping metadata. It is parsed and preserved even if not always displayed.
-- `value`: numeric value used for ranking and bar length.
-- `color`: hex color for the row/bar.
+- `region`: grouping metadata.
+- `value`: numeric value used for ranking and position.
+- `color`: hex color for the row/line.
+
+Optional fields currently used by the FIFA project include `date`, `quarter`, `month`, `rank`, `flag`, and `worldCupWins`.
 
 Good use cases:
 
@@ -84,7 +114,7 @@ Good use cases:
 - coins by market cap
 - products by sales
 
-When changing the ranking race topic, update `chartVideoConfig` in `src/script.ts`.
+When changing the FIFA ranking race topic, update `chartVideoConfig` in `src/projects/fifa-ranking-race/config.ts`. When creating a new ranking race topic, copy the project pattern into a new `src/projects/<topic>/` folder rather than overwriting the FIFA project unless asked.
 
 ## Required Data Format: Candlestick History
 
@@ -110,7 +140,7 @@ Field meanings:
 - `low`: lowest price.
 - `close`: closing price.
 
-The current Bitcoin data is generated from modeled anchor prices in `src/bitcoinHistoryData.ts`. It is prototype data, not production market data. For real publishing, replace it with verified daily BTC CSV/API data and preserve the OHLC shape.
+Bitcoin extends the shape with `openUsd`, `highUsd`, `lowUsd`, and `closeUsd` so USD values are preserved while the displayed chart uses KRW.
 
 ## Optional Data Format: Events
 
@@ -131,25 +161,26 @@ Field meanings:
 
 - `date`: event date in `YYYY-MM-DD` format.
 - `title`: short headline.
-- `detail`: one-sentence explanation for the toast.
+- `detail`: one-sentence explanation for the toast/card.
 - `tone`: one of `bullish`, `bearish`, or `neutral`.
-
-Events are used by `BitcoinHistoryVideo.tsx` to pause playback, show toast text, and display an open-to-close overlay.
 
 ## Data Accuracy Rules
 
-- Current ranking race data is sample prototype data.
-- Current Bitcoin candles are modeled sample data, not exchange-grade candles.
+- Current FIFA ranking race data is based on FIFA/Coca-Cola men ranking releases and local generated CSV snapshots.
+- Current Bitcoin candles are generated from the BTC analysis workbook in `outputs/bitcoin-history/btc-element-analysis/`.
+- Current Nasdaq candles are generated from `data/nasdaq-history/nasdaq_monthly_prices.csv`.
 - For public videos, verify source, unit, date range, and calculation method before rendering.
 - Put the source in the config so it appears in the video footer when relevant.
-- Do not present modeled data as real historical or financial data.
+- Do not present modeled, partial, or locally transformed data as exchange-grade or publication-ready without verification.
+- Financial market videos are information visualizations, not financial advice.
 
 ## Editing Guidance
 
-- Keep changes scoped to the requested composition or data pipeline.
+- Keep changes scoped to the requested composition, topic folder, or data pipeline.
 - Prefer the existing Remotion frame-driven style over adding runtime state.
 - Keep video constants explicit, especially dimensions, FPS, duration, and chart geometry.
-- Use the shared Shorts safe-area constants in `src/script.ts`; top-anchored UI should account for `SHORTS_PLATFORM_TOP_CLEARANCE` so YouTube Shorts controls do not cover the composition.
+- Use the shared Shorts safe-area constants in `src/shared/video.ts`; top-anchored UI should account for `SHORTS_PLATFORM_TOP_CLEARANCE`.
 - Preserve 1080x1920 vertical layout unless the user asks for a different format.
-- Generated render outputs belong in `out/`, which is gitignored.
+- Generated render outputs belong in `out/<topic>/`, which is gitignored.
+- Analysis workbooks and preview images belong in `outputs/<topic>/`.
 - Avoid committing generated videos or stills unless the user explicitly asks.

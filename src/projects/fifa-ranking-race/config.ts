@@ -1,18 +1,5 @@
 import { fifaMensRankingRaceCsv } from './generated/fifaMensRankingRaceCsv';
 
-export const VIDEO_WIDTH = 1080;
-export const VIDEO_HEIGHT = 1920;
-export const VIDEO_FPS = 30;
-export const VIDEO_ASPECT_RATIO = '9:16';
-export const SAFE_ZONE_TOP_RATIO = 0.15;
-export const SAFE_ZONE_BOTTOM_RATIO = 0.35;
-export const SHORTS_PLATFORM_TOP_CLEARANCE = 50;
-export const SAFE_ZONE_TOP_BASE = Math.round(VIDEO_HEIGHT * SAFE_ZONE_TOP_RATIO);
-export const SAFE_ZONE_TOP = SAFE_ZONE_TOP_BASE + SHORTS_PLATFORM_TOP_CLEARANCE;
-export const SAFE_ZONE_BOTTOM = Math.round(VIDEO_HEIGHT * SAFE_ZONE_BOTTOM_RATIO);
-export const SAFE_CONTENT_BOTTOM = VIDEO_HEIGHT - SAFE_ZONE_BOTTOM;
-export const SAFE_CONTENT_HEIGHT = SAFE_CONTENT_BOTTOM - SAFE_ZONE_TOP;
-
 export type ChartVideoEvent = {
   year: number;
   month: number;
