@@ -1,0 +1,12 @@
+slot,include_by_default,display_name,code,handle,socialblade_profile_url,socialblade_global_rank,subscribers_m,views,video_count,created_on,region,category,color,notes
+1,yes,MrBeast,MRB,@mrbeast,https://socialblade.com/youtube/handle/mrbeast,1,502,129674218845,987,2012-02-20,United States,Entertainment,#00A7FF,SocialBlade profile snapshot checked 2026-06-17
+2,yes,T-Series,TSR,@tseries,https://socialblade.com/youtube/handle/tseries,2,312,345199044132,26404,2006-03-13,India,Music,#FF3B30,SocialBlade profile snapshot checked 2026-06-17
+3,yes,Vlad and Niki,VNK,@vladandniki,https://socialblade.com/youtube/handle/vladandniki,6,150,121490047112,1029,2018-04-23,Russia / United States,Entertainment,#FFB000,Use this if the slash choice is Vlad and Niki
+4,yes,Stokes Twins,STK,@stokestwins,https://socialblade.com/youtube/handle/stokestwins,7,140,30916641855,450,2008-04-11,United States,People,#7C3AED,SocialBlade profile snapshot checked 2026-06-17
+5,yes,KimPro KIMPRO,KIM,@kimpro828,https://socialblade.com/youtube/handle/kimpro828,9,133,147072474922,4206,2017-11-11,South Korea,People,#22C55E,Display title is 김프로KIMPRO
+6,yes,PewDiePie,PDP,@pewdiepie,https://socialblade.com/youtube/handle/pewdiepie,15,110,29509709512,4663,2010-04-29,Sweden / Japan,Entertainment,#E11D48,Subscriber count is mostly flat in recent years
+7,yes,Alan's Universe,ALN,@alanchikinchow,https://socialblade.com/youtube/handle/alanchikinchow,18,101,62411494634,1715,2020-02-03,United States,Comedy,#14B8A6,SocialBlade lists this as Alan's Universe
+8,yes,A4,A4,@a4a4a4a4,https://socialblade.com/youtube/handle/a4a4a4a4,20,92.6,37525384794,1041,2014-11-29,Belarus / Russian-language,Entertainment,#F97316,Also known as Vlad A4
+9,yes,Mark Rober,RBR,@markrober,https://socialblade.com/youtube/handle/markrober,34,78.5,17547807399,259,2011-10-20,United States,Tech / Education,#2563EB,Fast-growing science and engineering creator
+10,yes,Dude Perfect,DPF,@dudeperfect,https://socialblade.com/youtube/handle/dudeperfect,59,62.3,20859599540,578,2009-03-17,United States,Sports / Comedy,#84CC16,Included because user named it despite lower global rank
+alt,no,Like Nastya,LNS,@likenastyaofficial,https://socialblade.com/youtube/handle/likenastyaofficial,10,132,121376775810,1080,2016-12-06,Russia / United States,Entertainment,#EC4899,Use instead of Vlad and Niki if you want Like Nastya as the slash choice

@@ -1,0 +1,122 @@
+year,date,month,quarter,name,code,region,value,color,source,confidence,notes,include_by_default
+2016,2016-12-31,12,4,MrBeast,MRB,United States,100000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,Mid-2016 around 30000; silver creator award year 2016,yes
+2017,2017-12-31,12,4,MrBeast,MRB,United States,1000000,#00A7FF,public-source reconstruction v0.2,milestone_anchor,Reached 1M in 2017 according to public profiles/news,yes
+2018,2018-12-31,12,4,MrBeast,MRB,United States,12000000,#00A7FF,public-source reconstruction v0.2,milestone_anchor,Diamond creator award year 2018,yes
+2019,2019-12-31,12,4,MrBeast,MRB,United States,27000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,Interpolated before 50M/100M public milestones,yes
+2020,2020-12-31,12,4,MrBeast,MRB,United States,47000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,Interpolated before 50M/100M public milestones,yes
+2021,2021-12-31,12,4,MrBeast,MRB,United States,88000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,Approaching 100M milestone reached 2022-07-28,yes
+2022,2022-12-31,12,4,MrBeast,MRB,United States,124000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,100M on 2022-07-28; 112M on 2022-11-17,yes
+2023,2023-12-31,12,4,MrBeast,MRB,United States,225000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,200M on 2023-10-15,yes
+2024,2024-12-31,12,4,MrBeast,MRB,United States,350000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,300M on 2024-07-10; smoothed toward 400M on 2025-06-01,yes
+2025,2025-12-31,12,4,MrBeast,MRB,United States,465000000,#00A7FF,public-source reconstruction v0.2,estimated_between_anchors,400M on 2025-06-01; trending toward 500M in 2026,yes
+2026,2026-06-17,6,2,MrBeast,MRB,United States,502000000,#00A7FF,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,T-Series,TSR,India,17000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,Before 50M public milestone,yes
+2017,2017-12-31,12,4,T-Series,TSR,India,32000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,Before 50M public milestone,yes
+2018,2018-12-31,12,4,T-Series,TSR,India,78000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,50M reached 2018-09-10,yes
+2019,2019-12-31,12,4,T-Series,TSR,India,124000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,100M reached 2019-05-29,yes
+2020,2020-12-31,12,4,T-Series,TSR,India,166000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,Between 100M and 200M milestones,yes
+2021,2021-12-31,12,4,T-Series,TSR,India,202000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,200M reached 2021-11-30,yes
+2022,2022-12-31,12,4,T-Series,TSR,India,236000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,Post-200M growth estimate,yes
+2023,2023-12-31,12,4,T-Series,TSR,India,257000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,Pre-MrBeast overtake estimate,yes
+2024,2024-12-31,12,4,T-Series,TSR,India,289000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,MrBeast passed T-Series at about 267M in June 2024,yes
+2025,2025-12-31,12,4,T-Series,TSR,India,305000000,#FF3B30,public-source reconstruction v0.2,estimated_between_anchors,Over 304M by September 2025 in public profile text,yes
+2026,2026-06-17,6,2,T-Series,TSR,India,312000000,#FF3B30,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,Vlad and Niki,VNK,Russia / United States,0,#FFB000,public-source reconstruction v0.2,not_started,Channel launched in 2018,yes
+2017,2017-12-31,12,4,Vlad and Niki,VNK,Russia / United States,0,#FFB000,public-source reconstruction v0.2,not_started,Channel launched in 2018,yes
+2018,2018-12-31,12,4,Vlad and Niki,VNK,Russia / United States,2000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,Channel launched 2018-04-23,yes
+2019,2019-12-31,12,4,Vlad and Niki,VNK,Russia / United States,16000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,Fast child-channel growth; pre-100M estimate,yes
+2020,2020-12-31,12,4,Vlad and Niki,VNK,Russia / United States,55000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,Interpolated before 100M milestone,yes
+2021,2021-12-31,12,4,Vlad and Niki,VNK,Russia / United States,70000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,Interpolated before 100M milestone,yes
+2022,2022-12-31,12,4,Vlad and Niki,VNK,Russia / United States,91000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,Approaching 100M milestone reached 2023-08-13,yes
+2023,2023-12-31,12,4,Vlad and Niki,VNK,Russia / United States,108000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,100M reached 2023-08-13,yes
+2024,2024-12-31,12,4,Vlad and Niki,VNK,Russia / United States,136000000,#FFB000,public-source reconstruction v0.2,estimated_between_anchors,Interpolated between 100M and 147M anchors,yes
+2025,2025-12-31,12,4,Vlad and Niki,VNK,Russia / United States,147000000,#FFB000,public-source reconstruction v0.2,observed_rounded,Public profile text says 147M on 2025-11-11,yes
+2026,2026-06-17,6,2,Vlad and Niki,VNK,Russia / United States,150000000,#FFB000,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,Stokes Twins,STK,United States,0,#7C3AED,public-source reconstruction v0.2,not_started,Joint channel launched in 2017,yes
+2017,2017-12-31,12,4,Stokes Twins,STK,United States,200000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,Early joint-channel estimate,yes
+2018,2018-12-31,12,4,Stokes Twins,STK,United States,2000000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,Silver creator award year 2018,yes
+2019,2019-12-31,12,4,Stokes Twins,STK,United States,4000000,#7C3AED,public-source reconstruction v0.2,milestone_anchor,Reached about 4M within two years,yes
+2020,2020-12-31,12,4,Stokes Twins,STK,United States,6000000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,About 4.8M around 2020 legal issue; smoothed year-end estimate,yes
+2021,2021-12-31,12,4,Stokes Twins,STK,United States,10000000,#7C3AED,public-source reconstruction v0.2,milestone_anchor,Diamond creator award year 2021,yes
+2022,2022-12-31,12,4,Stokes Twins,STK,United States,16000000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,Post-diamond estimate,yes
+2023,2023-12-31,12,4,Stokes Twins,STK,United States,30000000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,Before 2024 Shorts/dubbing breakout,yes
+2024,2024-12-31,12,4,Stokes Twins,STK,United States,110000000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,100M reached 2024-11-30; smoothed to year-end,yes
+2025,2025-12-31,12,4,Stokes Twins,STK,United States,132000000,#7C3AED,public-source reconstruction v0.2,estimated_between_anchors,128M by 2025-05-21; AP cited 129M in Aug 2025,yes
+2026,2026-06-17,6,2,Stokes Twins,STK,United States,140000000,#7C3AED,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,KimPro KIMPRO,KIM,South Korea,0,#22C55E,public-source reconstruction v0.2,not_started,Channel launched in 2017; first video in 2022,yes
+2017,2017-12-31,12,4,KimPro KIMPRO,KIM,South Korea,0,#22C55E,public-source reconstruction v0.2,not_active,Channel created 2017-11-11 but no major public upload history yet,yes
+2018,2018-12-31,12,4,KimPro KIMPRO,KIM,South Korea,0,#22C55E,public-source reconstruction v0.2,not_active,First video uploaded in 2022,yes
+2019,2019-12-31,12,4,KimPro KIMPRO,KIM,South Korea,0,#22C55E,public-source reconstruction v0.2,not_active,First video uploaded in 2022,yes
+2020,2020-12-31,12,4,KimPro KIMPRO,KIM,South Korea,0,#22C55E,public-source reconstruction v0.2,not_active,First video uploaded in 2022,yes
+2021,2021-12-31,12,4,KimPro KIMPRO,KIM,South Korea,0,#22C55E,public-source reconstruction v0.2,not_active,First video uploaded in 2022,yes
+2022,2022-12-31,12,4,KimPro KIMPRO,KIM,South Korea,1000000,#22C55E,public-source reconstruction v0.2,estimated_between_anchors,First video uploaded Aug 2022; early estimate,yes
+2023,2023-12-31,12,4,KimPro KIMPRO,KIM,South Korea,12000000,#22C55E,public-source reconstruction v0.2,estimated_between_anchors,Pre-2025 breakout estimate,yes
+2024,2024-12-31,12,4,KimPro KIMPRO,KIM,South Korea,80000000,#22C55E,public-source reconstruction v0.2,estimated_between_anchors,Pre-100M estimate before Apr 2025 milestone,yes
+2025,2025-12-31,12,4,KimPro KIMPRO,KIM,South Korea,125000000,#22C55E,public-source reconstruction v0.2,estimated_between_anchors,100M reached 2025-04-17/18; year-end estimate,yes
+2026,2026-06-17,6,2,KimPro KIMPRO,KIM,South Korea,133000000,#22C55E,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,PewDiePie,PDP,Sweden / Japan,50000000,#E11D48,public-source reconstruction v0.2,milestone_anchor,Reached 50M on 2016-12-08,yes
+2017,2017-12-31,12,4,PewDiePie,PDP,Sweden / Japan,58000000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Gained about 7M during 2017,yes
+2018,2018-12-31,12,4,PewDiePie,PDP,Sweden / Japan,79500000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Subscriber battle with T-Series accelerated late-2018 growth,yes
+2019,2019-12-31,12,4,PewDiePie,PDP,Sweden / Japan,102000000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Reached 100M on 2019-08-25,yes
+2020,2020-12-31,12,4,PewDiePie,PDP,Sweden / Japan,108000000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Post-100M plateau estimate,yes
+2021,2021-12-31,12,4,PewDiePie,PDP,Sweden / Japan,111000000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Post-100M plateau estimate,yes
+2022,2022-12-31,12,4,PewDiePie,PDP,Sweden / Japan,111000000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Mostly flat public rounded count,yes
+2023,2023-12-31,12,4,PewDiePie,PDP,Sweden / Japan,111000000,#E11D48,public-source reconstruction v0.2,estimated_between_anchors,Mostly flat public rounded count,yes
+2024,2024-12-31,12,4,PewDiePie,PDP,Sweden / Japan,110000000,#E11D48,public-source reconstruction v0.2,observed_rounded,Public rounded count near 110M,yes
+2025,2025-12-31,12,4,PewDiePie,PDP,Sweden / Japan,110000000,#E11D48,public-source reconstruction v0.2,observed_rounded,Public rounded count near 110M,yes
+2026,2026-06-17,6,2,PewDiePie,PDP,Sweden / Japan,110000000,#E11D48,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,Alan's Universe,ALN,United States,0,#14B8A6,public-source reconstruction v0.2,not_started,Channel launched in 2020,yes
+2017,2017-12-31,12,4,Alan's Universe,ALN,United States,0,#14B8A6,public-source reconstruction v0.2,not_started,Channel launched in 2020,yes
+2018,2018-12-31,12,4,Alan's Universe,ALN,United States,0,#14B8A6,public-source reconstruction v0.2,not_started,Channel launched in 2020,yes
+2019,2019-12-31,12,4,Alan's Universe,ALN,United States,0,#14B8A6,public-source reconstruction v0.2,not_started,Channel launched in 2020,yes
+2020,2020-12-31,12,4,Alan's Universe,ALN,United States,1000000,#14B8A6,public-source reconstruction v0.2,estimated_between_anchors,Early Shorts-era estimate,yes
+2021,2021-12-31,12,4,Alan's Universe,ALN,United States,7000000,#14B8A6,public-source reconstruction v0.2,milestone_anchor,Creator profile notes 7M viewers/following growth around 2021,yes
+2022,2022-12-31,12,4,Alan's Universe,ALN,United States,25000000,#14B8A6,public-source reconstruction v0.2,estimated_between_anchors,Estimated from Shorts growth before 2024 top-50 entry,yes
+2023,2023-12-31,12,4,Alan's Universe,ALN,United States,45000000,#14B8A6,public-source reconstruction v0.2,estimated_between_anchors,Estimated from Shorts growth before 2024 top-50 entry,yes
+2024,2024-12-31,12,4,Alan's Universe,ALN,United States,62000000,#14B8A6,public-source reconstruction v0.2,estimated_between_anchors,Entered global Top 50 in 2024; profile references about 57M in 2024,yes
+2025,2025-12-31,12,4,Alan's Universe,ALN,United States,96000000,#14B8A6,public-source reconstruction v0.2,estimated_between_anchors,Approaching 100M milestone reached 2026-03-12,yes
+2026,2026-06-17,6,2,Alan's Universe,ALN,United States,101000000,#14B8A6,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,A4,A4,Belarus / Russian-language,1000000,#F97316,public-source reconstruction v0.2,milestone_anchor,2016 viral video lifted channel from 200K to 1M,yes
+2017,2017-12-31,12,4,A4,A4,Belarus / Russian-language,2500000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Post-1M growth estimate,yes
+2018,2018-12-31,12,4,A4,A4,Belarus / Russian-language,8000000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Approaching diamond creator award,yes
+2019,2019-12-31,12,4,A4,A4,Belarus / Russian-language,17000000,#F97316,public-source reconstruction v0.2,milestone_anchor,Diamond creator award year 2019,yes
+2020,2020-12-31,12,4,A4,A4,Belarus / Russian-language,28000000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Estimated from Russian-language creator growth,yes
+2021,2021-12-31,12,4,A4,A4,Belarus / Russian-language,39000000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Estimated from Russian-language creator growth,yes
+2022,2022-12-31,12,4,A4,A4,Belarus / Russian-language,45000000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Pre-2023 public profile value,yes
+2023,2023-12-31,12,4,A4,A4,Belarus / Russian-language,49700000,#F97316,public-source reconstruction v0.2,observed_rounded,Public profile text cited 49.7M in Dec 2023,yes
+2024,2024-12-31,12,4,A4,A4,Belarus / Russian-language,65000000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Estimated before 2025 top-20 entry,yes
+2025,2025-12-31,12,4,A4,A4,Belarus / Russian-language,86000000,#F97316,public-source reconstruction v0.2,estimated_between_anchors,Surpassed 5-Minute Crafts and entered top-20 range in 2025,yes
+2026,2026-06-17,6,2,A4,A4,Belarus / Russian-language,92600000,#F97316,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,Mark Rober,RBR,United States,700000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,Pre-glitter-bomb estimate,yes
+2017,2017-12-31,12,4,Mark Rober,RBR,United States,1500000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,Pre-glitter-bomb estimate,yes
+2018,2018-12-31,12,4,Mark Rober,RBR,United States,5000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,Glitter bomb era growth estimate,yes
+2019,2019-12-31,12,4,Mark Rober,RBR,United States,9000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,TeamTrees visibility year,yes
+2020,2020-12-31,12,4,Mark Rober,RBR,United States,13000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,Backyard Squirrel Maze era estimate,yes
+2021,2021-12-31,12,4,Mark Rober,RBR,United States,20000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,TeamSeas era estimate,yes
+2022,2022-12-31,12,4,Mark Rober,RBR,United States,26000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,CrunchLabs launch era estimate,yes
+2023,2023-12-31,12,4,Mark Rober,RBR,United States,35000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,Pre-2024 acceleration estimate,yes
+2024,2024-12-31,12,4,Mark Rober,RBR,United States,55000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,MrBeast video shirt cited about 50M in July 2024,yes
+2025,2025-12-31,12,4,Mark Rober,RBR,United States,72000000,#2563EB,public-source reconstruction v0.2,estimated_between_anchors,Approaching 2026 public profile value,yes
+2026,2026-06-17,6,2,Mark Rober,RBR,United States,78500000,#2563EB,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,Dude Perfect,DPF,United States,17000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Historic large-channel estimate,yes
+2017,2017-12-31,12,4,Dude Perfect,DPF,United States,27000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Historic large-channel estimate,yes
+2018,2018-12-31,12,4,Dude Perfect,DPF,United States,38000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Historic large-channel estimate,yes
+2019,2019-12-31,12,4,Dude Perfect,DPF,United States,47000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Approaching 50M range,yes
+2020,2020-12-31,12,4,Dude Perfect,DPF,United States,54000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Above 50M range; exact 50M award timing needs provider confirmation,yes
+2021,2021-12-31,12,4,Dude Perfect,DPF,United States,57000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Slow mature-channel growth estimate,yes
+2022,2022-12-31,12,4,Dude Perfect,DPF,United States,59000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Public 50M custom award post in 2022,yes
+2023,2023-12-31,12,4,Dude Perfect,DPF,United States,60000000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Slow mature-channel growth estimate,yes
+2024,2024-12-31,12,4,Dude Perfect,DPF,United States,60500000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Slow mature-channel growth estimate,yes
+2025,2025-12-31,12,4,Dude Perfect,DPF,United States,61500000,#84CC16,public-source reconstruction v0.2,estimated_between_anchors,Approaching 2026 public profile value,yes
+2026,2026-06-17,6,2,Dude Perfect,DPF,United States,62300000,#84CC16,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,yes
+2016,2016-12-31,12,4,Like Nastya,LNS,Russia / United States,100000,#EC4899,public-source reconstruction v0.2,milestone_anchor,Silver creator award year 2016,no
+2017,2017-12-31,12,4,Like Nastya,LNS,Russia / United States,800000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,Before 1M/10M awards,no
+2018,2018-12-31,12,4,Like Nastya,LNS,Russia / United States,12000000,#EC4899,public-source reconstruction v0.2,milestone_anchor,1M and 10M creator award year 2018,no
+2019,2019-12-31,12,4,Like Nastya,LNS,Russia / United States,42000000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,Fast-growing multilingual kids channel,no
+2020,2020-12-31,12,4,Like Nastya,LNS,Russia / United States,63000000,#EC4899,public-source reconstruction v0.2,milestone_anchor,50M creator award year 2020,no
+2021,2021-12-31,12,4,Like Nastya,LNS,Russia / United States,87000000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,Approaching 100M milestone,no
+2022,2022-12-31,12,4,Like Nastya,LNS,Russia / United States,103000000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,100M reached 2022-08-25,no
+2023,2023-12-31,12,4,Like Nastya,LNS,Russia / United States,112000000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,Post-100M mature growth,no
+2024,2024-12-31,12,4,Like Nastya,LNS,Russia / United States,123000000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,About 120M in Oct 2024 public profile text,no
+2025,2025-12-31,12,4,Like Nastya,LNS,Russia / United States,129000000,#EC4899,public-source reconstruction v0.2,estimated_between_anchors,Approaching 2026 public profile value,no
+2026,2026-06-17,6,2,Like Nastya,LNS,Russia / United States,132000000,#EC4899,SocialBlade profile,observed_rounded,Current rounded public count checked 2026-06-17,no

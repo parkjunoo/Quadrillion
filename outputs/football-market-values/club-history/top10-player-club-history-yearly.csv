@@ -1,0 +1,1400 @@
+year,player_id,name,country,position,primary_club,clubs,club_spans,tracked_months,top10_months,best_global_rank,peak_value_million_eur,latest_value_million_eur,latest_month
+2000,405973,Fadel Gobitaka,Togo,Attack,Unknown,Unknown,Jan-Dec: Unknown,12,12,1,0.15,0.15,2000-12
+2001,405973,Fadel Gobitaka,Togo,Attack,Unknown,Unknown,Jan-Jun: Unknown,6,6,1,0.15,0.15,2001-06
+2016,405973,Fadel Gobitaka,Togo,Attack,Unknown,Unknown,Feb-Dec: Unknown,11,0,9204,0.25,0.25,2016-12
+2017,405973,Fadel Gobitaka,Togo,Attack,Unknown,Unknown,Jan-Dec: Unknown,12,0,10891,0.15,0.15,2017-12
+2018,405973,Fadel Gobitaka,Togo,Attack,Unknown,Unknown | AS Verbroedering Geel,Jan-Jun: Unknown | Sep-Dec: AS Verbroedering Geel,10,0,11089,0.15,0.075,2018-12
+2019,405973,Fadel Gobitaka,Togo,Attack,AS Verbroedering Geel,AS Verbroedering Geel | Roda JC Kerkrade U21,Jan-Jul: AS Verbroedering Geel | Aug-Nov: Roda JC Kerkrade U21,11,0,12799,0.075,0.05,2019-11
+2001,342216,Julien Serrano,France,Defender,Unknown,Unknown,Jul-Dec: Unknown,6,6,1,0.1,0.1,2001-12
+2002,342216,Julien Serrano,France,Defender,Unknown,Unknown,Jan-Dec: Unknown,12,12,1,0.1,0.1,2002-12
+2017,342216,Julien Serrano,France,Defender,AS Monaco,AS Monaco,Jul-Dec: AS Monaco,6,0,12004,0.1,0.1,2017-12
+2018,342216,Julien Serrano,France,Defender,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,2662,2,2,2018-12
+2019,342216,Julien Serrano,France,Defender,AS Monaco,AS Monaco | Cercle Brugge ,Jan-Nov: AS Monaco | Dec: Cercle Brugge ,12,0,2897,2,1,2019-12
+2020,342216,Julien Serrano,France,Defender,AS Béziers,Cercle Brugge  | AS Béziers,Jan-Mar: Cercle Brugge  | Apr-Dec: AS Béziers,12,0,4519,1,0.9,2020-12
+2021,342216,Julien Serrano,France,Defender,Livingston FC,Livingston FC | AS Monaco | Without Club | US Créteil-Lusitanos,Jan-May: Livingston FC | Jun-Sep: AS Monaco | Oct-Nov: Without Club | Dec: US Créteil-Lusitanos,12,0,4966,0.9,0.4,2021-12
+2022,342216,Julien Serrano,France,Defender,US Créteil-Lusitanos,US Créteil-Lusitanos,Jan-Nov: US Créteil-Lusitanos,11,0,8209,0.4,0.25,2022-11
+2003,6893,Gabriel Tamas,Romania,Defender,Galatasaray,Galatasaray,Dec: Galatasaray,1,1,1,0.9,0.9,2003-12
+2004,6893,Gabriel Tamas,Romania,Defender,Galatasaray,Galatasaray | Spartak Moscow,Jan-Sep: Galatasaray | Oct-Dec: Spartak Moscow,12,9,1,1.75,1.75,2004-12
+2005,6893,Gabriel Tamas,Romania,Defender,Spartak Moscow,Spartak Moscow,Jan-Dec: Spartak Moscow,12,0,552,1.75,1.75,2005-12
+2006,6893,Gabriel Tamas,Romania,Defender,Spartak Moscow,Spartak Moscow,Jan-Mar: Spartak Moscow,3,0,723,1.75,1.75,2006-03
+2007,6893,Gabriel Tamas,Romania,Defender,AJ Auxerre,AJ Auxerre,Aug-Dec: AJ Auxerre,5,0,708,3,3,2007-12
+2008,6893,Gabriel Tamas,Romania,Defender,AJ Auxerre,AJ Auxerre,Jan-Dec: AJ Auxerre,12,0,819,3,3,2008-12
+2009,6893,Gabriel Tamas,Romania,Defender,FC Dinamo Bucharest,AJ Auxerre | FC Dinamo Bucharest,Jan: AJ Auxerre | Feb-Dec: FC Dinamo Bucharest,12,0,988,3.4,3.4,2009-12
+2010,6893,Gabriel Tamas,Romania,Defender,AJ Auxerre,FC Dinamo Bucharest | AJ Auxerre,Jan-Jun: FC Dinamo Bucharest | Jul-Dec: AJ Auxerre,12,0,1083,3.5,3.5,2010-12
+2011,6893,Gabriel Tamas,Romania,Defender,West Bromwich Albion,AJ Auxerre | West Bromwich Albion,Jan: AJ Auxerre | Feb-Dec: West Bromwich Albion,12,0,994,4,3,2011-12
+2012,6893,Gabriel Tamas,Romania,Defender,West Bromwich Albion,West Bromwich Albion,Jan-Dec: West Bromwich Albion,12,0,1423,3,2,2012-12
+2013,6893,Gabriel Tamas,Romania,Defender,West Bromwich Albion,West Bromwich Albion,Jan-Dec: West Bromwich Albion,12,0,2151,2,1.5,2013-12
+2014,6893,Gabriel Tamas,Romania,Defender,Without Club,Without Club | Watford FC,Jan-Aug: Without Club | Sep-Nov: Watford FC,11,0,4202,0.9,0.9,2014-11
+2003,3132,Florin Cernat,Romania,Midfield,Dynamo Kyiv,Dynamo Kyiv,Dec: Dynamo Kyiv,1,1,2,0.4,0.4,2003-12
+2004,3132,Florin Cernat,Romania,Midfield,Dynamo Kyiv,Dynamo Kyiv,Jan-Dec: Dynamo Kyiv,12,9,2,2,2,2004-12
+2005,3132,Florin Cernat,Romania,Midfield,Dynamo Kyiv,Dynamo Kyiv,Jan-Dec: Dynamo Kyiv,12,0,490,2,2,2005-12
+2006,3132,Florin Cernat,Romania,Midfield,Dynamo Kyiv,Dynamo Kyiv,Jan-Mar: Dynamo Kyiv,3,0,634,2,2,2006-03
+2007,3132,Florin Cernat,Romania,Midfield,HNK Hajduk Split,HNK Hajduk Split,Oct-Dec: HNK Hajduk Split,3,0,984,2.2,2.2,2007-12
+2008,3132,Florin Cernat,Romania,Midfield,HNK Hajduk Split,HNK Hajduk Split | Dynamo Kyiv,Jan-Sep: HNK Hajduk Split | Oct-Dec: Dynamo Kyiv,12,0,974,2.8,1.5,2008-12
+2009,3132,Florin Cernat,Romania,Midfield,Dynamo Kyiv,Dynamo Kyiv | HNK Hajduk Split,Jan-Sep: Dynamo Kyiv | Oct-Dec: HNK Hajduk Split,12,0,1792,1.5,1.3,2009-12
+2010,3132,Florin Cernat,Romania,Midfield,HNK Hajduk Split,HNK Hajduk Split,Jan-Dec: HNK Hajduk Split,12,0,2784,1,1,2010-12
+2011,3132,Florin Cernat,Romania,Midfield,Kardemir DC Karabükspor,Kardemir DC Karabükspor,Jan-Dec: Kardemir DC Karabükspor,12,0,1931,2,2,2011-12
+2012,3132,Florin Cernat,Romania,Midfield,Kardemir DC Karabükspor,Kardemir DC Karabükspor,Jan-Dec: Kardemir DC Karabükspor,12,0,2036,2,1.8,2012-12
+2013,3132,Florin Cernat,Romania,Midfield,Caykur Rizespor,Caykur Rizespor,Jan-Dec: Caykur Rizespor,12,0,3583,1,0.7,2013-12
+2014,3132,Florin Cernat,Romania,Midfield,Caykur Rizespor,Caykur Rizespor | Otelul Galati,Jan-Nov: Caykur Rizespor | Dec: Otelul Galati,12,0,6104,0.5,0.4,2014-12
+2015,3132,Florin Cernat,Romania,Midfield,Otelul Galati,Otelul Galati,Jan-Nov: Otelul Galati,11,0,6400,0.5,0.5,2015-11
+2004,3139,David Beckham,England,Midfield,Real Madrid,Real Madrid,Oct-Dec: Real Madrid,3,3,1,40,28,2004-12
+2005,3139,David Beckham,England,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,9,5,28,28,2005-12
+2006,3139,David Beckham,England,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,22,22,22,2006-12
+2007,3139,David Beckham,England,Midfield,Real Madrid,Real Madrid | Los Angeles Galaxy,Jan-Sep: Real Madrid | Oct-Dec: Los Angeles Galaxy,12,0,25,22,15,2007-12
+2008,3139,David Beckham,England,Midfield,Los Angeles Galaxy,Los Angeles Galaxy,Jan-Dec: Los Angeles Galaxy,12,0,72,15,9,2008-12
+2009,3139,David Beckham,England,Midfield,Los Angeles Galaxy,Los Angeles Galaxy,Jan-Aug: Los Angeles Galaxy,8,0,251,9,9,2009-08
+2010,3139,David Beckham,England,Midfield,Los Angeles Galaxy,Los Angeles Galaxy,Jul-Dec: Los Angeles Galaxy,6,0,725,5,5,2010-12
+2011,3139,David Beckham,England,Midfield,Los Angeles Galaxy,Los Angeles Galaxy,Jan-Dec: Los Angeles Galaxy,12,0,752,5,3.5,2011-12
+2012,3139,David Beckham,England,Midfield,Los Angeles Galaxy,Los Angeles Galaxy,Jan-Jul: Los Angeles Galaxy,7,0,1197,3.5,3.5,2012-07
+2013,3139,David Beckham,England,Midfield,Paris Saint-Germain,Los Angeles Galaxy | Paris Saint-Germain,Jan-Apr: Los Angeles Galaxy | May-Dec: Paris Saint-Germain,12,0,3505,1,1,2013-12
+2014,3139,David Beckham,England,Midfield,Paris Saint-Germain,Paris Saint-Germain,Jan-Oct: Paris Saint-Germain,10,0,3589,1,1,2014-10
+2004,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Oct-Dec: AS Roma,3,3,2,35,35,2004-12
+2005,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,12,1,35,35,2005-12
+2006,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,12,1,37,37,2006-12
+2007,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,12,1,40,40,2007-12
+2008,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,1,3,40,25,2008-12
+2009,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,36,25,17.5,2009-12
+2010,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,137,15,10,2010-12
+2011,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,356,9,5,2011-12
+2012,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,806,5,1,2012-12
+2013,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,3587,1,1,2013-12
+2014,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,3675,1,1,2014-12
+2015,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,3754,1,1,2015-12
+2016,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,3813,1,1,2016-12
+2017,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,3846,1,1,2017-12
+2018,5958,Francesco Totti,Italy,Attack,AS Roma,AS Roma,Jan-Nov: AS Roma,11,0,4034,1,1,2018-11
+2004,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan,Oct-Dec: AC Milan,3,3,8,26,26,2004-12
+2005,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,12,7,30,30,2005-12
+2006,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,12,5,35,35,2006-12
+2007,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,12,1,70,70,2007-12
+2008,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,12,1,70,55,2008-12
+2009,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan | Real Madrid,Jan-Jun: AC Milan | Jul-Dec: Real Madrid,12,12,2,60,60,2009-12
+2010,3366,Kaká,Brazil,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,11,5,60,45,2010-12
+2011,3366,Kaká,Brazil,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,3,10,45,30,2011-12
+2012,3366,Kaká,Brazil,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,36,30,18,2012-12
+2013,3366,Kaká,Brazil,Midfield,Real Madrid,Real Madrid | AC Milan,Jan-Aug: Real Madrid | Sep-Dec: AC Milan,12,0,159,16,8,2013-12
+2014,3366,Kaká,Brazil,Midfield,AC Milan,AC Milan | Orlando City SC,Jan-Jun: AC Milan | Jul-Dec: Orlando City SC,12,0,497,8,6,2014-12
+2015,3366,Kaká,Brazil,Midfield,Orlando City SC,Orlando City SC,Jan-Nov: Orlando City SC,11,0,763,6,5,2015-11
+2004,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Oct-Dec: Manchester United,3,3,1,37,37,2004-12
+2005,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,1,37,36,2005-12
+2006,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,3,36,36,2006-12
+2007,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,4,36,36,2007-12
+2008,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,7,40,40,2008-12
+2009,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,3,9,42,42,2009-12
+2010,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,5,55,55,2010-12
+2011,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,5,55,54,2011-12
+2012,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,4,65,65,2012-12
+2013,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,12,4,65,50,2013-12
+2014,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,17,45,45,2014-12
+2015,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,25,45,40,2015-12
+2016,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,38,40,30,2016-12
+2017,3332,Wayne Rooney,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,94,30,15,2017-12
+2018,3332,Wayne Rooney,England,Attack,Everton FC,Everton FC | D.C. United,Jan-Nov: Everton FC | Dec: D.C. United,12,0,436,15,8,2018-12
+2019,3332,Wayne Rooney,England,Attack,D.C. United,D.C. United,Jan-Nov: D.C. United,11,0,1069,8,4.5,2019-11
+2004,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Oct-Dec: Chelsea FC,3,3,4,30,30,2004-12
+2005,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,9,3,31,26,2005-12
+2006,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,17,26,24.5,2006-12
+2007,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,9,3,38.5,38.5,2007-12
+2008,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,12,5,40,40,2008-12
+2009,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,1,7,40,35,2009-12
+2010,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,16,38,30,2010-12
+2011,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,30,30,17,2011-12
+2012,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Chelsea FC | Shanghai Shenhua Liansheng,Jan-Jun: Chelsea FC | Jul-Dec: Shanghai Shenhua Liansheng,12,0,129,17,3.5,2012-12
+2013,3924,Didier Drogba,Cote d'Ivoire,Attack,Galatasaray,Shanghai Shenhua Liansheng | Galatasaray,Jan-May: Shanghai Shenhua Liansheng | Jun-Dec: Galatasaray,12,0,1447,3,3,2013-12
+2014,3924,Didier Drogba,Cote d'Ivoire,Attack,Galatasaray,Galatasaray,Jan-Dec: Galatasaray,12,0,1429,3,2.25,2014-12
+2015,3924,Didier Drogba,Cote d'Ivoire,Attack,Chelsea FC,Galatasaray | Chelsea FC,Jan: Galatasaray | Feb-Dec: Chelsea FC,12,0,2049,2.25,1,2015-12
+2016,3924,Didier Drogba,Cote d'Ivoire,Attack,Montreal Impact,Chelsea FC | Montreal Impact,Jan-Feb: Chelsea FC | Mar-Nov: Montreal Impact,11,0,3752,1,1,2016-11
+2004,7717,José Antonio Reyes,Spain,Attack,Arsenal FC,Arsenal FC,Oct-Dec: Arsenal FC,3,3,3,35,35,2004-12
+2005,7717,José Antonio Reyes,Spain,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,15,24.5,19,2005-12
+2006,7717,José Antonio Reyes,Spain,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,34,19,17,2006-12
+2007,7717,José Antonio Reyes,Spain,Attack,Arsenal FC,Arsenal FC | Real Madrid | Atlético de Madrid,Jan-May: Arsenal FC | Jun-Jul: Real Madrid | Aug-Dec: Atlético de Madrid,12,0,42,17,12,2007-12
+2008,7717,José Antonio Reyes,Spain,Attack,Atlético de Madrid,Atlético de Madrid | SL Benfica,Jan-Aug: Atlético de Madrid | Sep-Dec: SL Benfica,12,0,116,12,4.5,2008-12
+2009,7717,José Antonio Reyes,Spain,Attack,Atlético de Madrid,SL Benfica | Atlético de Madrid,Jan-Jun: SL Benfica | Jul-Dec: Atlético de Madrid,12,0,441,7,7,2009-12
+2010,7717,José Antonio Reyes,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,232,12,12,2010-12
+2011,7717,José Antonio Reyes,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,159,15,15,2011-12
+2012,7717,José Antonio Reyes,Spain,Attack,Sevilla FC,Atlético de Madrid | Sevilla FC,Jan: Atlético de Madrid | Feb-Dec: Sevilla FC,12,0,164,15,9,2012-12
+2013,7717,José Antonio Reyes,Spain,Attack,Sevilla FC,Sevilla FC,Jan-Dec: Sevilla FC,12,0,675,6,5,2013-12
+2014,7717,José Antonio Reyes,Spain,Attack,Sevilla FC,Sevilla FC,Jan-Dec: Sevilla FC,12,0,1119,4,3,2014-12
+2015,7717,José Antonio Reyes,Spain,Attack,Sevilla FC,Sevilla FC,Jan-Dec: Sevilla FC,12,0,1571,3,2.5,2015-12
+2016,7717,José Antonio Reyes,Spain,Attack,RCD Espanyol Barcelona,Sevilla FC | RCD Espanyol Barcelona,Jan-Jun: Sevilla FC | Jul-Dec: RCD Espanyol Barcelona,12,0,1950,2.5,2,2016-12
+2017,7717,José Antonio Reyes,Spain,Attack,RCD Espanyol Barcelona,RCD Espanyol Barcelona,Jan-Dec: RCD Espanyol Barcelona,12,0,3940,1,0.8,2017-12
+2018,7717,José Antonio Reyes,Spain,Attack,Córdoba CF,RCD Espanyol Barcelona | Córdoba CF,Jan-Feb: RCD Espanyol Barcelona | Mar-Nov: Córdoba CF,11,0,4894,0.8,0.3,2018-11
+2004,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC,Oct-Dec: Chelsea FC,3,3,5,30,30,2004-12
+2005,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,1,4,30,18.5,2005-12
+2006,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,37,18.5,17.5,2006-12
+2007,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC,Jan-Nov: Chelsea FC,11,0,38,17.5,17.5,2007-11
+2008,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC,Feb-Dec: Chelsea FC,11,0,47,22,22,2008-12
+2009,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,52,22,17.5,2009-12
+2010,9828,Ricardo Carvalho,Portugal,Defender,Chelsea FC,Chelsea FC | Real Madrid,Jan-Jul: Chelsea FC | Aug-Dec: Real Madrid,12,0,101,17.5,10,2010-12
+2011,9828,Ricardo Carvalho,Portugal,Defender,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,317,10,9,2011-12
+2012,9828,Ricardo Carvalho,Portugal,Defender,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,371,9,1.5,2012-12
+2013,9828,Ricardo Carvalho,Portugal,Defender,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,3899,1,1,2013-12
+2014,9828,Ricardo Carvalho,Portugal,Defender,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,4013,1,1,2014-12
+2015,9828,Ricardo Carvalho,Portugal,Defender,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,6596,0.5,0.5,2015-12
+2016,9828,Ricardo Carvalho,Portugal,Defender,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,6614,0.5,0.5,2016-12
+2017,9828,Ricardo Carvalho,Portugal,Defender,Shanghai SIPG,AS Monaco | Shanghai SIPG,Jan-Feb: AS Monaco | Mar-Nov: Shanghai SIPG,11,0,6624,0.5,0.2,2017-11
+2004,1397,Michael Owen,England,Attack,Real Madrid,Real Madrid,Oct-Dec: Real Madrid,3,2,6,30,22,2004-12
+2005,1397,Michael Owen,England,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,19,22,22,2005-12
+2006,1397,Michael Owen,England,Attack,Newcastle United,Real Madrid | Newcastle United,Jan-May: Real Madrid | Jun-Dec: Newcastle United,12,0,27,22,20,2006-12
+2007,1397,Michael Owen,England,Attack,Newcastle United,Newcastle United,Jan-Dec: Newcastle United,12,0,31,20,15,2007-12
+2008,1397,Michael Owen,England,Attack,Newcastle United,Newcastle United,Jan-Dec: Newcastle United,12,0,100,15,15,2008-12
+2009,1397,Michael Owen,England,Attack,Newcastle United,Newcastle United,Jan-Dec: Newcastle United,12,0,107,15.5,12.2,2009-12
+2010,1397,Michael Owen,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,238,11,8.5,2010-12
+2011,1397,Michael Owen,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,401,8.5,5,2011-12
+2012,1397,Michael Owen,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,840,5,1.5,2012-12
+2013,1397,Michael Owen,England,Attack,Stoke City,Stoke City,Jan-Dec: Stoke City,12,0,3807,1,1,2013-12
+2014,1397,Michael Owen,England,Attack,Stoke City,Stoke City,Jan-Jun: Stoke City,6,0,3920,1,1,2014-06
+2004,5962,Antonio Cassano,Italy,Attack,AS Roma,AS Roma,Oct-Dec: AS Roma,3,3,9,25,25,2004-12
+2005,5962,Antonio Cassano,Italy,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,22,24,24,2005-12
+2006,5962,Antonio Cassano,Italy,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,27,20.5,20.5,2006-12
+2007,5962,Antonio Cassano,Italy,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,28,20.5,8.5,2007-12
+2008,5962,Antonio Cassano,Italy,Attack,Real Madrid,Real Madrid | UC Sampdoria,Jan: Real Madrid | Feb-May: UC Sampdoria | Jun-Dec: Real Madrid,12,0,123,12.5,12.5,2008-12
+2009,5962,Antonio Cassano,Italy,Attack,UC Sampdoria,Real Madrid | UC Sampdoria,Jan: Real Madrid | Feb-Dec: UC Sampdoria,12,0,98,17,17,2009-12
+2010,5962,Antonio Cassano,Italy,Attack,UC Sampdoria,UC Sampdoria,Jan-Dec: UC Sampdoria,12,0,89,18.5,18.5,2010-12
+2011,5962,Antonio Cassano,Italy,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,149,15,15,2011-12
+2012,5962,Antonio Cassano,Italy,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,287,10,10,2012-12
+2013,5962,Antonio Cassano,Italy,Attack,FC Internazionale,FC Internazionale,Jan-Dec: FC Internazionale,12,0,316,10,6,2013-12
+2014,5962,Antonio Cassano,Italy,Attack,Parma FC,Parma FC,Jan-Dec: Parma FC,12,0,753,5.5,5,2014-12
+2015,5962,Antonio Cassano,Italy,Attack,Parma FC,Parma FC | Without Club,Jan-Jun: Parma FC | Jul-Dec: Without Club,12,0,1310,3.5,1,2015-12
+2016,5962,Antonio Cassano,Italy,Attack,UC Sampdoria,UC Sampdoria,Jan-Dec: UC Sampdoria,12,0,4482,0.8,0.5,2016-12
+2017,5962,Antonio Cassano,Italy,Attack,UC Sampdoria,UC Sampdoria,Jan-Dec: UC Sampdoria,12,0,8212,0.3,0.3,2017-12
+2018,5962,Antonio Cassano,Italy,Attack,UC Sampdoria,UC Sampdoria,Jan-Jun: UC Sampdoria,6,0,8384,0.3,0.3,2018-06
+2004,3411,Pablo Aimar,Argentina,Midfield,Valencia CF,Valencia CF,Oct-Dec: Valencia CF,3,1,10,25,25,2004-12
+2005,3411,Pablo Aimar,Argentina,Midfield,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,1,10,25,25,2005-12
+2006,3411,Pablo Aimar,Argentina,Midfield,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,0,21,25,18,2006-12
+2007,3411,Pablo Aimar,Argentina,Midfield,Real Zaragoza,Valencia CF | Real Zaragoza,Jan-May: Valencia CF | Jun-Dec: Real Zaragoza,12,0,36,18,15,2007-12
+2008,3411,Pablo Aimar,Argentina,Midfield,Real Zaragoza,Real Zaragoza,Jan-Dec: Real Zaragoza,12,0,81,15,8,2008-12
+2009,3411,Pablo Aimar,Argentina,Midfield,SL Benfica,Real Zaragoza | SL Benfica,Jan: Real Zaragoza | Feb-Dec: SL Benfica,12,0,323,8,6.8,2009-12
+2010,3411,Pablo Aimar,Argentina,Midfield,SL Benfica,SL Benfica,Jan-Dec: SL Benfica,12,0,475,7.2,7.2,2010-12
+2011,3411,Pablo Aimar,Argentina,Midfield,SL Benfica,SL Benfica,Jan-Dec: SL Benfica,12,0,494,7.2,6.5,2011-12
+2012,3411,Pablo Aimar,Argentina,Midfield,SL Benfica,SL Benfica,Jan-Dec: SL Benfica,12,0,597,6.5,6,2012-12
+2013,3411,Pablo Aimar,Argentina,Midfield,SL Benfica,SL Benfica | Johor Darul Ta'zim,Jan-Jul: SL Benfica | Aug-Dec: Johor Darul Ta'zim,12,0,707,6,0.5,2013-12
+2014,3411,Pablo Aimar,Argentina,Midfield,Johor Darul Ta'zim,Johor Darul Ta'zim,Jan-Nov: Johor Darul Ta'zim,11,0,6467,0.5,0.5,2014-11
+2004,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Oct-Dec: Atlético de Madrid,3,2,10,25,25,2004-12
+2005,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,5,8,25,25,2005-12
+2006,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-May: Atlético de Madrid,5,0,19,25,25,2006-05
+2007,7767,Fernando Torres,Spain,Attack,Liverpool FC,Atlético de Madrid | Liverpool FC,Jun-Jul: Atlético de Madrid | Aug-Dec: Liverpool FC,7,5,9,35,35,2007-12
+2008,7767,Fernando Torres,Spain,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,7,7,40,40,2008-12
+2009,7767,Fernando Torres,Spain,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,5,45,45,2009-12
+2010,7767,Fernando Torres,Spain,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,7,50,50,2010-12
+2011,7767,Fernando Torres,Spain,Attack,Chelsea FC,Liverpool FC | Chelsea FC,Jan: Liverpool FC | Feb-Dec: Chelsea FC,12,12,6,50,42,2011-12
+2012,7767,Fernando Torres,Spain,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,1,8,42,35,2012-12
+2013,7767,Fernando Torres,Spain,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,52,28,23,2013-12
+2014,7767,Fernando Torres,Spain,Attack,Chelsea FC,Chelsea FC | AC Milan,Jan-Oct: Chelsea FC | Nov-Dec: AC Milan,12,0,138,19,7,2014-12
+2015,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,622,7,7,2015-12
+2016,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,453,10,10,2016-12
+2017,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,865,6,4,2017-12
+2018,7767,Fernando Torres,Spain,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,1441,4,4,2018-12
+2019,7767,Fernando Torres,Spain,Attack,Sagan Tosu,Sagan Tosu,Jan-Nov: Sagan Tosu,11,0,1948,3.5,2.5,2019-11
+2004,4257,Samuel Eto'o,Cameroon,Attack,FC Barcelona,FC Barcelona,Oct-Dec: FC Barcelona,3,1,7,27,27,2004-12
+2005,4257,Samuel Eto'o,Cameroon,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,4,31,31,2005-12
+2006,4257,Samuel Eto'o,Cameroon,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,2,36,36,2006-12
+2007,4257,Samuel Eto'o,Cameroon,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,38,38,2007-12
+2008,4257,Samuel Eto'o,Cameroon,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,6,40,40,2008-12
+2009,4257,Samuel Eto'o,Cameroon,Attack,FC Barcelona,FC Barcelona | FC Internazionale,Jan-Aug: FC Barcelona | Sep-Dec: FC Internazionale,12,5,6,42,40,2009-12
+2010,4257,Samuel Eto'o,Cameroon,Attack,FC Internazionale,FC Internazionale,Jan-Dec: FC Internazionale,12,0,14,40,37.5,2010-12
+2011,4257,Samuel Eto'o,Cameroon,Attack,FC Internazionale,FC Internazionale | Anzhi Makhachkala ( -2022),Jan-Sep: FC Internazionale | Oct-Dec: Anzhi Makhachkala ( -2022),12,4,9,42,30,2011-12
+2012,4257,Samuel Eto'o,Cameroon,Attack,Anzhi Makhachkala ( -2022),Anzhi Makhachkala ( -2022),Jan-Dec: Anzhi Makhachkala ( -2022),12,0,43,30,28,2012-12
+2013,4257,Samuel Eto'o,Cameroon,Attack,Anzhi Makhachkala ( -2022),Anzhi Makhachkala ( -2022) | Chelsea FC,Jan-Aug: Anzhi Makhachkala ( -2022) | Sep-Dec: Chelsea FC,12,0,63,27,12,2013-12
+2014,4257,Samuel Eto'o,Cameroon,Attack,Chelsea FC,Chelsea FC | Everton FC,Jan-Sep: Chelsea FC | Oct-Dec: Everton FC,12,0,451,9,7,2014-12
+2015,4257,Samuel Eto'o,Cameroon,Attack,UC Sampdoria,Everton FC | UC Sampdoria,Jan: Everton FC | Feb-Dec: UC Sampdoria,12,0,656,7,2,2015-12
+2016,4257,Samuel Eto'o,Cameroon,Attack,Antalyaspor,Antalyaspor,Jan-Dec: Antalyaspor,12,0,2540,2,2,2016-12
+2017,4257,Samuel Eto'o,Cameroon,Attack,Antalyaspor,Antalyaspor,Jan-Dec: Antalyaspor,12,0,2782,1.7,1.5,2017-12
+2018,4257,Samuel Eto'o,Cameroon,Attack,Konyaspor,Antalyaspor | Konyaspor,Jan: Antalyaspor | Feb-Dec: Konyaspor,12,0,3396,1.5,1,2018-12
+2019,4257,Samuel Eto'o,Cameroon,Attack,Qatar SC,Konyaspor | Qatar SC,Jan-Apr: Konyaspor | May-Nov: Qatar SC,11,0,4528,1,1,2019-11
+2004,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid B,Real Madrid B,Oct-Dec: Real Madrid B,3,0,11,25,25,2004-12
+2005,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid B,Real Madrid B,Jan-Dec: Real Madrid B,12,1,9,25,25,2005-12
+2006,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid B,Real Madrid B,Jan-May: Real Madrid B,5,0,20,25,25,2006-05
+2007,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Aug-Dec: Real Madrid Castilla,5,0,29,26,26,2007-12
+2008,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,24,30,30,2008-12
+2009,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,23,32,32,2009-12
+2010,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,22,35,35,2010-12
+2011,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,18,35,35,2011-12
+2012,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,19,35,35,2012-12
+2013,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,30,35,15,2013-12
+2014,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,285,12,8,2014-12
+2015,3979,Iker Casillas,Spain,Goalkeeper,Real Madrid Castilla,Real Madrid Castilla | FC Porto,Jan-Sep: Real Madrid Castilla | Oct-Dec: FC Porto,12,0,512,8,5,2015-12
+2016,3979,Iker Casillas,Spain,Goalkeeper,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,966,5,3,2016-12
+2017,3979,Iker Casillas,Spain,Goalkeeper,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,1709,3,2,2017-12
+2018,3979,Iker Casillas,Spain,Goalkeeper,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,2568,2,1,2018-12
+2019,3979,Iker Casillas,Spain,Goalkeeper,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,4241,1,1,2019-12
+2020,3979,Iker Casillas,Spain,Goalkeeper,FC Porto,FC Porto,Jan-Nov: FC Porto,11,0,4221,1,1,2020-11
+2004,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Oct-Dec: Chelsea FC,3,0,24,19.5,19.5,2004-12
+2005,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,11,2,35,35,2005-12
+2006,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,12,1,38.5,38.5,2006-12
+2007,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,12,1,39.75,39.75,2007-12
+2008,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,6,4,39.75,37,2008-12
+2009,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,7,6,45,45,2009-12
+2010,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,11,45,30,2010-12
+2011,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,33,30,16,2011-12
+2012,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,140,16,5.5,2012-12
+2013,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,1078,4,3.5,2013-12
+2014,3163,Frank Lampard,England,Midfield,Chelsea FC,Chelsea FC | Manchester City,Jan-Jul: Chelsea FC | Aug-Dec: Manchester City,12,0,2186,2,1.5,2014-12
+2015,3163,Frank Lampard,England,Midfield,Manchester City,Manchester City | New York City FC,Jan-Jun: Manchester City | Jul-Dec: New York City FC,12,0,2873,1.5,1,2015-12
+2016,3163,Frank Lampard,England,Midfield,New York City FC,New York City FC,Jan-Nov: New York City FC,11,0,3819,1,1,2016-11
+2004,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Oct-Dec: Liverpool FC,3,0,29,17,17,2004-12
+2005,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,10,4,30,30,2005-12
+2006,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,6,34,34,2006-12
+2007,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,10,6,38.5,38.5,2007-12
+2008,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,4,45,45,2008-12
+2009,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,4,50,50,2009-12
+2010,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,7,10,50,42,2010-12
+2011,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,11,42,30,2011-12
+2012,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,45,30,15.5,2012-12
+2013,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,291,11.5,9,2013-12
+2014,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,560,7.5,6,2014-12
+2015,3109,Steven Gerrard,England,Midfield,Liverpool FC,Liverpool FC | Los Angeles Galaxy,Jan-Jun: Liverpool FC | Jul-Dec: Los Angeles Galaxy,12,0,798,6,2,2015-12
+2016,3109,Steven Gerrard,England,Midfield,Los Angeles Galaxy,Los Angeles Galaxy,Jan-Nov: Los Angeles Galaxy,11,0,2564,2,1.75,2016-11
+2004,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Oct-Dec: Manchester United,3,0,12,25,25,2004-12
+2005,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,6,5,29.5,26.5,2005-12
+2006,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,16,26.5,25,2006-12
+2007,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,17,27,27,2007-12
+2008,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,18,33,33,2008-12
+2009,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,19,35,35,2009-12
+2010,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,24,31,23,2010-12
+2011,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,64,23,14,2011-12
+2012,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,193,14,6,2012-12
+2013,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,1327,3.5,3,2013-12
+2014,3235,Rio Ferdinand,England,Defender,Manchester United,Manchester United | Queens Park Rangers,Jan-Jul: Manchester United | Aug-Dec: Queens Park Rangers,12,0,3016,1.5,1,2014-12
+2015,3235,Rio Ferdinand,England,Defender,Queens Park Rangers,Queens Park Rangers,Jan-Dec: Queens Park Rangers,12,0,4096,1,1,2015-12
+2016,3235,Rio Ferdinand,England,Defender,Queens Park Rangers,Queens Park Rangers,Jan-Jul: Queens Park Rangers,7,0,4139,1,1,2016-07
+2005,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,May-Dec: Juventus FC,8,7,2,35,35,2005-12
+2006,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,12,6,35,30,2006-12
+2007,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,5,7,33,33,2007-12
+2008,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,13,33,32,2008-12
+2009,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,22,32,30.5,2009-12
+2010,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,25,30.5,28,2010-12
+2011,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,49,25,17,2011-12
+2012,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,141,16,16,2012-12
+2013,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,336,10,7.5,2013-12
+2014,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,845,5,3,2014-12
+2015,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,2220,2,2,2015-12
+2016,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,2307,2,2,2016-12
+2017,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,2384,2,2,2017-12
+2018,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC | Paris Saint-Germain,Jan-Aug: Juventus FC | Sep-Dec: Paris Saint-Germain,12,0,2530,2,1,2018-12
+2019,5023,Gianluigi Buffon,Italy,Goalkeeper,Paris Saint-Germain,Paris Saint-Germain | Juventus FC,Jan-Nov: Paris Saint-Germain | Dec: Juventus FC,12,0,4216,1,1,2019-12
+2020,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,4216,1,1,2020-12
+2021,5023,Gianluigi Buffon,Italy,Goalkeeper,Juventus FC,Juventus FC | Parma Calcio 1913,Jan-Nov: Juventus FC | Dec: Parma Calcio 1913,12,0,4529,1,1,2021-12
+2022,5023,Gianluigi Buffon,Italy,Goalkeeper,Parma Calcio 1913,Parma Calcio 1913,Jan-Nov: Parma Calcio 1913,11,0,4711,1,1,2022-11
+2004,5878,Alberto Gilardino,Italy,Attack,Parma FC,Parma FC,Oct-Dec: Parma FC,3,0,18,20,20,2004-12
+2005,5878,Alberto Gilardino,Italy,Attack,AC Milan,Parma FC | AC Milan,Jan-Jun: Parma FC | Jul-Dec: AC Milan,12,6,7,30,30,2005-12
+2006,5878,Alberto Gilardino,Italy,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,3,7,30,27,2006-12
+2007,5878,Alberto Gilardino,Italy,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,12,27,21.5,2007-12
+2008,5878,Alberto Gilardino,Italy,Attack,AC Milan,AC Milan | ACF Fiorentina,Jan-Jun: AC Milan | Jul-Dec: ACF Fiorentina,12,0,43,21.5,13,2008-12
+2009,5878,Alberto Gilardino,Italy,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,84,18,18,2009-12
+2010,5878,Alberto Gilardino,Italy,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,70,20,19,2010-12
+2011,5878,Alberto Gilardino,Italy,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,100,18,16,2011-12
+2012,5878,Alberto Gilardino,Italy,Attack,Genoa CFC,Genoa CFC,Jan-Dec: Genoa CFC,12,0,337,9,7,2012-12
+2013,5878,Alberto Gilardino,Italy,Attack,Bologna FC 1909,Bologna FC 1909,Jan-Dec: Bologna FC 1909,12,0,537,7,7,2013-12
+2014,5878,Alberto Gilardino,Italy,Attack,Genoa CFC,Genoa CFC | Guangzhou Evergrande Taobao,Jan-Oct: Genoa CFC | Nov-Dec: Guangzhou Evergrande Taobao,12,0,660,6,4.2,2014-12
+2015,5878,Alberto Gilardino,Italy,Attack,Guangzhou Evergrande Taobao,Guangzhou Evergrande Taobao | ACF Fiorentina,Jan: Guangzhou Evergrande Taobao | Feb-May: ACF Fiorentina | Jun-Dec: Guangzhou Evergrande Taobao,12,0,1084,4.2,1.5,2015-12
+2016,5878,Alberto Gilardino,Italy,Attack,FC Empoli,US Palermo | FC Empoli,Jan-Jun: US Palermo | Jul-Dec: FC Empoli,12,0,3604,1,1,2016-12
+2017,5878,Alberto Gilardino,Italy,Attack,Delfino Pescara 1936,FC Empoli | Delfino Pescara 1936 | Spezia Calcio,Jan-May: FC Empoli | Jun-Nov: Delfino Pescara 1936 | Dec: Spezia Calcio,12,0,5955,0.5,0.2,2017-12
+2018,5878,Alberto Gilardino,Italy,Attack,Spezia Calcio,Spezia Calcio,Jan-Nov: Spezia Calcio,11,0,9967,0.2,0.2,2018-11
+2004,5588,Michael Essien,Ghana,Midfield,Olympique Lyon,Olympique Lyon,Oct-Dec: Olympique Lyon,3,0,55,12,12,2004-12
+2005,5588,Michael Essien,Ghana,Midfield,Olympique Lyon,Olympique Lyon | Chelsea FC,Jan-Jul: Olympique Lyon | Aug-Dec: Chelsea FC,12,5,1,38,36.5,2005-12
+2006,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,12,1,36.5,28,2006-12
+2007,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,3,10,28.5,28.5,2007-12
+2008,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,18,32.5,32.5,2008-12
+2009,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,18,35,35,2009-12
+2010,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,16,38,38,2010-12
+2011,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,16,38,34,2011-12
+2012,5588,Michael Essien,Ghana,Midfield,Chelsea FC,Chelsea FC | Real Madrid,Jan-Aug: Chelsea FC | Sep-Dec: Real Madrid,12,0,24,34,24,2012-12
+2013,5588,Michael Essien,Ghana,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,164,16,10,2013-12
+2014,5588,Michael Essien,Ghana,Midfield,AC Milan,Chelsea FC | AC Milan,Jan-Feb: Chelsea FC | Mar-Dec: AC Milan,12,0,548,7.5,2.5,2014-12
+2015,5588,Michael Essien,Ghana,Midfield,AC Milan,AC Milan | Panathinaikos Athens,Jan-Jun: AC Milan | Jul-Dec: Panathinaikos Athens,12,0,3976,1,1,2015-12
+2016,5588,Michael Essien,Ghana,Midfield,Panathinaikos Athens,Panathinaikos Athens,Jan-Dec: Panathinaikos Athens,12,0,4040,1,0.8,2016-12
+2017,5588,Michael Essien,Ghana,Midfield,PERSIB Bandung,Panathinaikos Athens | PERSIB Bandung,Jan-Apr: Panathinaikos Athens | May-Nov: PERSIB Bandung,11,0,4708,0.8,0.5,2017-11
+2004,3467,Shaun Wright-Phillips,England,Attack,Manchester City,Manchester City,Oct-Dec: Manchester City,3,0,396,2.25,2.25,2004-12
+2005,3467,Shaun Wright-Phillips,England,Attack,Chelsea FC,Manchester City | Chelsea FC,Jan-Jun: Manchester City | Jul-Dec: Chelsea FC,12,1,6,31.5,23,2005-12
+2006,3467,Shaun Wright-Phillips,England,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,23,23,16,2006-12
+2007,3467,Shaun Wright-Phillips,England,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,46,16,12.5,2007-12
+2008,3467,Shaun Wright-Phillips,England,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,92,15,13,2008-12
+2009,3467,Shaun Wright-Phillips,England,Attack,Manchester City,Chelsea FC | Manchester City,Jan: Chelsea FC | Feb-Dec: Manchester City,12,0,141,13,13,2009-12
+2010,3467,Shaun Wright-Phillips,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,149,15,12,2010-12
+2011,3467,Shaun Wright-Phillips,England,Attack,Manchester City,Manchester City | Queens Park Rangers,Jan-Jul: Manchester City | Aug-Dec: Queens Park Rangers,12,0,248,12,5.5,2011-12
+2012,3467,Shaun Wright-Phillips,England,Attack,Queens Park Rangers,Queens Park Rangers,Jan-Dec: Queens Park Rangers,12,0,762,5.5,3.5,2012-12
+2013,3467,Shaun Wright-Phillips,England,Attack,Queens Park Rangers,Queens Park Rangers,Jan-Dec: Queens Park Rangers,12,0,1940,2.5,2,2013-12
+2014,3467,Shaun Wright-Phillips,England,Attack,Queens Park Rangers,Queens Park Rangers,Jan-Dec: Queens Park Rangers,12,0,3188,1.3,1,2014-12
+2015,3467,Shaun Wright-Phillips,England,Attack,Queens Park Rangers,Queens Park Rangers,Jan-Dec: Queens Park Rangers,12,0,4147,1,0.5,2015-12
+2016,3467,Shaun Wright-Phillips,England,Attack,New York Red Bulls,Queens Park Rangers | New York Red Bulls,Jan-Feb: Queens Park Rangers | Mar-Nov: New York Red Bulls,11,0,6749,0.5,0.3,2016-11
+2004,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Oct-Dec: Chelsea FC,3,0,40,15,15,2004-12
+2005,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,11,28,28,2005-12
+2006,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,12,8,30,30,2006-12
+2007,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,4,8,33,33,2007-12
+2008,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Sep: Chelsea FC,9,0,14,33,33,2008-09
+2009,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Feb-Dec: Chelsea FC,11,0,17,35,35,2009-12
+2010,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,20,35,35,2010-12
+2011,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,22,35,30,2011-12
+2012,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,35,30,17.5,2012-12
+2013,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,272,12,10,2013-12
+2014,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,540,7.5,6,2014-12
+2015,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,755,6,4,2015-12
+2016,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,1262,4,2.5,2016-12
+2017,3160,John Terry,England,Defender,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,2051,2.5,1,2017-12
+2018,3160,John Terry,England,Defender,Aston Villa,Chelsea FC | Aston Villa,Jan: Chelsea FC | Feb-Nov: Aston Villa,11,0,4124,1,1,2018-11
+2004,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Oct-Dec: FC Barcelona,3,0,21,21,21,2004-12
+2005,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,20,21,21,2005-12
+2006,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,3,10,28,28,2006-12
+2007,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,11,31,31,2007-12
+2008,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,11,38,38,2008-12
+2009,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,6,50,50,2009-12
+2010,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,65,50,2010-12
+2011,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,7,50,45,2011-12
+2012,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,1,7,45,30,2012-12
+2013,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,80,25,10,2013-12
+2014,7607,Xavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,406,10,5,2014-12
+2015,7607,Xavi,Spain,Midfield,Al-Sadd SC,FC Barcelona | Al-Sadd SC,Jan-Jun: FC Barcelona | Jul-Dec: Al-Sadd SC,12,0,996,5,5,2015-12
+2016,7607,Xavi,Spain,Midfield,Al-Sadd SC,Al-Sadd SC,Jan-Nov: Al-Sadd SC,11,0,1073,5,4,2016-11
+2004,10,Miroslav Klose,Germany,Attack,SV Werder Bremen,SV Werder Bremen,Oct-Dec: SV Werder Bremen,3,0,130,7,7,2004-12
+2005,10,Miroslav Klose,Germany,Attack,SV Werder Bremen,SV Werder Bremen,Jan-Dec: SV Werder Bremen,12,0,48,15,15,2005-12
+2006,10,Miroslav Klose,Germany,Attack,SV Werder Bremen,SV Werder Bremen,Jan-Dec: SV Werder Bremen,12,6,9,30,30,2006-12
+2007,10,Miroslav Klose,Germany,Attack,SV Werder Bremen,SV Werder Bremen,Jan-Dec: SV Werder Bremen,12,3,9,30,23,2007-12
+2008,10,Miroslav Klose,Germany,Attack,Bayern Munich,SV Werder Bremen | Bayern Munich,Jan-May: SV Werder Bremen | Jun-Dec: Bayern Munich,12,0,37,23,20,2008-12
+2009,10,Miroslav Klose,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,61,20,12,2009-12
+2010,10,Miroslav Klose,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,333,9,7.5,2010-12
+2011,10,Miroslav Klose,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,527,7,5,2011-12
+2012,10,Miroslav Klose,Germany,Attack,SS Lazio,SS Lazio,Jan-Dec: SS Lazio,12,0,673,6,6,2012-12
+2013,10,Miroslav Klose,Germany,Attack,SS Lazio,SS Lazio,Jan-Dec: SS Lazio,12,0,1136,4,2,2013-12
+2014,10,Miroslav Klose,Germany,Attack,SS Lazio,SS Lazio,Jan-Dec: SS Lazio,12,0,3932,1,1,2014-12
+2015,10,Miroslav Klose,Germany,Attack,SS Lazio,SS Lazio,Jan-Dec: SS Lazio,12,0,3994,1,1,2015-12
+2016,10,Miroslav Klose,Germany,Attack,SS Lazio,SS Lazio,Jan-Dec: SS Lazio,12,0,4057,1,1,2016-12
+2017,10,Miroslav Klose,Germany,Attack,SS Lazio,SS Lazio,Jan-Jun: SS Lazio,6,0,4054,1,1,2017-06
+2004,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United,Oct-Dec: Manchester United,3,0,26,18,18,2004-12
+2005,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,15,26.5,26.5,2005-12
+2006,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,15,26.5,25,2006-12
+2007,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,4,7,34,34,2007-12
+2008,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,11,1,60,60,2008-12
+2009,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United | Real Madrid,Jan-Jun: Manchester United | Jul-Dec: Real Madrid,12,12,1,70,70,2009-12
+2010,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,90,90,2010-12
+2011,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,90,90,2011-12
+2012,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,100,100,2012-12
+2013,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,100,100,2013-12
+2014,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,1,120,120,2014-12
+2015,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,1,120,110,2015-12
+2016,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,110,110,2016-12
+2017,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,100,100,2017-12
+2018,8198,Cristiano Ronaldo,Portugal,Attack,Real Madrid,Real Madrid | Juventus FC,Jan-Nov: Real Madrid | Dec: Juventus FC,12,6,3,120,100,2018-12
+2019,8198,Cristiano Ronaldo,Portugal,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,11,100,75,2019-12
+2020,8198,Cristiano Ronaldo,Portugal,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,38,75,60,2020-12
+2021,8198,Cristiano Ronaldo,Portugal,Attack,Juventus FC,Juventus FC | Manchester United,Jan-Nov: Juventus FC | Dec: Manchester United,12,0,48,60,35,2021-12
+2022,8198,Cristiano Ronaldo,Portugal,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,160,35,20,2022-12
+2023,8198,Cristiano Ronaldo,Portugal,Attack,Al-Nassr FC,Manchester United | Al-Nassr FC,Jan-May: Manchester United | Jun-Dec: Al-Nassr FC,12,0,407,20,15,2023-12
+2024,8198,Cristiano Ronaldo,Portugal,Attack,Al-Nassr FC,Al-Nassr FC,Jan-Nov: Al-Nassr FC,11,0,664,15,15,2024-11
+2026,8198,Cristiano Ronaldo,Portugal,Attack,Al-Nassr Football Club,Al-Nassr Football Club,Jun: Al-Nassr Football Club,1,0,727,15,15,2026-06
+2004,3455,Zlatan Ibrahimović,Sweden,Attack,Juventus FC,Juventus FC,Oct-Dec: Juventus FC,3,0,17,22,22,2004-12
+2005,3455,Zlatan Ibrahimović,Sweden,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,12,28,28,2005-12
+2006,3455,Zlatan Ibrahimović,Sweden,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,12,28,25,2006-12
+2007,3455,Zlatan Ibrahimović,Sweden,Attack,FC Internazionale,Juventus FC | FC Internazionale,Jan-Apr: Juventus FC | May-Dec: FC Internazionale,12,4,7,35,35,2007-12
+2008,3455,Zlatan Ibrahimović,Sweden,Attack,FC Internazionale,FC Internazionale,Jan-Dec: FC Internazionale,12,11,5,45,45,2008-12
+2009,3455,Zlatan Ibrahimović,Sweden,Attack,FC Internazionale,FC Internazionale | FC Barcelona,Jan-Jul: FC Internazionale | Aug-Dec: FC Barcelona,12,12,5,46,46,2009-12
+2010,3455,Zlatan Ibrahimović,Sweden,Attack,FC Barcelona,FC Barcelona | AC Milan,Jan-Aug: FC Barcelona | Sep-Dec: AC Milan,12,1,9,46,30,2010-12
+2011,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,22,35,35,2011-12
+2012,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,AC Milan | Paris Saint-Germain,Jan-Jun: AC Milan | Jul-Dec: Paris Saint-Germain,12,0,14,37,35,2012-12
+2013,3455,Zlatan Ibrahimović,Sweden,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,35,35,30,2013-12
+2014,3455,Zlatan Ibrahimović,Sweden,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,60,28,26,2014-12
+2015,3455,Zlatan Ibrahimović,Sweden,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,116,21,15,2015-12
+2016,3455,Zlatan Ibrahimović,Sweden,Attack,Paris Saint-Germain,Paris Saint-Germain | Manchester United,Jan-Jul: Paris Saint-Germain | Aug-Dec: Manchester United,12,0,270,15,12,2016-12
+2017,3455,Zlatan Ibrahimović,Sweden,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,422,12,8,2017-12
+2018,3455,Zlatan Ibrahimović,Sweden,Attack,Los Angeles Galaxy,Manchester United | Los Angeles Galaxy,Jan-Feb: Manchester United | Mar-Dec: Los Angeles Galaxy,12,0,972,7,3.5,2018-12
+2019,3455,Zlatan Ibrahimović,Sweden,Attack,Los Angeles Galaxy,Los Angeles Galaxy,Jan-Dec: Los Angeles Galaxy,12,0,2055,3.5,3.5,2019-12
+2020,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,Los Angeles Galaxy | AC Milan,Jan-Mar: Los Angeles Galaxy | Apr-Dec: AC Milan,12,0,1690,5,5,2020-12
+2021,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,1716,5,4,2021-12
+2022,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,2009,4,2,2022-12
+2023,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,3550,2,2,2023-12
+2024,3455,Zlatan Ibrahimović,Sweden,Attack,AC Milan,AC Milan,Jan-Nov: AC Milan,11,0,3688,2,2,2024-11
+2004,7980,David Villa,Spain,Attack,Real Zaragoza,Real Zaragoza,Oct-Dec: Real Zaragoza,3,0,357,2.5,2.5,2004-12
+2005,7980,David Villa,Spain,Attack,Real Zaragoza,Real Zaragoza,Jan-Dec: Real Zaragoza,12,0,61,12,12,2005-12
+2006,7980,David Villa,Spain,Attack,Valencia CF,Real Zaragoza | Valencia CF,Jan: Real Zaragoza | Feb-Dec: Valencia CF,12,0,23,22,22,2006-12
+2007,7980,David Villa,Spain,Attack,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,7,7,35,35,2007-12
+2008,7980,David Villa,Spain,Attack,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,1,9,35,35,2008-12
+2009,7980,David Villa,Spain,Attack,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,9,7,45,45,2009-12
+2010,7980,David Villa,Spain,Attack,Valencia CF,Valencia CF | FC Barcelona,Jan-Jul: Valencia CF | Aug-Dec: FC Barcelona,12,5,6,50,50,2010-12
+2011,7980,David Villa,Spain,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,6,50,45,2011-12
+2012,7980,David Villa,Spain,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,1,6,45,28,2012-12
+2013,7980,David Villa,Spain,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,107,20,12,2013-12
+2014,7980,David Villa,Spain,Attack,Atlético de Madrid,Atlético de Madrid | Melbourne City FC,Jan-Sep: Atlético de Madrid | Oct-Dec: Melbourne City FC,12,0,357,10,7.5,2014-12
+2015,7980,David Villa,Spain,Attack,New York City FC,Melbourne City FC | New York City FC,Jan-Feb: Melbourne City FC | Mar-Nov: New York City FC,11,0,563,7.5,7,2015-11
+2004,28003,Lionel Messi,Argentina,Attack,FC Barcelona B,FC Barcelona B,Dec: FC Barcelona B,1,0,344,3,3,2004-12
+2005,28003,Lionel Messi,Argentina,Attack,FC Barcelona B,FC Barcelona B | FC Barcelona,Jan-Nov: FC Barcelona B | Dec: FC Barcelona,12,0,263,5,5,2005-12
+2006,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,48,15,15,2006-12
+2007,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,6,2,60,60,2007-12
+2008,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,2,60,55,2008-12
+2009,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,2,70,70,2009-12
+2010,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,100,100,2010-12
+2011,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,100,100,2011-12
+2012,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,120,120,2012-12
+2013,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,120,120,2013-12
+2014,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,120,120,2014-12
+2015,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,120,120,2015-12
+2016,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,120,120,2016-12
+2017,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,120,120,2017-12
+2018,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,1,180,160,2018-12
+2019,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,160,140,2019-12
+2020,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,10,8,140,100,2020-12
+2021,28003,Lionel Messi,Argentina,Attack,FC Barcelona,FC Barcelona | Paris Saint-Germain,Jan-Nov: FC Barcelona | Dec: Paris Saint-Germain,12,0,18,80,60,2021-12
+2022,28003,Lionel Messi,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,61,60,50,2022-12
+2023,28003,Lionel Messi,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain | Inter Miami CF,Jan-Jul: Paris Saint-Germain | Aug-Dec: Inter Miami CF,12,0,94,50,35,2023-12
+2024,28003,Lionel Messi,Argentina,Attack,Inter Miami CF,Inter Miami CF,Jan-Dec: Inter Miami CF,12,0,213,35,35,2024-12
+2025,28003,Lionel Messi,Argentina,Attack,Inter Miami CF,Inter Miami CF,Jan: Inter Miami CF,1,0,226,35,35,2025-01
+2026,28003,Lionel Messi,Argentina,Attack,Club Internacional de Fútbol Miami,Club Internacional de Fútbol Miami,Jun: Club Internacional de Fútbol Miami,1,0,229,35,35,2026-06
+2004,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Oct-Dec: AC Milan,3,0,19,20,20,2004-12
+2005,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,14,25,25,2005-12
+2006,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,15,25,25,2006-12
+2007,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,May-Dec: AC Milan,8,0,12,30,30,2007-12
+2008,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,5,10,36,36,2008-12
+2009,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,14,36,22,2009-12
+2010,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,61,22,16,2010-12
+2011,5817,Andrea Pirlo,Italy,Midfield,AC Milan,AC Milan,Jan-Dec: AC Milan,12,0,133,16,10,2011-12
+2012,5817,Andrea Pirlo,Italy,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,243,12.5,12.5,2012-12
+2013,5817,Andrea Pirlo,Italy,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,254,12,10,2013-12
+2014,5817,Andrea Pirlo,Italy,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,528,7.5,5,2014-12
+2015,5817,Andrea Pirlo,Italy,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,1774,2.5,1,2015-12
+2016,5817,Andrea Pirlo,Italy,Midfield,New York City FC,Juventus FC | New York City FC,Jan-Feb: Juventus FC | Mar-Nov: New York City FC,11,0,3638,1,1,2016-11
+2004,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Oct-Dec: Arsenal FC,3,0,351,2.5,2.5,2004-12
+2005,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,126,8,8,2005-12
+2006,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,57,13.5,13.5,2006-12
+2007,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,28,22,22,2007-12
+2008,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,6,10,38,38,2008-12
+2009,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,2,8,40,40,2009-12
+2010,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,12,4,55,55,2010-12
+2011,8806,Cesc Fàbregas,Spain,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,12,4,55,54,2011-12
+2012,8806,Cesc Fàbregas,Spain,Midfield,FC Barcelona,Arsenal FC | FC Barcelona,Jan: Arsenal FC | Feb-Dec: FC Barcelona,12,12,4,55,55,2012-12
+2013,8806,Cesc Fàbregas,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,6,55,45,2013-12
+2014,8806,Cesc Fàbregas,Spain,Midfield,FC Barcelona,FC Barcelona | Chelsea FC,Jan-Jul: FC Barcelona | Aug-Dec: Chelsea FC,12,6,9,50,40,2014-12
+2015,8806,Cesc Fàbregas,Spain,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,11,50,50,2015-12
+2016,8806,Cesc Fàbregas,Spain,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,17,50,45,2016-12
+2017,8806,Cesc Fàbregas,Spain,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,22,45,35,2017-12
+2018,8806,Cesc Fàbregas,Spain,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,103,35,25,2018-12
+2019,8806,Cesc Fàbregas,Spain,Midfield,AS Monaco,Chelsea FC | AS Monaco,Jan-Feb: Chelsea FC | Mar-Dec: AS Monaco,12,0,269,25,10,2019-12
+2020,8806,Cesc Fàbregas,Spain,Midfield,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,931,10,6.5,2020-12
+2021,8806,Cesc Fàbregas,Spain,Midfield,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,1311,6.5,3.5,2021-12
+2022,8806,Cesc Fàbregas,Spain,Midfield,AS Monaco,AS Monaco | Como 1907,Jan-Nov: AS Monaco | Dec: Como 1907,12,0,2063,3.5,1.5,2022-12
+2023,8806,Cesc Fàbregas,Spain,Midfield,Como 1907,Como 1907,Jan-Nov: Como 1907,11,0,3850,1.5,1,2023-11
+2004,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Oct-Dec: FC Barcelona,3,0,58,12,12,2004-12
+2005,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,59,12,12,2005-12
+2006,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-May: FC Barcelona,5,0,70,12,12,2006-05
+2007,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jun-Dec: FC Barcelona,7,0,30,22,22,2007-12
+2008,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,15,34,34,2008-12
+2009,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,9,4,50,50,2009-12
+2010,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,60,60,2010-12
+2011,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,65,65,2011-12
+2012,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,70,70,2012-12
+2013,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,70,65,2013-12
+2014,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,6,7,55,45,2014-12
+2015,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,36,35,35,2015-12
+2016,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,42,35,30,2016-12
+2017,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,78,30,20,2017-12
+2018,7600,Andrés Iniesta,Spain,Midfield,FC Barcelona,FC Barcelona | Vissel Kobe,Jan-Jun: FC Barcelona | Jul-Dec: Vissel Kobe,12,0,229,20,8,2018-12
+2019,7600,Andrés Iniesta,Spain,Midfield,Vissel Kobe,Vissel Kobe,Jan-Nov: Vissel Kobe,11,0,1225,6.75,5.5,2019-11
+2004,22068,Franck Ribéry,France,Attack,FC Metz,FC Metz,Oct-Dec: FC Metz,3,0,313,3,3,2004-12
+2005,22068,Franck Ribéry,France,Attack,FC Metz,FC Metz | Olympique Marseille,Jan-Oct: FC Metz | Nov-Dec: Olympique Marseille,12,0,122,8.5,8.5,2005-12
+2006,22068,Franck Ribéry,France,Attack,Olympique Marseille,Olympique Marseille,Jan-Dec: Olympique Marseille,12,0,65,13.5,11,2006-12
+2007,22068,Franck Ribéry,France,Attack,Olympique Marseille,Olympique Marseille | Bayern Munich,Jan-Jul: Olympique Marseille | Aug-Dec: Bayern Munich,12,0,31,25,25,2007-12
+2008,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,24,30,30,2008-12
+2009,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,13,40,40,2009-12
+2010,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,8,50,45,2010-12
+2011,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,5,9,45,38,2011-12
+2012,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,8,9,42,42,2012-12
+2013,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,12,42,42,2013-12
+2014,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,19,42,38,2014-12
+2015,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,33,38,15,2015-12
+2016,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,237,15,9,2016-12
+2017,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,561,9,5,2017-12
+2018,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,1174,5,4,2018-12
+2019,22068,Franck Ribéry,France,Attack,Bayern Munich,Bayern Munich | ACF Fiorentina,Jan-Nov: Bayern Munich | Dec: ACF Fiorentina,12,0,1742,4,4,2019-12
+2020,22068,Franck Ribéry,France,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,1963,4,3,2020-12
+2021,22068,Franck Ribéry,France,Attack,ACF Fiorentina,ACF Fiorentina | US Salernitana 1919,Jan-Sep: ACF Fiorentina | Oct-Dec: US Salernitana 1919,12,0,2331,3,1,2021-12
+2022,22068,Franck Ribéry,France,Attack,US Salernitana 1919,US Salernitana 1919,Jan-Dec: US Salernitana 1919,12,0,4691,1,1,2022-12
+2023,22068,Franck Ribéry,France,Attack,US Salernitana 1919,US Salernitana 1919,Jan-Nov: US Salernitana 1919,11,0,4787,1,1,2023-11
+2004,4673,Wesley Sneijder,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam,Oct-Dec: Ajax Amsterdam,3,0,72,10,10,2004-12
+2005,4673,Wesley Sneijder,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,87,10,10,2005-12
+2006,4673,Wesley Sneijder,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam,Jan-Mar: Ajax Amsterdam,3,0,107,10,10,2006-03
+2007,4673,Wesley Sneijder,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam | Real Madrid,Feb-Jul: Ajax Amsterdam | Aug-Dec: Real Madrid,11,0,28,27,27,2007-12
+2008,4673,Wesley Sneijder,Netherlands,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,23,32,32,2008-12
+2009,4673,Wesley Sneijder,Netherlands,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,27,30,25,2009-12
+2010,4673,Wesley Sneijder,Netherlands,Midfield,FC Internazionale,FC Internazionale,Jan-Dec: FC Internazionale,12,0,11,45,45,2010-12
+2011,4673,Wesley Sneijder,Netherlands,Midfield,FC Internazionale,FC Internazionale,Jan-Dec: FC Internazionale,12,2,10,42,40,2011-12
+2012,4673,Wesley Sneijder,Netherlands,Midfield,FC Internazionale,FC Internazionale,Jan-Dec: FC Internazionale,12,0,14,38,28,2012-12
+2013,4673,Wesley Sneijder,Netherlands,Midfield,Galatasaray,FC Internazionale | Galatasaray,Jan-May: FC Internazionale | Jun-Dec: Galatasaray,12,0,121,19,17,2013-12
+2014,4673,Wesley Sneijder,Netherlands,Midfield,Galatasaray,Galatasaray,Jan-Dec: Galatasaray,12,0,174,18,18,2014-12
+2015,4673,Wesley Sneijder,Netherlands,Midfield,Galatasaray,Galatasaray,Jan-Dec: Galatasaray,12,0,204,15.5,15,2015-12
+2016,4673,Wesley Sneijder,Netherlands,Midfield,Galatasaray,Galatasaray,Jan-Dec: Galatasaray,12,0,291,13.5,11,2016-12
+2017,4673,Wesley Sneijder,Netherlands,Midfield,Galatasaray,Galatasaray | OGC Nice,Jan-Sep: Galatasaray | Oct-Dec: OGC Nice,12,0,590,9,5,2017-12
+2018,4673,Wesley Sneijder,Netherlands,Midfield,Al-Gharafa SC,OGC Nice | Al-Gharafa SC,Jan-Apr: OGC Nice | May-Dec: Al-Gharafa SC,12,0,1300,5,4,2018-12
+2019,4673,Wesley Sneijder,Netherlands,Midfield,Al-Gharafa SC,Al-Gharafa SC,Jan-Nov: Al-Gharafa SC,11,0,1881,4,3,2019-11
+2004,4360,Arjen Robben,Netherlands,Attack,Chelsea FC,Chelsea FC,Oct-Dec: Chelsea FC,3,0,24,20,20,2004-12
+2005,4360,Arjen Robben,Netherlands,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,13,27.5,27.5,2005-12
+2006,4360,Arjen Robben,Netherlands,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,11,27.5,25.7,2006-12
+2007,4360,Arjen Robben,Netherlands,Attack,Chelsea FC,Chelsea FC | Real Madrid,Jan-Jul: Chelsea FC | Aug-Dec: Real Madrid,12,0,17,30,30,2007-12
+2008,4360,Arjen Robben,Netherlands,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,18,30,28,2008-12
+2009,4360,Arjen Robben,Netherlands,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,25,30,30,2009-12
+2010,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,13,40,40,2010-12
+2011,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,4,10,40,35,2011-12
+2012,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,26,32,28,2012-12
+2013,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,88,22,22,2013-12
+2014,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,54,30,30,2014-12
+2015,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,44,33,28,2015-12
+2016,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,76,28,11,2016-12
+2017,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,429,11,9,2017-12
+2018,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,667,9,5,2018-12
+2019,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,1409,5,4,2019-12
+2020,4360,Arjen Robben,Netherlands,Attack,Bayern Munich,Bayern Munich | FC Groningen,Jan-Jun: Bayern Munich | Jul-Dec: FC Groningen,12,0,1693,4,1,2020-12
+2021,4360,Arjen Robben,Netherlands,Attack,FC Groningen,FC Groningen,Jan-Dec: FC Groningen,12,0,6183,0.6,0.2,2021-12
+2022,4360,Arjen Robben,Netherlands,Attack,FC Groningen,FC Groningen,Jan-Oct: FC Groningen,10,0,10878,0.2,0.2,2022-10
+2005,26399,Sergio Agüero,Argentina,Attack,CA Independiente,CA Independiente,Dec: CA Independiente,1,0,861,1.25,1.25,2005-12
+2006,26399,Sergio Agüero,Argentina,Attack,CA Independiente,CA Independiente | Atlético de Madrid,Jan-Jul: CA Independiente | Aug-Dec: Atlético de Madrid,12,0,26,23,23,2006-12
+2007,26399,Sergio Agüero,Argentina,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,23,23,20,2007-12
+2008,26399,Sergio Agüero,Argentina,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,26,28,28,2008-12
+2009,26399,Sergio Agüero,Argentina,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,14,36,36,2009-12
+2010,26399,Sergio Agüero,Argentina,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,18,36,36,2010-12
+2011,26399,Sergio Agüero,Argentina,Attack,Atlético de Madrid,Atlético de Madrid | Manchester City,Jan-Jun: Atlético de Madrid | Jul-Dec: Manchester City,12,3,10,40,40,2011-12
+2012,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,11,6,51,51,2012-12
+2013,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,1,10,45,40,2013-12
+2014,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,14,45,45,2014-12
+2015,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,3,8,60,60,2015-12
+2016,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,60,60,2016-12
+2017,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,14,65,65,2017-12
+2018,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,23,80,75,2018-12
+2019,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,32,75,65,2019-12
+2020,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,64,65,35,2020-12
+2021,26399,Sergio Agüero,Argentina,Attack,Manchester City,Manchester City | FC Barcelona,Jan-Sep: Manchester City | Oct-Dec: FC Barcelona,12,0,188,35,15,2021-12
+2022,26399,Sergio Agüero,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,643,15,15,2022-12
+2023,26399,Sergio Agüero,Argentina,Attack,FC Barcelona,FC Barcelona,Jan-Mar: FC Barcelona,3,0,654,15,15,2023-03
+2004,4276,Carlos Tevez,Argentina,Attack,CA Boca Juniors,CA Boca Juniors,Oct-Dec: CA Boca Juniors,3,0,35,15,15,2004-12
+2005,4276,Carlos Tevez,Argentina,Attack,CA Boca Juniors,CA Boca Juniors,Jan-Dec: CA Boca Juniors,12,0,39,15,15,2005-12
+2006,4276,Carlos Tevez,Argentina,Attack,CA Boca Juniors,CA Boca Juniors,Jan-Mar: CA Boca Juniors,3,0,47,15,15,2006-03
+2007,4276,Carlos Tevez,Argentina,Attack,Manchester United,West Ham United | Manchester United,Apr-Jul: West Ham United | Aug-Dec: Manchester United,9,0,68,15,15,2007-12
+2008,4276,Carlos Tevez,Argentina,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,27,28,28,2008-12
+2009,4276,Carlos Tevez,Argentina,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,29,28,25,2009-12
+2010,4276,Carlos Tevez,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,26,34,34,2010-12
+2011,4276,Carlos Tevez,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,3,9,40,40,2011-12
+2012,4276,Carlos Tevez,Argentina,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,40,22.5,2012-12
+2013,4276,Carlos Tevez,Argentina,Attack,Juventus FC,Manchester City | Juventus FC,Jan-Jun: Manchester City | Jul-Dec: Juventus FC,12,0,58,27,20,2013-12
+2014,4276,Carlos Tevez,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,94,23,23,2014-12
+2015,4276,Carlos Tevez,Argentina,Attack,CA Boca Juniors,Juventus FC | CA Boca Juniors,Jan-Jun: Juventus FC | Jul-Dec: CA Boca Juniors,12,0,102,23,20,2015-12
+2016,4276,Carlos Tevez,Argentina,Attack,CA Boca Juniors,CA Boca Juniors,Jan-Nov: CA Boca Juniors,11,0,142,20,8.5,2016-11
+2004,6288,Mario Gómez,Germany,Attack,VfB Stuttgart II,VfB Stuttgart II,Oct-Dec: VfB Stuttgart II,3,0,1107,0.25,0.25,2004-12
+2005,6288,Mario Gómez,Germany,Attack,VfB Stuttgart II,VfB Stuttgart II | VfB Stuttgart,Jan-Aug: VfB Stuttgart II | Sep-Dec: VfB Stuttgart,12,0,1035,0.8,0.8,2005-12
+2006,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfB Stuttgart,Jan-Dec: VfB Stuttgart,12,0,561,2.5,2.5,2006-12
+2007,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfB Stuttgart,Jan-Dec: VfB Stuttgart,12,0,198,8,8,2007-12
+2008,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfB Stuttgart,Jan-Dec: VfB Stuttgart,12,0,57,19,19,2008-12
+2009,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfB Stuttgart,Jan-Dec: VfB Stuttgart,12,0,27,30,30,2009-12
+2010,6288,Mario Gómez,Germany,Attack,Bayern Munich,VfB Stuttgart | Bayern Munich,Jan-Apr: VfB Stuttgart | May-Dec: Bayern Munich,12,0,29,30,22,2010-12
+2011,6288,Mario Gómez,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,19,35,35,2011-12
+2012,6288,Mario Gómez,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,7,10,42,42,2012-12
+2013,6288,Mario Gómez,Germany,Attack,ACF Fiorentina,Bayern Munich | ACF Fiorentina,Jan-Jun: Bayern Munich | Jul-Dec: ACF Fiorentina,12,0,15,42,24,2013-12
+2014,6288,Mario Gómez,Germany,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,98,22,16,2014-12
+2015,6288,Mario Gómez,Germany,Attack,ACF Fiorentina,ACF Fiorentina | Besiktas JK,Jan-Sep: ACF Fiorentina | Oct-Dec: Besiktas JK,12,0,230,15,11.5,2015-12
+2016,6288,Mario Gómez,Germany,Attack,Besiktas JK,Besiktas JK | VfL Wolfsburg,Jan-Sep: Besiktas JK | Oct-Dec: VfL Wolfsburg,12,0,335,12,10,2016-12
+2017,6288,Mario Gómez,Germany,Attack,VfL Wolfsburg,VfL Wolfsburg,Jan-Dec: VfL Wolfsburg,12,0,507,10,6,2017-12
+2018,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfL Wolfsburg | VfB Stuttgart,Jan-May: VfL Wolfsburg | Jun-Dec: VfB Stuttgart,12,0,1048,6,4,2018-12
+2019,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfB Stuttgart,Jan-Dec: VfB Stuttgart,12,0,1815,4,1,2019-12
+2020,6288,Mario Gómez,Germany,Attack,VfB Stuttgart,VfB Stuttgart,Jan-Nov: VfB Stuttgart,11,0,4786,1,0.8,2020-11
+2006,35518,David Silva,Spain,Midfield,Celta de Vigo,Celta de Vigo,Feb-Dec: Celta de Vigo,11,0,1037,0.8,0.8,2006-12
+2007,35518,David Silva,Spain,Midfield,Valencia CF,Celta de Vigo | Valencia CF,Jan: Celta de Vigo | Feb-Dec: Valencia CF,12,0,63,15,15,2007-12
+2008,35518,David Silva,Spain,Midfield,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,0,44,22,22,2008-12
+2009,35518,David Silva,Spain,Midfield,Valencia CF,Valencia CF,Jan-Dec: Valencia CF,12,0,34,28,28,2009-12
+2010,35518,David Silva,Spain,Midfield,Valencia CF,Valencia CF | Manchester City,Jan-Jul: Valencia CF | Aug-Dec: Manchester City,12,0,22,32,32,2010-12
+2011,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,24,34,34,2011-12
+2012,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,11,7,50,50,2012-12
+2013,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,44,40,2013-12
+2014,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,21,40,40,2014-12
+2015,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,28,40,38,2015-12
+2016,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,39,38,33,2016-12
+2017,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,66,33,30,2017-12
+2018,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,134,30,25,2018-12
+2019,35518,David Silva,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,273,25,15,2019-12
+2020,35518,David Silva,Spain,Midfield,Manchester City,Manchester City | Real Sociedad,Jan-Sep: Manchester City | Oct-Dec: Real Sociedad,12,0,641,15,5,2020-12
+2021,35518,David Silva,Spain,Midfield,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,1576,5,4,2021-12
+2022,35518,David Silva,Spain,Midfield,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,1836,4,4,2022-12
+2023,35518,David Silva,Spain,Midfield,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,1908,4,4,2023-12
+2024,35518,David Silva,Spain,Midfield,Real Sociedad,Real Sociedad,Jan-Nov: Real Sociedad,11,0,2045,4,4,2024-11
+2004,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Oct-Dec: Arsenal FC,3,0,196,5,5,2004-12
+2005,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,169,7.25,7.25,2005-12
+2006,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,126,8.5,8.5,2006-12
+2007,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,60,15,15,2007-12
+2008,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,80,16,16,2008-12
+2009,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,62,21,21,2009-12
+2010,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,52,25,25,2010-12
+2011,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,36,30,30,2011-12
+2012,4380,Robin van Persie,Netherlands,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,11,8,47.5,47.5,2012-12
+2013,4380,Robin van Persie,Netherlands,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,5,9,45,45,2013-12
+2014,4380,Robin van Persie,Netherlands,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,24,40,33,2014-12
+2015,4380,Robin van Persie,Netherlands,Attack,Manchester United,Manchester United | Fenerbahce,Jan-Sep: Manchester United | Oct-Dec: Fenerbahce,12,0,47,33,13,2015-12
+2016,4380,Robin van Persie,Netherlands,Attack,Fenerbahce,Fenerbahce,Jan-Dec: Fenerbahce,12,0,372,11,9,2016-12
+2017,4380,Robin van Persie,Netherlands,Attack,Fenerbahce,Fenerbahce,Jan-Dec: Fenerbahce,12,0,780,7,4,2017-12
+2018,4380,Robin van Persie,Netherlands,Attack,Feyenoord Rotterdam,Fenerbahce | Feyenoord Rotterdam,Jan: Fenerbahce | Feb-Dec: Feyenoord Rotterdam,12,0,1526,4,1.5,2018-12
+2019,4380,Robin van Persie,Netherlands,Attack,Feyenoord Rotterdam,Feyenoord Rotterdam,Jan-Dec: Feyenoord Rotterdam,12,0,3573,1.5,1.5,2019-12
+2020,4380,Robin van Persie,Netherlands,Attack,Feyenoord Rotterdam,Feyenoord Rotterdam,Jan-Nov: Feyenoord Rotterdam,11,0,3499,1.5,1.5,2020-11
+2007,39152,Radamel Falcao,Colombia,Attack,CA River Plate,CA River Plate,Sep-Dec: CA River Plate,4,0,647,3.75,3.75,2007-12
+2008,39152,Radamel Falcao,Colombia,Attack,CA River Plate,CA River Plate,Jan-Dec: CA River Plate,12,0,405,6.5,6.5,2008-12
+2009,39152,Radamel Falcao,Colombia,Attack,CA River Plate,CA River Plate,Jan-Dec: CA River Plate,12,0,443,6.5,6.5,2009-12
+2010,39152,Radamel Falcao,Colombia,Attack,FC Porto,CA River Plate | FC Porto,Jan: CA River Plate | Feb-Dec: FC Porto,12,0,202,12.2,12.2,2010-12
+2011,39152,Radamel Falcao,Colombia,Attack,FC Porto,FC Porto | Atlético de Madrid,Jan-Aug: FC Porto | Sep-Dec: Atlético de Madrid,12,0,39,30,30,2011-12
+2012,39152,Radamel Falcao,Colombia,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,5,8,50,50,2012-12
+2013,39152,Radamel Falcao,Colombia,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,12,5,60,60,2013-12
+2014,39152,Radamel Falcao,Colombia,Attack,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,12,6,60,55,2014-12
+2015,39152,Radamel Falcao,Colombia,Attack,AS Monaco,AS Monaco | Manchester United,Jan: AS Monaco | Feb-Jun: Manchester United | Jul-Dec: AS Monaco,12,1,9,55,35,2015-12
+2016,39152,Radamel Falcao,Colombia,Attack,AS Monaco,AS Monaco | Chelsea FC,Jan: AS Monaco | Feb-Jun: Chelsea FC | Jul-Dec: AS Monaco,12,0,53,35,15,2016-12
+2017,39152,Radamel Falcao,Colombia,Attack,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,308,15,15,2017-12
+2018,39152,Radamel Falcao,Colombia,Attack,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,427,15,12,2018-12
+2019,39152,Radamel Falcao,Colombia,Attack,AS Monaco,AS Monaco | Galatasaray,Jan-Sep: AS Monaco | Oct-Dec: Galatasaray,12,0,727,12,8,2019-12
+2020,39152,Radamel Falcao,Colombia,Attack,Galatasaray,Galatasaray,Jan-Dec: Galatasaray,12,0,1540,6,3.5,2020-12
+2021,39152,Radamel Falcao,Colombia,Attack,Galatasaray,Galatasaray | Rayo Vallecano,Jan-Nov: Galatasaray | Dec: Rayo Vallecano,12,0,2191,3.5,2,2021-12
+2022,39152,Radamel Falcao,Colombia,Attack,Rayo Vallecano,Rayo Vallecano,Jan-Dec: Rayo Vallecano,12,0,3336,2,2,2022-12
+2023,39152,Radamel Falcao,Colombia,Attack,Rayo Vallecano,Rayo Vallecano,Jan-Dec: Rayo Vallecano,12,0,3448,2,1.2,2023-12
+2024,39152,Radamel Falcao,Colombia,Attack,Rayo Vallecano,Rayo Vallecano,Jan-Dec: Rayo Vallecano,12,0,4740,1.2,0.8,2024-12
+2025,39152,Radamel Falcao,Colombia,Attack,Rayo Vallecano,Rayo Vallecano,Jan-Nov: Rayo Vallecano,11,0,4675,0.8,0.8,2025-11
+2026,39152,Radamel Falcao,Colombia,Attack,Millonarios FC,Millonarios FC,Jun: Millonarios FC,1,0,5245,0.8,0.8,2026-06
+2008,80562,Hulk,Brazil,Attack,FC Porto,FC Porto,Jul-Dec: FC Porto,6,0,542,5,5,2008-12
+2009,80562,Hulk,Brazil,Attack,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,171,12.5,12.5,2009-12
+2010,80562,Hulk,Brazil,Attack,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,174,14,14,2010-12
+2011,80562,Hulk,Brazil,Attack,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,30,31,31,2011-12
+2012,80562,Hulk,Brazil,Attack,FC Porto,FC Porto | Zenit St. Petersburg,Jan-Aug: FC Porto | Sep-Dec: Zenit St. Petersburg,12,4,10,45,45,2012-12
+2013,80562,Hulk,Brazil,Attack,Zenit St. Petersburg,Zenit St. Petersburg,Jan-Dec: Zenit St. Petersburg,12,8,8,45,45,2013-12
+2014,80562,Hulk,Brazil,Attack,Zenit St. Petersburg,Zenit St. Petersburg,Jan-Dec: Zenit St. Petersburg,12,0,12,48,45,2014-12
+2015,80562,Hulk,Brazil,Attack,Zenit St. Petersburg,Zenit St. Petersburg,Jan-Dec: Zenit St. Petersburg,12,0,20,45,37,2015-12
+2016,80562,Hulk,Brazil,Attack,Zenit St. Petersburg,Zenit St. Petersburg | Shanghai SIPG,Jan-Oct: Zenit St. Petersburg | Nov-Dec: Shanghai SIPG,12,0,42,37,22,2016-12
+2017,80562,Hulk,Brazil,Attack,Shanghai SIPG,Shanghai SIPG,Jan-Dec: Shanghai SIPG,12,0,151,22,21,2017-12
+2018,80562,Hulk,Brazil,Attack,Shanghai SIPG,Shanghai SIPG,Jan-Dec: Shanghai SIPG,12,0,225,21,20,2018-12
+2019,80562,Hulk,Brazil,Attack,Shanghai SIPG,Shanghai SIPG,Jan-Dec: Shanghai SIPG,12,0,365,20,8.5,2019-12
+2020,80562,Hulk,Brazil,Attack,Shanghai SIPG,Shanghai SIPG | Shanghai Port,Jan-Jul: Shanghai SIPG | Aug-Dec: Shanghai Port,12,0,1113,8.5,2.5,2020-12
+2021,80562,Hulk,Brazil,Attack,Clube Atlético Mineiro,Shanghai Port | Clube Atlético Mineiro,Jan-Apr: Shanghai Port | May-Dec: Clube Atlético Mineiro,12,0,2664,2.5,2.5,2021-12
+2022,80562,Hulk,Brazil,Attack,Clube Atlético Mineiro,Clube Atlético Mineiro,Jan-Dec: Clube Atlético Mineiro,12,0,2747,2.5,2.5,2022-12
+2023,80562,Hulk,Brazil,Attack,Clube Atlético Mineiro,Clube Atlético Mineiro,Jan-Dec: Clube Atlético Mineiro,12,0,2832,2.5,2,2023-12
+2024,80562,Hulk,Brazil,Attack,Clube Atlético Mineiro,Clube Atlético Mineiro,Jan-Dec: Clube Atlético Mineiro,12,0,3305,2,2,2024-12
+2026,80562,Hulk,Brazil,Attack,Clube Atlético Mineiro,Clube Atlético Mineiro,Jun: Clube Atlético Mineiro,1,0,3291,2,2,2026-06
+2007,48280,Edinson Cavani,Uruguay,Attack,US Palermo,US Palermo,Apr-Dec: US Palermo,9,0,332,4.85,4.85,2007-12
+2008,48280,Edinson Cavani,Uruguay,Attack,US Palermo,US Palermo,Jan-Dec: US Palermo,12,0,480,5,5,2008-12
+2009,48280,Edinson Cavani,Uruguay,Attack,US Palermo,US Palermo,Jan-Dec: US Palermo,12,0,235,10.5,10.5,2009-12
+2010,48280,Edinson Cavani,Uruguay,Attack,US Palermo,US Palermo | SSC Napoli,Jan-Jul: US Palermo | Aug-Dec: SSC Napoli,12,0,143,15.5,15.5,2010-12
+2011,48280,Edinson Cavani,Uruguay,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,64,24.5,24.5,2011-12
+2012,48280,Edinson Cavani,Uruguay,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,23,35,35,2012-12
+2013,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,SSC Napoli | Paris Saint-Germain,Jan-Jun: SSC Napoli | Jul-Dec: Paris Saint-Germain,12,12,4,60,60,2013-12
+2014,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,4,60,57,2014-12
+2015,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,1,10,50,42,2015-12
+2016,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,31,42,40,2016-12
+2017,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,25,45,45,2017-12
+2018,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,37,60,55,2018-12
+2019,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,77,55,25,2019-12
+2020,48280,Edinson Cavani,Uruguay,Attack,Paris Saint-Germain,Paris Saint-Germain | Manchester United,Jan-Sep: Paris Saint-Germain | Oct-Dec: Manchester United,12,0,328,25,12,2020-12
+2021,48280,Edinson Cavani,Uruguay,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,737,12,4,2021-12
+2022,48280,Edinson Cavani,Uruguay,Attack,Manchester United,Manchester United | Valencia CF,Jan-Oct: Manchester United | Nov-Dec: Valencia CF,12,0,1586,5,5,2022-12
+2023,48280,Edinson Cavani,Uruguay,Attack,Valencia CF,Valencia CF | CA Boca Juniors,Jan-Sep: Valencia CF | Oct-Dec: CA Boca Juniors,12,0,1586,5,2.5,2023-12
+2024,48280,Edinson Cavani,Uruguay,Attack,CA Boca Juniors,CA Boca Juniors,Jan-Dec: CA Boca Juniors,12,0,2872,2.5,2.5,2024-12
+2025,48280,Edinson Cavani,Uruguay,Attack,CA Boca Juniors,CA Boca Juniors,Jan-Mar: CA Boca Juniors,3,0,2794,2.5,2.5,2025-03
+2026,48280,Edinson Cavani,Uruguay,Attack,Club Atlético Boca Juniors,Club Atlético Boca Juniors,Jun: Club Atlético Boca Juniors,1,0,2856,2.5,2.5,2026-06
+2009,68290,Neymar,Brazil,Midfield,Santos FC,Santos FC,Feb-Dec: Santos FC,11,0,583,6,6,2009-12
+2010,68290,Neymar,Brazil,Midfield,Santos FC,Santos FC,Jan-Dec: Santos FC,12,0,108,18,18,2010-12
+2011,68290,Neymar,Brazil,Midfield,Santos FC,Santos FC,Jan-Dec: Santos FC,12,0,35,30,30,2011-12
+2012,68290,Neymar,Brazil,Midfield,Santos FC,Santos FC,Jan-Dec: Santos FC,12,0,20,40,40,2012-12
+2013,68290,Neymar,Brazil,Midfield,FC Barcelona,Santos FC | FC Barcelona,Jan-Jun: Santos FC | Jul-Dec: FC Barcelona,12,11,7,50,50,2013-12
+2014,68290,Neymar,Brazil,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,4,70,70,2014-12
+2015,68290,Neymar,Brazil,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,100,100,2015-12
+2016,68290,Neymar,Brazil,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,3,100,100,2016-12
+2017,68290,Neymar,Brazil,Midfield,FC Barcelona,FC Barcelona | Paris Saint-Germain,Jan-Sep: FC Barcelona | Oct-Dec: Paris Saint-Germain,12,12,1,150,150,2017-12
+2018,68290,Neymar,Brazil,Midfield,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,2,180,180,2018-12
+2019,68290,Neymar,Brazil,Midfield,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,2,180,160,2019-12
+2020,68290,Neymar,Brazil,Midfield,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,2,160,128,2020-12
+2021,68290,Neymar,Brazil,Midfield,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,2,128,90,2021-12
+2022,68290,Neymar,Brazil,Midfield,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,4,8,90,75,2022-12
+2023,68290,Neymar,Brazil,Midfield,Paris Saint-Germain,Paris Saint-Germain | Al-Hilal SFC,Jan-Sep: Paris Saint-Germain | Oct-Dec: Al-Hilal SFC,12,0,30,75,50,2023-12
+2024,68290,Neymar,Brazil,Midfield,Al-Hilal SFC,Al-Hilal SFC,Jan-Dec: Al-Hilal SFC,12,0,109,50,50,2024-12
+2025,68290,Neymar,Brazil,Midfield,Al-Hilal SFC,Al-Hilal SFC,Jan-Mar: Al-Hilal SFC,3,0,113,50,50,2025-03
+2026,68290,Neymar,Brazil,Midfield,Santos Futebol Clube,Santos Futebol Clube,Jun: Santos Futebol Clube,1,0,113,50,50,2026-06
+2009,74842,Mario Götze,Germany,Midfield,Borussia Dortmund U19,Borussia Dortmund U19,Jul-Dec: Borussia Dortmund U19,6,0,3343,0.75,0.75,2009-12
+2010,74842,Mario Götze,Germany,Midfield,Borussia Dortmund U19,Borussia Dortmund U19 | Borussia Dortmund,Jan-Jul: Borussia Dortmund U19 | Aug-Dec: Borussia Dortmund,12,0,467,7.5,7.5,2010-12
+2011,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,37,30,30,2011-12
+2012,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,39,30,30,2012-12
+2013,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,1,10,45,45,2013-12
+2014,74842,Mario Götze,Germany,Midfield,Bayern Munich,Borussia Dortmund | Bayern Munich,Jan: Borussia Dortmund | Feb-Dec: Bayern Munich,12,5,8,55,48,2014-12
+2015,74842,Mario Götze,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,16,50,45,2015-12
+2016,74842,Mario Götze,Germany,Midfield,Bayern Munich,Bayern Munich | Borussia Dortmund,Jan-Jun: Bayern Munich | Jul-Dec: Borussia Dortmund,12,0,29,45,28,2016-12
+2017,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,104,28,20,2017-12
+2018,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,256,20,18,2018-12
+2019,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,333,25,18,2019-12
+2020,74842,Mario Götze,Germany,Midfield,Borussia Dortmund,Borussia Dortmund | PSV Eindhoven,Jan-Sep: Borussia Dortmund | Oct-Dec: PSV Eindhoven,12,0,557,18,10.5,2020-12
+2021,74842,Mario Götze,Germany,Midfield,PSV Eindhoven,PSV Eindhoven,Jan-Dec: PSV Eindhoven,12,0,763,12,12,2021-12
+2022,74842,Mario Götze,Germany,Midfield,PSV Eindhoven,PSV Eindhoven | Eintracht Frankfurt,Jan-Oct: PSV Eindhoven | Nov-Dec: Eintracht Frankfurt,12,0,748,13,13,2022-12
+2023,74842,Mario Götze,Germany,Midfield,Eintracht Frankfurt,Eintracht Frankfurt,Jan-Dec: Eintracht Frankfurt,12,0,751,13,7,2023-12
+2024,74842,Mario Götze,Germany,Midfield,Eintracht Frankfurt,Eintracht Frankfurt,Jan-Dec: Eintracht Frankfurt,12,0,1405,7,5,2024-12
+2025,74842,Mario Götze,Germany,Midfield,Eintracht Frankfurt,Eintracht Frankfurt,Jan-Dec: Eintracht Frankfurt,12,0,1648,5,3.5,2025-12
+2026,74842,Mario Götze,Germany,Midfield,Eintracht Frankfurt,Eintracht Frankfurt | Eintracht Frankfurt Fußball AG,Jan-May: Eintracht Frankfurt | Jun: Eintracht Frankfurt Fußball AG,6,0,1639,3.5,3.5,2026-06
+2006,39381,Gareth Bale,Wales,Attack,Southampton FC,Southampton FC,Aug-Dec: Southampton FC,5,0,1485,0.4,0.4,2006-12
+2007,39381,Gareth Bale,Wales,Attack,Southampton FC,Southampton FC | Tottenham Hotspur,Jan-Jul: Southampton FC | Aug-Dec: Tottenham Hotspur,12,0,83,14.75,14.75,2007-12
+2008,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,87,14.75,9.5,2008-12
+2009,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,239,9.5,8.5,2009-12
+2010,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,77,20,20,2010-12
+2011,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,49,25,25,2011-12
+2012,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,11,40,40,2012-12
+2013,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur | Real Madrid,Jan-Aug: Tottenham Hotspur | Sep-Dec: Real Madrid,12,6,3,80,80,2013-12
+2014,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,3,80,80,2014-12
+2015,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,3,80,80,2015-12
+2016,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,4,90,90,2016-12
+2017,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,4,90,80,2017-12
+2018,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,13,90,80,2018-12
+2019,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,20,80,40,2019-12
+2020,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid | Tottenham Hotspur,Jan-Sep: Real Madrid | Oct-Dec: Tottenham Hotspur,12,0,162,40,20,2020-12
+2021,39381,Gareth Bale,Wales,Attack,Tottenham Hotspur,Tottenham Hotspur | Real Madrid,Jan-Sep: Tottenham Hotspur | Oct-Dec: Real Madrid,12,0,399,20,5,2021-12
+2022,39381,Gareth Bale,Wales,Attack,Real Madrid,Real Madrid | Los Angeles FC,Jan-Jul: Real Madrid | Aug-Dec: Los Angeles FC,12,0,1548,5,2,2022-12
+2023,39381,Gareth Bale,Wales,Attack,Los Angeles FC,Los Angeles FC,Jan-Nov: Los Angeles FC,11,0,3241,2,2,2023-11
+2006,35664,Mesut Özil,Germany,Midfield,FC Schalke 04,FC Schalke 04 U19 | FC Schalke 04,Feb-Jun: FC Schalke 04 U19 | Jul-Dec: FC Schalke 04,11,0,1514,0.4,0.4,2006-12
+2007,35664,Mesut Özil,Germany,Midfield,FC Schalke 04,FC Schalke 04,Jan-Dec: FC Schalke 04,12,0,899,2.2,2.2,2007-12
+2008,35664,Mesut Özil,Germany,Midfield,SV Werder Bremen,FC Schalke 04 | SV Werder Bremen,Jan-Feb: FC Schalke 04 | Mar-Dec: SV Werder Bremen,12,0,482,6,6,2008-12
+2009,35664,Mesut Özil,Germany,Midfield,SV Werder Bremen,SV Werder Bremen,Jan-Dec: SV Werder Bremen,12,0,113,16,16,2009-12
+2010,35664,Mesut Özil,Germany,Midfield,SV Werder Bremen,SV Werder Bremen,Jan-Dec: SV Werder Bremen,12,0,41,27,27,2010-12
+2011,35664,Mesut Özil,Germany,Midfield,Real Madrid,SV Werder Bremen | Real Madrid,Jan: SV Werder Bremen | Feb-Dec: Real Madrid,12,0,28,32,32,2011-12
+2012,35664,Mesut Özil,Germany,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,19,40,40,2012-12
+2013,35664,Mesut Özil,Germany,Midfield,Real Madrid,Real Madrid | Arsenal FC,Jan-Aug: Real Madrid | Sep-Dec: Arsenal FC,12,4,7,50,50,2013-12
+2014,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,1,10,50,45,2014-12
+2015,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,22,45,40,2015-12
+2016,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,20,50,50,2016-12
+2017,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,21,50,50,2017-12
+2018,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,51,50,35,2018-12
+2019,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,183,35,22,2019-12
+2020,35664,Mesut Özil,Germany,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,402,22,5,2020-12
+2021,35664,Mesut Özil,Germany,Midfield,Fenerbahce,Arsenal FC | Fenerbahce,Jan-Feb: Arsenal FC | Mar-Dec: Fenerbahce,12,0,1663,5,3.8,2021-12
+2022,35664,Mesut Özil,Germany,Midfield,Fenerbahce,Fenerbahce | Basaksehir FK,Jan-Sep: Fenerbahce | Oct-Dec: Basaksehir FK,12,0,2030,3.7,1,2022-12
+2023,35664,Mesut Özil,Germany,Midfield,Basaksehir FK,Basaksehir FK,Jan-Dec: Basaksehir FK,12,0,5004,1,0.7,2023-12
+2024,35664,Mesut Özil,Germany,Midfield,Basaksehir FK,Basaksehir FK,Jan-Aug: Basaksehir FK,8,0,6333,0.7,0.7,2024-08
+2006,44352,Luis Suárez,Uruguay,Attack,FC Groningen,FC Groningen,Sep-Dec: FC Groningen,4,0,1678,0.25,0.25,2006-12
+2007,44352,Luis Suárez,Uruguay,Attack,FC Groningen,FC Groningen | Ajax Amsterdam,Jan-Jul: FC Groningen | Aug-Dec: Ajax Amsterdam,12,0,256,7.5,7.5,2007-12
+2008,44352,Luis Suárez,Uruguay,Attack,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,205,10,10,2008-12
+2009,44352,Luis Suárez,Uruguay,Attack,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,74,20,20,2009-12
+2010,44352,Luis Suárez,Uruguay,Attack,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,51,25,25,2010-12
+2011,44352,Luis Suárez,Uruguay,Attack,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,52,25,25,2011-12
+2012,44352,Luis Suárez,Uruguay,Attack,Liverpool FC,Ajax Amsterdam | Liverpool FC,Jan: Ajax Amsterdam | Feb-Dec: Liverpool FC,12,0,50,29,29,2012-12
+2013,44352,Luis Suárez,Uruguay,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,18,42,42,2013-12
+2014,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,Liverpool FC | FC Barcelona,Jan-Jun: Liverpool FC | Jul-Dec: FC Barcelona,12,12,6,60,60,2014-12
+2015,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,4,90,90,2015-12
+2016,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,4,90,90,2016-12
+2017,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,12,4,90,90,2017-12
+2018,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,11,85,60,2018-12
+2019,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,70,60,40,2019-12
+2020,44352,Luis Suárez,Uruguay,Attack,FC Barcelona,FC Barcelona | Atlético de Madrid,Jan-Sep: FC Barcelona | Oct-Dec: Atlético de Madrid,12,0,173,40,18,2020-12
+2021,44352,Luis Suárez,Uruguay,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,604,15,10,2021-12
+2022,44352,Luis Suárez,Uruguay,Attack,Atlético de Madrid,Atlético de Madrid | Club Nacional,Jan-Oct: Atlético de Madrid | Nov-Dec: Club Nacional,12,0,906,10,4,2022-12
+2023,44352,Luis Suárez,Uruguay,Attack,Grêmio Foot-Ball Porto Alegrense,Club Nacional | Grêmio Foot-Ball Porto Alegrense,Jan-Mar: Club Nacional | Apr-Dec: Grêmio Foot-Ball Porto Alegrense,12,0,1996,4,4,2023-12
+2024,44352,Luis Suárez,Uruguay,Attack,Grêmio Foot-Ball Porto Alegrense,Grêmio Foot-Ball Porto Alegrense,Jan-Dec: Grêmio Foot-Ball Porto Alegrense,12,0,2132,4,4,2024-12
+2026,44352,Luis Suárez,Uruguay,Attack,Club Internacional de Fútbol Miami,Club Internacional de Fútbol Miami,Jun: Club Internacional de Fútbol Miami,1,0,2180,4,4,2026-06
+2009,88103,James Rodríguez,Colombia,Midfield,CA Banfield,CA Banfield,Mar-Dec: CA Banfield,10,0,2683,1,1,2009-12
+2010,88103,James Rodríguez,Colombia,Midfield,CA Banfield,CA Banfield | FC Porto,Jan-Jun: CA Banfield | Jul-Dec: FC Porto,12,0,841,4.5,4.5,2010-12
+2011,88103,James Rodríguez,Colombia,Midfield,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,321,9.7,9.7,2011-12
+2012,88103,James Rodríguez,Colombia,Midfield,FC Porto,FC Porto,Jan-Dec: FC Porto,12,0,124,18,18,2012-12
+2013,88103,James Rodríguez,Colombia,Midfield,AS Monaco,FC Porto | AS Monaco,Jan-Jun: FC Porto | Jul-Dec: AS Monaco,12,0,39,32,32,2013-12
+2014,88103,James Rodríguez,Colombia,Midfield,AS Monaco,AS Monaco | Real Madrid,Jan-Jun: AS Monaco | Jul-Dec: Real Madrid,12,6,5,60,60,2014-12
+2015,88103,James Rodríguez,Colombia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,4,80,80,2015-12
+2016,88103,James Rodríguez,Colombia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,9,6,80,70,2016-12
+2017,88103,James Rodríguez,Colombia,Midfield,Real Madrid,Real Madrid | Bayern Munich,Jan-Nov: Real Madrid | Dec: Bayern Munich,12,0,20,50,50,2017-12
+2018,88103,James Rodríguez,Colombia,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,23,80,65,2018-12
+2019,88103,James Rodríguez,Colombia,Midfield,Bayern Munich,Bayern Munich | Real Madrid,Jan-Nov: Bayern Munich | Dec: Real Madrid,12,0,54,65,40,2019-12
+2020,88103,James Rodríguez,Colombia,Midfield,Real Madrid,Real Madrid | Everton FC,Jan-Sep: Real Madrid | Oct-Dec: Everton FC,12,0,166,40,35,2020-12
+2021,88103,James Rodríguez,Colombia,Midfield,Everton FC,Everton FC | Al-Rayyan SC,Jan-Sep: Everton FC | Oct-Dec: Al-Rayyan SC,12,0,176,35,20,2021-12
+2022,88103,James Rodríguez,Colombia,Midfield,Al-Rayyan SC,Al-Rayyan SC | Olympiacos Piraeus,Jan-Oct: Al-Rayyan SC | Nov-Dec: Olympiacos Piraeus,12,0,605,15,9,2022-12
+2023,88103,James Rodríguez,Colombia,Midfield,Without Club,Olympiacos Piraeus | Without Club,Jan-Apr: Olympiacos Piraeus | May-Dec: Without Club,12,0,1021,9,6,2023-12
+2024,88103,James Rodríguez,Colombia,Midfield,Without Club,Without Club,Jan-Oct: Without Club,10,0,1556,6,6,2024-10
+2026,88103,James Rodríguez,Colombia,Midfield,Minnesota United FC,Minnesota United FC,Jun: Minnesota United FC,1,0,1584,6,6,2026-06
+2007,45320,Ángel Di María,Argentina,Attack,SL Benfica,SL Benfica,Jul-Dec: SL Benfica,6,0,500,4,4,2007-12
+2008,45320,Ángel Di María,Argentina,Attack,SL Benfica,SL Benfica,Jan-Dec: SL Benfica,12,0,345,7,7,2008-12
+2009,45320,Ángel Di María,Argentina,Attack,SL Benfica,SL Benfica,Jan-Dec: SL Benfica,12,0,349,7.8,7.8,2009-12
+2010,45320,Ángel Di María,Argentina,Attack,Real Madrid,SL Benfica | Real Madrid,Jan-Jun: SL Benfica | Jul-Dec: Real Madrid,12,0,47,25,25,2010-12
+2011,45320,Ángel Di María,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,46,25,25,2011-12
+2012,45320,Ángel Di María,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,13,40,40,2012-12
+2013,45320,Ángel Di María,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,18,40,34,2013-12
+2014,45320,Ángel Di María,Argentina,Attack,Real Madrid,Real Madrid | Manchester United,Jan-Sep: Real Madrid | Oct-Dec: Manchester United,12,6,5,65,65,2014-12
+2015,45320,Ángel Di María,Argentina,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,6,5,65,50,2015-12
+2016,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Manchester United | Paris Saint-Germain,Jan: Manchester United | Feb-Dec: Paris Saint-Germain,12,2,10,60,55,2016-12
+2017,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,19,50,40,2017-12
+2018,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,69,45,45,2018-12
+2019,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,105,45,40,2019-12
+2020,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,153,40,32,2020-12
+2021,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,241,28,15,2021-12
+2022,45320,Ángel Di María,Argentina,Attack,Paris Saint-Germain,Paris Saint-Germain | Juventus FC,Jan-Oct: Paris Saint-Germain | Nov-Dec: Juventus FC,12,0,577,15,10,2022-12
+2023,45320,Ángel Di María,Argentina,Attack,Juventus FC,Juventus FC | SL Benfica,Jan-Nov: Juventus FC | Dec: SL Benfica,12,0,886,10,5,2023-12
+2024,45320,Ángel Di María,Argentina,Attack,SL Benfica,SL Benfica,Jan-Dec: SL Benfica,12,0,1689,5,3,2024-12
+2025,45320,Ángel Di María,Argentina,Attack,SL Benfica,SL Benfica | CA Rosario Central,Jan-Nov: SL Benfica | Dec: CA Rosario Central,12,0,2106,3,2,2025-12
+2026,45320,Ángel Di María,Argentina,Attack,CA Rosario Central,CA Rosario Central | Club Atlético Rosario Central,Jan-May: CA Rosario Central | Jun: Club Atlético Rosario Central,6,0,2097,2,2,2026-06
+2005,27992,Luka Modrić,Croatia,Midfield,GNK Dinamo Zagreb,GNK Dinamo Zagreb,Sep-Dec: GNK Dinamo Zagreb,4,0,517,2.5,2.5,2005-12
+2006,27992,Luka Modrić,Croatia,Midfield,GNK Dinamo Zagreb,GNK Dinamo Zagreb,Jan-Dec: GNK Dinamo Zagreb,12,0,300,4.7,4.7,2006-12
+2007,27992,Luka Modrić,Croatia,Midfield,GNK Dinamo Zagreb,GNK Dinamo Zagreb,Jan-Dec: GNK Dinamo Zagreb,12,0,150,10.5,10.5,2007-12
+2008,27992,Luka Modrić,Croatia,Midfield,GNK Dinamo Zagreb,GNK Dinamo Zagreb,Jan-Dec: GNK Dinamo Zagreb,12,0,65,18,18,2008-12
+2009,27992,Luka Modrić,Croatia,Midfield,Tottenham Hotspur,GNK Dinamo Zagreb | Tottenham Hotspur,Jan: GNK Dinamo Zagreb | Feb-Dec: Tottenham Hotspur,12,0,81,18.5,18.5,2009-12
+2010,27992,Luka Modrić,Croatia,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,66,22,22,2010-12
+2011,27992,Luka Modrić,Croatia,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,26,33,33,2011-12
+2012,27992,Luka Modrić,Croatia,Midfield,Tottenham Hotspur,Tottenham Hotspur | Real Madrid,Jan-Jul: Tottenham Hotspur | Aug-Dec: Real Madrid,12,0,11,40,40,2012-12
+2013,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,30,35,35,2013-12
+2014,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,6,8,55,55,2014-12
+2015,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,6,8,55,50,2015-12
+2016,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,19,50,50,2016-12
+2017,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,28,45,40,2017-12
+2018,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,86,40,25,2018-12
+2019,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,294,25,15,2019-12
+2020,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,687,15,10,2020-12
+2021,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,904,10,10,2021-12
+2022,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,909,10,10,2022-12
+2023,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,946,10,10,2023-12
+2024,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,1020,10,5,2024-12
+2025,27992,Luka Modrić,Croatia,Midfield,Real Madrid,Real Madrid | AC Milan,Jan-Nov: Real Madrid | Dec: AC Milan,12,0,1519,5,4,2025-12
+2026,27992,Luka Modrić,Croatia,Midfield,AC Milan,AC Milan | Associazione Calcio Milan,Jan-May: AC Milan | Jun: Associazione Calcio Milan,6,0,1510,4,4,2026-06
+2008,50202,Eden Hazard,Belgium,Attack,LOSC Lille U19,LOSC Lille U19 | LOSC Lille,May-Nov: LOSC Lille U19 | Dec: LOSC Lille,8,0,1551,1.8,1.8,2008-12
+2009,50202,Eden Hazard,Belgium,Attack,LOSC Lille,LOSC Lille,Jan-Dec: LOSC Lille,12,0,416,7.5,7.5,2009-12
+2010,50202,Eden Hazard,Belgium,Attack,LOSC Lille,LOSC Lille,Jan-Dec: LOSC Lille,12,0,127,16,16,2010-12
+2011,50202,Eden Hazard,Belgium,Attack,LOSC Lille,LOSC Lille,Jan-Dec: LOSC Lille,12,0,53,26.5,26.5,2011-12
+2012,50202,Eden Hazard,Belgium,Attack,Chelsea FC,LOSC Lille | Chelsea FC,Jan-Jun: LOSC Lille | Jul-Dec: Chelsea FC,12,0,11,40,40,2012-12
+2013,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,16,42,42,2013-12
+2014,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,11,48,48,2014-12
+2015,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,11,6,70,70,2015-12
+2016,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,5,7,70,65,2016-12
+2017,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,10,8,75,75,2017-12
+2018,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,12,5,150,150,2018-12
+2019,50202,Eden Hazard,Belgium,Attack,Chelsea FC,Chelsea FC | Real Madrid,Jan-Nov: Chelsea FC | Dec: Real Madrid,12,12,3,150,120,2019-12
+2020,50202,Eden Hazard,Belgium,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,2,10,120,60,2020-12
+2021,50202,Eden Hazard,Belgium,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,78,50,18,2021-12
+2022,50202,Eden Hazard,Belgium,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,468,18,7.5,2022-12
+2023,50202,Eden Hazard,Belgium,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,1200,7.5,5,2023-12
+2024,50202,Eden Hazard,Belgium,Attack,Real Madrid,Real Madrid,Jan-Nov: Real Madrid,11,0,1737,5,5,2024-11
+2008,58358,Thomas Müller,Germany,Attack,FC Bayern Munich II,FC Bayern Munich II,Aug-Dec: FC Bayern Munich II,5,0,3921,0.25,0.25,2008-12
+2009,58358,Thomas Müller,Germany,Attack,FC Bayern Munich II,FC Bayern Munich II | Bayern Munich,Jan-Jul: FC Bayern Munich II | Aug-Dec: Bayern Munich,12,0,724,5,5,2009-12
+2010,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,62,23,23,2010-12
+2011,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,27,33,33,2011-12
+2012,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,21,35,32,2012-12
+2013,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,14,45,45,2013-12
+2014,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,13,50,50,2014-12
+2015,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,8,7,75,75,2015-12
+2016,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,6,75,75,2016-12
+2017,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,1,10,75,45,2017-12
+2018,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,64,60,40,2018-12
+2019,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,156,40,32,2019-12
+2020,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,178,35,35,2020-12
+2021,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,189,35,25,2021-12
+2022,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,310,25,18,2022-12
+2023,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,524,18,10,2023-12
+2024,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,1062,10,6,2024-12
+2025,58358,Thomas Müller,Germany,Attack,Bayern Munich,Bayern Munich | Vancouver Whitecaps FC,Jan-Nov: Bayern Munich | Dec: Vancouver Whitecaps FC,12,0,1364,6,5,2025-12
+2026,58358,Thomas Müller,Germany,Attack,Vancouver Whitecaps FC,Vancouver Whitecaps FC,Jan-Jun: Vancouver Whitecaps FC,6,0,1355,5,5,2026-06
+2012,122153,Paul Pogba,France,Midfield,Manchester United Reserves,Manchester United Reserves | Juventus FC,Apr-Oct: Manchester United Reserves | Nov-Dec: Juventus FC,9,0,702,6,6,2012-12
+2013,122153,Paul Pogba,France,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,80,25,25,2013-12
+2014,122153,Paul Pogba,France,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,15,45,45,2014-12
+2015,122153,Paul Pogba,France,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,3,10,55,55,2015-12
+2016,122153,Paul Pogba,France,Midfield,Juventus FC,Juventus FC | Manchester United,Jan-Sep: Juventus FC | Oct-Dec: Manchester United,12,9,7,80,80,2016-12
+2017,122153,Paul Pogba,France,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,9,7,80,75,2017-12
+2018,122153,Paul Pogba,France,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,2,9,90,80,2018-12
+2019,122153,Paul Pogba,France,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,18,100,100,2019-12
+2020,122153,Paul Pogba,France,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,17,100,65,2020-12
+2021,122153,Paul Pogba,France,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,43,65,55,2021-12
+2022,122153,Paul Pogba,France,Midfield,Manchester United,Manchester United | Juventus FC,Jan-Oct: Manchester United | Nov-Dec: Juventus FC,12,0,71,55,35,2022-12
+2023,122153,Paul Pogba,France,Midfield,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,189,35,15,2023-12
+2024,122153,Paul Pogba,France,Midfield,Juventus FC,Juventus FC,Jan-Nov: Juventus FC,11,0,726,15,15,2024-11
+2026,122153,Paul Pogba,France,Midfield,Association sportive de Monaco Football Club,Association sportive de Monaco Football Club,Jun: Association sportive de Monaco Football Club,1,0,805,15,15,2026-06
+2006,40433,Alexis Sánchez,Chile,Attack,CSD Colo-Colo,CSD Colo-Colo,Dec: CSD Colo-Colo,1,0,2263,0.05,0.05,2006-12
+2007,40433,Alexis Sánchez,Chile,Attack,CSD Colo-Colo,CSD Colo-Colo | CA River Plate,Jan-Aug: CSD Colo-Colo | Sep-Dec: CA River Plate,12,0,817,2.75,2.75,2007-12
+2008,40433,Alexis Sánchez,Chile,Attack,CA River Plate,CA River Plate | Udinese Calcio,Jan-Jun: CA River Plate | Jul-Dec: Udinese Calcio,12,0,788,3.8,3.8,2008-12
+2009,40433,Alexis Sánchez,Chile,Attack,Udinese Calcio,Udinese Calcio,Jan-Dec: Udinese Calcio,12,0,480,6.5,6.5,2009-12
+2010,40433,Alexis Sánchez,Chile,Attack,Udinese Calcio,Udinese Calcio,Jan-Dec: Udinese Calcio,12,0,325,9.5,9.5,2010-12
+2011,40433,Alexis Sánchez,Chile,Attack,FC Barcelona,Udinese Calcio | FC Barcelona,Jan-Jun: Udinese Calcio | Jul-Dec: FC Barcelona,12,0,48,26,26,2011-12
+2012,40433,Alexis Sánchez,Chile,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,22,38,38,2012-12
+2013,40433,Alexis Sánchez,Chile,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,51,28,26,2013-12
+2014,40433,Alexis Sánchez,Chile,Attack,FC Barcelona,FC Barcelona | Arsenal FC,Jan-Jul: FC Barcelona | Aug-Dec: Arsenal FC,12,0,34,38,38,2014-12
+2015,40433,Alexis Sánchez,Chile,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,3,9,55,55,2015-12
+2016,40433,Alexis Sánchez,Chile,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,12,55,55,2016-12
+2017,40433,Alexis Sánchez,Chile,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,11,65,65,2017-12
+2018,40433,Alexis Sánchez,Chile,Attack,Manchester United,Arsenal FC | Manchester United,Jan-Apr: Arsenal FC | May-Dec: Manchester United,12,0,26,70,45,2018-12
+2019,40433,Alexis Sánchez,Chile,Attack,Manchester United,Manchester United | Inter Milan,Jan-Nov: Manchester United | Dec: Inter Milan,12,0,103,45,25,2019-12
+2020,40433,Alexis Sánchez,Chile,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,315,25,10,2020-12
+2021,40433,Alexis Sánchez,Chile,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,834,10,3.5,2021-12
+2022,40433,Alexis Sánchez,Chile,Attack,Inter Milan,Inter Milan | Olympique Marseille,Jan-Oct: Inter Milan | Nov-Dec: Olympique Marseille,12,0,1754,4.5,4.5,2022-12
+2023,40433,Alexis Sánchez,Chile,Attack,Olympique Marseille,Olympique Marseille | Inter Milan,Jan-Nov: Olympique Marseille | Dec: Inter Milan,12,0,1755,4.5,2.5,2023-12
+2024,40433,Alexis Sánchez,Chile,Attack,Inter Milan,Inter Milan | Udinese Calcio,Jan-Nov: Inter Milan | Dec: Udinese Calcio,12,0,2850,2.5,2,2024-12
+2025,40433,Alexis Sánchez,Chile,Attack,Udinese Calcio,Udinese Calcio | Sevilla FC,Jan-Nov: Udinese Calcio | Dec: Sevilla FC,12,0,2629,2,1.4,2025-12
+2026,40433,Alexis Sánchez,Chile,Attack,Sevilla FC,Sevilla FC | Sevilla Fútbol Club S.A.D.,Jan-May: Sevilla FC | Jun: Sevilla Fútbol Club S.A.D.,6,0,2618,1.4,1.4,2026-06
+2008,88755,Kevin De Bruyne,Belgium,Midfield,KRC Genk,KRC Genk,Oct-Dec: KRC Genk,3,0,4731,0.1,0.1,2008-12
+2009,88755,Kevin De Bruyne,Belgium,Midfield,KRC Genk,KRC Genk,Jan-Dec: KRC Genk,12,0,3614,0.65,0.65,2009-12
+2010,88755,Kevin De Bruyne,Belgium,Midfield,KRC Genk,KRC Genk,Jan-Dec: KRC Genk,12,0,778,5,5,2010-12
+2011,88755,Kevin De Bruyne,Belgium,Midfield,KRC Genk,KRC Genk,Jan-Dec: KRC Genk,12,0,527,7,7,2011-12
+2012,88755,Kevin De Bruyne,Belgium,Midfield,KRC Genk,KRC Genk,Jan-Dec: KRC Genk,12,0,358,9,9,2012-12
+2013,88755,Kevin De Bruyne,Belgium,Midfield,Chelsea FC,SV Werder Bremen | Chelsea FC,Jan-Jun: SV Werder Bremen | Jul-Dec: Chelsea FC,12,0,175,17,17,2013-12
+2014,88755,Kevin De Bruyne,Belgium,Midfield,VfL Wolfsburg,Chelsea FC | VfL Wolfsburg,Jan: Chelsea FC | Feb-Dec: VfL Wolfsburg,12,0,133,20,20,2014-12
+2015,88755,Kevin De Bruyne,Belgium,Midfield,VfL Wolfsburg,VfL Wolfsburg | Manchester City,Jan-Sep: VfL Wolfsburg | Oct-Dec: Manchester City,12,3,10,60,60,2015-12
+2016,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,1,10,60,60,2016-12
+2017,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,75,75,2017-12
+2018,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,4,150,150,2018-12
+2019,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,5,150,150,2019-12
+2020,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,4,150,120,2020-12
+2021,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,4,120,90,2021-12
+2022,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,8,7,90,80,2022-12
+2023,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,19,80,60,2023-12
+2024,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,68,60,35,2024-12
+2025,88755,Kevin De Bruyne,Belgium,Midfield,Manchester City,Manchester City | SSC Napoli,Jan-Nov: Manchester City | Dec: SSC Napoli,12,0,223,35,15,2025-12
+2026,88755,Kevin De Bruyne,Belgium,Midfield,SSC Napoli,SSC Napoli | Società Sportiva Calcio Napoli,Jan-May: SSC Napoli | Jun: Società Sportiva Calcio Napoli,6,0,589,15,15,2026-06
+2008,38253,Robert Lewandowski,Poland,Attack,Znicz Pruszkow,Znicz Pruszkow | Lech Poznan,Mar-Aug: Znicz Pruszkow | Sep-Dec: Lech Poznan,10,0,1664,1.65,1.65,2008-12
+2009,38253,Robert Lewandowski,Poland,Attack,Lech Poznan,Lech Poznan,Jan-Dec: Lech Poznan,12,0,1183,3,3,2009-12
+2010,38253,Robert Lewandowski,Poland,Attack,Borussia Dortmund,Lech Poznan | Borussia Dortmund,Jan-Jun: Lech Poznan | Jul-Dec: Borussia Dortmund,12,0,632,6,6,2010-12
+2011,38253,Robert Lewandowski,Poland,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,543,7,7,2011-12
+2012,38253,Robert Lewandowski,Poland,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,75,25,25,2012-12
+2013,38253,Robert Lewandowski,Poland,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,24,39,39,2013-12
+2014,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Borussia Dortmund | Bayern Munich,Jan-Jun: Borussia Dortmund | Jul-Dec: Bayern Munich,12,0,12,50,50,2014-12
+2015,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,3,9,70,70,2015-12
+2016,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,6,75,75,2016-12
+2017,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,7,80,80,2017-12
+2018,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,12,90,70,2018-12
+2019,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,48,70,70,2019-12
+2020,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,56,70,60,2020-12
+2021,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,61,60,50,2021-12
+2022,38253,Robert Lewandowski,Poland,Attack,Bayern Munich,Bayern Munich | FC Barcelona,Jan-Oct: Bayern Munich | Nov-Dec: FC Barcelona,12,0,93,50,45,2022-12
+2023,38253,Robert Lewandowski,Poland,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,117,45,20,2023-12
+2024,38253,Robert Lewandowski,Poland,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,503,20,15,2024-12
+2025,38253,Robert Lewandowski,Poland,Attack,FC Barcelona,FC Barcelona,Jan-Nov: FC Barcelona,11,0,735,15,15,2025-11
+2026,38253,Robert Lewandowski,Poland,Attack,Futbol Club Barcelona,Futbol Club Barcelona,Jun: Futbol Club Barcelona,1,0,812,15,15,2026-06
+2009,125781,Antoine Griezmann,France,Attack,Real Sociedad,Real Sociedad,Sep-Dec: Real Sociedad,4,0,2592,1,1,2009-12
+2010,125781,Antoine Griezmann,France,Attack,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,403,8,8,2010-12
+2011,125781,Antoine Griezmann,France,Attack,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,413,8,8,2011-12
+2012,125781,Antoine Griezmann,France,Attack,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,252,12,12,2012-12
+2013,125781,Antoine Griezmann,France,Attack,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,108,20,20,2013-12
+2014,125781,Antoine Griezmann,France,Attack,Real Sociedad,Real Sociedad | Atlético de Madrid,Jan-Jul: Real Sociedad | Aug-Dec: Atlético de Madrid,12,0,52,30,30,2014-12
+2015,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,15,50,50,2015-12
+2016,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,7,6,80,80,2016-12
+2017,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,12,5,80,80,2017-12
+2018,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,12,4,150,150,2018-12
+2019,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid | FC Barcelona,Jan-Nov: Atlético de Madrid | Dec: FC Barcelona,12,12,4,150,120,2019-12
+2020,125781,Antoine Griezmann,France,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,3,9,120,80,2020-12
+2021,125781,Antoine Griezmann,France,Attack,FC Barcelona,FC Barcelona | Atlético de Madrid,Jan-Sep: FC Barcelona | Oct-Dec: Atlético de Madrid,12,0,45,60,50,2021-12
+2022,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,75,50,25,2022-12
+2023,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,282,25,25,2023-12
+2024,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,319,25,22,2024-12
+2025,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid,Jan-Dec: Atlético de Madrid,12,0,445,22,11,2025-12
+2026,125781,Antoine Griezmann,France,Attack,Atlético de Madrid,Atlético de Madrid | Club Atlético de Madrid S.A.D.,Jan-May: Atlético de Madrid | Jun: Club Atlético de Madrid S.A.D.,6,0,745,11,11,2026-06
+2006,39153,Gonzalo Higuaín,Argentina,Attack,CA River Plate,CA River Plate,Oct-Dec: CA River Plate,3,0,80,12,12,2006-12
+2007,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,CA River Plate | Real Madrid,Jan-May: CA River Plate | Jun-Dec: Real Madrid,12,0,72,15,15,2007-12
+2008,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,73,18,18,2008-12
+2009,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,46,25,25,2009-12
+2010,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,15,38,38,2010-12
+2011,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,14,38,30,2011-12
+2012,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,20,38,38,2012-12
+2013,39153,Gonzalo Higuaín,Argentina,Attack,Real Madrid,Real Madrid | SSC Napoli,Jan-Jul: Real Madrid | Aug-Dec: SSC Napoli,12,0,24,38,33,2013-12
+2014,39153,Gonzalo Higuaín,Argentina,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,28,40,40,2014-12
+2015,39153,Gonzalo Higuaín,Argentina,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,24,47,47,2015-12
+2016,39153,Gonzalo Higuaín,Argentina,Attack,SSC Napoli,SSC Napoli | Juventus FC,Jan-Sep: SSC Napoli | Oct-Dec: Juventus FC,12,3,8,75,75,2016-12
+2017,39153,Gonzalo Higuaín,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,9,8,75,70,2017-12
+2018,39153,Gonzalo Higuaín,Argentina,Attack,Juventus FC,Juventus FC | AC Milan,Jan-Nov: Juventus FC | Dec: AC Milan,12,0,29,70,50,2018-12
+2019,39153,Gonzalo Higuaín,Argentina,Attack,Chelsea FC,AC Milan | Chelsea FC | Juventus FC,Jan-Feb: AC Milan | Mar-Nov: Chelsea FC | Dec: Juventus FC,12,0,91,50,32,2019-12
+2020,39153,Gonzalo Higuaín,Argentina,Attack,Juventus FC,Juventus FC | Inter Miami CF,Jan-Nov: Juventus FC | Dec: Inter Miami CF,12,0,240,32,10,2020-12
+2021,39153,Gonzalo Higuaín,Argentina,Attack,Inter Miami CF,Inter Miami CF,Jan-Nov: Inter Miami CF,11,0,865,10,3.5,2021-11
+2015,342229,Kylian Mbappé,France,Attack,AS Monaco U19,AS Monaco U19,Dec: AS Monaco U19,1,0,13041,0.05,0.05,2015-12
+2016,342229,Kylian Mbappé,France,Attack,AS Monaco,AS Monaco U19 | AS Monaco,Jan: AS Monaco U19 | Feb-Dec: AS Monaco,12,0,1324,4,4,2016-12
+2017,342229,Kylian Mbappé,France,Attack,AS Monaco,AS Monaco | Paris Saint-Germain,Jan-Sep: AS Monaco | Oct-Dec: Paris Saint-Germain,12,3,4,90,90,2017-12
+2018,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,1,200,200,2018-12
+2019,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,1,200,200,2019-12
+2020,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,1,200,180,2020-12
+2021,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,1,180,160,2021-12
+2022,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,1,180,180,2022-12
+2023,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,1,180,180,2023-12
+2024,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,12,3,180,180,2024-12
+2025,342229,Kylian Mbappé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Nov: Paris Saint-Germain,11,11,3,180,180,2025-11
+2026,342229,Kylian Mbappé,France,Attack,Real Madrid Club de Fútbol,Real Madrid Club de Fútbol,Jun: Real Madrid Club de Fútbol,1,1,2,180,180,2026-06
+2012,132098,Harry Kane,England,Attack,Norwich City,Norwich City,Nov-Dec: Norwich City,2,0,5841,0.5,0.5,2012-12
+2013,132098,Harry Kane,England,Attack,Norwich City,Norwich City,Jan-Dec: Norwich City,12,0,5971,0.5,0.5,2013-12
+2014,132098,Harry Kane,England,Attack,Norwich City,Norwich City | Tottenham Hotspur,Jan-Jun: Norwich City | Aug-Dec: Tottenham Hotspur,11,0,1520,3,3,2014-12
+2015,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,93,25,25,2015-12
+2016,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,34,40,40,2016-12
+2017,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,3,8,80,80,2017-12
+2018,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,12,3,150,150,2018-12
+2019,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,12,4,150,150,2019-12
+2020,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,12,3,150,120,2020-12
+2021,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,12,2,120,100,2021-12
+2022,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,10,3,100,90,2022-12
+2023,132098,Harry Kane,England,Attack,Tottenham Hotspur,Tottenham Hotspur | Bayern Munich,Jan-Sep: Tottenham Hotspur | Oct-Dec: Bayern Munich,12,3,7,110,110,2023-12
+2024,132098,Harry Kane,England,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,4,7,110,90,2024-12
+2025,132098,Harry Kane,England,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,18,90,65,2025-12
+2026,132098,Harry Kane,England,Attack,Bayern Munich,Bayern Munich | FC Bayern München,Jan-May: Bayern Munich | Jun: FC Bayern München,6,0,49,65,65,2026-06
+2011,206050,Paulo Dybala,Argentina,Attack,Instituto ACC,Instituto ACC,Dec: Instituto ACC,1,0,2127,2,2,2011-12
+2012,206050,Paulo Dybala,Argentina,Attack,Instituto ACC,Instituto ACC | US Palermo,Jan-Jun: Instituto ACC | Jul-Dec: US Palermo,12,0,557,7,7,2012-12
+2013,206050,Paulo Dybala,Argentina,Attack,US Palermo,US Palermo,Jan-Dec: US Palermo,12,0,486,8,7.5,2013-12
+2014,206050,Paulo Dybala,Argentina,Attack,US Palermo,US Palermo,Jan-Dec: US Palermo,12,0,684,6.5,6.5,2014-12
+2015,206050,Paulo Dybala,Argentina,Attack,Juventus FC,US Palermo | Juventus FC,Jan-Jun: US Palermo | Jul-Dec: Juventus FC,12,0,74,28,28,2015-12
+2016,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,29,45,45,2016-12
+2017,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,1,6,85,85,2017-12
+2018,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,8,8,110,110,2018-12
+2019,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,11,110,85,2019-12
+2020,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,22,90,70,2020-12
+2021,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,36,70,50,2021-12
+2022,206050,Paulo Dybala,Argentina,Attack,Juventus FC,Juventus FC | AS Roma,Jan-Oct: Juventus FC | Nov-Dec: AS Roma,12,0,91,50,30,2022-12
+2023,206050,Paulo Dybala,Argentina,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,240,30,25,2023-12
+2024,206050,Paulo Dybala,Argentina,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,358,25,8,2024-12
+2025,206050,Paulo Dybala,Argentina,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,1204,8,5,2025-12
+2026,206050,Paulo Dybala,Argentina,Attack,AS Roma,AS Roma | Associazione Sportiva Roma,Jan-May: AS Roma | Jun: Associazione Sportiva Roma,6,0,1332,5,5,2026-06
+2008,80444,Philippe Coutinho,Brazil,Midfield,Clube de Regatas Vasco da Gama,Clube de Regatas Vasco da Gama,Jul-Dec: Clube de Regatas Vasco da Gama,6,0,2124,1,1,2008-12
+2009,80444,Philippe Coutinho,Brazil,Midfield,Clube de Regatas Vasco da Gama,Clube de Regatas Vasco da Gama,Jan-Dec: Clube de Regatas Vasco da Gama,12,0,2469,1,1,2009-12
+2010,80444,Philippe Coutinho,Brazil,Midfield,Clube de Regatas Vasco da Gama,Clube de Regatas Vasco da Gama | Inter Milan,Jan-Jul: Clube de Regatas Vasco da Gama | Aug-Dec: Inter Milan,12,0,907,4.5,4.5,2010-12
+2011,80444,Philippe Coutinho,Brazil,Midfield,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,533,7,7,2011-12
+2012,80444,Philippe Coutinho,Brazil,Midfield,Inter Milan,Inter Milan | RCD Espanyol Barcelona,Jan: Inter Milan | Feb-Jun: RCD Espanyol Barcelona | Jul-Dec: Inter Milan,12,0,423,8.5,8.5,2012-12
+2013,80444,Philippe Coutinho,Brazil,Midfield,Liverpool FC,Inter Milan | Liverpool FC,Jan: Inter Milan | Feb-Dec: Liverpool FC,12,0,242,14,14,2013-12
+2014,80444,Philippe Coutinho,Brazil,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,145,20,20,2014-12
+2015,80444,Philippe Coutinho,Brazil,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,59,30,30,2015-12
+2016,80444,Philippe Coutinho,Brazil,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,58,35,35,2016-12
+2017,80444,Philippe Coutinho,Brazil,Midfield,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,18,65,65,2017-12
+2018,80444,Philippe Coutinho,Brazil,Midfield,FC Barcelona,Liverpool FC | FC Barcelona,Jan-Feb: Liverpool FC | Mar-Dec: FC Barcelona,12,10,9,150,140,2018-12
+2019,80444,Philippe Coutinho,Brazil,Midfield,FC Barcelona,FC Barcelona | Bayern Munich,Jan-Nov: FC Barcelona | Dec: Bayern Munich,12,1,9,140,70,2019-12
+2020,80444,Philippe Coutinho,Brazil,Midfield,Bayern Munich,Bayern Munich | FC Barcelona,Jan-Sep: Bayern Munich | Oct-Dec: FC Barcelona,12,0,56,70,60,2020-12
+2021,80444,Philippe Coutinho,Brazil,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,92,50,18,2021-12
+2022,80444,Philippe Coutinho,Brazil,Midfield,Aston Villa,FC Barcelona | Aston Villa,Jan-Feb: FC Barcelona | Mar-Dec: Aston Villa,12,0,432,20,18,2022-12
+2023,80444,Philippe Coutinho,Brazil,Midfield,Aston Villa,Aston Villa | Al-Duhail SC,Jan-Oct: Aston Villa | Nov-Dec: Al-Duhail SC,12,0,516,18,9,2023-12
+2024,80444,Philippe Coutinho,Brazil,Midfield,Al-Duhail SC,Al-Duhail SC,Jan-Dec: Al-Duhail SC,12,0,1123,9,7.5,2024-12
+2025,80444,Philippe Coutinho,Brazil,Midfield,Al-Duhail SC,Al-Duhail SC,Jan-Oct: Al-Duhail SC,10,0,1328,7.5,7.5,2025-10
+2010,148455,Mohamed Salah,Egypt,Attack,El Mokawloon SC,El Mokawloon SC,Jun-Dec: El Mokawloon SC,7,0,7621,0.025,0.025,2010-12
+2011,148455,Mohamed Salah,Egypt,Attack,El Mokawloon SC,El Mokawloon SC,Jan-Dec: El Mokawloon SC,12,0,6664,0.3,0.3,2011-12
+2012,148455,Mohamed Salah,Egypt,Attack,El Mokawloon SC,El Mokawloon SC | FC Basel 1893,Jan-Jun: El Mokawloon SC | Jul-Dec: FC Basel 1893,12,0,1124,4,4,2012-12
+2013,148455,Mohamed Salah,Egypt,Attack,FC Basel 1893,FC Basel 1893,Jan-Dec: FC Basel 1893,12,0,473,8.5,8.5,2013-12
+2014,148455,Mohamed Salah,Egypt,Attack,Chelsea FC,FC Basel 1893 | Chelsea FC,Jan: FC Basel 1893 | Feb-Dec: Chelsea FC,12,0,266,13,13,2014-12
+2015,148455,Mohamed Salah,Egypt,Attack,ACF Fiorentina,Chelsea FC | ACF Fiorentina | AS Roma,Jan: Chelsea FC | Feb-Jun: ACF Fiorentina | Jul-Oct: Chelsea FC | Nov-Dec: AS Roma,12,0,160,20,20,2015-12
+2016,148455,Mohamed Salah,Egypt,Attack,AS Roma,AS Roma,Jan-Dec: AS Roma,12,0,97,27,27,2016-12
+2017,148455,Mohamed Salah,Egypt,Attack,AS Roma,AS Roma | Liverpool FC,Jan-Sep: AS Roma | Oct-Dec: Liverpool FC,12,0,57,40,40,2017-12
+2018,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,8,5,150,150,2018-12
+2019,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,6,150,150,2019-12
+2020,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,5,150,120,2020-12
+2021,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,4,120,100,2021-12
+2022,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,10,4,100,80,2022-12
+2023,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,20,80,65,2023-12
+2024,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,59,65,55,2024-12
+2025,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,82,55,30,2025-12
+2026,148455,Mohamed Salah,Egypt,Attack,Liverpool FC,Liverpool FC | Liverpool Football Club,Jan-May: Liverpool FC | Jun: Liverpool Football Club,6,0,243,30,30,2026-06
+2013,207929,Dele Alli,England,Midfield,Milton Keynes Dons,Milton Keynes Dons,Aug-Dec: Milton Keynes Dons,5,0,8719,0.25,0.25,2013-12
+2014,207929,Dele Alli,England,Midfield,Milton Keynes Dons,Milton Keynes Dons,Jan-Dec: Milton Keynes Dons,12,0,2182,2,2,2014-12
+2015,207929,Dele Alli,England,Midfield,Milton Keynes Dons,Milton Keynes Dons | Tottenham Hotspur,Jan-Jun: Milton Keynes Dons | Jul-Dec: Tottenham Hotspur,12,0,897,5,5,2015-12
+2016,207929,Dele Alli,England,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,144,20,20,2016-12
+2017,207929,Dele Alli,England,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,21,60,60,2017-12
+2018,207929,Dele Alli,England,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,1,10,100,100,2018-12
+2019,207929,Dele Alli,England,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,12,100,90,2019-12
+2020,207929,Dele Alli,England,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,22,90,38,2020-12
+2021,207929,Dele Alli,England,Midfield,Tottenham Hotspur,Tottenham Hotspur,Jan-Dec: Tottenham Hotspur,12,0,157,38,25,2021-12
+2022,207929,Dele Alli,England,Midfield,Everton FC,Tottenham Hotspur | Everton FC | Besiktas JK,Jan-Feb: Tottenham Hotspur | Mar-Sep: Everton FC | Oct-Dec: Besiktas JK,12,0,277,25,14,2022-12
+2023,207929,Dele Alli,England,Midfield,Besiktas JK,Besiktas JK | Everton FC,Jan-Sep: Besiktas JK | Oct-Dec: Everton FC,12,0,683,14,5,2023-12
+2024,207929,Dele Alli,England,Midfield,Everton FC,Everton FC | Without Club,Jan-Sep: Everton FC | Oct-Dec: Without Club,12,0,1731,5,3.5,2024-12
+2025,207929,Dele Alli,England,Midfield,Without Club,Without Club | Como 1907,Jan-May: Without Club | Jun-Sep: Como 1907 | Oct-Dec: Without Club,12,0,2209,3.5,1.5,2025-12
+2026,207929,Dele Alli,England,Midfield,Without Club,Without Club,Jan-Jun: Without Club,6,0,2443,1.5,1.5,2026-06
+2012,134425,Raheem Sterling,England,Attack,Liverpool FC,Liverpool FC,Sep-Dec: Liverpool FC,4,0,1874,2.5,2.5,2012-12
+2013,134425,Raheem Sterling,England,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,272,12.5,12.5,2013-12
+2014,134425,Raheem Sterling,England,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,146,20,20,2014-12
+2015,134425,Raheem Sterling,England,Attack,Liverpool FC,Liverpool FC | Manchester City,Jan-Sep: Liverpool FC | Oct-Dec: Manchester City,12,0,20,50,50,2015-12
+2016,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,21,50,45,2016-12
+2017,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,32,50,50,2017-12
+2018,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,1,10,120,120,2018-12
+2019,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,3,160,160,2019-12
+2020,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,3,160,110,2020-12
+2021,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,4,7,110,85,2021-12
+2022,134425,Raheem Sterling,England,Attack,Manchester City,Manchester City | Chelsea FC,Jan-Oct: Manchester City | Nov-Dec: Chelsea FC,12,0,11,85,70,2022-12
+2023,134425,Raheem Sterling,England,Attack,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,0,44,70,45,2023-12
+2024,134425,Raheem Sterling,England,Attack,Chelsea FC,Chelsea FC | Arsenal FC,Jan-Nov: Chelsea FC | Dec: Arsenal FC,12,0,130,45,22,2024-12
+2025,134425,Raheem Sterling,England,Attack,Arsenal FC,Arsenal FC | Chelsea FC,Jan-Sep: Arsenal FC | Oct-Dec: Chelsea FC,12,0,475,22,5,2025-12
+2026,134425,Raheem Sterling,England,Attack,Chelsea FC,Chelsea FC | Feyenoord Rotterdam,Jan-May: Chelsea FC | Jun: Feyenoord Rotterdam,6,0,1336,5,5,2026-06
+2015,288230,Ousmane Dembélé,France,Attack,Stade Rennais FC,Stade Rennais FC,Oct-Dec: Stade Rennais FC,3,0,9505,0.25,0.25,2015-12
+2016,288230,Ousmane Dembélé,France,Attack,Borussia Dortmund,Stade Rennais FC | Borussia Dortmund,Jan-Jun: Stade Rennais FC | Jul-Dec: Borussia Dortmund,12,0,217,18,18,2016-12
+2017,288230,Ousmane Dembélé,France,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,79,33,33,2017-12
+2018,288230,Ousmane Dembélé,France,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,16,80,80,2018-12
+2019,288230,Ousmane Dembélé,France,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,4,9,120,75,2019-12
+2020,288230,Ousmane Dembélé,France,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,43,75,50,2020-12
+2021,288230,Ousmane Dembélé,France,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,82,50,30,2021-12
+2022,288230,Ousmane Dembélé,France,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,63,60,60,2022-12
+2023,288230,Ousmane Dembélé,France,Attack,FC Barcelona,FC Barcelona | Paris Saint-Germain,Jan-Nov: FC Barcelona | Dec: Paris Saint-Germain,12,0,66,60,60,2023-12
+2024,288230,Ousmane Dembélé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,70,60,55,2024-12
+2025,288230,Ousmane Dembélé,France,Attack,Paris Saint-Germain,Paris Saint-Germain,Jan-Dec: Paris Saint-Germain,12,0,16,100,100,2025-12
+2026,288230,Ousmane Dembélé,France,Attack,Paris Saint-Germain,Paris Saint-Germain | Paris Saint-Germain Football Club,Jan-May: Paris Saint-Germain | Jun: Paris Saint-Germain Football Club,6,0,15,100,100,2026-06
+2012,200512,Sadio Mané,Senegal,Attack,FC Metz,FC Metz | Red Bull Salzburg,Apr-Aug: FC Metz | Sep-Dec: Red Bull Salzburg,9,0,1623,3,3,2012-12
+2013,200512,Sadio Mané,Senegal,Attack,Red Bull Salzburg,Red Bull Salzburg,Jan-Dec: Red Bull Salzburg,12,0,947,5,5,2013-12
+2014,200512,Sadio Mané,Senegal,Attack,Red Bull Salzburg,Red Bull Salzburg | Southampton FC,Jan-Sep: Red Bull Salzburg | Oct-Dec: Southampton FC,12,0,411,10,10,2014-12
+2015,200512,Sadio Mané,Senegal,Attack,Southampton FC,Southampton FC,Jan-Dec: Southampton FC,12,0,181,18,18,2015-12
+2016,200512,Sadio Mané,Senegal,Attack,Southampton FC,Southampton FC | Liverpool FC,Jan-Jul: Southampton FC | Aug-Dec: Liverpool FC,12,0,88,30,30,2016-12
+2017,200512,Sadio Mané,Senegal,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,36,50,50,2017-12
+2018,200512,Sadio Mané,Senegal,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,32,75,75,2018-12
+2019,200512,Sadio Mané,Senegal,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,7,7,150,150,2019-12
+2020,200512,Sadio Mané,Senegal,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,12,6,150,120,2020-12
+2021,200512,Sadio Mané,Senegal,Attack,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,5,6,120,80,2021-12
+2022,200512,Sadio Mané,Senegal,Attack,Liverpool FC,Liverpool FC | Bayern Munich,Jan-Aug: Liverpool FC | Sep-Dec: Bayern Munich,12,0,17,80,60,2022-12
+2023,200512,Sadio Mané,Senegal,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,68,60,25,2023-12
+2024,200512,Sadio Mané,Senegal,Attack,Bayern Munich,Bayern Munich,Jan-Nov: Bayern Munich,11,0,367,25,25,2024-11
+2026,200512,Sadio Mané,Senegal,Attack,Al-Nassr Football Club,Al-Nassr Football Club,Jun: Al-Nassr Football Club,1,0,435,25,25,2026-06
+2017,401173,Jadon Sancho,England,Attack,Borussia Dortmund,Borussia Dortmund,Aug-Dec: Borussia Dortmund,5,0,1094,5,5,2017-12
+2018,401173,Jadon Sancho,England,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,40,70,70,2018-12
+2019,401173,Jadon Sancho,England,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,11,120,120,2019-12
+2020,401173,Jadon Sancho,England,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,10,8,130,100,2020-12
+2021,401173,Jadon Sancho,England,Attack,Borussia Dortmund,Borussia Dortmund | Manchester United,Jan-Sep: Borussia Dortmund | Oct-Dec: Manchester United,12,10,4,100,85,2021-12
+2022,401173,Jadon Sancho,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,2,10,85,60,2022-12
+2023,401173,Jadon Sancho,England,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,58,60,25,2023-12
+2024,401173,Jadon Sancho,England,Attack,Borussia Dortmund,Manchester United | Borussia Dortmund | Chelsea FC,Jan-Apr: Manchester United | May-Nov: Borussia Dortmund | Dec: Chelsea FC,12,0,269,30,30,2024-12
+2025,401173,Jadon Sancho,England,Attack,Chelsea FC,Chelsea FC | Aston Villa,Jan-Sep: Chelsea FC | Oct-Dec: Aston Villa,12,0,278,30,20,2025-12
+2026,401173,Jadon Sancho,England,Attack,Aston Villa,Aston Villa | Aston Villa Football Club,Jan-May: Aston Villa | Jun: Aston Villa Football Club,6,0,430,20,20,2026-06
+2017,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Feb-Dec: Liverpool FC,11,0,1245,5,5,2017-12
+2018,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,118,45,45,2018-12
+2019,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,12,110,110,2019-12
+2020,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,9,8,110,110,2020-12
+2021,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,4,8,110,80,2021-12
+2022,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,17,80,70,2022-12
+2023,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,46,70,70,2023-12
+2024,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC,Jan-Dec: Liverpool FC,12,0,41,75,75,2024-12
+2025,314353,Trent Alexander-Arnold,England,Defender,Liverpool FC,Liverpool FC | Real Madrid,Jan-Nov: Liverpool FC | Dec: Real Madrid,12,0,40,75,70,2025-12
+2026,314353,Trent Alexander-Arnold,England,Defender,Real Madrid,Real Madrid | Real Madrid Club de Fútbol,Jan-May: Real Madrid | Jun: Real Madrid Club de Fútbol,6,0,43,70,70,2026-06
+2016,418560,Erling Haaland,Norway,Attack,Bryne FK,Bryne FK,Dec: Bryne FK,1,0,10009,0.2,0.2,2016-12
+2017,418560,Erling Haaland,Norway,Attack,Bryne FK,Bryne FK | Molde FK,Jan-Nov: Bryne FK | Dec: Molde FK,12,0,8427,0.3,0.3,2017-12
+2018,418560,Erling Haaland,Norway,Attack,Molde FK,Molde FK,Jan-Dec: Molde FK,12,0,1446,5,5,2018-12
+2019,418560,Erling Haaland,Norway,Attack,Red Bull Salzburg,Molde FK | Red Bull Salzburg,Jan-May: Molde FK | Jun-Dec: Red Bull Salzburg,12,0,136,45,45,2019-12
+2020,418560,Erling Haaland,Norway,Attack,Borussia Dortmund,Red Bull Salzburg | Borussia Dortmund,Jan: Red Bull Salzburg | Feb-Dec: Borussia Dortmund,12,2,9,100,100,2020-12
+2021,418560,Erling Haaland,Norway,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,12,2,150,150,2021-12
+2022,418560,Erling Haaland,Norway,Attack,Borussia Dortmund,Borussia Dortmund | Manchester City,Jan-Oct: Borussia Dortmund | Nov-Dec: Manchester City,12,12,1,170,170,2022-12
+2023,418560,Erling Haaland,Norway,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,1,180,180,2023-12
+2024,418560,Erling Haaland,Norway,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,1,200,200,2024-12
+2025,418560,Erling Haaland,Norway,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,1,200,200,2025-12
+2026,418560,Erling Haaland,Norway,Attack,Manchester City,Manchester City | Manchester City Football Club,Jan-May: Manchester City | Jun: Manchester City Football Club,6,6,1,200,200,2026-06
+2009,96341,Romelu Lukaku,Belgium,Attack,RSC Anderlecht,RSC Anderlecht U17 | RSC Anderlecht,May-Aug: RSC Anderlecht U17 | Sep-Dec: RSC Anderlecht,8,0,724,5,5,2009-12
+2010,96341,Romelu Lukaku,Belgium,Attack,RSC Anderlecht,RSC Anderlecht,Jan-Dec: RSC Anderlecht,12,0,187,14,14,2010-12
+2011,96341,Romelu Lukaku,Belgium,Attack,RSC Anderlecht,RSC Anderlecht,Jan-Dec: RSC Anderlecht,12,0,170,15,15,2011-12
+2012,96341,Romelu Lukaku,Belgium,Attack,Chelsea FC,RSC Anderlecht | Chelsea FC,Jan: RSC Anderlecht | Feb-Dec: Chelsea FC,12,0,172,15,14,2012-12
+2013,96341,Romelu Lukaku,Belgium,Attack,Chelsea FC,West Bromwich Albion | Chelsea FC,Jan-Jun: West Bromwich Albion | Jul-Dec: Chelsea FC,12,0,81,24,24,2013-12
+2014,96341,Romelu Lukaku,Belgium,Attack,Everton FC,Everton FC,Jan-Dec: Everton FC,12,0,62,30,30,2014-12
+2015,96341,Romelu Lukaku,Belgium,Attack,Everton FC,Everton FC,Jan-Dec: Everton FC,12,0,60,30,28,2015-12
+2016,96341,Romelu Lukaku,Belgium,Attack,Everton FC,Everton FC,Jan-Dec: Everton FC,12,0,39,40,40,2016-12
+2017,96341,Romelu Lukaku,Belgium,Attack,Everton FC,Everton FC | Manchester United,Jan-Jul: Everton FC | Aug-Dec: Manchester United,12,0,15,70,70,2017-12
+2018,96341,Romelu Lukaku,Belgium,Attack,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,13,100,85,2018-12
+2019,96341,Romelu Lukaku,Belgium,Attack,Manchester United,Manchester United | Inter Milan,Jan-Nov: Manchester United | Dec: Inter Milan,12,0,18,85,75,2019-12
+2020,96341,Romelu Lukaku,Belgium,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,12,90,90,2020-12
+2021,96341,Romelu Lukaku,Belgium,Attack,Inter Milan,Inter Milan | Chelsea FC,Jan-Nov: Inter Milan | Dec: Chelsea FC,12,8,5,100,100,2021-12
+2022,96341,Romelu Lukaku,Belgium,Attack,Chelsea FC,Chelsea FC | Inter Milan,Jan-Oct: Chelsea FC | Nov-Dec: Inter Milan,12,2,5,100,55,2022-12
+2023,96341,Romelu Lukaku,Belgium,Attack,Inter Milan,Inter Milan | AS Roma,Jan-Nov: Inter Milan | Dec: AS Roma,12,0,82,55,35,2023-12
+2024,96341,Romelu Lukaku,Belgium,Attack,AS Roma,AS Roma | SSC Napoli,Jan-Nov: AS Roma | Dec: SSC Napoli,12,0,228,35,25,2024-12
+2025,96341,Romelu Lukaku,Belgium,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,419,25,15,2025-12
+2026,96341,Romelu Lukaku,Belgium,Attack,SSC Napoli,SSC Napoli | Società Sportiva Calcio Napoli,Jan-May: SSC Napoli | Jun: Società Sportiva Calcio Napoli,6,0,625,15,15,2026-06
+2012,240306,Bruno Fernandes,Portugal,Midfield,Novara Calcio 1908,Novara Calcio 1908,Oct-Dec: Novara Calcio 1908,3,0,10177,0.075,0.075,2012-12
+2013,240306,Bruno Fernandes,Portugal,Midfield,Novara Calcio 1908,Novara Calcio 1908,Jan-Dec: Novara Calcio 1908,12,0,1242,3.5,3.5,2013-12
+2014,240306,Bruno Fernandes,Portugal,Midfield,Udinese Calcio,Udinese Calcio,Jan-Dec: Udinese Calcio,12,0,598,7,7,2014-12
+2015,240306,Bruno Fernandes,Portugal,Midfield,Udinese Calcio,Udinese Calcio,Jan-Dec: Udinese Calcio,12,0,607,7,6.5,2015-12
+2016,240306,Bruno Fernandes,Portugal,Midfield,Udinese Calcio,Udinese Calcio,Jan-Dec: Udinese Calcio,12,0,734,6.5,6.5,2016-12
+2017,240306,Bruno Fernandes,Portugal,Midfield,UC Sampdoria,UC Sampdoria | Sporting CP,Jan-Oct: UC Sampdoria | Nov-Dec: Sporting CP,12,0,423,12,12,2017-12
+2018,240306,Bruno Fernandes,Portugal,Midfield,Sporting CP,Sporting CP,Jan-Dec: Sporting CP,12,0,166,30,26,2018-12
+2019,240306,Bruno Fernandes,Portugal,Midfield,Sporting CP,Sporting CP,Jan-Dec: Sporting CP,12,0,67,60,60,2019-12
+2020,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Sporting CP | Manchester United,Jan-Mar: Sporting CP | Apr-Dec: Manchester United,12,0,13,90,90,2020-12
+2021,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,8,7,90,90,2021-12
+2022,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,10,6,90,75,2022-12
+2023,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,24,75,70,2023-12
+2024,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,40,70,55,2024-12
+2025,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Manchester United,Jan-Dec: Manchester United,12,0,72,55,40,2025-12
+2026,240306,Bruno Fernandes,Portugal,Midfield,Manchester United,Manchester United | Manchester United Football Club,Jan-May: Manchester United | Jun: Manchester United Football Club,6,0,121,40,40,2026-06
+2015,326330,Frenkie de Jong,Netherlands,Midfield,Willem II Tilburg,Willem II Tilburg,May-Dec: Willem II Tilburg,8,0,7293,0.4,0.4,2015-12
+2016,326330,Frenkie de Jong,Netherlands,Midfield,Ajax Amsterdam,Willem II Tilburg | Ajax Amsterdam U21 | Ajax Amsterdam,Jan: Willem II Tilburg | Feb-Jun: Ajax Amsterdam U21 | Jul-Dec: Ajax Amsterdam,12,0,5552,0.6,0.6,2016-12
+2017,326330,Frenkie de Jong,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,1578,3.5,3.5,2017-12
+2018,326330,Frenkie de Jong,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam,Jan-Dec: Ajax Amsterdam,12,0,66,60,60,2018-12
+2019,326330,Frenkie de Jong,Netherlands,Midfield,Ajax Amsterdam,Ajax Amsterdam | FC Barcelona,Jan-Nov: Ajax Amsterdam | Dec: FC Barcelona,12,0,23,90,90,2019-12
+2020,326330,Frenkie de Jong,Netherlands,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,20,90,70,2020-12
+2021,326330,Frenkie de Jong,Netherlands,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,6,10,90,70,2021-12
+2022,326330,Frenkie de Jong,Netherlands,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,28,70,50,2022-12
+2023,326330,Frenkie de Jong,Netherlands,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,18,90,80,2023-12
+2024,326330,Frenkie de Jong,Netherlands,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,28,80,70,2024-12
+2025,326330,Frenkie de Jong,Netherlands,Midfield,FC Barcelona,FC Barcelona,Jan-Nov: FC Barcelona,11,0,45,70,70,2025-11
+2026,326330,Frenkie de Jong,Netherlands,Midfield,Futbol Club Barcelona,Futbol Club Barcelona,Jun: Futbol Club Barcelona,1,0,48,70,70,2026-06
+2013,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa | Notts County,Jul-Nov: Aston Villa | Dec: Notts County,6,0,8818,0.25,0.25,2013-12
+2014,203460,Jack Grealish,England,Attack,Notts County,Notts County | Aston Villa,Jan-Sep: Notts County | Oct-Dec: Aston Villa,12,0,3811,1,1,2014-12
+2015,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa,Jan-Dec: Aston Villa,12,0,1084,4.5,4.5,2015-12
+2016,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa,Jan-Dec: Aston Villa,12,0,1111,4.5,4.5,2016-12
+2017,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa,Jan-Dec: Aston Villa,12,0,1046,5,5,2017-12
+2018,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa,Jan-Dec: Aston Villa,12,0,337,20,20,2018-12
+2019,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa,Jan-Dec: Aston Villa,12,0,213,35,35,2019-12
+2020,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa,Jan-Dec: Aston Villa,12,0,83,50,50,2020-12
+2021,203460,Jack Grealish,England,Attack,Aston Villa,Aston Villa | Manchester City,Jan-Sep: Aston Villa | Oct-Dec: Manchester City,12,2,4,100,80,2021-12
+2022,203460,Jack Grealish,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,14,80,70,2022-12
+2023,203460,Jack Grealish,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,33,75,70,2023-12
+2024,203460,Jack Grealish,England,Attack,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,44,70,45,2024-12
+2025,203460,Jack Grealish,England,Attack,Manchester City,Manchester City | Everton FC,Jan-Nov: Manchester City | Dec: Everton FC,12,0,129,45,25,2025-12
+2026,203460,Jack Grealish,England,Attack,Everton FC,Everton FC | Everton Football Club,Jan-May: Everton FC | Jun: Everton Football Club,6,0,313,25,25,2026-06
+2017,371998,Vinicius Junior,Brazil,Attack,CR Flamengo,CR Flamengo,Oct-Dec: CR Flamengo,3,0,245,20,20,2017-12
+2018,371998,Vinicius Junior,Brazil,Attack,CR Flamengo,CR Flamengo | Real Madrid,Jan-Nov: CR Flamengo | Dec: Real Madrid,12,0,148,35,35,2018-12
+2019,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,50,70,50,2019-12
+2020,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,98,50,50,2020-12
+2021,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,1,6,100,100,2021-12
+2022,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,3,120,120,2022-12
+2023,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,3,150,150,2023-12
+2024,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,4,180,180,2024-12
+2025,371998,Vinicius Junior,Brazil,Attack,Real Madrid,Real Madrid,Jan-Nov: Real Madrid,11,11,4,180,180,2025-11
+2026,371998,Vinicius Junior,Brazil,Attack,Real Madrid Club de Fútbol,Real Madrid Club de Fútbol,Jun: Real Madrid Club de Fútbol,1,1,3,180,180,2026-06
+2018,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,400,20,20,2018-12
+2019,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,274,30,30,2019-12
+2020,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,61,60,60,2020-12
+2021,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,13,85,85,2021-12
+2022,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,10,4,110,110,2022-12
+2023,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,5,110,110,2023-12
+2024,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,12,4,150,150,2024-12
+2025,406635,Phil Foden,England,Midfield,Manchester City,Manchester City,Jan-Oct: Manchester City,10,10,5,150,150,2025-10
+2026,406635,Phil Foden,England,Midfield,Manchester City Football Club,Manchester City Football Club,Jun: Manchester City Football Club,1,1,5,150,150,2026-06
+2016,357498,Dušan Vlahović,Serbia,Attack,FK Partizan Belgrade,FK Partizan Belgrade,May-Dec: FK Partizan Belgrade,8,0,6130,0.5,0.5,2016-12
+2017,357498,Dušan Vlahović,Serbia,Attack,FK Partizan Belgrade,FK Partizan Belgrade,Jan-Dec: FK Partizan Belgrade,12,0,6150,0.5,0.5,2017-12
+2018,357498,Dušan Vlahović,Serbia,Attack,ACF Fiorentina,FK Partizan Belgrade | ACF Fiorentina,Jan-Jun: FK Partizan Belgrade | Jul-Dec: ACF Fiorentina,12,0,3988,1,1,2018-12
+2019,357498,Dušan Vlahović,Serbia,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,1447,6,6,2019-12
+2020,357498,Dušan Vlahović,Serbia,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,475,18,16,2020-12
+2021,357498,Dušan Vlahović,Serbia,Attack,ACF Fiorentina,ACF Fiorentina,Jan-Dec: ACF Fiorentina,12,0,29,70,70,2021-12
+2022,357498,Dušan Vlahović,Serbia,Attack,Juventus FC,ACF Fiorentina | Juventus FC,Jan-Feb: ACF Fiorentina | Mar-Dec: Juventus FC,12,8,8,85,80,2022-12
+2023,357498,Dušan Vlahović,Serbia,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,17,80,60,2023-12
+2024,357498,Dušan Vlahović,Serbia,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,52,65,60,2024-12
+2025,357498,Dušan Vlahović,Serbia,Attack,Juventus FC,Juventus FC,Jan-Dec: Juventus FC,12,0,60,60,35,2025-12
+2026,357498,Dušan Vlahović,Serbia,Attack,Juventus FC,Juventus FC | Juventus Football Club,Jan-May: Juventus FC | Jun: Juventus Football Club,6,0,169,35,35,2026-06
+2013,161056,Joshua Kimmich,Germany,Midfield,RB Leipzig,RB Leipzig,Aug-Dec: RB Leipzig,5,0,7988,0.3,0.3,2013-12
+2014,161056,Joshua Kimmich,Germany,Midfield,RB Leipzig,RB Leipzig,Jan-Dec: RB Leipzig,12,0,2971,1.5,1.5,2014-12
+2015,161056,Joshua Kimmich,Germany,Midfield,RB Leipzig,RB Leipzig | VfB Stuttgart,Jan-Jun: RB Leipzig | Jul-Dec: VfB Stuttgart,12,0,921,5,5,2015-12
+2016,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,VfB Stuttgart | Bayern Munich,Jan: VfB Stuttgart | Feb-Dec: Bayern Munich,12,0,164,20,20,2016-12
+2017,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,60,40,40,2017-12
+2018,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,62,60,60,2018-12
+2019,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,31,80,80,2019-12
+2020,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,13,85,85,2020-12
+2021,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,11,90,85,2021-12
+2022,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,1,10,85,80,2022-12
+2023,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,18,80,75,2023-12
+2024,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,35,75,50,2024-12
+2025,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,101,50,40,2025-12
+2026,161056,Joshua Kimmich,Germany,Midfield,Bayern Munich,Bayern Munich | FC Bayern München,Jan-May: Bayern Munich | Jun: FC Bayern München,6,0,139,40,40,2026-06
+2013,241641,Bernardo Silva,Portugal,Midfield,SL Benfica B,SL Benfica B,Nov-Dec: SL Benfica B,2,0,5391,0.6,0.6,2013-12
+2014,241641,Bernardo Silva,Portugal,Midfield,SL Benfica B,SL Benfica B,Jan-Dec: SL Benfica B,12,0,1741,2.5,2.5,2014-12
+2015,241641,Bernardo Silva,Portugal,Midfield,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,217,15,15,2015-12
+2016,241641,Bernardo Silva,Portugal,Midfield,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,161,20,20,2016-12
+2017,241641,Bernardo Silva,Portugal,Midfield,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,38,40,40,2017-12
+2018,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,52,65,65,2018-12
+2019,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,100,100,2019-12
+2020,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,12,100,70,2020-12
+2021,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,21,75,75,2021-12
+2022,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,3,10,80,80,2022-12
+2023,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,14,80,80,2023-12
+2024,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,23,80,60,2024-12
+2025,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,55,60,27,2025-12
+2026,241641,Bernardo Silva,Portugal,Midfield,Manchester City,Manchester City | Manchester City Football Club,Jan-May: Manchester City | Jun: Manchester City Football Club,6,0,286,27,27,2026-06
+2019,581678,Jude Bellingham,England,Midfield,Birmingham City,Birmingham City,Oct-Dec: Birmingham City,3,0,2776,2.5,2.5,2019-12
+2020,581678,Jude Bellingham,England,Midfield,Birmingham City,Birmingham City | Borussia Dortmund,Jan-Aug: Birmingham City | Sep-Dec: Borussia Dortmund,12,0,263,27,27,2020-12
+2021,581678,Jude Bellingham,England,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,23,75,75,2021-12
+2022,581678,Jude Bellingham,England,Midfield,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,4,4,110,110,2022-12
+2023,581678,Jude Bellingham,England,Midfield,Borussia Dortmund,Borussia Dortmund | Real Madrid,Jan-Sep: Borussia Dortmund | Oct-Dec: Real Madrid,12,12,2,180,180,2023-12
+2024,581678,Jude Bellingham,England,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,180,180,2024-12
+2025,581678,Jude Bellingham,England,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,2,180,160,2025-12
+2026,581678,Jude Bellingham,England,Midfield,Real Madrid,Real Madrid | Real Madrid Club de Fútbol,Jan-May: Real Madrid | Jun: Real Madrid Club de Fútbol,6,6,2,160,160,2026-06
+2019,683840,Pedri,Spain,Midfield,UD Las Palmas,UD Las Palmas,Sep-Dec: UD Las Palmas,4,0,1195,8,8,2019-12
+2020,683840,Pedri,Spain,Midfield,UD Las Palmas,UD Las Palmas | FC Barcelona,Jan-Sep: UD Las Palmas | Oct-Dec: FC Barcelona,12,0,232,30,30,2020-12
+2021,683840,Pedri,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,18,80,80,2021-12
+2022,683840,Pedri,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,4,7,100,100,2022-12
+2023,683840,Pedri,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,9,9,100,90,2023-12
+2024,683840,Pedri,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,22,90,80,2024-12
+2025,683840,Pedri,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Nov: FC Barcelona,11,0,29,80,80,2025-11
+2026,683840,Pedri,Spain,Midfield,Futbol Club Barcelona,Futbol Club Barcelona,Jun: Futbol Club Barcelona,1,0,34,80,80,2026-06
+2019,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Sep-Dec: Arsenal FC,4,0,761,13,13,2019-12
+2020,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,127,40,40,2020-12
+2021,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,0,39,65,65,2021-12
+2022,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,2,6,100,100,2022-12
+2023,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,12,4,120,120,2023-12
+2024,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,12,5,150,150,2024-12
+2025,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,12,3,150,130,2025-12
+2026,433177,Bukayo Saka,England,Attack,Arsenal FC,Arsenal FC | Arsenal Football Club,Jan-May: Arsenal FC | Jun: Arsenal Football Club,6,6,3,130,130,2026-06
+2020,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich,Jul-Dec: Bayern Munich,6,0,873,10,10,2020-12
+2021,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,0,70,55,55,2021-12
+2022,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,2,6,100,100,2022-12
+2023,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,6,110,110,2023-12
+2024,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,8,140,140,2024-12
+2025,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,12,4,140,130,2025-12
+2026,580195,Jamal Musiala,Germany,Midfield,Bayern Munich,Bayern Munich | FC Bayern München,Jan-May: Bayern Munich | Jun: FC Bayern München,6,6,4,130,130,2026-06
+2015,369081,Federico Valverde,Uruguay,Midfield,CA Peñarol,CA Peñarol,Aug-Dec: CA Peñarol,5,0,7280,0.4,0.4,2015-12
+2016,369081,Federico Valverde,Uruguay,Midfield,CA Peñarol,CA Peñarol | Real Madrid Castilla,Jan-Jul: CA Peñarol | Aug-Dec: Real Madrid Castilla,12,0,3841,1,1,2016-12
+2017,369081,Federico Valverde,Uruguay,Midfield,Real Madrid Castilla,Real Madrid Castilla,Jan-Dec: Real Madrid Castilla,12,0,1702,3,3,2017-12
+2018,369081,Federico Valverde,Uruguay,Midfield,Deportivo de La Coruña,Deportivo de La Coruña | Real Madrid,Jan-Nov: Deportivo de La Coruña | Dec: Real Madrid,12,0,1090,6,6,2018-12
+2019,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,104,50,50,2019-12
+2020,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,32,70,70,2020-12
+2021,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,28,70,65,2021-12
+2022,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,2,5,100,100,2022-12
+2023,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,9,7,100,100,2023-12
+2024,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,4,7,130,130,2024-12
+2025,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,12,8,130,120,2025-12
+2026,369081,Federico Valverde,Uruguay,Midfield,Real Madrid,Real Madrid | Real Madrid Club de Fútbol,Jan-May: Real Madrid | Jun: Real Madrid Club de Fútbol,6,5,9,120,120,2026-06
+2021,646740,Gavi,Spain,Midfield,FC Barcelona,FC Barcelona,Oct-Dec: FC Barcelona,3,0,124,40,40,2021-12
+2022,646740,Gavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,1,10,90,90,2022-12
+2023,646740,Gavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,11,90,90,2023-12
+2024,646740,Gavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,18,90,80,2024-12
+2025,646740,Gavi,Spain,Midfield,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,25,80,40,2025-12
+2026,646740,Gavi,Spain,Midfield,FC Barcelona,FC Barcelona | Futbol Club Barcelona,Jan-May: FC Barcelona | Jun: Futbol Club Barcelona,6,0,131,40,40,2026-06
+2018,413112,Aurélien Tchouaméni,France,Midfield,FC Girondins Bordeaux,FC Girondins Bordeaux,Sep-Dec: FC Girondins Bordeaux,4,0,1315,5,5,2018-12
+2019,413112,Aurélien Tchouaméni,France,Midfield,FC Girondins Bordeaux,FC Girondins Bordeaux,Jan-Dec: FC Girondins Bordeaux,12,0,728,14,14,2019-12
+2020,413112,Aurélien Tchouaméni,France,Midfield,AS Monaco,FC Girondins Bordeaux | AS Monaco,Jan: FC Girondins Bordeaux | Feb-Dec: AS Monaco,12,0,524,17,16,2020-12
+2021,413112,Aurélien Tchouaméni,France,Midfield,AS Monaco,AS Monaco,Jan-Dec: AS Monaco,12,0,121,40,40,2021-12
+2022,413112,Aurélien Tchouaméni,France,Midfield,AS Monaco,AS Monaco | Real Madrid,Jan-Aug: AS Monaco | Sep-Dec: Real Madrid,12,1,10,90,90,2022-12
+2023,413112,Aurélien Tchouaméni,France,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,2,10,90,90,2023-12
+2024,413112,Aurélien Tchouaméni,France,Midfield,Real Madrid,Real Madrid,Jan-Dec: Real Madrid,12,0,15,100,100,2024-12
+2025,413112,Aurélien Tchouaméni,France,Midfield,Real Madrid,Real Madrid,Jan-Nov: Real Madrid,11,0,16,100,100,2025-11
+2026,413112,Aurélien Tchouaméni,France,Midfield,Real Madrid Club de Fútbol,Real Madrid Club de Fútbol,Jun: Real Madrid Club de Fútbol,1,0,19,100,100,2026-06
+2017,401923,Victor Osimhen,Nigeria,Attack,VfL Wolfsburg,VfL Wolfsburg,Feb-Dec: VfL Wolfsburg,11,0,4263,1,1,2017-12
+2018,401923,Victor Osimhen,Nigeria,Attack,VfL Wolfsburg,VfL Wolfsburg | Royal Charleroi SC,Jan-Nov: VfL Wolfsburg | Dec: Royal Charleroi SC,12,0,2320,3,3,2018-12
+2019,401923,Victor Osimhen,Nigeria,Attack,Royal Charleroi SC,Royal Charleroi SC | LOSC Lille,Jan-Nov: Royal Charleroi SC | Dec: LOSC Lille,12,0,284,30,30,2019-12
+2020,401923,Victor Osimhen,Nigeria,Attack,LOSC Lille,LOSC Lille | SSC Napoli,Jan-Sep: LOSC Lille | Oct-Dec: SSC Napoli,12,0,97,50,50,2020-12
+2021,401923,Victor Osimhen,Nigeria,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,63,60,60,2021-12
+2022,401923,Victor Osimhen,Nigeria,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,0,45,70,70,2022-12
+2023,401923,Victor Osimhen,Nigeria,Attack,SSC Napoli,SSC Napoli,Jan-Dec: SSC Napoli,12,9,6,120,110,2023-12
+2024,401923,Victor Osimhen,Nigeria,Attack,SSC Napoli,SSC Napoli | Galatasaray,Jan-Sep: SSC Napoli | Oct-Dec: Galatasaray,12,0,12,110,75,2024-12
+2025,401923,Victor Osimhen,Nigeria,Attack,Galatasaray,Galatasaray,Jan-Dec: Galatasaray,12,0,35,75,75,2025-12
+2026,401923,Victor Osimhen,Nigeria,Attack,Galatasaray,Galatasaray | Galatasaray Spor Kulübü,Jan-May: Galatasaray | Jun: Galatasaray Spor Kulübü,6,0,34,75,75,2026-06
+2017,357662,Declan Rice,England,Midfield,West Ham United,West Ham United,Oct-Dec: West Ham United,3,0,6284,0.5,0.5,2017-12
+2018,357662,Declan Rice,England,Midfield,West Ham United,West Ham United,Jan-Dec: West Ham United,12,0,350,20,20,2018-12
+2019,357662,Declan Rice,England,Midfield,West Ham United,West Ham United,Jan-Dec: West Ham United,12,0,89,55,55,2019-12
+2020,357662,Declan Rice,England,Midfield,West Ham United,West Ham United,Jan-Dec: West Ham United,12,0,68,55,55,2020-12
+2021,357662,Declan Rice,England,Midfield,West Ham United,West Ham United,Jan-Dec: West Ham United,12,0,22,75,75,2021-12
+2022,357662,Declan Rice,England,Midfield,West Ham United,West Ham United,Jan-Dec: West Ham United,12,0,12,80,80,2022-12
+2023,357662,Declan Rice,England,Midfield,West Ham United,West Ham United | Arsenal FC,Jan-Sep: West Ham United | Oct-Dec: Arsenal FC,12,3,6,110,110,2023-12
+2024,357662,Declan Rice,England,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,9,6,120,110,2024-12
+2025,357662,Declan Rice,England,Midfield,Arsenal FC,Arsenal FC,Jan-Dec: Arsenal FC,12,1,8,120,120,2025-12
+2026,357662,Declan Rice,England,Midfield,Arsenal FC,Arsenal FC | Arsenal Football Club,Jan-May: Arsenal FC | Jun: Arsenal Football Club,6,5,8,120,120,2026-06
+2016,406625,Lautaro Martínez,Argentina,Attack,Racing Club,Racing Club,Feb-Dec: Racing Club,11,0,6396,0.5,0.5,2016-12
+2017,406625,Lautaro Martínez,Argentina,Attack,Racing Club,Racing Club,Jan-Dec: Racing Club,12,0,553,10,10,2017-12
+2018,406625,Lautaro Martínez,Argentina,Attack,Racing Club,Racing Club | Inter Milan,Jan-Nov: Racing Club | Dec: Inter Milan,12,0,213,25,25,2018-12
+2019,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,32,80,80,2019-12
+2020,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,32,80,70,2020-12
+2021,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,17,80,80,2021-12
+2022,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,17,80,75,2022-12
+2023,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,1,9,110,110,2023-12
+2024,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,2,9,110,100,2024-12
+2025,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan,Jan-Dec: Inter Milan,12,0,17,100,85,2025-12
+2026,406625,Lautaro Martínez,Argentina,Attack,Inter Milan,Inter Milan | Football Club Internazionale Milano S.p.A.,Jan-May: Inter Milan | Jun: Football Club Internazionale Milano S.p.A.,6,0,24,85,85,2026-06
+2020,598577,Florian Wirtz,Germany,Midfield,Bayer 04 Leverkusen,Bayer 04 Leverkusen,Jul-Dec: Bayer 04 Leverkusen,6,0,330,24,24,2020-12
+2021,598577,Florian Wirtz,Germany,Midfield,Bayer 04 Leverkusen,Bayer 04 Leverkusen,Jan-Dec: Bayer 04 Leverkusen,12,0,31,70,70,2021-12
+2022,598577,Florian Wirtz,Germany,Midfield,Bayer 04 Leverkusen,Bayer 04 Leverkusen,Jan-Dec: Bayer 04 Leverkusen,12,0,26,70,70,2022-12
+2023,598577,Florian Wirtz,Germany,Midfield,Bayer 04 Leverkusen,Bayer 04 Leverkusen,Jan-Dec: Bayer 04 Leverkusen,12,0,14,100,100,2023-12
+2024,598577,Florian Wirtz,Germany,Midfield,Bayer 04 Leverkusen,Bayer 04 Leverkusen,Jan-Dec: Bayer 04 Leverkusen,12,10,7,140,140,2024-12
+2025,598577,Florian Wirtz,Germany,Midfield,Bayer 04 Leverkusen,Bayer 04 Leverkusen | Liverpool FC,Jan-Sep: Bayer 04 Leverkusen | Oct-Dec: Liverpool FC,12,11,7,140,110,2025-12
+2026,598577,Florian Wirtz,Germany,Midfield,Liverpool FC,Liverpool FC | Liverpool Football Club,Jan-May: Liverpool FC | Jun: Liverpool Football Club,6,5,10,110,110,2026-06
+2016,357565,Rodri,Spain,Midfield,Villarreal CF,Villarreal CF,Aug-Dec: Villarreal CF,5,0,6630,0.5,0.5,2016-12
+2017,357565,Rodri,Spain,Midfield,Villarreal CF,Villarreal CF,Jan-Dec: Villarreal CF,12,0,2182,2.5,2.5,2017-12
+2018,357565,Rodri,Spain,Midfield,Villarreal CF,Villarreal CF | Atlético de Madrid,Jan-Sep: Villarreal CF | Oct-Dec: Atlético de Madrid,12,0,100,50,50,2018-12
+2019,357565,Rodri,Spain,Midfield,Atlético de Madrid,Atlético de Madrid | Manchester City,Jan-Nov: Atlético de Madrid | Dec: Manchester City,12,0,32,80,80,2019-12
+2020,357565,Rodri,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,35,80,64,2020-12
+2021,357565,Rodri,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,35,70,70,2021-12
+2022,357565,Rodri,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,16,80,80,2022-12
+2023,357565,Rodri,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,110,110,2023-12
+2024,357565,Rodri,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,6,9,130,130,2024-12
+2025,357565,Rodri,Spain,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,11,130,75,2025-12
+2026,357565,Rodri,Spain,Midfield,Manchester City,Manchester City | Manchester City Football Club,Jan-May: Manchester City | Jun: Manchester City Football Club,6,0,32,75,75,2026-06
+2021,568177,Cole Palmer,England,Midfield,Manchester City U23,Manchester City U23 | Manchester City,Mar-Nov: Manchester City U23 | Dec: Manchester City,10,0,2292,3,3,2021-12
+2022,568177,Cole Palmer,England,Midfield,Manchester City,Manchester City,Jan-Dec: Manchester City,12,0,586,15,15,2022-12
+2023,568177,Cole Palmer,England,Midfield,Manchester City,Manchester City | Chelsea FC,Jan-Sep: Manchester City | Oct-Dec: Chelsea FC,12,0,118,45,45,2023-12
+2024,568177,Cole Palmer,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,1,9,130,130,2024-12
+2025,568177,Cole Palmer,England,Midfield,Chelsea FC,Chelsea FC,Jan-Dec: Chelsea FC,12,5,7,130,120,2025-12
+2026,568177,Cole Palmer,England,Midfield,Chelsea FC,Chelsea FC | Chelsea Football Club,Jan-May: Chelsea FC | Jun: Chelsea Football Club,6,6,7,120,120,2026-06
+2016,349066,Alexander Isak,Sweden,Attack,AIK,AIK,Jun-Dec: AIK,7,0,2696,1.75,1.75,2016-12
+2017,349066,Alexander Isak,Sweden,Attack,Borussia Dortmund,AIK | Borussia Dortmund,Jan: AIK | Feb-Dec: Borussia Dortmund,12,0,840,6,6,2017-12
+2018,349066,Alexander Isak,Sweden,Attack,Borussia Dortmund,Borussia Dortmund,Jan-Dec: Borussia Dortmund,12,0,994,6,3,2018-12
+2019,349066,Alexander Isak,Sweden,Attack,Willem II Tilburg,Borussia Dortmund | Willem II Tilburg | Real Sociedad,Jan-May: Borussia Dortmund | Jun-Nov: Willem II Tilburg | Dec: Real Sociedad,12,0,912,10,10,2019-12
+2020,349066,Alexander Isak,Sweden,Attack,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,303,25,22,2020-12
+2021,349066,Alexander Isak,Sweden,Attack,Real Sociedad,Real Sociedad,Jan-Dec: Real Sociedad,12,0,118,40,40,2021-12
+2022,349066,Alexander Isak,Sweden,Attack,Real Sociedad,Real Sociedad | Newcastle United,Jan-Aug: Real Sociedad | Sep-Dec: Newcastle United,12,0,78,50,50,2022-12
+2023,349066,Alexander Isak,Sweden,Attack,Newcastle United,Newcastle United,Jan-Dec: Newcastle United,12,0,39,70,70,2023-12
+2024,349066,Alexander Isak,Sweden,Attack,Newcastle United,Newcastle United,Jan-Dec: Newcastle United,12,0,29,75,75,2024-12
+2025,349066,Alexander Isak,Sweden,Attack,Newcastle United,Newcastle United | Liverpool FC,Jan-Sep: Newcastle United | Oct-Dec: Liverpool FC,12,8,5,140,120,2025-12
+2026,349066,Alexander Isak,Sweden,Attack,Liverpool FC,Liverpool FC | Liverpool Football Club,Jan-May: Liverpool FC | Jun: Liverpool Football Club,6,6,6,120,120,2026-06
+2019,566723,Michael Olise,France,Attack,Reading FC U18,Reading FC U18,Oct-Dec: Reading FC U18,3,0,10765,0.2,0.2,2019-12
+2020,566723,Michael Olise,France,Attack,Reading FC,Reading FC U18 | Reading FC,Jan: Reading FC U18 | Feb-Dec: Reading FC,12,0,1108,8,8,2020-12
+2021,566723,Michael Olise,France,Attack,Reading FC,Reading FC | Crystal Palace,Jan-Nov: Reading FC | Dec: Crystal Palace,12,0,487,18,18,2021-12
+2022,566723,Michael Olise,France,Attack,Crystal Palace,Crystal Palace,Jan-Dec: Crystal Palace,12,0,355,22,22,2022-12
+2023,566723,Michael Olise,France,Attack,Crystal Palace,Crystal Palace,Jan-Dec: Crystal Palace,12,0,102,50,50,2023-12
+2024,566723,Michael Olise,France,Attack,Crystal Palace,Crystal Palace | Bayern Munich,Jan-Sep: Crystal Palace | Oct-Dec: Bayern Munich,12,0,52,65,65,2024-12
+2025,566723,Michael Olise,France,Attack,Bayern Munich,Bayern Munich,Jan-Dec: Bayern Munich,12,2,5,130,130,2025-12
+2026,566723,Michael Olise,France,Attack,Bayern Munich,Bayern Munich | FC Bayern München,Jan-May: Bayern Munich | Jun: FC Bayern München,6,6,5,130,130,2026-06
+2023,937958,Lamine Yamal,Spain,Attack,FC Barcelona,FC Barcelona,Aug-Dec: FC Barcelona,5,0,70,60,60,2023-12
+2024,937958,Lamine Yamal,Spain,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,0,12,120,120,2024-12
+2025,937958,Lamine Yamal,Spain,Attack,FC Barcelona,FC Barcelona,Jan-Dec: FC Barcelona,12,1,10,120,120,2025-12
+2026,937958,Lamine Yamal,Spain,Attack,Futbol Club Barcelona,Futbol Club Barcelona,Jun: Futbol Club Barcelona,1,0,13,120,120,2026-06

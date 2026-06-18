@@ -1,0 +1,44 @@
+{
+  "source": {
+    "dataset": "https://github.com/dcaribou/transfermarkt-datasets",
+    "license": "CC0-1.0 for the transfermarkt-datasets repository release; original values are Transfermarkt estimates.",
+    "playerValuations": {
+      "url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/player_valuations.csv.gz",
+      "lastModified": "Fri, 12 Jun 2026 09:00:39 GMT",
+      "etag": "\"14f607d657d85b05a318a031a7f26849\""
+    },
+    "players": {
+      "url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz",
+      "lastModified": "Fri, 12 Jun 2026 09:00:40 GMT",
+      "etag": "\"5c941db67643dd7ae7b5decb1e42d827\""
+    }
+  },
+  "generatedAt": "2026-06-16T13:41:19.177Z",
+  "requestedStartMonth": "2000-01",
+  "requestedEndMonth": "2026-12",
+  "actualEndMonth": "2026-06",
+  "staleDays": 548,
+  "observedRowCount": 515387,
+  "historicalObservedRowCount": 507814,
+  "currentProfileSnapshotRowCount": 7573,
+  "currentProfileSnapshotDate": "2026-06-12",
+  "monthlyTopN": 100,
+  "monthlyRowCount": 26156,
+  "monthlyFocusTopN": 10,
+  "monthlyTop10RowCount": 2666,
+  "top10PlayerPoolCount": 98,
+  "top10PlayerPoolMonthlyRowCount": 15410,
+  "videoTopN": 40,
+  "videoRowCount": 10496,
+  "top10PlayerPoolVideoRowCount": 15410,
+  "method": "Monthly snapshots rank players by the latest observed Transfermarkt market value available on or before the final day of each month. Historical observations come from player_valuations. Active-player current profile market values from players.csv are added as a current-month snapshot when the historical valuation table is behind the dataset refresh date. Values older than staleDays are excluded to avoid carrying inactive players indefinitely. The top10 player pool includes every player who appears in a monthly global top 10 at least once, then tracks those players across every month where they have an active value. Monthly CSV values are top 100; video CSV values are top 40 and top10-player-pool rows use value in millions of euros for the existing chart-race parser.",
+  "outputFiles": [
+    "football_player_market_values_observed.csv",
+    "football_player_market_values_monthly_top100.csv",
+    "football_player_market_values_monthly_top10.csv",
+    "football_player_market_values_top10_player_pool.csv",
+    "football_player_market_values_top10_player_pool_monthly.csv",
+    "football_player_market_values_top10_player_pool_video.csv",
+    "football_player_market_values_top40_video.csv"
+  ]
+}

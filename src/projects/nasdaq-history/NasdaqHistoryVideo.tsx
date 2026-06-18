@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 import { useLayoutEffect, useRef } from 'react';
-import { AbsoluteFill, Audio, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Audio, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import {
   CandlestickSeries,
   ColorType,
@@ -20,6 +20,28 @@ import {
   type NasdaqEvent,
 } from './data';
 import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
+import {
+  createPriceNewsFrameGeometry,
+  PriceNewsChartShell,
+  PriceNewsDateReadout,
+  PriceNewsEventBody,
+  PriceNewsEventCard,
+  PriceNewsEventDate,
+  PriceNewsEventDetail,
+  PriceNewsEventImage,
+  PriceNewsEventStat,
+  PriceNewsEventTitle,
+  PriceNewsFeed,
+  PriceNewsFeedItem,
+  PriceNewsHeader,
+  PriceNewsMetricCard,
+  PriceNewsMetricDetail,
+  PriceNewsMetricLabel,
+  PriceNewsMetricMeta,
+  PriceNewsMetricValue,
+  priceNewsTemplate,
+  PriceNewsVideoFrame,
+} from '../../shared/priceNewsVideoFrame';
 
 type EventWithFrame = NasdaqEvent & {
   frame: number;
@@ -81,17 +103,25 @@ type EventPriceMove = {
   isBodyUp: boolean;
 };
 
+const youtubeBottomSafeArea = 220;
 const fontStack =
   'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-const chartWidth = 980;
-const chartHeight = 830;
-const chartPlotWidth = 858;
-const chartPaneHeight = 774;
-const chartLeft = 50;
-const chartTop = 450 + SHORTS_PLATFORM_TOP_CLEARANCE;
-const youtubeBottomSafeArea = 220;
-const headerTop = 118 + SHORTS_PLATFORM_TOP_CLEARANCE;
-const priceReadoutTop = 232 + SHORTS_PLATFORM_TOP_CLEARANCE;
+const frameInset = {
+  left: 76,
+  right: 76,
+};
+const priceNewsLayout = createPriceNewsFrameGeometry({
+  chartHeight: 830,
+  chartTop: 450 + SHORTS_PLATFORM_TOP_CLEARANCE,
+  dateReadoutTop: 336 + SHORTS_PLATFORM_TOP_CLEARANCE,
+  frameInset,
+  headerTop: 118 + SHORTS_PLATFORM_TOP_CLEARANCE,
+  newsFeedBottom: youtubeBottomSafeArea - 8,
+});
+const chartWidth = priceNewsLayout.chart.width;
+const chartHeight = priceNewsLayout.chart.height;
+const chartPlotWidth = chartWidth - priceNewsTemplate.chartRightScaleWidth;
+const chartPaneHeight = chartHeight - 56;
 const priceScaleTopMargin = 0.16;
 const priceScaleBottomMargin = 0.02;
 const introSequenceFrames = 0;
@@ -109,10 +139,10 @@ const rollingWindowRightPadding = 8;
 const fullChartLeftPadding = 8;
 const fullChartRightPadding = 18;
 const visibleNewsCount = 5;
-const newsRowHeight = 66;
-const newsFeedGap = 7;
-const eventCalloutCardWidth = 420;
-const eventCalloutCardHeight = 340;
+const newsRowHeight = priceNewsTemplate.newsRowHeight;
+const newsFeedGap = priceNewsTemplate.newsFeedGap;
+const eventCalloutCardWidth = priceNewsTemplate.eventCardWidth;
+const eventCalloutCardHeight = priceNewsTemplate.eventCardHeight;
 const soundtrackPath = 'audio/intergalactic-alex-jones-xander-jones.mp3';
 const soundtrackStartFromSeconds = 10;
 const soundtrackVolume = 0.2;
@@ -165,16 +195,28 @@ export const NasdaqHistoryVideo = () => {
   );
 
   return (
-    <AbsoluteFill style={styles.stage}>
+    <PriceNewsVideoFrame theme={theme}>
       <Audio
         src={staticFile(soundtrackPath)}
         startFrom={soundtrackStartFromSeconds * fps}
         volume={soundtrackFrameVolume}
       />
-      <div style={styles.backgroundPanel} />
-      <Header intro={intro} />
-      <DateReadout candle={currentCandle} />
-      <div style={styles.chartShell}>
+      <PriceNewsHeader
+        badge="NASDAQ COMPOSITE"
+        geometry={priceNewsLayout}
+        intro={intro}
+        subtitle={nasdaqVideoConfig.subtitle}
+        theme={theme}
+        title={nasdaqVideoConfig.title}
+      />
+      <PriceNewsDateReadout
+        geometry={priceNewsLayout}
+        label="CURRENT MONTH"
+        theme={theme}
+      >
+        {formatDisplayMonth(currentCandle.time)}
+      </PriceNewsDateReadout>
+      <PriceNewsChartShell geometry={priceNewsLayout} theme={theme}>
         <TradingViewCandleChart currentIndex={currentIndex} fullChartProgress={fullChartProgress} />
         <ChartPriceBadge
           candle={currentCandle}
@@ -184,10 +226,10 @@ export const NasdaqHistoryVideo = () => {
           monthlyPointMove={monthlyPointMove}
         />
         <ChartEventMediaOverlay event={activeEvent} frame={chartFrame} />
-      </div>
+      </PriceNewsChartShell>
       <NewsHistory events={schedule.events} frame={chartFrame} />
       <EndChannelPromo durationInFrames={durationInFrames} fps={fps} frame={frame} />
-    </AbsoluteFill>
+    </PriceNewsVideoFrame>
   );
 };
 
@@ -338,27 +380,6 @@ const BellIcon = () => (
     <path d="M12 16L8 12M52 16L56 12" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="4" opacity="0.55" />
   </svg>
 );
-
-const Header = ({ intro }: { intro: number }) => {
-  const y = interpolate(intro, [0, 1], [-24, 0]);
-
-  return (
-    <div style={{ ...styles.header, opacity: intro, transform: `translateY(${y}px)` }}>
-      <div style={styles.marketBadge}>NASDAQ COMPOSITE</div>
-      <div style={styles.title}>{nasdaqVideoConfig.title}</div>
-      <div style={styles.subtitle}>{nasdaqVideoConfig.subtitle}</div>
-    </div>
-  );
-};
-
-const DateReadout = ({ candle }: { candle: NasdaqCandle }) => {
-  return (
-    <div style={styles.dateReadout}>
-      <div style={styles.dateLabel}>CURRENT MONTH</div>
-      <div style={styles.currentDate}>{formatDisplayMonth(candle.time)}</div>
-    </div>
-  );
-};
 
 const TradingViewCandleChart = ({
   currentIndex,
@@ -512,16 +533,16 @@ const ChartPriceBadge = ({
       : 'Monthly close';
 
   return (
-      <div style={{ ...styles.chartPriceBadge, borderTopColor: accent }}>
-      <div style={styles.chartPriceLabel}>MONTHLY CLOSE</div>
-      <div style={styles.chartPriceValue}>{formatUsdIndex(candle.close)}</div>
-      <div style={styles.chartPriceMetaRow}>
+    <PriceNewsMetricCard accent={accent} theme={theme}>
+      <PriceNewsMetricLabel theme={theme}>MONTHLY CLOSE</PriceNewsMetricLabel>
+      <PriceNewsMetricValue theme={theme}>{formatUsdIndex(candle.close)}</PriceNewsMetricValue>
+      <PriceNewsMetricMeta>
         <span style={{ ...styles.chartPriceMove, color: isUp ? theme.up : theme.down }}>
           {formatSignedPoints(monthlyPointMove)} pts / {formatSignedPercent(monthlyChangePercent)}
         </span>
-      </div>
-      <div style={styles.chartPriceDetail}>{detail}</div>
-    </div>
+      </PriceNewsMetricMeta>
+      <PriceNewsMetricDetail theme={theme}>{detail}</PriceNewsMetricDetail>
+    </PriceNewsMetricCard>
   );
 };
 
@@ -628,37 +649,32 @@ const ChartEventMediaOverlay = ({
           transform: `translate(-50%, -50%) rotate(${arrowAngle}rad)`,
         }}
       />
-      <div
-        style={{
-          ...styles.eventMediaCard,
-          left: layout.cardLeft,
-          top: layout.cardTop,
-          borderColor: accent,
-          opacity: cardProgress,
-          transform: `translateX(${interpolate(cardProgress, [0, 1], [cardEntrance, 0])}px) scaleX(${interpolate(
-            cardProgress,
-            [0, 1],
-            [0.72, 1],
-          )})`,
-          transformOrigin: cardOrigin,
-        }}
+      <PriceNewsEventCard
+        accent={accent}
+        left={layout.cardLeft}
+        opacity={cardProgress}
+        top={layout.cardTop}
+        transform={`translateX(${interpolate(cardProgress, [0, 1], [cardEntrance, 0])}px) scaleX(${interpolate(
+          cardProgress,
+          [0, 1],
+          [0.72, 1],
+        )})`}
+        transformOrigin={cardOrigin}
       >
-        <div style={styles.eventImageWrap}>
-          <img src={staticFile(event.image.src)} alt={event.image.alt} style={styles.eventImage} />
-          <div style={styles.eventImageTint} />
-          <div style={styles.eventImageCredit}>{event.image.credit}</div>
-        </div>
-        <div style={styles.eventMediaBody}>
-          <div style={{ ...styles.eventMediaDate, color: accent }}>
-            {formatDisplayMonth(event.date)}
-          </div>
-          <div style={styles.eventMediaTitle}>{event.title}</div>
-          <div style={styles.eventMediaDetail}>{event.detail}</div>
-          <div style={{ ...styles.eventMediaStat, color: eventMove.isBodyUp ? theme.up : theme.down }}>
+        <PriceNewsEventImage
+          alt={event.image.alt}
+          credit={event.image.credit}
+          src={staticFile(event.image.src)}
+        />
+        <PriceNewsEventBody>
+          <PriceNewsEventDate accent={accent}>{formatDisplayMonth(event.date)}</PriceNewsEventDate>
+          <PriceNewsEventTitle theme={theme}>{event.title}</PriceNewsEventTitle>
+          <PriceNewsEventDetail theme={theme}>{event.detail}</PriceNewsEventDetail>
+          <PriceNewsEventStat color={eventMove.isBodyUp ? theme.up : theme.down}>
             {formatSignedPoints(eventMove.bodyPointMove)} pts / {formatSignedPercent(eventMove.bodyPercent)}
-          </div>
-        </div>
-      </div>
+          </PriceNewsEventStat>
+        </PriceNewsEventBody>
+      </PriceNewsEventCard>
     </div>
   );
 };
@@ -685,12 +701,7 @@ const NewsHistory = ({
   });
 
   return (
-    <div
-      style={{
-        ...styles.newsFeed,
-        transform: `translateY(${y}px)`,
-      }}
-    >
+    <PriceNewsFeed geometry={priceNewsLayout} transform={`translateY(${y}px)`}>
       {history.map((historyEvent, position) => {
         const accent = getEventAccent(historyEvent.tone);
         const baseOpacity = position === 0 ? 1 : Math.max(0.14, 0.72 - position * 0.12);
@@ -701,24 +712,19 @@ const NewsHistory = ({
             : 0;
 
         return (
-          <div
+          <PriceNewsFeedItem
+            accent={accent}
+            date={formatDisplayMonth(historyEvent.date)}
             key={`${historyEvent.date}-${historyEvent.title}`}
-            style={{
-              ...styles.newsFeedItem,
-              borderLeftColor: accent,
-              opacity: rowOpacity,
-              transform: `translateY(${rowShift}px)`,
-            }}
-          >
-            <span style={{ ...styles.newsFeedDate, color: accent }}>
-              {formatDisplayMonth(historyEvent.date)}
-            </span>
-            <span style={styles.newsFeedTitle}>{historyEvent.title}</span>
-            <span style={styles.newsFeedStat}>{formatEventNewsStat(historyEvent)}</span>
-          </div>
+            opacity={rowOpacity}
+            stat={formatEventNewsStat(historyEvent)}
+            theme={theme}
+            title={historyEvent.title}
+            transform={`translateY(${rowShift}px)`}
+          />
         );
       })}
-    </div>
+    </PriceNewsFeed>
   );
 };
 
@@ -1142,18 +1148,6 @@ const theme = {
 } as const;
 
 const styles = {
-  stage: {
-    backgroundColor: theme.background,
-    color: theme.ink,
-    fontFamily: fontStack,
-    overflow: 'hidden',
-  },
-  backgroundPanel: {
-    position: 'absolute',
-    inset: 0,
-    background:
-      'linear-gradient(180deg, #F6F8FB 0%, #F1F3F7 58%, #F6F8FB 100%)',
-  },
   endPromoOverlay: {
     position: 'absolute',
     inset: 0,
@@ -1243,120 +1237,15 @@ const styles = {
     height: 42,
     display: 'block',
   },
-  header: {
-    position: 'absolute',
-    left: 62,
-    top: headerTop,
-    width: 780,
-    zIndex: 5,
-  },
-  marketBadge: {
-    display: 'inline-block',
-    padding: '12px 16px',
-    background: '#151618',
-    color: '#FFFFFF',
-    fontSize: 22,
-    fontWeight: 950,
-    lineHeight: 1,
-  },
-  title: {
-    marginTop: 24,
-    color: theme.ink,
-    fontSize: 72,
-    fontWeight: 950,
-    lineHeight: 0.96,
-    letterSpacing: 0,
-    maxWidth: 760,
-  },
-  subtitle: {
-    marginTop: 16,
-    width: 920,
-    color: theme.muted,
-    fontSize: 29,
-    fontWeight: 800,
-    lineHeight: 1,
-    whiteSpace: 'nowrap',
-  },
-  dateReadout: {
-    position: 'absolute',
-    right: 58,
-    top: priceReadoutTop,
-    width: 420,
-    textAlign: 'right',
-    zIndex: 6,
-  },
-  dateLabel: {
-    color: theme.muted,
-    fontSize: 24,
-    fontWeight: 950,
-  },
-  currentDate: {
-    marginTop: 9,
-    color: theme.ink,
-    fontSize: 62,
-    fontWeight: 950,
-    lineHeight: 0.96,
-    fontVariantNumeric: 'tabular-nums',
-  },
-  chartShell: {
-    position: 'absolute',
-    left: chartLeft,
-    top: chartTop,
-    width: chartWidth,
-    height: chartHeight,
-    border: `2px solid ${theme.border}`,
-    background: theme.chartBackground,
-    overflow: 'hidden',
-    zIndex: 2,
-  },
   chartCanvas: {
     width: chartWidth,
     height: chartHeight,
-  },
-  chartPriceBadge: {
-    position: 'absolute',
-    left: 24,
-    top: 24,
-    width: 440,
-    padding: '18px 22px 20px',
-    borderTop: '8px solid',
-    background: 'rgba(255,255,255,0.94)',
-    boxShadow: '0 18px 48px rgba(20,20,20,0.14)',
-    zIndex: 12,
-  },
-  chartPriceLabel: {
-    color: theme.muted,
-    fontSize: 21,
-    fontWeight: 950,
-    lineHeight: 1,
-  },
-  chartPriceValue: {
-    marginTop: 9,
-    color: theme.ink,
-    fontSize: 62,
-    fontWeight: 950,
-    lineHeight: 0.92,
-    fontVariantNumeric: 'tabular-nums',
-  },
-  chartPriceMetaRow: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    gap: 14,
-    marginTop: 11,
   },
   chartPriceMove: {
     fontSize: 23,
     fontWeight: 950,
     lineHeight: 1,
     whiteSpace: 'nowrap',
-  },
-  chartPriceDetail: {
-    marginTop: 10,
-    color: 'rgba(21,22,24,0.72)',
-    fontSize: 25,
-    fontWeight: 900,
-    lineHeight: 1.08,
   },
   eventMediaOverlay: {
     position: 'absolute',
@@ -1408,129 +1297,5 @@ const styles = {
     borderTop: '10px solid transparent',
     borderBottom: '10px solid transparent',
     borderLeft: '16px solid',
-  },
-  eventMediaCard: {
-    position: 'absolute',
-    width: eventCalloutCardWidth,
-    height: eventCalloutCardHeight,
-    boxSizing: 'border-box',
-    border: '3px solid',
-    background: 'rgba(255,255,255,0.98)',
-    boxShadow: '0 22px 58px rgba(20,20,20,0.24)',
-    overflow: 'hidden',
-  },
-  eventImageWrap: {
-    position: 'relative',
-    width: '100%',
-    height: 128,
-    overflow: 'hidden',
-    background: '#DDE2EA',
-  },
-  eventImage: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    display: 'block',
-  },
-  eventImageTint: {
-    position: 'absolute',
-    inset: 0,
-    background: 'linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.42))',
-  },
-  eventImageCredit: {
-    position: 'absolute',
-    left: 10,
-    right: 10,
-    bottom: 8,
-    color: 'rgba(255,255,255,0.78)',
-    fontSize: 10,
-    fontWeight: 780,
-    lineHeight: 1.12,
-    textShadow: '0 1px 8px rgba(0,0,0,0.52)',
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-  },
-  eventMediaBody: {
-    padding: '12px 17px 15px',
-  },
-  eventMediaDate: {
-    fontSize: 18,
-    fontWeight: 950,
-    lineHeight: 1,
-    fontVariantNumeric: 'tabular-nums',
-  },
-  eventMediaTitle: {
-    marginTop: 7,
-    color: theme.ink,
-    fontSize: 30,
-    fontWeight: 950,
-    lineHeight: 1,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-  },
-  eventMediaDetail: {
-    marginTop: 8,
-    color: 'rgba(21,22,24,0.68)',
-    fontSize: 17,
-    fontWeight: 760,
-    lineHeight: 1.13,
-    maxHeight: 58,
-    overflow: 'hidden',
-  },
-  eventMediaStat: {
-    marginTop: 8,
-    fontSize: 22,
-    fontWeight: 950,
-    lineHeight: 1,
-    whiteSpace: 'nowrap',
-  },
-  newsFeed: {
-    position: 'absolute',
-    left: 50,
-    right: 50,
-    bottom: youtubeBottomSafeArea,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: newsFeedGap,
-    zIndex: 9,
-  },
-  newsFeedItem: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 16,
-    minHeight: newsRowHeight,
-    boxSizing: 'border-box',
-    padding: '8px 18px 10px',
-    borderLeft: '9px solid',
-    background: 'rgba(255,255,255,0.94)',
-    boxShadow: '0 14px 34px rgba(20,20,20,0.12)',
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
-  },
-  newsFeedDate: {
-    flex: '0 0 auto',
-    width: 170,
-    fontSize: 40,
-    fontWeight: 950,
-    lineHeight: 1,
-  },
-  newsFeedTitle: {
-    flex: '1 1 auto',
-    minWidth: 0,
-    color: theme.ink,
-    fontSize: 44,
-    fontWeight: 950,
-    lineHeight: 1,
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-  },
-  newsFeedStat: {
-    flex: '0 0 auto',
-    color: 'rgba(21,22,24,0.68)',
-    fontSize: 40,
-    fontWeight: 950,
-    lineHeight: 1,
   },
 } satisfies Record<string, CSSProperties>;

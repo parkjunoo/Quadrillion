@@ -13,6 +13,12 @@ import {
   type ChartSnapshot,
 } from './chartRace';
 import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
+import {
+  SHORTS_INTRO_SECONDS,
+  SHORTS_OUTRO_SECONDS,
+  ShortsIntro,
+  ShortsOutro,
+} from '../../shared/shortsAnimations';
 import { chartVideoConfig, type ChartVideoEvent } from './config';
 
 const countryColorOverrides: Record<string, string> = {
@@ -113,19 +119,38 @@ const rankedEntities = chartData.entities.filter(hasTopNAppearance).sort(
   (a, b) => finalRankFor(b) - finalRankFor(a),
 );
 const trophyPulseMonths = 2.4;
-const introHoldSeconds = 1;
+const introHoldSeconds = SHORTS_INTRO_SECONDS;
+const outroHoldSeconds = SHORTS_OUTRO_SECONDS;
 const finalApproachSeconds = 2.2;
 const finalSettleSeconds = 2;
 const toastHoldSeconds = 1.5;
 const toastFadeInSeconds = 0.2;
 const toastFadeOutSeconds = 0.3;
 const channelHandle = '@whoa-data';
+const introCopy = {
+  accentColor: '#F5E829',
+  channelHandle,
+  kicker: chartVideoConfig.kickerLabel,
+  meta: `${chartData.minYear}-${chartData.maxYear}`,
+  secondaryColor: '#31D07D',
+  subtitle: chartVideoConfig.subtitle,
+  title: chartVideoConfig.title,
+};
+const outroCopy = {
+  accentColor: '#F5E829',
+  channelHandle,
+  kicker: 'NEXT DATA RACE',
+  secondaryColor: '#31D07D',
+  subtitle: 'Follow for the next chart story',
+  title: 'More ranking races',
+};
 
 export const ShortsVideo = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const introHoldFrames = Math.round(introHoldSeconds * fps);
-  const raceDurationInFrames = Math.max(1, durationInFrames - introHoldFrames);
+  const outroHoldFrames = Math.round(outroHoldSeconds * fps);
+  const raceDurationInFrames = Math.max(1, durationInFrames - introHoldFrames - outroHoldFrames);
   const raceFrame = clamp(frame - introHoldFrames, 0, raceDurationInFrames - 1);
   const intro = spring({
     frame,
@@ -150,6 +175,8 @@ export const ShortsVideo = () => {
       <WorldCupToast activeEvent={activeEvent} />
       <RankTimeline currentReleasePosition={releasePosition} intro={intro} />
       <Footer />
+      <ShortsIntro copy={introCopy} fps={fps} frame={frame} />
+      <ShortsOutro copy={outroCopy} durationInFrames={durationInFrames} fps={fps} frame={frame} />
     </AbsoluteFill>
   );
 };

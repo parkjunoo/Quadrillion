@@ -62,11 +62,21 @@ Current topic folders:
 
 When adding a new video, create a topic folder and keep its config/data/UI local to that folder. Register the composition in `src/Root.tsx`, import shared frame constants from `src/shared/video.ts`, and add render scripts that write to `out/<topic>/`.
 
+## Shared Video Templates
+
+Use the existing shared templates before creating new per-topic frame chrome, headers, footers, metric cards, or news feeds.
+
+- `src/shared/dataVideoFrame.tsx`: shared vertical data-video frame layout for dark data/race videos. It provides stage/background, header, timeline rail, chart frame, chart-top bar, channel tag, footer, and `createDataVideoFrameGeometry`. The `GlobalMarketCap` composition uses this template. Prefer the centered `76px / 76px` side inset when a new full-width frame should align with the current market-cap template.
+- `src/shared/priceNewsVideoFrame.tsx`: shared price/news layout for candlestick and market-history videos. It provides the stage, header, date readout, chart shell, metric card, event news card, and bottom news feed. The `NasdaqHistory` composition uses this template. Reuse `priceNewsTemplate` for shared row height, card size, chart scale width, and feed gaps instead of hard-coding new padding values in topic files.
+- Keep topic-specific chart engines, data transforms, event scheduling, and custom overlays inside `src/projects/<topic>/`. If a visual shell pattern is reusable across videos, extend the shared template rather than copying the layout into a topic component.
+
 ## Important Files
 
 - `src/index.ts`: Remotion entrypoint.
 - `src/Root.tsx`: registers Remotion compositions.
 - `src/shared/video.ts`: shared 1080x1920, FPS, aspect ratio, and Shorts safe-area constants.
+- `src/shared/dataVideoFrame.tsx`: shared data-video frame layout used by market/race-style videos.
+- `src/shared/priceNewsVideoFrame.tsx`: shared price/news frame, metric card, event card, and news feed layout for candlestick history videos.
 - `src/projects/fifa-ranking-race/config.ts`: ranking race title, units, duration, source, events, and CSV binding.
 - `src/projects/fifa-ranking-race/chartRace.ts`: CSV parsing, snapshot building, frame-by-frame ranking interpolation.
 - `src/projects/fifa-ranking-race/ShortsVideo.tsx`: ranking race video UI.

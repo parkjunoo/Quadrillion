@@ -1,0 +1,20 @@
+{
+  "ticker": "QQQ",
+  "name": "Invesco QQQ Trust, Series 1",
+  "instrumentType": "ETF",
+  "exchangeName": "NGM",
+  "currency": "USD",
+  "interval": "1d",
+  "requestedStartDate": "2005-06-18",
+  "requestedEndDate": "2026-06-18",
+  "firstTradingDateInFile": "2005-06-20",
+  "lastTradingDateInFile": "2026-06-17",
+  "rowCount": 5282,
+  "source": "Yahoo Finance chart API",
+  "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1119052800&period2=1781827200&interval=1d&events=history&includeAdjustedClose=true",
+  "notes": [
+    "The requested start date was a Saturday; the first available trading day is 2005-06-20.",
+    "As of 2026-06-18, the latest returned complete trading day is 2026-06-17.",
+    "OHLC columns are Yahoo Finance daily prices; adjClose is retained for adjusted-close analysis."
+  ]
+}
