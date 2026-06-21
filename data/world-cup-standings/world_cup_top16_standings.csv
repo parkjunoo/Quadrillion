@@ -1,0 +1,347 @@
+year,host,final_rank,team,team_code,stage,group,played,won,drawn,lost,goals_for,goals_against,goal_difference,points,source_type,source_url,source_section
+1930,Uruguay,1,Uruguay,URU,champion,3,4,4,0,0,15,3,12,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,2,Argentina,ARG,runner_up,1,5,4,0,1,18,9,9,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,3,United States,USA,third_place,4,3,2,0,1,7,6,1,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,4,Yugoslavia,YUG,fourth_place,2,3,2,0,1,7,7,0,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,5,Chile,CHI,group_stage,1,3,2,0,1,5,3,2,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,6,Brazil,BRA,group_stage,2,2,1,0,1,5,2,3,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,7,France,FRA,group_stage,1,3,1,0,2,4,3,1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,8,Romania,ROU,group_stage,3,2,1,0,1,3,5,-2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,9,Paraguay,PAR,group_stage,4,2,1,0,1,1,3,-2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,10,Peru,PER,group_stage,3,2,0,0,2,1,4,-3,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,11,Belgium,BEL,group_stage,4,2,0,0,2,0,4,-4,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,12,Bolivia,BOL,group_stage,2,2,0,0,2,0,8,-8,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1930,Uruguay,13,Mexico,MEX,group_stage,1,3,0,0,3,4,13,-9,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1930_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,1,Italy,ITA,champion,,5,4,1,0,12,3,9,9,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,2,Czechoslovakia,TCH,runner_up,,4,3,0,1,9,6,3,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,3,Germany,GER,third_place,,4,3,0,1,11,8,3,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,4,Austria,AUT,fourth_place,,4,2,0,2,7,7,0,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,5,Spain,ESP,quarter_finals,,3,1,1,1,4,3,1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,6,Hungary,HUN,quarter_finals,,2,1,0,1,5,4,1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,7,Switzerland,SUI,quarter_finals,,2,1,0,1,5,5,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,8,Sweden,SWE,quarter_finals,,2,1,0,1,4,4,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,9,Argentina,ARG,round_of_16,,1,0,0,1,2,3,-1,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,10,France,FRA,round_of_16,,1,0,0,1,2,3,-1,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,11,Netherlands,NED,round_of_16,,1,0,0,1,2,3,-1,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,12,Romania,ROU,round_of_16,,1,0,0,1,1,2,-1,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,13,Egypt,EGY,round_of_16,,1,0,0,1,2,4,-2,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,14,Brazil,BRA,round_of_16,,1,0,0,1,1,3,-2,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,15,Belgium,BEL,round_of_16,,1,0,0,1,2,5,-3,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1934,Italy,16,United States,USA,round_of_16,,1,0,0,1,1,7,-6,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1934_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,1,Italy,ITA,champion,,4,4,0,0,11,5,6,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,2,Hungary,HUN,runner_up,,4,3,0,1,15,5,10,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,3,Brazil,BRA,third_place,,5,3,1,1,14,11,3,7,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,4,Sweden,SWE,fourth_place,,3,1,0,2,11,9,2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,5,Czechoslovakia,TCH,quarter_finals,,3,1,1,1,5,3,2,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,6,Switzerland,SUI,quarter_finals,,3,1,1,1,5,5,0,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,7,Cuba,CUB,quarter_finals,,3,1,1,1,5,12,-7,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,8,France,FRA,quarter_finals,,2,1,0,1,4,4,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,9,Romania,ROU,round_of_16,,2,0,1,1,4,5,-1,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,10,Germany,GER,round_of_16,,2,0,1,1,3,5,-2,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,11,Poland,POL,round_of_16,,1,0,0,1,5,6,-1,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,12,Norway,NOR,round_of_16,,1,0,0,1,1,2,-1,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,13,Belgium,BEL,round_of_16,,1,0,0,1,1,3,-2,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,14,Netherlands,NED,round_of_16,,1,0,0,1,0,3,-3,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,15,Dutch East Indies,INH,round_of_16,,1,0,0,1,0,6,-6,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1938,France,16,Austria,AUT,round_of_16,,0,0,0,0,0,0,0,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1938_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,1,Uruguay,URU,champion,4,4,3,1,0,15,5,10,7,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,2,Brazil,BRA,runner_up,1,6,4,1,1,22,6,16,9,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,3,Sweden,SWE,third_place,3,5,2,1,2,11,15,-4,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,4,Spain,ESP,fourth_place,2,6,3,1,2,10,12,-2,7,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,5,Yugoslavia,YUG,first_round,1,3,2,0,1,7,3,4,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,6,Switzerland,SUI,first_round,1,3,1,1,1,4,6,-2,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,7,Italy,ITA,first_round,3,2,1,0,1,4,3,1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,8,England,ENG,first_round,2,3,1,0,2,2,2,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,9,Chile,CHI,first_round,2,3,1,0,2,5,6,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,10,United States,USA,first_round,2,3,1,0,2,4,8,-4,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,11,Paraguay,PAR,first_round,3,2,0,1,1,2,4,-2,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,12,Mexico,MEX,first_round,1,3,0,0,3,2,10,-8,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1950,Brazil,13,Bolivia,BOL,first_round,4,1,0,0,1,0,8,-8,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1950_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,1,West Germany,FRG,champion,2,6,5,0,1,25,14,11,10,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,2,Hungary,HUN,runner_up,2,5,4,0,1,27,10,17,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,3,Austria,AUT,third_place,3,5,4,0,1,17,12,5,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,4,Uruguay,URU,fourth_place,3,5,3,0,2,16,9,7,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,5,Brazil,BRA,quarter_finals,1,3,1,1,1,8,5,3,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,6,England,ENG,quarter_finals,4,3,1,1,1,8,8,0,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,7,Yugoslavia,YUG,quarter_finals,1,3,1,1,1,2,3,-1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,8,Switzerland,SUI,quarter_finals,4,4,2,0,2,11,11,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,9,Turkey,TUR,group_stage,2,3,1,0,2,10,11,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,10,Italy,ITA,group_stage,4,3,1,0,2,6,7,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,11,France,FRA,group_stage,1,2,1,0,1,3,3,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,12,Belgium,BEL,group_stage,4,2,0,1,1,5,8,-3,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,13,Mexico,MEX,group_stage,1,2,0,0,2,2,8,-6,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,14,Czechoslovakia,TCH,group_stage,3,2,0,0,2,0,7,-7,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,15,Scotland,SCO,group_stage,3,2,0,0,2,0,8,-8,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1954,Switzerland,16,South Korea,KOR,group_stage,2,2,0,0,2,0,16,-16,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1954_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,1,Brazil,BRA,champion,4,6,5,1,0,16,4,12,11,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,2,Sweden,SWE,runner_up,3,6,4,1,1,12,7,5,9,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,3,France,FRA,third_place,2,6,4,0,2,23,15,8,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,4,West Germany,FRG,fourth_place,1,6,2,2,2,12,14,-2,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,5,Yugoslavia,YUG,quarter_finals,2,4,1,2,1,7,7,0,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,6,Wales,WAL,quarter_finals,3,5,1,3,1,4,4,0,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,7,Soviet Union,URS,quarter_finals,4,5,2,1,2,5,6,-1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,8,Northern Ireland,NIR,quarter_finals,1,5,2,1,2,6,10,-4,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,9,Czechoslovakia,TCH,group_stage,1,4,1,1,2,9,6,3,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,10,Hungary,HUN,group_stage,3,4,1,1,2,7,5,2,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,11,England,ENG,group_stage,4,4,0,3,1,4,5,-1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,12,Paraguay,PAR,group_stage,2,3,1,1,1,9,12,-3,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,13,Argentina,ARG,group_stage,1,3,1,0,2,5,10,-5,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,14,Scotland,SCO,group_stage,2,3,0,1,2,4,6,-2,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,15,Austria,AUT,group_stage,4,3,0,1,2,2,7,-5,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1958,Sweden,16,Mexico,MEX,group_stage,3,3,0,1,2,1,8,-7,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1958_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,1,Brazil,BRA,champion,3,6,5,1,0,14,5,9,11,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,2,Czechoslovakia,TCH,runner_up,3,6,3,1,2,7,7,0,7,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,3,Chile,CHI,third_place,2,6,4,0,2,10,8,2,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,4,Yugoslavia,YUG,fourth_place,1,6,3,0,3,10,7,3,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,5,Hungary,HUN,quarter_finals,4,4,2,1,1,8,3,5,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,6,Soviet Union,URS,quarter_finals,1,4,2,1,1,9,7,2,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,7,West Germany,FRG,quarter_finals,2,4,2,1,1,4,2,2,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,8,England,ENG,quarter_finals,4,4,1,1,2,5,6,-1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,9,Italy,ITA,group_stage,2,3,1,1,1,3,2,1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,10,Argentina,ARG,group_stage,4,3,1,1,1,2,3,-1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,11,Mexico,MEX,group_stage,3,3,1,0,2,3,4,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,12,Spain,ESP,group_stage,3,3,1,0,2,2,3,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,13,Uruguay,URU,group_stage,1,3,1,0,2,4,6,-2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,14,Colombia,COL,group_stage,1,3,0,1,2,5,11,-6,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,15,Bulgaria,BUL,group_stage,4,3,0,1,2,1,7,-6,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1962,Chile,16,Switzerland,SUI,group_stage,2,3,0,0,3,2,8,-6,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1962_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,1,England,ENG,champion,1,6,5,1,0,11,3,8,11,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,2,West Germany,FRG,runner_up,2,6,4,1,1,15,6,9,9,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,3,Portugal,POR,third_place,3,6,5,0,1,17,8,9,10,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,4,Soviet Union,URS,fourth_place,4,6,4,0,2,10,6,4,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,5,Argentina,ARG,quarter_finals,2,4,2,1,1,4,2,2,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,6,Hungary,HUN,quarter_finals,3,4,2,0,2,8,7,1,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,7,Uruguay,URU,quarter_finals,1,4,1,2,1,2,5,-3,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,8,North Korea,PRK,quarter_finals,4,4,1,1,2,5,9,-4,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,9,Italy,ITA,group_stage,4,3,1,0,2,2,2,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,10,Spain,ESP,group_stage,2,3,1,0,2,4,5,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,11,Brazil,BRA,group_stage,3,3,1,0,2,4,6,-2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,12,Mexico,MEX,group_stage,1,3,0,2,1,1,3,-2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,13,Chile,CHI,group_stage,4,3,0,1,2,2,5,-3,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,14,France,FRA,group_stage,1,3,0,1,2,2,5,-3,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,15,Bulgaria,BUL,group_stage,3,3,0,0,3,1,8,-7,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1966,England,16,Switzerland,SUI,group_stage,2,3,0,0,3,1,9,-8,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1966_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,1,Brazil,BRA,champion,3,6,6,0,0,19,7,12,12,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,2,Italy,ITA,runner_up,2,6,3,2,1,10,8,2,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,3,West Germany,FRG,third_place,4,6,5,0,1,17,10,7,10,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,4,Uruguay,URU,fourth_place,2,6,2,1,3,4,5,-1,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,5,Soviet Union,URS,quarter_finals,1,4,2,1,1,6,2,4,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,6,Mexico,MEX,quarter_finals,1,4,2,1,1,6,4,2,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,7,Peru,PER,quarter_finals,4,4,2,0,2,9,9,0,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,8,England,ENG,quarter_finals,3,4,2,0,2,4,4,0,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,9,Sweden,SWE,group_stage,2,3,1,1,1,2,2,0,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,10,Belgium,BEL,group_stage,1,3,1,0,2,4,5,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,11,Romania,ROU,group_stage,3,3,1,0,2,4,5,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,12,Israel,ISR,group_stage,2,3,0,2,1,1,3,-2,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,13,Bulgaria,BUL,group_stage,4,3,0,1,2,5,9,-4,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,14,Morocco,MAR,group_stage,4,3,0,1,2,2,6,-4,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,15,Czechoslovakia,TCH,group_stage,3,3,0,0,3,2,7,-5,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1970,Mexico,16,El Salvador,SLV,group_stage,1,3,0,0,3,0,9,-9,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1970_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,1,West Germany,FRG,champion,1 / B,7,6,0,1,13,4,9,12,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,2,Netherlands,NED,runner_up,3 / A,7,5,1,1,15,3,12,11,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,3,Poland,POL,third_place,4 / B,7,6,0,1,16,5,11,12,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,4,Brazil,BRA,fourth_place,2 / A,7,3,2,2,6,4,2,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,5,Sweden,SWE,second_group_stage,3 / B,6,2,2,2,7,6,1,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,6,East Germany,GDR,second_group_stage,1 / A,6,2,2,2,5,5,0,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,7,Yugoslavia,YUG,second_group_stage,2 / B,6,1,2,3,12,7,5,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,8,Argentina,ARG,second_group_stage,4 / A,6,1,2,3,9,12,-3,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,9,Scotland,SCO,first_group_stage,2,3,1,2,0,3,1,2,4,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,10,Italy,ITA,first_group_stage,4,3,1,1,1,5,4,1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,11,Chile,CHI,first_group_stage,1,3,0,2,1,1,2,-1,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,12,Bulgaria,BUL,first_group_stage,3,3,0,2,1,2,5,-3,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,13,Uruguay,URU,first_group_stage,3,3,0,1,2,1,6,-5,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,14,Australia,AUS,first_group_stage,1,3,0,1,2,0,5,-5,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,15,Haiti,HAI,first_group_stage,4,3,0,0,3,2,14,-12,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1974,West Germany,16,Zaire,ZAI,first_group_stage,2,3,0,0,3,0,14,-14,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1974_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,1,Argentina,ARG,champion,1 / B,7,5,1,1,15,4,11,11,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,2,Netherlands,NED,runner_up,4 / A,7,3,2,2,15,10,5,8,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,3,Brazil,BRA,third_place,3 / B,7,4,3,0,10,3,7,11,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,4,Italy,ITA,fourth_place,1 / A,7,4,1,2,9,6,3,9,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,5,Poland,POL,second_group_stage,2 / B,6,3,1,2,6,6,0,7,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,6,West Germany,FRG,second_group_stage,2 / A,6,1,4,1,10,5,5,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,7,Austria,AUT,second_group_stage,3 / A,6,3,0,3,7,10,-3,6,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,8,Peru,PER,second_group_stage,4 / B,6,2,1,3,7,12,-5,5,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,9,Tunisia,TUN,first_group_stage,2,3,1,1,1,3,2,1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,10,Spain,ESP,first_group_stage,3,3,1,1,1,2,2,0,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,11,Scotland,SCO,first_group_stage,4,3,1,1,1,5,6,-1,3,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,12,France,FRA,first_group_stage,1,3,1,0,2,5,5,0,2,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,13,Sweden,SWE,first_group_stage,3,3,0,1,2,1,3,-2,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,14,Iran,IRN,first_group_stage,4,3,0,1,2,2,8,-6,1,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,15,Hungary,HUN,first_group_stage,1,3,0,0,3,3,8,-5,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1978,Argentina,16,Mexico,MEX,first_group_stage,2,3,0,0,3,2,12,-10,0,wikipedia_fifa_retrospective_ranking,https://en.wikipedia.org/wiki/1978_FIFA_World_Cup,FIFA_retrospective_ranking
+1982,Spain,1,Italy,ITA,champion,1 / C,7,4,3,0,12,6,6,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,2,West Germany,FRG,runner_up,2 / B,7,3,2,2,12,10,2,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,3,Poland,POL,third_place,1 / A,7,3,3,1,11,5,6,9,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,4,France,FRA,fourth_place,4 / D,7,3,2,2,16,12,4,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,5,Brazil,BRA,second_group_stage,6 / C,5,4,0,1,15,6,9,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,6,England,ENG,second_group_stage,4 / B,5,3,2,0,6,1,5,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,7,Soviet Union,URS,second_group_stage,6 / A,5,2,2,1,7,4,3,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,8,Austria,AUT,second_group_stage,2 / D,5,2,1,2,5,4,1,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,9,Northern Ireland,NIR,second_group_stage,5 / D,5,1,3,1,5,7,-2,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,10,Belgium,BEL,second_group_stage,3 / A,5,2,1,2,3,5,-2,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,11,Argentina,ARG,second_group_stage,3 / C,5,2,0,3,8,7,1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,12,Spain,ESP,second_group_stage,5 / B,5,1,2,2,4,5,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,13,Algeria,ALG,first_group_stage,2,3,2,0,1,5,5,0,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,14,Hungary,HUN,first_group_stage,3,3,1,1,1,12,6,6,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,15,Scotland,SCO,first_group_stage,6,3,1,1,1,8,8,0,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1982,Spain,16,Yugoslavia,YUG,first_group_stage,5,3,1,1,1,2,2,0,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1982_FIFA_World_Cup,Final_standings
+1986,Mexico,1,Argentina,ARG,champion,A,7,6,1,0,14,5,9,13,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,2,West Germany,FRG,runner_up,E,7,3,2,2,8,7,1,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,3,France,FRA,third_place,C,7,4,2,1,12,6,6,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,4,Belgium,BEL,fourth_place,B,7,2,2,3,12,15,-3,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,5,Brazil,BRA,quarter_finals,D,5,4,1,0,10,1,9,9,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,6,Mexico,MEX,quarter_finals,B,5,3,2,0,6,2,4,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,7,Spain,ESP,quarter_finals,D,5,3,1,1,11,4,7,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,8,England,ENG,quarter_finals,F,5,2,1,2,7,3,4,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,9,Denmark,DEN,round_of_16,E,4,3,0,1,10,6,4,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,10,Soviet Union,URS,round_of_16,C,4,2,1,1,12,5,7,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,11,Morocco,MAR,round_of_16,F,4,1,2,1,3,2,1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,12,Italy,ITA,round_of_16,A,4,1,2,1,5,6,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,13,Paraguay,PAR,round_of_16,B,4,1,2,1,4,6,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,14,Poland,POL,round_of_16,F,4,1,1,2,1,7,-6,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,15,Bulgaria,BUL,round_of_16,A,4,0,2,2,2,6,-4,2,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1986,Mexico,16,Uruguay,URU,round_of_16,E,4,0,2,2,2,8,-6,2,wikipedia_final_standings,https://en.wikipedia.org/wiki/1986_FIFA_World_Cup,Final_standings
+1990,Italy,1,West Germany,FRG,champion,D,7,5,2,0,15,5,10,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,2,Argentina,ARG,runner_up,B,7,2,3,2,5,4,1,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,3,Italy,ITA,third_place,A,7,6,1,0,10,2,8,13,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,4,England,ENG,fourth_place,F,7,3,3,1,8,6,2,9,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,5,Yugoslavia,YUG,quarter_finals,D,5,3,1,1,8,6,2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,6,Czechoslovakia,TCH,quarter_finals,A,5,3,0,2,10,5,5,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,7,Cameroon,CMR,quarter_finals,B,5,3,0,2,7,9,-2,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,8,Republic of Ireland,IRL,quarter_finals,F,5,0,4,1,2,3,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,9,Brazil,BRA,round_of_16,C,4,3,0,1,4,2,2,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,10,Spain,ESP,round_of_16,E,4,2,1,1,6,4,2,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,11,Belgium,BEL,round_of_16,E,4,2,0,2,6,4,2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,12,Romania,ROU,round_of_16,B,4,1,2,1,4,3,1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,13,Costa Rica,CRC,round_of_16,C,4,2,0,2,4,6,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,14,Colombia,COL,round_of_16,D,4,1,1,2,4,4,0,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,15,Netherlands,NED,round_of_16,F,4,0,3,1,3,4,-1,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1990,Italy,16,Uruguay,URU,round_of_16,E,4,1,1,2,2,5,-3,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1990_FIFA_World_Cup,Final_standings
+1994,United States,1,Brazil,BRA,champion,B,7,5,2,0,11,3,8,17,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,2,Italy,ITA,runner_up,E,7,4,2,1,8,5,3,14,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,3,Sweden,SWE,third_place,B,7,3,3,1,15,8,7,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,4,Bulgaria,BUL,fourth_place,D,7,3,1,3,10,11,-1,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,5,Germany,GER,quarterfinals,C,5,3,1,1,9,7,2,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,6,Romania,ROU,quarterfinals,A,5,3,1,1,10,9,1,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,7,Netherlands,NED,quarterfinals,F,5,3,0,2,8,6,2,9,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,8,Spain,ESP,quarterfinals,C,5,2,2,1,10,6,4,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,9,Nigeria,NGA,round_of_16,D,4,2,0,2,7,4,3,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,10,Argentina,ARG,round_of_16,D,4,2,0,2,8,6,2,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,11,Belgium,BEL,round_of_16,F,4,2,0,2,4,4,0,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,12,Saudi Arabia,KSA,round_of_16,F,4,2,0,2,5,6,-1,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,13,Mexico,MEX,round_of_16,E,4,1,2,1,4,4,0,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,14,United States,USA,round_of_16,A,4,1,1,2,3,4,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,15,Switzerland,SUI,round_of_16,A,4,1,1,2,5,7,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1994,United States,16,Republic of Ireland,IRL,round_of_16,E,4,1,1,2,2,4,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/1994_FIFA_World_Cup,Final_standings
+1998,France,1,France,FRA,champion,C,7,6,1,0,15,2,13,19,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,2,Brazil,BRA,runner_up,A,7,4,1,2,14,10,4,13,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,3,Croatia,CRO,third_place,H,7,5,0,2,11,5,6,15,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,4,Netherlands,NED,fourth_place,E,7,3,3,1,13,7,6,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,5,Italy,ITA,quarter_finals,B,5,3,2,0,8,3,5,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,6,Argentina,ARG,quarter_finals,H,5,3,1,1,10,4,6,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,7,Germany,GER,quarter_finals,F,5,3,1,1,8,6,2,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,8,Denmark,DEN,quarter_finals,C,5,2,1,2,9,7,2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,9,England,ENG,round_of_16,G,4,2,1,1,7,4,3,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,10,FR Yugoslavia,YUG,round_of_16,F,4,2,1,1,5,4,1,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,11,Romania,ROU,round_of_16,G,4,2,1,1,4,3,1,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,12,Nigeria,NGA,round_of_16,D,4,2,0,2,6,9,-3,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,13,Mexico,MEX,round_of_16,E,4,1,2,1,8,7,1,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,14,Paraguay,PAR,round_of_16,D,4,1,2,1,3,2,1,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,15,Norway,NOR,round_of_16,A,4,1,2,1,5,5,0,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+1998,France,16,Chile,CHI,round_of_16,B,4,0,3,1,5,8,-3,3,wikipedia_final_standings,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,1,Brazil,BRA,champion,C,7,7,0,0,18,4,14,21,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,2,Germany,GER,runner_up,E,7,5,1,1,14,3,11,16,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,3,Turkey,TUR,third_place,C,7,4,1,2,10,6,4,13,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,4,South Korea,KOR,fourth_place,D,7,3,2,2,8,6,2,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,5,Spain,ESP,quarter_finals,B,5,3,2,0,10,5,5,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,6,England,ENG,quarter_finals,F,5,2,2,1,6,3,3,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,7,Senegal,SEN,quarter_finals,A,5,2,2,1,7,6,1,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,8,United States,USA,quarter_finals,D,5,2,1,2,7,7,0,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,9,Japan,JPN,round_of_16,H,4,2,1,1,5,3,2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,10,Denmark,DEN,round_of_16,A,4,2,1,1,5,5,0,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,11,Mexico,MEX,round_of_16,G,4,2,1,1,4,4,0,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,12,Republic of Ireland,IRL,round_of_16,E,4,1,3,0,6,3,3,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,13,Sweden,SWE,round_of_16,F,4,1,2,1,5,5,0,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,14,Belgium,BEL,round_of_16,H,4,1,2,1,6,7,-1,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,15,Italy,ITA,round_of_16,G,4,1,1,2,5,5,0,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2002,South Korea / Japan,16,Paraguay,PAR,round_of_16,B,4,1,1,2,6,7,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup,Final_standings
+2006,Germany,1,Italy,ITA,champion,E,7,5,2,0,12,2,10,17,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,2,France,FRA,runner_up,G,7,4,3,0,9,3,6,15,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,3,Germany,GER,third_place,A,7,5,1,1,14,6,8,16,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,4,Portugal,POR,fourth_place,D,7,4,1,2,7,5,2,13,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,5,Brazil,BRA,quarter_finals,F,5,4,0,1,10,2,8,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,6,Argentina,ARG,quarter_finals,C,5,3,2,0,11,3,8,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,7,England,ENG,quarter_finals,B,5,3,2,0,6,2,4,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,8,Ukraine,UKR,quarter_finals,H,5,2,1,2,5,7,-2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,9,Spain,ESP,round_of_16,H,4,3,0,1,9,4,5,9,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,10,Switzerland,SUI,round_of_16,G,4,2,2,0,4,0,4,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,11,Netherlands,NED,round_of_16,C,4,2,1,1,3,2,1,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,12,Ecuador,ECU,round_of_16,A,4,2,0,2,5,4,1,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,13,Ghana,GHA,round_of_16,E,4,2,0,2,4,6,-2,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,14,Sweden,SWE,round_of_16,B,4,1,2,1,3,4,-1,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,15,Mexico,MEX,round_of_16,D,4,1,1,2,5,5,0,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2006,Germany,16,Australia,AUS,round_of_16,F,4,1,1,2,5,6,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup,Final_standings
+2010,South Africa,1,Spain,ESP,champion,H,7,6,0,1,8,2,6,18,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,2,Netherlands,NED,runner_up,E,7,6,0,1,12,6,6,18,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,3,Germany,GER,third_place,D,7,5,0,2,16,5,11,15,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,4,Uruguay,URU,fourth_place,A,7,3,2,2,11,8,3,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,5,Argentina,ARG,quarter_finals,B,5,4,0,1,10,6,4,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,6,Brazil,BRA,quarter_finals,G,5,3,1,1,9,4,5,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,7,Ghana,GHA,quarter_finals,D,5,2,2,1,5,4,1,8,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,8,Paraguay,PAR,quarter_finals,F,5,1,3,1,3,2,1,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,9,Japan,JPN,round_of_16,E,4,2,1,1,4,2,2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,10,Chile,CHI,round_of_16,H,4,2,0,2,3,5,-2,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,11,Portugal,POR,round_of_16,G,4,1,2,1,7,1,6,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,12,United States,USA,round_of_16,C,4,1,2,1,5,5,0,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,13,England,ENG,round_of_16,C,4,1,2,1,3,5,-2,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,14,Mexico,MEX,round_of_16,A,4,1,1,2,4,5,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,15,South Korea,KOR,round_of_16,B,4,1,1,2,6,8,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2010,South Africa,16,Slovakia,SVK,round_of_16,F,4,1,1,2,5,7,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup,Final_standings
+2014,Brazil,1,Germany,GER,champion,G,7,6,1,0,18,4,14,19,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,2,Argentina,ARG,runner_up,F,7,5,1,1,8,4,4,16,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,3,Netherlands,NED,third_place,B,7,5,2,0,15,4,11,17,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,4,Brazil,BRA,fourth_place,A,7,3,2,2,11,14,-3,11,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,5,Colombia,COL,quarter_finals,C,5,4,0,1,12,4,8,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,6,Belgium,BEL,quarter_finals,H,5,4,0,1,6,3,3,12,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,7,France,FRA,quarter_finals,E,5,3,1,1,10,3,7,10,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,8,Costa Rica,CRC,quarter_finals,D,5,2,3,0,5,2,3,9,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,9,Chile,CHI,round_of_16,B,4,2,1,1,6,4,2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,10,Mexico,MEX,round_of_16,A,4,2,1,1,5,3,2,7,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,11,Switzerland,SUI,round_of_16,E,4,2,0,2,7,7,0,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,12,Uruguay,URU,round_of_16,D,4,2,0,2,4,6,-2,6,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,13,Greece,GRE,round_of_16,C,4,1,2,1,3,5,-2,5,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,14,Algeria,ALG,round_of_16,H,4,1,1,2,7,7,0,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,15,United States,USA,round_of_16,G,4,1,1,2,5,6,-1,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2014,Brazil,16,Nigeria,NGA,round_of_16,F,4,1,1,2,3,5,-2,4,wikipedia_final_standings,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup,Final_standings
+2018,Russia,1,France,FRA,champion,C,7,6,1,0,14,6,8,19,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,2,Croatia,CRO,runner_up,D,7,4,2,1,14,9,5,14,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,3,Belgium,BEL,third_place,G,7,6,0,1,16,6,10,18,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,4,England,ENG,fourth_place,G,7,3,1,3,12,8,4,10,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,5,Uruguay,URU,quarter_finals,A,5,4,0,1,7,3,4,12,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,6,Brazil,BRA,quarter_finals,E,5,3,1,1,8,3,5,10,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,7,Sweden,SWE,quarter_finals,F,5,3,0,2,6,4,2,9,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,8,Russia,RUS,quarter_finals,A,5,2,2,1,11,7,4,8,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,9,Colombia,COL,round_of_16,H,4,2,1,1,6,3,3,7,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,10,Spain,ESP,round_of_16,B,4,1,3,0,7,6,1,6,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,11,Denmark,DEN,round_of_16,C,4,1,3,0,3,2,1,6,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,12,Mexico,MEX,round_of_16,F,4,2,0,2,3,6,-3,6,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,13,Portugal,POR,round_of_16,B,4,1,2,1,6,6,0,5,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,14,Switzerland,SUI,round_of_16,E,4,1,2,1,5,5,0,5,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,15,Japan,JPN,round_of_16,H,4,1,1,2,6,7,-1,4,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2018,Russia,16,Argentina,ARG,round_of_16,D,4,1,1,2,6,9,-3,4,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,1,Argentina,ARG,champion,C,7,4,2,1,15,8,7,14,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,2,France,FRA,runner_up,D,7,5,1,1,16,8,8,16,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,3,Croatia,CRO,third_place,F,7,2,4,1,8,7,1,10,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,4,Morocco,MAR,fourth_place,F,7,3,2,2,6,5,1,11,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,5,Netherlands,NED,quarter_finals,A,5,3,2,0,10,4,6,11,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,6,England,ENG,quarter_finals,B,5,3,1,1,13,4,9,10,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,7,Brazil,BRA,quarter_finals,G,5,3,1,1,8,3,5,10,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,8,Portugal,POR,quarter_finals,H,5,3,0,2,12,6,6,9,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,9,Japan,JPN,round_of_16,E,4,2,1,1,5,4,1,7,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,10,Senegal,SEN,round_of_16,A,4,2,0,2,5,7,-2,6,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,11,Australia,AUS,round_of_16,D,4,2,0,2,4,6,-2,6,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,12,Switzerland,SUI,round_of_16,G,4,2,0,2,5,9,-4,6,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,13,Spain,ESP,round_of_16,E,4,1,2,1,9,3,6,5,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,14,United States,USA,round_of_16,B,4,1,2,1,3,4,-1,5,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,15,Poland,POL,round_of_16,C,4,1,1,2,3,5,-2,4,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage
+2022,Qatar,16,South Korea,KOR,round_of_16,H,4,1,1,2,5,8,-3,4,manual_from_match_results_fifa_penalty_draw_convention,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup,match_results_and_knockout_stage

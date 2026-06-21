@@ -8,6 +8,7 @@ Quadrillion creates 1080x1920 short-form chart videos for YouTube Shorts, Reels,
 
 The current Remotion compositions are:
 
+- `TitleIntro`: a standalone 2-second `Football Value Kings` intro.
 - `QuadrillionShort`: a CSV-driven FIFA men ranking race video.
 - `BitcoinHistory`: a Bitcoin 3-day candlestick history video with event callouts.
 - `NasdaqHistory`: a NASDAQ Composite monthly candlestick history video with event cards.
@@ -70,6 +71,16 @@ Use the existing shared templates before creating new per-topic frame chrome, he
 - `src/shared/priceNewsVideoFrame.tsx`: shared price/news layout for candlestick and market-history videos. It provides the stage, header, date readout, chart shell, metric card, event news card, and bottom news feed. The `NasdaqHistory` composition uses this template. Reuse `priceNewsTemplate` for shared row height, card size, chart scale width, and feed gaps instead of hard-coding new padding values in topic files.
 - Keep topic-specific chart engines, data transforms, event scheduling, and custom overlays inside `src/projects/<topic>/`. If a visual shell pattern is reusable across videos, extend the shared template rather than copying the layout into a topic component.
 
+## Standalone Intro
+
+`TitleIntro` is the canonical intro for the `Football Value Kings` / football market value race topic.
+
+- Source code lives in `src/projects/title-intro/`.
+- Static intro assets live in `public/projects/title-intro/`.
+- Render the standalone intro with `yarn render:intro`; output belongs in `out/title-intro/title-intro.mp4`.
+- Do not use the legacy shared `ShortsIntro` overlay for `FootballMarketValues`. The football market value body composition should start directly on the race; use the standalone `TitleIntro` composition/file when an intro is needed.
+- For a new topic-specific intro, copy the `title-intro` project pattern into a new topic folder instead of changing `src/shared/shortsAnimations.tsx` unless the user explicitly asks to update the shared legacy animation.
+
 ## Important Files
 
 - `src/index.ts`: Remotion entrypoint.
@@ -77,6 +88,8 @@ Use the existing shared templates before creating new per-topic frame chrome, he
 - `src/shared/video.ts`: shared 1080x1920, FPS, aspect ratio, and Shorts safe-area constants.
 - `src/shared/dataVideoFrame.tsx`: shared data-video frame layout used by market/race-style videos.
 - `src/shared/priceNewsVideoFrame.tsx`: shared price/news frame, metric card, event card, and news feed layout for candlestick history videos.
+- `src/projects/title-intro/config.ts`: standalone intro title, name tag, subtitle, background asset, duration, and FPS.
+- `src/projects/title-intro/TitleIntroVideo.tsx`: standalone intro composition used instead of the old embedded football-value intro.
 - `src/projects/fifa-ranking-race/config.ts`: ranking race title, units, duration, source, events, and CSV binding.
 - `src/projects/fifa-ranking-race/chartRace.ts`: CSV parsing, snapshot building, frame-by-frame ranking interpolation.
 - `src/projects/fifa-ranking-race/ShortsVideo.tsx`: ranking race video UI.

@@ -1,0 +1,273 @@
+year,tournament,opening_date,group,country,rank_by_total_value,coach,player_count,matched_player_count,valued_player_count,before_or_on_valuation_count,after_valuation_count,missing_value_count,value_coverage_percent,total_value_eur,total_value_million_eur,average_value_million_eur,median_value_million_eur,top_player_name,top_player_value_million_eur,source_url
+1998,1998 FIFA World Cup,1998-06-10,Group G,England,1,Glenn Hoddle,22,4,4,0,4,18,18.2,120000000,120,5.5,27.5,David Beckham,40,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group B,Cameroon,2,Claude Le Roy,22,1,1,0,1,21,4.5,24000000,24,1.1,24,Samuel Eto'o,24,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group F,FR Yugoslavia,3,Slobodan Santrač,22,1,1,0,1,21,4.5,22000000,22,1,22,Dejan Stanković,22,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group B,Italy,4,Cesare Maldini,22,1,1,0,1,21,4.5,20000000,20,0.9,20,Gianluigi Buffon,20,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group H,Argentina,5,Daniel Passarella,22,2,1,0,1,21,4.5,11000000,11,0.5,11,Javier Zanetti,11,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group C,Denmark,6,Bo Johansson,22,1,1,0,1,21,4.5,7000000,7,0.3,7,Martin Jørgensen,7,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group F,United States,7,Steve Sampson,22,1,1,0,1,21,4.5,2000000,2,0.1,2,Brad Friedel,2,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group A,Brazil,8,Mário Zagallo,22,6,5,0,5,17,22.7,1125000,1.1,0.1,0.3,Júnior Baiano,0.4,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group H,Croatia,9,Miroslav Blažević,22,1,1,0,1,21,4.5,850000,0.9,0,0.9,Anthony Šerić,0.9,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group E,Mexico,10,Manuel Lapuente,22,2,1,0,1,21,4.5,300000,0.3,0,0.3,Luis Hernández,0.3,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group C,France,11,Aimé Jacquet,22,1,1,0,1,21,4.5,150000,0.2,0,0.2,Patrick Vieira,0.2,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group D,Bulgaria,12,Hristo Bonev,22,1,1,0,1,21,4.5,50000,0.1,0,0.1,Ilian Iliev,0.1,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group B,Austria,13,Herbert Prohaska,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group E,Belgium,14,Georges Leekens,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group B,Chile,15,Nelson Acosta,22,2,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group G,Colombia,16,Hernán Darío Gómez,22,1,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group F,Germany,17,Berti Vogts,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group F,Iran,18,Jalal Talebi,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group H,Jamaica,19,Renê Simões,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group H,Japan,20,Takeshi Okada,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group A,Morocco,21,Henri Michel,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group E,Netherlands,22,Guus Hiddink,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group D,Nigeria,23,Bora Milutinović,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group A,Norway,24,Egil Olsen,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group D,Paraguay,25,Paulo César Carpegiani,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group G,Romania,26,Anghel Iordănescu,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group C,Saudi Arabia,27,"Carlos Alberto Parreira (fired after two matches, replaced by Mohammed Al-Kharashy for the final match)",22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group A,Scotland,28,Craig Brown,22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group C,South Africa,29,Philippe Troussier,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group E,South Korea,30,"Cha Bum-kun (fired after two matches, replaced by Kim Pyung-seok for the final match)",22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group D,Spain,31,Javier Clemente,22,1,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+1998,1998 FIFA World Cup,1998-06-10,Group G,Tunisia,32,"Henryk Kasperczak (fired after two matches, replaced by Ali Selmi for the final match)",22,0,0,0,0,22,0,0,0,0,,,,https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group F,England,1,Sven-Göran Eriksson,23,9,9,0,9,14,39.1,165000000,165,7.2,16,David Beckham,40,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group B,Spain,2,José Antonio Camacho,23,9,8,0,8,15,34.8,93500000,93.5,4.1,11,Carles Puyol,22.5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group F,Argentina,3,Marcelo Bielsa,23,3,3,0,3,20,13,61000000,61,2.7,25,Walter Samuel,25,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group G,Italy,4,Giovanni Trapattoni,23,3,3,0,3,20,13,58000000,58,2.5,20,Francesco Totti,35,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group C,Brazil,5,Luiz Felipe Scolari,23,7,7,0,7,16,30.4,40075000,40.1,1.7,0.3,Kaká,26,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group F,Sweden,6,Lars Lagerbäck and Tommy Söderberg,23,3,3,0,3,20,13,32750000,32.8,1.4,7.3,Zlatan Ibrahimović,22,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group E,Cameroon,7,Winfried Schäfer,23,3,3,0,3,20,13,32250000,32.3,1.4,7,Samuel Eto'o,24,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group E,Republic of Ireland,8,Mick McCarthy,23,5,5,0,5,18,21.7,31750000,31.8,1.4,3.8,Damien Duff,15,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group H,Belgium,9,Robert Waseige,23,4,4,0,4,19,17.4,25000000,25,1.1,6.5,Daniel Van Buyten,8.5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group E,Germany,10,Rudi Völler,23,4,4,0,4,19,17.4,25000000,25,1.1,6,Christoph Metzelder,9.5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group A,Denmark,11,Morten Olsen,23,6,6,0,6,17,26.1,23750000,23.8,1,4.3,Martin Jørgensen,7,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group A,France,12,Roger Lemerre,23,2,2,0,2,21,8.7,20150000,20.2,0.9,10.1,Djibril Cissé,20,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group F,Nigeria,13,Festus Onigbinde,23,6,6,0,6,17,26.1,19650000,19.7,0.9,2.5,Joseph Yobo,9,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group C,Turkey,14,Şenol Güneş,23,1,1,0,1,22,4.3,12000000,12,0.5,12,Emre Belözoğlu,12,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group D,Portugal,15,António Oliveira,23,5,5,0,5,18,21.7,11825000,11.8,0.5,0.2,Hugo Viana,7,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group H,Russia,16,Oleg Romantsev,23,5,5,0,5,18,21.7,11150000,11.2,0.5,0.5,Marat Izmailov,6,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group A,Uruguay,17,Víctor Púa,23,3,3,0,3,20,13,9750000,9.8,0.4,4.3,Gustavo Munúa,5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group A,Senegal,18,Bruno Metsu,23,3,3,0,3,20,13,8250000,8.3,0.4,3,Henri Camara,3.3,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group G,Croatia,19,Mirko Jozić,23,3,3,0,3,20,13,7600000,7.6,0.3,1.5,Ivica Olić,5.3,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group B,Paraguay,20,Cesare Maldini,23,1,1,0,1,22,4.3,7500000,7.5,0.3,7.5,Roque Santa Cruz,7.5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group B,South Africa,21,Jomo Sono,23,2,1,0,1,22,4.3,5000000,5,0.2,5,Steven Pienaar,5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group D,United States,22,Bruce Arena,23,1,1,0,1,22,4.3,2000000,2,0.1,2,Brad Friedel,2,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group G,Mexico,23,Javier Aguirre,23,3,2,0,2,21,8.7,700000,0.7,0,0.4,Alberto Rodríguez,0.4,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group D,South Korea,24,Guus Hiddink,23,1,1,0,1,22,4.3,500000,0.5,0,0.5,Cha Du-ri,0.5,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group C,Costa Rica,25,Alexandre Guimarães,23,1,1,0,1,22,4.3,400000,0.4,0,0.4,Carlos Castro,0.4,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group G,Ecuador,26,Hernán Darío Gómez,23,1,1,0,1,22,4.3,400000,0.4,0,0.4,José Francisco Cevallos,0.4,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group C,China PR,27,Bora Milutinović,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group H,Japan,28,Philippe Troussier,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group D,Poland,29,Jerzy Engel,23,1,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group E,Saudi Arabia,30,Nasser Al-Johar,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group B,Slovenia,31,Srečko Katanec,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2002,2002 FIFA World Cup,2002-05-31,Group H,Tunisia,32,Ammar Souayah,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group B,England,1,Sven-Göran Eriksson,23,19,19,19,0,4,82.6,307350000,307.4,13.4,13,Wayne Rooney,36,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group H,Spain,2,Luis Aragonés,23,18,17,16,1,6,73.9,273050000,273.1,11.9,17.5,Xavi,28,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group E,Italy,3,Marcello Lippi,23,11,11,11,0,12,47.8,217500000,217.5,9.5,18,Francesco Totti,37,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group C,Argentina,4,José Pekerman,23,13,13,13,0,10,56.5,133300000,133.3,5.8,11.5,Esteban Cambiasso,19,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group C,Netherlands,5,Marco van Basten,23,12,12,12,0,11,52.2,128250000,128.3,5.6,8.6,Arjen Robben,27.5,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group F,Brazil,6,Carlos Alberto Parreira,23,12,11,7,4,12,47.8,126025000,126,5.5,10,Kaká,35,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group A,Germany,7,Jürgen Klinsmann,23,14,14,14,0,9,60.9,99250000,99.3,4.3,6.8,Miroslav Klose,20,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group D,Portugal,8,Luiz Felipe Scolari,23,10,10,9,1,13,43.5,95550000,95.6,4.2,6,Cristiano Ronaldo,26.5,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group G,France,9,Raymond Domenech,23,11,11,10,1,12,47.8,90650000,90.7,3.9,10,William Gallas,12,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group E,Czech Republic,10,Karel Brückner,23,10,10,9,1,13,43.5,71250000,71.3,3.1,5.5,Petr Čech,22,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group C,Ivory Coast,11,Henri Michel,23,11,11,11,0,12,47.8,70550000,70.6,3.1,4.8,Didier Drogba,26,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group B,Sweden,12,Lars Lagerbäck,23,7,7,7,0,16,30.4,53750000,53.8,2.3,4.5,Zlatan Ibrahimović,25,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group C,Serbia and Montenegro,13,Ilija Petković,23,7,7,7,0,16,30.4,48250000,48.3,2.1,4.5,Dejan Stanković,22,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group E,Ghana,14,Ratomir Dujković,23,7,7,7,0,16,30.4,47150000,47.2,2.1,2,Michael Essien,36.5,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group F,Croatia,15,Zlatko Kranjčar,23,8,8,8,0,15,34.8,37000000,37,1.6,3.7,Ivan Klasnić,12,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group H,Ukraine,16,Oleg Blokhin,23,8,8,8,0,15,34.8,22000000,22,1,2.4,Anatoliy Tymoshchuk,6,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group G,Switzerland,17,Köbi Kuhn,23,7,7,7,0,16,30.4,20150000,20.2,0.9,2,Valon Behrami,6,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group B,Paraguay,18,Aníbal Ruiz,23,4,4,3,1,19,17.4,11380000,11.4,0.5,2.4,Nelson Haedo Valdez,5,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group G,Togo,19,Otto Pfister,23,3,3,2,1,20,13,11000000,11,0.5,0.6,Emmanuel Adebayor,10,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group A,Poland,20,Paweł Janas,23,3,3,3,0,20,13,10950000,11,0.5,4.3,Artur Boruc,4.5,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group E,United States,21,Bruce Arena,23,3,3,3,0,20,13,9000000,9,0.4,3,Oguchi Onyewu,5,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group H,Tunisia,22,Roger Lemerre,23,4,4,4,0,19,17.4,7900000,7.9,0.3,1.5,Karim Haggui,4,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group F,Australia,23,Guus Hiddink,23,3,3,2,1,20,13,4550000,4.6,0.2,0.5,Mark Schwarzer,3.8,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group A,Ecuador,24,Luis Fernando Suárez,23,1,1,1,0,22,4.3,2250000,2.3,0.1,2.3,Antonio Valencia,2.3,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group D,Mexico,25,Ricardo La Volpe,23,4,3,1,2,20,13,1600000,1.6,0.1,0.6,Francisco Javier Rodríguez,0.7,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group A,Costa Rica,26,Alexandre Guimarães,23,4,3,2,1,20,13,1500000,1.5,0.1,0.6,Christian Bolaños,0.7,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group D,Angola,27,Luis Oliveira Gonçalves,23,3,3,2,1,20,13,1275000,1.3,0.1,0.4,Mateus,0.8,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group B,Trinidad and Tobago,28,Leo Beenhakker,23,2,2,2,0,21,8.7,1050000,1.1,0,0.5,Kenwyne Jones,0.8,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group G,South Korea,29,Dick Advocaat,23,1,1,1,0,22,4.3,1000000,1,0,1,Park Chu-young,1,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group D,Iran,30,Branko Ivanković,23,2,2,1,1,21,8.7,450000,0.5,0,0.2,Masoud Shojaei,0.4,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group F,Japan,31,Zico,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2006,2006 FIFA World Cup,2006-06-09,Group H,Saudi Arabia,32,Marcos Paquetá,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group H,Spain,1,Vicente del Bosque,23,23,23,23,0,0,100,650000000,650,28.3,25,Xavi,65,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group C,England,2,Fabio Capello,23,18,18,18,0,5,78.3,415000000,415,18,17.5,Wayne Rooney,53,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group A,France,3,Raymond Domenech,23,22,22,22,0,1,95.7,355500000,355.5,15.5,14.3,Franck Ribéry,50,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group B,Argentina,4,Diego Maradona,23,15,15,15,0,8,65.2,305000000,305,13.3,10,Lionel Messi,80,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group F,Italy,5,Marcello Lippi,23,19,19,19,0,4,82.6,295000000,295,12.8,15,Daniele De Rossi,38,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group D,Germany,6,Joachim Löw,23,21,21,21,0,2,91.3,281000000,281,12.2,12,Mario Gómez,27.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group G,Brazil,7,Carlos Dunga,23,15,15,14,1,8,65.2,272000000,272,11.8,16,Kaká,50,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group G,Portugal,8,Carlos Queiroz,23,19,19,19,0,4,82.6,245800000,245.8,10.7,8.8,Cristiano Ronaldo,75,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group E,Netherlands,9,Bert van Marwijk,23,20,20,20,0,3,87,240800000,240.8,10.5,8.3,Arjen Robben,38,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group D,Serbia,10,Radomir Antić,23,17,17,17,0,6,73.9,170550000,170.6,7.4,8.5,Nemanja Vidić,35,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group G,Ivory Coast,11,Sven-Göran Eriksson,23,18,18,17,1,5,78.3,158850000,158.9,6.9,6.5,Didier Drogba,38,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group E,Cameroon,12,Paul Le Guen,23,17,17,17,0,6,73.9,127650000,127.7,5.6,4,Samuel Eto'o,40,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group A,Uruguay,13,Óscar Tabárez,23,15,13,13,0,10,56.5,91500000,91.5,4,7,Luis Suárez,20,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group E,Denmark,14,Morten Olsen,23,21,21,21,0,2,91.3,79000000,79,3.4,2.5,Simon Kjær,12,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group H,Switzerland,15,Ottmar Hitzfeld,23,14,14,14,0,9,60.9,77750000,77.8,3.4,4.5,Diego Benaglio,10,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group F,Slovakia,16,Vladimír Weiss Sr.,23,19,19,19,0,4,82.6,77600000,77.6,3.4,2.3,Marek Hamšík,24,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group B,Nigeria,17,Lars Lagerbäck,23,14,14,14,0,9,60.9,71200000,71.2,3.1,3.8,Taye Taiwo,10.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group H,Chile,18,Marcelo Bielsa,23,14,14,14,0,9,60.9,59050000,59.1,2.6,4.5,Arturo Vidal,9,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group D,Ghana,19,Milovan Rajevac,23,14,14,14,0,9,60.9,46550000,46.6,2,2.1,Sulley Muntari,13,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group F,Paraguay,20,Gerardo Martino,23,7,7,7,0,16,30.4,45000000,45,2,4,Óscar Cardozo,12.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group B,Greece,21,Otto Rehhagel,23,13,13,13,0,10,56.5,42250000,42.3,1.8,2.5,Sotiris Ninis,7.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group A,Mexico,22,Javier Aguirre,23,7,6,6,0,17,26.1,36500000,36.5,1.6,4.5,Andrés Guardado,12,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group C,United States,23,Bob Bradley,23,9,9,9,0,14,39.1,36000000,36,1.6,3,Tim Howard,9.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group C,Slovenia,24,Matjaž Kek,23,13,13,13,0,10,56.5,28150000,28.2,1.2,1.5,Samir Handanović,9.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group E,Japan,25,Takeshi Okada,23,7,7,7,0,16,30.4,27500000,27.5,1.2,4,Keisuke Honda,6,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group C,Algeria,26,Rabah Saâdane,23,13,13,13,0,10,56.5,23250000,23.3,1,1.5,Hassan Yebda,4.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group H,Honduras,27,Reinaldo Rueda,23,4,4,4,0,19,17.4,22300000,22.3,1,2.9,Wilson Palacios,16,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group D,Australia,28,Pim Verbeek,23,8,8,8,0,15,34.8,16300000,16.3,0.7,2,Mark Schwarzer,4,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group B,South Korea,29,Huh Jung-moo,23,6,5,5,0,18,21.7,12750000,12.8,0.6,3,Park Chu-young,5.2,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group A,South Africa,30,Carlos Alberto Parreira,23,6,6,6,0,17,26.1,11875000,11.9,0.5,0.8,Steven Pienaar,8,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group F,New Zealand,31,Ricki Herbert,23,5,4,4,0,19,17.4,6850000,6.9,0.3,1.4,Ryan Nelsen,3.5,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2010,2010 FIFA World Cup,2010-06-11,Group G,North Korea,32,Kim Jong-hun,23,0,0,0,0,23,0,0,0,0,,,,https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group B,Spain,1,Vicente del Bosque,23,23,23,23,0,0,100,608100000,608.1,26.4,25,Andrés Iniesta,55,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group G,Germany,2,Joachim Löw,23,23,23,23,0,0,100,526000000,526,22.9,22,Mario Götze,55,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group A,Brazil,3,Luiz Felipe Scolari,23,20,20,20,0,3,87,460500000,460.5,20,21,Neymar,60,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group E,France,4,Didier Deschamps,23,23,23,23,0,0,100,379250000,379.3,16.5,14,Paul Pogba,45,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group F,Argentina,5,Alejandro Sabella,23,20,20,20,0,3,87,372000000,372,16.2,9.3,Lionel Messi,120,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group H,Belgium,6,Marc Wilmots,23,23,23,23,0,0,100,348000000,348,15.1,12,Eden Hazard,45,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group D,England,7,Roy Hodgson,23,23,23,23,0,0,100,334000000,334,14.5,13,Wayne Rooney,45,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group D,Italy,8,Cesare Prandelli,23,23,23,23,0,0,100,323000000,323,14,12,Mario Balotelli,30,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group G,Portugal,9,Paulo Bento,23,23,23,23,0,0,100,297250000,297.3,12.9,7.5,Cristiano Ronaldo,100,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group B,Netherlands,10,Louis van Gaal,23,23,23,23,0,0,100,207500000,207.5,9,7,Robin van Persie,40,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group D,Uruguay,11,Óscar Tabárez,23,19,18,18,0,5,78.3,204100000,204.1,8.9,5,Edinson Cavani,60,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group A,Croatia,12,Niko Kovač,23,23,22,22,0,1,95.7,196500000,196.5,8.5,5,Luka Modrić,40,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group C,Colombia,13,José Pékerman,23,20,19,19,0,4,82.6,188850000,188.9,8.2,7,James Rodríguez,35,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group E,Switzerland,14,Ottmar Hitzfeld,23,23,23,23,0,0,100,178000000,178,7.7,6,Ricardo Rodríguez,20,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group B,Chile,15,Jorge Sampaoli,23,16,16,16,0,7,69.6,129900000,129.9,5.6,3.6,Arturo Vidal,44,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group H,Russia,16,Fabio Capello,23,12,12,12,0,11,52.2,119550000,119.6,5.2,8.5,Alan Dzagoev,23,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group A,Cameroon,17,Volker Finke,23,21,21,21,0,2,91.3,117200000,117.2,5.1,4.3,Alex Song,18,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group F,Bosnia and Herzegovina,18,Safet Sušić,23,21,21,21,0,2,91.3,113850000,113.9,5,3,Edin Džeko,24,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group C,Ivory Coast,19,Sabri Lamouchi,23,20,20,20,0,3,87,110200000,110.2,4.8,2.8,Yaya Touré,30,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group G,Ghana,20,James Kwesi Appiah,23,19,19,19,0,4,82.6,94700000,94.7,4.1,3,Kwadwo Asamoah,20,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group C,Japan,21,Alberto Zaccheroni,23,17,14,14,0,9,60.9,85250000,85.3,3.7,3.8,Keisuke Honda,17,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group F,Nigeria,22,Stephen Keshi,23,18,18,18,0,5,78.3,82050000,82.1,3.6,2,John Obi Mikel,20,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group A,Mexico,23,Miguel Herrera,23,14,13,13,0,10,56.5,61900000,61.9,2.7,5,Giovani dos Santos,10,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group G,United States,24,Jürgen Klinsmann,23,16,15,15,0,8,65.2,51900000,51.9,2.3,3,Clint Dempsey,7,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group H,Algeria,25,Vahid Halilhodžić,23,18,18,18,0,5,78.3,50500000,50.5,2.2,1.6,Sofiane Feghouli,12,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group C,Greece,26,Fernando Santos,23,15,15,15,0,8,65.2,46900000,46.9,2,2,Sokratis Papastathopoulos,15,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group E,Ecuador,27,Reinaldo Rueda,23,8,8,8,0,15,34.8,41300000,41.3,1.8,3.4,Antonio Valencia,16,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group H,South Korea,28,Hong Myung-bo,23,14,9,9,0,14,39.1,37000000,37,1.6,2,Son Heung-min,14,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group D,Costa Rica,29,Jorge Luis Pinto,23,10,10,10,0,13,43.5,24150000,24.2,1.1,1.3,Bryan Ruiz,8,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group E,Honduras,30,Luis Fernando Suárez,23,10,9,9,0,14,39.1,14800000,14.8,0.6,1.3,Emilio Izaguirre,4.3,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group B,Australia,31,Ange Postecoglou,23,14,13,13,0,10,56.5,14050000,14.1,0.6,0.8,Mathew Ryan,2.5,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2014,2014 FIFA World Cup,2014-06-12,Group F,Iran,32,Carlos Queiroz,23,8,8,8,0,15,34.8,9600000,9.6,0.4,1,Ashkan Dejagah,3,https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group C,France,1,Didier Deschamps,23,23,23,23,0,0,100,1080500000,1080.5,47,40,Kylian Mbappé,120,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group E,Brazil,2,Tite,23,23,22,22,0,1,95.7,977000000,977,42.5,36,Neymar,180,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group F,Germany,3,Joachim Löw,23,23,23,23,0,0,100,883000000,883,38.4,40,Toni Kroos,80,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group G,England,4,Gareth Southgate,23,23,23,23,0,0,100,874000000,874,38,25,Harry Kane,150,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group B,Spain,5,Fernando Hierro,23,22,22,22,0,1,95.7,815350000,815.4,35.5,35,Sergio Busquets,80,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group G,Belgium,6,Roberto Martínez,23,23,23,23,0,0,100,754000000,754,32.8,18,Kevin De Bruyne,150,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group D,Argentina,7,Jorge Sampaoli,23,23,19,19,0,4,82.6,660500000,660.5,28.7,15,Lionel Messi,180,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group B,Portugal,8,Fernando Santos,23,22,22,22,0,1,95.7,479500000,479.5,20.8,20,Cristiano Ronaldo,100,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group D,Croatia,9,Zlatko Dalić,23,23,23,23,0,0,100,364000000,364,15.8,14,Ivan Rakitić,50,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group A,Uruguay,10,Óscar Tabárez,23,19,18,18,0,5,78.3,354500000,354.5,15.4,11.5,Luis Suárez,70,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group H,Senegal,11,Aliou Cissé,23,21,21,21,0,2,91.3,292250000,292.3,12.7,7,Sadio Mané,70,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group E,Serbia,12,Mladen Krstajić,23,23,23,23,0,0,100,280450000,280.5,12.2,6,Sergej Milinković-Savić,90,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group H,Poland,13,Adam Nawałka,23,19,19,19,0,4,82.6,257300000,257.3,11.2,7,Robert Lewandowski,90,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group C,Denmark,14,Åge Hareide,23,23,23,22,1,0,100,254400000,254.4,11.1,6,Christian Eriksen,80,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group H,Colombia,15,José Pékerman,23,19,18,18,0,5,78.3,243000000,243,10.6,8.5,James Rodríguez,70,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group E,Switzerland,16,Vladimir Petković,23,23,23,23,0,0,100,218100000,218.1,9.5,5.8,Granit Xhaka,40,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group A,Egypt,17,Héctor Cúper,23,13,11,11,0,12,47.8,182075000,182.1,7.9,2.5,Mohamed Salah,150,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group D,Nigeria,18,Gernot Rohr,23,18,18,18,0,5,78.3,130350000,130.4,5.7,4.3,Wilfred Ndidi,25,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group F,Mexico,19,Juan Carlos Osorio,23,17,16,16,0,7,69.6,128500000,128.5,5.6,5,Hirving Lozano,25,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group B,Morocco,20,Hervé Renard,23,19,19,19,0,4,82.6,126100000,126.1,5.5,3,Hakim Ziyech,25,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group F,Sweden,21,Janne Andersson,23,23,23,23,0,0,100,119750000,119.8,5.2,2.5,Victor Lindelöf,25,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group A,Russia,22,Stanislav Cherchesov,23,13,13,13,0,10,56.5,99300000,99.3,4.3,7,Aleksandr Golovin,18,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group F,South Korea,23,Shin Tae-yong,23,18,7,7,0,16,30.4,74250000,74.3,3.2,3.5,Son Heung-min,50,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group H,Japan,24,Akira Nishino,23,22,20,20,0,3,87,69350000,69.4,3,1.8,Shinji Kagawa,13,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group G,Tunisia,25,Nabil Maâloul,23,15,15,15,0,8,65.2,50300000,50.3,2.2,1.6,Wahbi Khazri,10,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group C,Australia,26,Bert van Marwijk,23,20,16,16,0,7,69.6,45000000,45,2,2.3,Aaron Mooy,10,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group B,Iran,27,Carlos Queiroz,23,18,18,18,0,5,78.3,44250000,44.3,1.9,1.2,Alireza Jahanbakhsh,12,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group E,Costa Rica,28,Óscar Ramírez,23,14,13,13,0,10,56.5,35325000,35.3,1.5,1.3,Keylor Navas,18,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group C,Peru,29,Ricardo Gareca,23,18,12,12,0,11,52.2,24700000,24.7,1.1,1.6,André Carrillo,6,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group D,Iceland,30,Heimir Hallgrímsson,23,11,11,11,0,12,47.8,11950000,12,0.5,0.5,Sverrir Ingi Ingason,3.2,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group A,Saudi Arabia,31,Juan Antonio Pizzi,23,14,4,4,0,19,17.4,3275000,3.3,0.1,0.8,Fahad Al-Muwallad,1,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2018,2018 FIFA World Cup,2018-06-14,Group G,Panama,32,Hernán Darío Gómez,23,11,6,4,2,17,26.1,1350000,1.4,0.1,0.2,Michael Amir Murillo,0.5,https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group B,England,1,Gareth Southgate,26,26,26,26,0,0,100,1260000000,1260,48.5,38.5,Phil Foden,110,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group G,Brazil,2,Tite,26,26,24,24,0,2,92.3,1134000000,1134,43.6,50,Vinícius Júnior,120,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group D,France,3,Didier Deschamps,26,26,26,26,0,0,100,1032500000,1032.5,39.7,35,Kylian Mbappé,160,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group H,Portugal,4,Fernando Santos,26,26,26,26,0,0,100,937000000,937,36,29,Rafael Leão,85,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group E,Germany,5,Hans-Dieter Flick,26,26,26,26,0,0,100,885500000,885.5,34.1,27,Jamal Musiala,100,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group E,Spain,6,Luis Enrique,26,25,25,25,0,1,96.2,859000000,859,33,25,Pedri,100,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group C,Argentina,7,Lionel Scaloni,26,26,25,25,0,1,96.2,642000000,642,24.7,25,Lautaro Martínez,75,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group A,Netherlands,8,Louis van Gaal,26,26,26,26,0,0,100,587250000,587.3,22.6,16.5,Matthijs de Ligt,70,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group F,Belgium,9,Roberto Martínez,26,26,26,26,0,0,100,563200000,563.2,21.7,16.5,Kevin De Bruyne,80,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group H,Uruguay,10,Diego Alonso,26,25,20,20,0,6,76.9,402900000,402.9,15.5,6,Federico Valverde,100,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group F,Croatia,11,Zlatko Dalić,26,26,26,26,0,0,100,377000000,377,14.5,9,Joško Gvardiol,60,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group G,Serbia,12,Dragan Stojković,26,24,24,24,0,2,92.3,354000000,354,13.6,8,Dušan Vlahović,80,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group D,Denmark,13,Kasper Hjulmand,26,25,25,25,0,1,96.2,339000000,339,13,12,Pierre-Emile Højbjerg,45,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group G,Switzerland,14,Murat Yakin,26,26,25,25,0,1,96.2,278000000,278,10.7,6,Manuel Akanji,30,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group C,Poland,15,Czesław Michniewicz,26,25,25,25,0,1,96.2,252600000,252.6,9.7,6,Robert Lewandowski,45,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group B,United States,16,Gregg Berhalter,26,26,19,19,0,7,73.1,247900000,247.9,9.5,12,Christian Pulisic,38,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group A,Senegal,17,Aliou Cissé,26,24,24,24,0,2,92.3,226000000,226,8.7,6.5,Kalidou Koulibaly,35,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group F,Morocco,18,Walid Regragui,26,21,20,20,0,6,76.9,222200000,222.2,8.5,5.5,Achraf Hakimi,65,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group H,Ghana,19,Otto Addo,26,25,23,23,0,3,88.5,214000000,214,8.2,6,Thomas Partey,38,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group F,Canada,20,John Herdman,26,24,16,16,0,10,61.5,165000000,165,6.3,3.2,Alphonso Davies,70,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group E,Japan,21,Hajime Moriyasu,26,26,24,24,0,2,92.3,150500000,150.5,5.8,3.5,Daichi Kamada,30,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group H,South Korea,22,Paulo Bento,26,25,12,12,0,14,46.2,149875000,149.9,5.8,4.3,Son Heung-min,70,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group B,Wales,23,Rob Page,26,24,21,21,0,5,80.8,148750000,148.8,5.7,5,Ben Davies,20,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group C,Mexico,24,Gerardo Martino,26,25,17,17,0,9,65.4,131600000,131.6,5.1,4,Edson Álvarez,35,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group A,Ecuador,25,Gustavo Alfaro,26,20,13,13,0,13,50,121000000,121,4.7,4,Moisés Caicedo,38,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group G,Cameroon,26,Rigobert Song,26,22,21,21,0,5,80.8,111800000,111.8,4.3,4,Bryan Mbeumo,28,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group B,Iran,27,Carlos Queiroz,25,18,17,17,0,8,68,51000000,51,2,1,Mehdi Taremi,20,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group D,Tunisia,28,Jalel Kadri,26,18,16,16,0,10,61.5,46650000,46.7,1.8,1.9,Ellyes Skhiri,13,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group D,Australia,29,Graham Arnold,26,24,19,19,0,7,73.1,30800000,30.8,1.2,1,Mathew Ryan,5,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group E,Costa Rica,30,Luis Fernando Suárez,26,21,16,16,0,10,61.5,14550000,14.6,0.6,0.3,Keylor Navas,5,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group A,Qatar,31,Félix Sánchez,26,15,3,3,0,23,11.5,5050000,5.1,0.2,0.8,Akram Afif,4,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2022,2022 FIFA World Cup,2022-11-20,Group C,Saudi Arabia,32,Hervé Renard,26,26,3,3,0,23,11.5,4200000,4.2,0.2,1.7,Salem Al-Dawsari,1.8,https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group I,France,1,Didier Deschamps,26,26,26,26,0,0,100,1463000000,1463,56.3,47.5,Kylian Mbappé,180,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group L,England,2,Thomas Tuchel,26,26,26,26,0,0,100,1289000000,1289,49.6,40,Jude Bellingham,160,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group K,Portugal,3,Roberto Martínez,26,26,26,26,0,0,100,1022500000,1022.5,39.3,32.5,João Neves,110,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group H,Spain,4,Luis de la Fuente,26,25,24,24,0,2,92.3,966000000,966,37.2,32.5,Lamine Yamal,120,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group E,Germany,5,Julian Nagelsmann,26,26,25,25,0,1,96.2,925500000,925.5,35.6,25,Jamal Musiala,130,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group J,Argentina,6,Lionel Scaloni,26,25,24,24,0,2,92.3,803500000,803.5,30.9,20,Julián Alvarez,100,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group F,Netherlands,7,Ronald Koeman,26,26,26,26,0,0,100,797100000,797.1,30.7,25,Ryan Gravenberch,90,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group C,Brazil,8,Carlo Ancelotti,26,21,17,17,0,9,65.4,695000000,695,26.7,35,Vinícius Júnior,180,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group I,Norway,9,Ståle Solbakken,26,26,21,21,0,5,80.8,524000000,524,20.2,14,Erling Haaland,200,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group G,Belgium,10,Rudi Garcia,26,26,26,26,0,0,100,453800000,453.8,17.5,15,Jérémy Doku,65,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group F,Sweden,11,Graham Potter,26,26,20,20,0,6,76.9,439800000,439.8,16.9,9.3,Alexander Isak,120,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group H,Uruguay,12,Marcelo Bielsa,26,25,17,17,0,9,65.4,430750000,430.8,16.6,10,Federico Valverde,120,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group E,Ivory Coast,13,Emerse Faé,26,26,24,24,0,2,92.3,419800000,419.8,16.1,15,Amad Diallo,50,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group D,Turkey,14,Vincenzo Montella,26,26,25,25,0,1,96.2,404900000,404.9,15.6,10,Kenan Yıldız,75,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group I,Senegal,15,Pape Thiaw,26,26,24,24,0,2,92.3,390800000,390.8,15,11,Nicolas Jackson,45,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group C,Morocco,16,Mohamed Ouahbi,26,24,19,19,0,7,73.1,367400000,367.4,14.1,12,Achraf Hakimi,80,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group D,United States,17,Mauricio Pochettino,26,25,18,18,0,8,69.2,322800000,322.8,12.4,16.5,Christian Pulisic,60,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group B,Switzerland,18,Murat Yakin,26,26,23,23,0,3,88.5,310300000,310.3,11.9,9,Gregor Kobel,40,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group L,Croatia,19,Zlatko Dalić,26,26,24,24,0,2,92.3,307650000,307.7,11.8,7,Joško Gvardiol,70,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group E,Ecuador,20,Sebastián Beccacece,26,25,17,17,0,9,65.4,297600000,297.6,11.4,5,Moisés Caicedo,110,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group J,Austria,21,Ralf Rangnick,26,26,23,23,0,3,88.5,258400000,258.4,9.9,12,Konrad Laimer,32,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group F,Japan,22,Hajime Moriyasu,26,26,20,20,0,6,76.9,224100000,224.1,8.6,10,Takefusa Kubo,30,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group K,Colombia,23,Néstor Lorenzo,26,26,19,19,0,7,73.1,216300000,216.3,8.3,5,Luis Díaz,70,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group C,Scotland,24,Steve Clarke,26,23,23,23,0,3,88.5,202600000,202.6,7.8,3.5,Scott McTominay,45,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group J,Algeria,25,Vladimir Petković,26,23,19,19,0,7,73.1,193800000,193.8,7.5,7,Rayan Aït-Nouri,40,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group L,Ghana,26,Carlos Queiroz,26,24,20,20,0,6,76.9,181100000,181.1,7,3.5,Antoine Semenyo,65,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group B,Canada,27,Jesse Marsch,26,25,14,14,0,12,53.8,159150000,159.2,6.1,8,Alphonso Davies,50,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group A,Czech Republic,28,Miroslav Koubek,26,26,15,15,0,11,57.7,126400000,126.4,4.9,7,Patrik Schick,25,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group A,Mexico,29,Javier Aguirre,26,26,11,11,0,15,42.3,115500000,115.5,4.4,7,Santiago Giménez,40,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group K,DR Congo,30,Sébastien Desabre,26,23,21,21,0,5,80.8,115250000,115.3,4.4,2.5,Yoane Wissa,28,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group G,Egypt,31,Hossam Hassan,26,17,9,9,0,17,34.6,112000000,112,4.3,3,Omar Marmoush,65,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group D,Paraguay,32,Gustavo Alfaro,26,22,11,11,0,15,42.3,110500000,110.5,4.3,8.5,Diego Gómez,25,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group A,South Korea,33,Hong Myung-bo,26,26,12,12,0,14,46.2,96000000,96,3.7,3.3,Kim Min-jae,25,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group B,Bosnia and Herzegovina,34,Sergej Barbarez,26,25,17,17,0,9,65.4,76350000,76.4,2.9,3,Ermedin Demirović,22,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group C,Haiti,35,Sébastien Migné,26,18,15,15,0,11,57.7,54050000,54.1,2.1,1.6,Wilson Isidor,18,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group K,Uzbekistan,36,Fabio Cannavaro,26,20,8,8,0,18,30.8,51550000,51.6,2,1.3,Abdukodir Khusanov,35,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group H,Cape Verde,37,Bubista,26,17,13,13,0,13,50,36775000,36.8,1.4,1,Logan Costa,18,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group F,Tunisia,38,Sabri Lamouchi (first match) / Hervé Renard (remaining matches),26,19,12,12,0,14,46.2,36200000,36.2,1.4,2.3,Montassar Talbi,7,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group E,Curaçao,39,Dick Advocaat,26,25,22,22,0,4,84.6,34425000,34.4,1.3,0.8,Tahith Chong,6,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group D,Australia,40,Tony Popovic,26,26,16,16,0,10,61.5,34050000,34.1,1.3,1.4,Nestory Irankunda,6,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group G,New Zealand,41,Darren Bazeley,26,26,14,14,0,12,53.8,22375000,22.4,0.9,0.8,Chris Wood,8,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group G,Iran,42,Amir Ghalenoei,26,15,14,14,0,12,53.8,20375000,20.4,0.8,1.1,Mohammad Mohebi,3.5,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group L,Panama,43,Thomas Christiansen,26,22,6,6,0,20,23.1,15200000,15.2,0.6,1,Michael Amir Murillo,10,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group A,South Africa,44,Hugo Broos,26,21,1,1,0,25,3.8,13000000,13,0.5,13,Lyle Foster,13,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group B,Qatar,45,Julen Lopetegui,26,21,4,4,0,22,15.4,8300000,8.3,0.3,1.8,Akram Afif,4.5,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group I,Iraq,46,Graham Arnold,26,23,7,7,0,19,26.9,7500000,7.5,0.3,0.6,Zidane Iqbal,3,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group H,Saudi Arabia,47,Georgios Donis,26,26,3,3,0,23,11.5,5650000,5.7,0.2,2,Saud Abdulhamid,3,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads
+2026,2026 FIFA World Cup,2026-06-11,Group J,Jordan,48,Jamal Sellami,26,17,0,0,0,26,0,0,0,0,,,,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads

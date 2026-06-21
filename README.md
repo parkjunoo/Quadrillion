@@ -2,11 +2,12 @@
 
 React, Remotion, SVG chart, TradingView Lightweight Charts로 만드는 9:16 데이터 영상 제작 프로젝트입니다. 목표는 YouTube Shorts, Reels, TikTok 같은 세로형 플랫폼에 바로 올릴 수 있는 데이터 기반 모션 그래픽 영상을 코드로 생성하는 것입니다.
 
-현재 Remotion 컴포지션은 세 가지입니다.
+현재 Remotion 주요 컴포지션은 다음과 같습니다.
 
 - `QuadrillionShort`: 남자 FIFA/Coca-Cola 국가대표 랭킹 변화를 보여주는 순위 라인 레이스 영상
 - `BitcoinHistory`: 비트코인 3일봉 가격 흐름과 주요 이벤트를 보여주는 캔들 차트 영상
 - `NasdaqHistory`: 나스닥 월봉 가격 흐름과 변동성 이벤트 뉴스카드를 보여주는 캔들 차트 영상
+- `WorldCupSquadValues`: 월드컵 연도별 국가 버블 안에 선수 버블을 중첩한 스쿼드 가치 프록시 영상
 
 ## 실행 명령
 
@@ -23,6 +24,9 @@ yarn poster:bitcoin
 yarn render:bitcoin
 yarn poster:nasdaq
 yarn render:nasdaq
+yarn data:world-cup-values
+yarn poster:world-cup-values
+yarn render:world-cup-values
 ```
 
 - `yarn dev`: Remotion Studio를 엽니다.
@@ -32,6 +36,8 @@ yarn render:nasdaq
 - `yarn poster:race`, `yarn render:race`: 랭킹 레이스 대표 산출물을 `out/fifa-ranking-race/`에 렌더링합니다.
 - `yarn poster:bitcoin`, `yarn render:bitcoin`: 비트코인 산출물을 `out/bitcoin-history/`에 렌더링합니다.
 - `yarn poster:nasdaq`, `yarn render:nasdaq`: 나스닥 산출물을 `out/nasdaq-history/`에 렌더링합니다.
+- `yarn data:world-cup-values`: 기존 축구 선수 가치 CSV에서 월드컵 출전국별 상위 선수 프록시 데이터를 생성합니다.
+- `yarn poster:world-cup-values`, `yarn render:world-cup-values`: 월드컵 스쿼드 가치 버블 영상을 `out/world-cup-squad-values/`에 렌더링합니다.
 
 `out/`은 렌더 결과물 폴더이며 `.gitignore`에 포함되어 있습니다.
 
@@ -45,6 +51,7 @@ yarn render:nasdaq
 - `QuadrillionShort` 길이: `50초`
 - `BitcoinHistory` 길이: `112초`
 - `NasdaqHistory` 길이: `60초`
+- `WorldCupSquadValues` 길이: `58초`
 
 상단 UI는 YouTube Shorts 버튼에 가려지지 않도록 `SHORTS_PLATFORM_TOP_CLEARANCE`를 기준으로 배치합니다. 새 영상도 헤더, 날짜, 차트, 이벤트 배지처럼 위쪽에 붙는 요소는 이 공통 값을 반영해야 합니다.
 
@@ -145,6 +152,7 @@ year,name,code,region,value,color
 ## 데이터 정확성
 
 - `QuadrillionShort`의 현재 데이터는 1992.12-2026.06 남자 FIFA/Coca-Cola 공식 랭킹 발표를 기반으로 하며, 월드컵 우승은 차트 위 이벤트 토스트로만 표시합니다.
+- `WorldCupSquadValues`의 현재 데이터는 Transfermarkt 추정 선수 가치의 월간 글로벌 top 100에서 월드컵 출전국 선수만 필터링한 프록시입니다. 공식 23/26인 엔트리 전체 스쿼드 가치가 아니므로 공개 전 로스터/가치 산식을 검증해야 합니다.
 - `BitcoinHistory`의 캔들 데이터는 엑셀 병합본에서 생성한 BTC/USD 3일봉을 원화 환산한 데이터입니다.
 - `NasdaqHistory`의 최신 월 데이터는 부분월일 수 있습니다.
 - 공개 콘텐츠로 사용할 때는 데이터 출처, 날짜 범위, 단위, 계산 방식을 영상 하단 또는 문서에 명시해야 합니다.

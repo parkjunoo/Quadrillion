@@ -1,0 +1,668 @@
+{
+  "generatedAt": "2026-06-20T07:46:50.603Z",
+  "scope": "FIFA men World Cup final standings top 16 for every completed tournament from 1930 through 2022. For tournaments with fewer than 16 entrants, all ranked teams are included.",
+  "rowCount": 346,
+  "tournaments": [
+    {
+      "year": 1930,
+      "rowCount": 13,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1934,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1934_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1938,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1950,
+      "rowCount": 13,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1950_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1954,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1954_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1958,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1958_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1962,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1962_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1966,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1966_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1970,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1970_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1974,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1974_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1978,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1978_FIFA_World_Cup",
+      "sourceSection": "FIFA_retrospective_ranking"
+    },
+    {
+      "year": 1982,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1982_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 1986,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1986_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 1990,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1990_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 1994,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1994_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 1998,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 2002,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 2006,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 2010,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 2014,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup",
+      "sourceSection": "Final_standings"
+    },
+    {
+      "year": 2018,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup",
+      "sourceSection": "manual_top16"
+    },
+    {
+      "year": 2022,
+      "rowCount": 16,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup",
+      "sourceSection": "manual_top16"
+    }
+  ],
+  "validation": [
+    {
+      "year": 1930,
+      "rowCount": 13,
+      "minRank": 1,
+      "maxRank": 13,
+      "teams": [
+        "Uruguay",
+        "Argentina",
+        "United States",
+        "Yugoslavia",
+        "Chile",
+        "Brazil",
+        "France",
+        "Romania",
+        "Paraguay",
+        "Peru",
+        "Belgium",
+        "Bolivia",
+        "Mexico"
+      ]
+    },
+    {
+      "year": 1934,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Italy",
+        "Czechoslovakia",
+        "Germany",
+        "Austria",
+        "Spain",
+        "Hungary",
+        "Switzerland",
+        "Sweden",
+        "Argentina",
+        "France",
+        "Netherlands",
+        "Romania",
+        "Egypt",
+        "Brazil",
+        "Belgium",
+        "United States"
+      ]
+    },
+    {
+      "year": 1938,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Italy",
+        "Hungary",
+        "Brazil",
+        "Sweden",
+        "Czechoslovakia",
+        "Switzerland",
+        "Cuba",
+        "France",
+        "Romania",
+        "Germany",
+        "Poland",
+        "Norway",
+        "Belgium",
+        "Netherlands",
+        "Dutch East Indies",
+        "Austria"
+      ]
+    },
+    {
+      "year": 1950,
+      "rowCount": 13,
+      "minRank": 1,
+      "maxRank": 13,
+      "teams": [
+        "Uruguay",
+        "Brazil",
+        "Sweden",
+        "Spain",
+        "Yugoslavia",
+        "Switzerland",
+        "Italy",
+        "England",
+        "Chile",
+        "United States",
+        "Paraguay",
+        "Mexico",
+        "Bolivia"
+      ]
+    },
+    {
+      "year": 1954,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "West Germany",
+        "Hungary",
+        "Austria",
+        "Uruguay",
+        "Brazil",
+        "England",
+        "Yugoslavia",
+        "Switzerland",
+        "Turkey",
+        "Italy",
+        "France",
+        "Belgium",
+        "Mexico",
+        "Czechoslovakia",
+        "Scotland",
+        "South Korea"
+      ]
+    },
+    {
+      "year": 1958,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Brazil",
+        "Sweden",
+        "France",
+        "West Germany",
+        "Yugoslavia",
+        "Wales",
+        "Soviet Union",
+        "Northern Ireland",
+        "Czechoslovakia",
+        "Hungary",
+        "England",
+        "Paraguay",
+        "Argentina",
+        "Scotland",
+        "Austria",
+        "Mexico"
+      ]
+    },
+    {
+      "year": 1962,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Brazil",
+        "Czechoslovakia",
+        "Chile",
+        "Yugoslavia",
+        "Hungary",
+        "Soviet Union",
+        "West Germany",
+        "England",
+        "Italy",
+        "Argentina",
+        "Mexico",
+        "Spain",
+        "Uruguay",
+        "Colombia",
+        "Bulgaria",
+        "Switzerland"
+      ]
+    },
+    {
+      "year": 1966,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "England",
+        "West Germany",
+        "Portugal",
+        "Soviet Union",
+        "Argentina",
+        "Hungary",
+        "Uruguay",
+        "North Korea",
+        "Italy",
+        "Spain",
+        "Brazil",
+        "Mexico",
+        "Chile",
+        "France",
+        "Bulgaria",
+        "Switzerland"
+      ]
+    },
+    {
+      "year": 1970,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Brazil",
+        "Italy",
+        "West Germany",
+        "Uruguay",
+        "Soviet Union",
+        "Mexico",
+        "Peru",
+        "England",
+        "Sweden",
+        "Belgium",
+        "Romania",
+        "Israel",
+        "Bulgaria",
+        "Morocco",
+        "Czechoslovakia",
+        "El Salvador"
+      ]
+    },
+    {
+      "year": 1974,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "West Germany",
+        "Netherlands",
+        "Poland",
+        "Brazil",
+        "Sweden",
+        "East Germany",
+        "Yugoslavia",
+        "Argentina",
+        "Scotland",
+        "Italy",
+        "Chile",
+        "Bulgaria",
+        "Uruguay",
+        "Australia",
+        "Haiti",
+        "Zaire"
+      ]
+    },
+    {
+      "year": 1978,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Argentina",
+        "Netherlands",
+        "Brazil",
+        "Italy",
+        "Poland",
+        "West Germany",
+        "Austria",
+        "Peru",
+        "Tunisia",
+        "Spain",
+        "Scotland",
+        "France",
+        "Sweden",
+        "Iran",
+        "Hungary",
+        "Mexico"
+      ]
+    },
+    {
+      "year": 1982,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Italy",
+        "West Germany",
+        "Poland",
+        "France",
+        "Brazil",
+        "England",
+        "Soviet Union",
+        "Austria",
+        "Northern Ireland",
+        "Belgium",
+        "Argentina",
+        "Spain",
+        "Algeria",
+        "Hungary",
+        "Scotland",
+        "Yugoslavia"
+      ]
+    },
+    {
+      "year": 1986,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Argentina",
+        "West Germany",
+        "France",
+        "Belgium",
+        "Brazil",
+        "Mexico",
+        "Spain",
+        "England",
+        "Denmark",
+        "Soviet Union",
+        "Morocco",
+        "Italy",
+        "Paraguay",
+        "Poland",
+        "Bulgaria",
+        "Uruguay"
+      ]
+    },
+    {
+      "year": 1990,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "West Germany",
+        "Argentina",
+        "Italy",
+        "England",
+        "Yugoslavia",
+        "Czechoslovakia",
+        "Cameroon",
+        "Republic of Ireland",
+        "Brazil",
+        "Spain",
+        "Belgium",
+        "Romania",
+        "Costa Rica",
+        "Colombia",
+        "Netherlands",
+        "Uruguay"
+      ]
+    },
+    {
+      "year": 1994,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Brazil",
+        "Italy",
+        "Sweden",
+        "Bulgaria",
+        "Germany",
+        "Romania",
+        "Netherlands",
+        "Spain",
+        "Nigeria",
+        "Argentina",
+        "Belgium",
+        "Saudi Arabia",
+        "Mexico",
+        "United States",
+        "Switzerland",
+        "Republic of Ireland"
+      ]
+    },
+    {
+      "year": 1998,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "France",
+        "Brazil",
+        "Croatia",
+        "Netherlands",
+        "Italy",
+        "Argentina",
+        "Germany",
+        "Denmark",
+        "England",
+        "FR Yugoslavia",
+        "Romania",
+        "Nigeria",
+        "Mexico",
+        "Paraguay",
+        "Norway",
+        "Chile"
+      ]
+    },
+    {
+      "year": 2002,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Brazil",
+        "Germany",
+        "Turkey",
+        "South Korea",
+        "Spain",
+        "England",
+        "Senegal",
+        "United States",
+        "Japan",
+        "Denmark",
+        "Mexico",
+        "Republic of Ireland",
+        "Sweden",
+        "Belgium",
+        "Italy",
+        "Paraguay"
+      ]
+    },
+    {
+      "year": 2006,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Italy",
+        "France",
+        "Germany",
+        "Portugal",
+        "Brazil",
+        "Argentina",
+        "England",
+        "Ukraine",
+        "Spain",
+        "Switzerland",
+        "Netherlands",
+        "Ecuador",
+        "Ghana",
+        "Sweden",
+        "Mexico",
+        "Australia"
+      ]
+    },
+    {
+      "year": 2010,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Spain",
+        "Netherlands",
+        "Germany",
+        "Uruguay",
+        "Argentina",
+        "Brazil",
+        "Ghana",
+        "Paraguay",
+        "Japan",
+        "Chile",
+        "Portugal",
+        "United States",
+        "England",
+        "Mexico",
+        "South Korea",
+        "Slovakia"
+      ]
+    },
+    {
+      "year": 2014,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Germany",
+        "Argentina",
+        "Netherlands",
+        "Brazil",
+        "Colombia",
+        "Belgium",
+        "France",
+        "Costa Rica",
+        "Chile",
+        "Mexico",
+        "Switzerland",
+        "Uruguay",
+        "Greece",
+        "Algeria",
+        "United States",
+        "Nigeria"
+      ]
+    },
+    {
+      "year": 2018,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "France",
+        "Croatia",
+        "Belgium",
+        "England",
+        "Uruguay",
+        "Brazil",
+        "Sweden",
+        "Russia",
+        "Colombia",
+        "Spain",
+        "Denmark",
+        "Mexico",
+        "Portugal",
+        "Switzerland",
+        "Japan",
+        "Argentina"
+      ]
+    },
+    {
+      "year": 2022,
+      "rowCount": 16,
+      "minRank": 1,
+      "maxRank": 16,
+      "teams": [
+        "Argentina",
+        "France",
+        "Croatia",
+        "Morocco",
+        "Netherlands",
+        "England",
+        "Brazil",
+        "Portugal",
+        "Japan",
+        "Senegal",
+        "Australia",
+        "Switzerland",
+        "Spain",
+        "United States",
+        "Poland",
+        "South Korea"
+      ]
+    }
+  ],
+  "sources": [
+    "Wikipedia tournament pages, using FIFA retrospective ranking sections for 1930-1978 and final standings sections for 1982-2014.",
+    "2018 and 2022 top 16 rows are explicitly encoded from match results with FIFA/Wikipedia penalty shoot-out convention: shoot-outs count as draws for both teams."
+  ],
+  "output": "/Users/junsoo/00_project/Quadrillion/data/world-cup-standings/world_cup_top16_standings.csv"
+}

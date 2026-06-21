@@ -16,6 +16,12 @@ import { TitleIntroVideo } from './projects/title-intro/TitleIntroVideo';
 import { VIDEO_FPS, VIDEO_HEIGHT, VIDEO_WIDTH } from './shared/video';
 import { YoutubeSubscriberRaceVideo } from './projects/youtube-subscriber-race/YoutubeSubscriberRaceVideo';
 import { youtubeSubscriberVideoConfig } from './projects/youtube-subscriber-race/config';
+import { worldCupSquadValueVideoConfig } from './projects/world-cup-squad-values/config';
+import { WorldCupSquadValuesVideo } from './projects/world-cup-squad-values/WorldCupSquadValuesVideo';
+import { worldCupSquadMarketValueVideoConfig } from './projects/world-cup-squad-market-values/config';
+import { WorldCupSquadMarketValuesVideo } from './projects/world-cup-squad-market-values/WorldCupSquadMarketValuesVideo';
+import { worldCupRankTrackerConfig } from './projects/world-cup-rank-tracker/config';
+import { WorldCupRankTrackerVideo } from './projects/world-cup-rank-tracker/WorldCupRankTrackerVideo';
 
 export const RemotionRoot = () => {
   return (
@@ -81,6 +87,30 @@ export const RemotionRoot = () => {
         component={YoutubeSubscriberRaceVideo}
         durationInFrames={youtubeSubscriberVideoConfig.durationInSeconds * youtubeSubscriberVideoConfig.fps}
         fps={youtubeSubscriberVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="WorldCupSquadValues"
+        component={WorldCupSquadValuesVideo}
+        durationInFrames={worldCupSquadValueVideoConfig.durationInSeconds * worldCupSquadValueVideoConfig.fps}
+        fps={worldCupSquadValueVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="WorldCupSquadMarketValues"
+        component={WorldCupSquadMarketValuesVideo}
+        durationInFrames={worldCupSquadMarketValueVideoConfig.durationInSeconds * worldCupSquadMarketValueVideoConfig.fps}
+        fps={worldCupSquadMarketValueVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="WorldCupRankTracker"
+        component={WorldCupRankTrackerVideo}
+        durationInFrames={worldCupRankTrackerConfig.durationInSeconds * worldCupRankTrackerConfig.fps}
+        fps={worldCupRankTrackerConfig.fps}
         height={VIDEO_HEIGHT}
         width={VIDEO_WIDTH}
       />

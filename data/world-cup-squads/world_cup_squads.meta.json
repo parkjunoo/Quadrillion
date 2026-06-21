@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-06-20T10:08:47.070Z",
+  "source": {
+    "label": "Wikipedia FIFA World Cup squads pages",
+    "pagePattern": "https://en.wikipedia.org/wiki/{year}_FIFA_World_Cup_squads",
+    "note": "The linked Wikipedia pages cite FIFA and federation squad sources, but public renders should still verify the source, roster rules, and late replacement handling for the chosen tournament years."
+  },
+  "outputFiles": [
+    "data/world-cup-squads/world_cup_squads.csv",
+    "data/world-cup-squads/world_cup_squad_country_summary.csv"
+  ],
+  "years": [
+    1930,
+    1934,
+    1938,
+    1950,
+    1954,
+    1958,
+    1962,
+    1966,
+    1970,
+    1974,
+    1978,
+    1982,
+    1986,
+    1990,
+    1994,
+    1998,
+    2002,
+    2006,
+    2010,
+    2014,
+    2018,
+    2022,
+    2026
+  ],
+  "rowCount": 12212,
+  "countryCount": 537,
+  "pages": [
+    {
+      "countryCount": 13,
+      "playerCount": 241,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup_squads",
+      "year": 1930
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 342,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1934_FIFA_World_Cup_squads",
+      "year": 1934
+    },
+    {
+      "countryCount": 15,
+      "playerCount": 318,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup_squads",
+      "year": 1938
+    },
+    {
+      "countryCount": 13,
+      "playerCount": 278,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1950_FIFA_World_Cup_squads",
+      "year": 1950
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 350,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1954_FIFA_World_Cup_squads",
+      "year": 1954
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 352,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1958_FIFA_World_Cup_squads",
+      "year": 1958
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 352,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1962_FIFA_World_Cup_squads",
+      "year": 1962
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 352,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1966_FIFA_World_Cup_squads",
+      "year": 1966
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 349,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1970_FIFA_World_Cup_squads",
+      "year": 1970
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 352,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1974_FIFA_World_Cup_squads",
+      "year": 1974
+    },
+    {
+      "countryCount": 16,
+      "playerCount": 352,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1978_FIFA_World_Cup_squads",
+      "year": 1978
+    },
+    {
+      "countryCount": 24,
+      "playerCount": 526,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1982_FIFA_World_Cup_squads",
+      "year": 1982
+    },
+    {
+      "countryCount": 24,
+      "playerCount": 528,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1986_FIFA_World_Cup_squads",
+      "year": 1986
+    },
+    {
+      "countryCount": 24,
+      "playerCount": 528,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1990_FIFA_World_Cup_squads",
+      "year": 1990
+    },
+    {
+      "countryCount": 24,
+      "playerCount": 528,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1994_FIFA_World_Cup_squads",
+      "year": 1994
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 705,
+      "sourceUrl": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads",
+      "year": 1998
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 736,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads",
+      "year": 2002
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 736,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads",
+      "year": 2006
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 736,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads",
+      "year": 2010
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 736,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads",
+      "year": 2014
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 736,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads",
+      "year": 2018
+    },
+    {
+      "countryCount": 32,
+      "playerCount": 831,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads",
+      "year": 2022
+    },
+    {
+      "countryCount": 48,
+      "playerCount": 1248,
+      "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+      "year": 2026
+    }
+  ],
+  "method": "Downloads each men FIFA World Cup squad page, parses national-team sections with nat-fs-player tables, and writes one row per listed player plus one country summary row."
+}

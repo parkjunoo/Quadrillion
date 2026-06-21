@@ -19,9 +19,7 @@ import {
 import { marketValueVideoConfig } from './config';
 import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
 import {
-  SHORTS_INTRO_SECONDS,
   SHORTS_OUTRO_SECONDS,
-  ShortsIntro,
   ShortsOutro,
 } from '../../shared/shortsAnimations';
 
@@ -34,7 +32,6 @@ const fontStack =
 const emojiFontStack = '"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif';
 const templateTopOffset = SHORTS_PLATFORM_TOP_CLEARANCE;
 const channelHandle = '@whoa-data';
-const introHoldSeconds = SHORTS_INTRO_SECONDS;
 const finalSettleSeconds = SHORTS_OUTRO_SECONDS;
 const chart = {
   left: 58,
@@ -62,15 +59,6 @@ const yearRail = {
   top: 332 + templateTopOffset,
   width: 842,
 };
-const introCopy = {
-  accentColor: '#F5E829',
-  channelHandle,
-  kicker: marketValueVideoConfig.valueColumnLabel,
-  meta: `${chartData.minYear}-${chartData.maxYear}`,
-  secondaryColor: '#22C55E',
-  subtitle: marketValueVideoConfig.titleHook,
-  title: marketValueVideoConfig.title,
-};
 const outroCopy = {
   accentColor: '#F5E829',
   channelHandle,
@@ -83,10 +71,9 @@ const outroCopy = {
 export const FootballMarketValueVideo = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const introHoldFrames = Math.round(introHoldSeconds * fps);
   const finalSettleFrames = Math.round(finalSettleSeconds * fps);
-  const motionFrames = Math.max(1, durationInFrames - introHoldFrames - finalSettleFrames);
-  const raceFrame = clamp(frame - introHoldFrames, 0, motionFrames - 1);
+  const motionFrames = Math.max(1, durationInFrames - finalSettleFrames);
+  const raceFrame = clamp(frame, 0, motionFrames - 1);
   const state = getMarketValueFrameState({
     data: chartData,
     frame: raceFrame,
@@ -109,7 +96,6 @@ export const FootballMarketValueVideo = () => {
       <ValueLegend intro={intro} />
       <BarRaceChart intro={intro} state={state} />
       <Footer />
-      <ShortsIntro copy={introCopy} fps={fps} frame={frame} />
       <ShortsOutro copy={outroCopy} durationInFrames={durationInFrames} fps={fps} frame={frame} />
     </AbsoluteFill>
   );

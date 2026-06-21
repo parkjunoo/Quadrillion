@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-06-20T06:01:08.691Z",
+  "source": {
+    "dataset": "https://github.com/dcaribou/transfermarkt-datasets",
+    "license": "CC0-1.0 for the transfermarkt-datasets repository release; original values are Transfermarkt estimates.",
+    "playerValuations": {
+      "url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/player_valuations.csv.gz",
+      "lastModified": "Fri, 12 Jun 2026 09:00:39 GMT",
+      "etag": "\"14f607d657d85b05a318a031a7f26849\""
+    },
+    "players": {
+      "url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz",
+      "lastModified": "Fri, 12 Jun 2026 09:00:40 GMT",
+      "etag": "\"5c941db67643dd7ae7b5decb1e42d827\""
+    }
+  },
+  "sourceInput": "data/football-market-values/football_player_market_values_monthly_top100.csv",
+  "outputFiles": [
+    "data/world-cup-squad-values/world_cup_squad_values_top_player_proxy.csv",
+    "src/projects/world-cup-squad-values/generated/worldCupSquadValueSnapshots.ts"
+  ],
+  "tournamentYears": [
+    2006,
+    2010,
+    2014,
+    2018,
+    2022
+  ],
+  "countriesPerTournament": 8,
+  "playersPerCountry": 8,
+  "method": "For completed men World Cup tournaments from 2006-2022, filter the monthly global top 100 Transfermarkt player valuation snapshot to qualified countries, sum each country available top-100-player values, and show the top countries plus their top players. This is a top-player proxy, not an official 23/26-man squad market-value total."
+}

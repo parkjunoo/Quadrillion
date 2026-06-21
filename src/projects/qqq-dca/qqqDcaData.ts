@@ -11,9 +11,13 @@ export type QqqPricePoint = {
 export type QqqDcaPoint = QqqPricePoint & {
   tenYearAverageCost: number | null;
   tenYearInvested: number | null;
+  tenYearPnl: number | null;
+  tenYearShares: number | null;
   tenYearValue: number | null;
   twentyYearAverageCost: number;
   twentyYearInvested: number;
+  twentyYearPnl: number;
+  twentyYearShares: number;
   twentyYearValue: number;
 };
 
@@ -118,6 +122,8 @@ const buildQqqDcaData = (): QqqDcaData => {
     const twentyYearAverageCost = twentyYearInvested / twentyYearCloseShares;
     let tenYearAverageCost: number | null = null;
     let tenYearValue: number | null = null;
+    let tenYearPnl: number | null = null;
+    let currentTenYearShares: number | null = null;
     let currentTenYearInvested: number | null = null;
 
     if (point.date >= qqqDcaVideoConfig.tenYearStartDate) {
@@ -128,6 +134,8 @@ const buildQqqDcaData = (): QqqDcaData => {
       tenYearFirstTradingDate ||= point.date;
       tenYearValue = tenYearShares * point.adjClose;
       tenYearAverageCost = tenYearInvested / tenYearCloseShares;
+      tenYearPnl = tenYearValue - tenYearInvested;
+      currentTenYearShares = tenYearCloseShares;
       currentTenYearInvested = tenYearInvested;
     }
 
@@ -138,9 +146,13 @@ const buildQqqDcaData = (): QqqDcaData => {
       ...point,
       tenYearAverageCost,
       tenYearInvested: currentTenYearInvested,
+      tenYearPnl,
+      tenYearShares: currentTenYearShares,
       tenYearValue,
       twentyYearAverageCost,
       twentyYearInvested,
+      twentyYearPnl: twentyYearValue - twentyYearInvested,
+      twentyYearShares: twentyYearCloseShares,
       twentyYearValue,
     };
   });

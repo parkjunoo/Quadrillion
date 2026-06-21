@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-06-20T10:26:29.511Z",
+  "startYear": 1998,
+  "tournamentYears": [
+    1998,
+    2002,
+    2006,
+    2010,
+    2014,
+    2018,
+    2022,
+    2026
+  ],
+  "rowCount": 6464,
+  "countryCount": 272,
+  "matchedPlayerRows": 3882,
+  "valuedPlayerRows": 3368,
+  "missingRows": 3096,
+  "coverageByYear": {
+    "1998": {
+      "playerRows": 705,
+      "matchedRows": 26,
+      "valuedRows": 19,
+      "latestOnOrBeforeOpeningRows": 0,
+      "firstAfterOpeningRows": 19,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 2.7
+    },
+    "2002": {
+      "playerRows": 736,
+      "matchedRows": 95,
+      "valuedRows": 91,
+      "latestOnOrBeforeOpeningRows": 0,
+      "firstAfterOpeningRows": 91,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 12.4
+    },
+    "2006": {
+      "playerRows": 736,
+      "matchedRows": 222,
+      "valuedRows": 218,
+      "latestOnOrBeforeOpeningRows": 202,
+      "firstAfterOpeningRows": 16,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 29.6
+    },
+    "2010": {
+      "playerRows": 736,
+      "matchedRows": 433,
+      "valuedRows": 428,
+      "latestOnOrBeforeOpeningRows": 426,
+      "firstAfterOpeningRows": 2,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 58.2
+    },
+    "2014": {
+      "playerRows": 736,
+      "matchedRows": 580,
+      "valuedRows": 565,
+      "latestOnOrBeforeOpeningRows": 565,
+      "firstAfterOpeningRows": 0,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 76.8
+    },
+    "2018": {
+      "playerRows": 736,
+      "matchedRows": 616,
+      "valuedRows": 567,
+      "latestOnOrBeforeOpeningRows": 564,
+      "firstAfterOpeningRows": 3,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 77
+    },
+    "2022": {
+      "playerRows": 831,
+      "matchedRows": 768,
+      "valuedRows": 659,
+      "latestOnOrBeforeOpeningRows": 659,
+      "firstAfterOpeningRows": 0,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 79.3
+    },
+    "2026": {
+      "playerRows": 1248,
+      "matchedRows": 1142,
+      "valuedRows": 821,
+      "latestOnOrBeforeOpeningRows": 821,
+      "firstAfterOpeningRows": 0,
+      "currentProfileValueRows": 0,
+      "valueCoveragePercent": 65.8
+    }
+  },
+  "source": {
+    "squads": "data/world-cup-squads/world_cup_squads.csv",
+    "squadPagePattern": "https://en.wikipedia.org/wiki/{year}_FIFA_World_Cup_squads",
+    "transfermarktDataset": "https://github.com/dcaribou/transfermarkt-datasets",
+    "transfermarktLicense": "CC0-1.0 for the transfermarkt-datasets repository release; original values are Transfermarkt estimates.",
+    "observedValues": "data/football-market-values/football_player_market_values_observed.csv",
+    "players": {
+      "url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz",
+      "lastModified": "Fri, 12 Jun 2026 09:00:40 GMT",
+      "etag": "\"5c941db67643dd7ae7b5decb1e42d827\""
+    }
+  },
+  "outputFiles": [
+    "data/world-cup-squad-market-values/world_cup_squad_player_market_values.csv",
+    "data/world-cup-squad-market-values/world_cup_country_squad_market_values.csv",
+    "data/world-cup-squad-market-values/world_cup_country_squad_market_values_top5_video.csv",
+    "data/world-cup-squad-market-values/world_cup_squad_market_value_missing.csv",
+    "src/projects/world-cup-squad-market-values/generated/worldCupSquadMarketValueTop5Csv.ts"
+  ],
+  "method": "For every men FIFA World Cup squad player from 1998 onward, match the Wikipedia squad row to Transfermarkt player profiles primarily by normalized name plus exact birth date, then country/name fallbacks. Use the latest observed Transfermarkt value on or before the tournament opening date; if no earlier value exists, use the first observed value after opening and mark valuation_method as first_after_opening. If no confident player match or value is available, write value_eur as 0 and mark valuation_method as zero_filled_missing. Country totals sum all rows, so missing values contribute 0.",
+  "caveats": [
+    "Transfermarkt values are estimates, not official FIFA squad values.",
+    "1998 has limited true pre-tournament coverage because the observed Transfermarkt data starts in 2000; rows using later valuations are explicitly marked first_after_opening.",
+    "Rows without a confident player-profile match or valuation are retained with blank value fields and listed in the missing file."
+  ]
+}
