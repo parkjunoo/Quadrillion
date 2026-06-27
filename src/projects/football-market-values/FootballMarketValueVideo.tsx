@@ -17,11 +17,16 @@ import {
   type MarketValueRaceRow,
 } from './marketValueRace';
 import { marketValueVideoConfig } from './config';
-import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
+import { VIDEO_WIDTH } from '../../shared/video';
 import {
   SHORTS_OUTRO_SECONDS,
   ShortsOutro,
 } from '../../shared/shortsAnimations';
+import {
+  defaultDataShortsFooterInset,
+  defaultDataShortsFrameInset,
+  defaultDataShortsTemplate,
+} from '../../shared/dataVideoFrame';
 
 const chartData = buildMarketValueRaceData(marketValueVideoConfig.csv, {
   dataCadence: marketValueVideoConfig.dataCadence,
@@ -30,34 +35,44 @@ const chartData = buildMarketValueRaceData(marketValueVideoConfig.csv, {
 const fontStack =
   'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 const emojiFontStack = '"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif';
-const templateTopOffset = SHORTS_PLATFORM_TOP_CLEARANCE;
 const channelHandle = '@whoa-data';
 const finalSettleSeconds = SHORTS_OUTRO_SECONDS;
+const chartSideMargin = defaultDataShortsFooterInset.left;
+const visibleChartLeftPadding = defaultDataShortsFrameInset.left - defaultDataShortsTemplate.chartLeft;
 const chart = {
-  left: 58,
-  top: 535 + templateTopOffset,
-  width: 965,
-  height: 920,
+  left: defaultDataShortsTemplate.chartLeft,
+  top: defaultDataShortsTemplate.chartTop,
+  width: defaultDataShortsTemplate.chartWidth,
+  height: defaultDataShortsTemplate.chartHeight,
 };
 const row = {
-  height: 74,
-  gap: 18,
+  height: 82,
+  gap: 10,
 };
-const rankColumnWidth = 46;
-const barLeft = 66;
-const barMaxWidth = 692;
-const valueLeft = 778;
-const valueWidth = 178;
-const barHeight = 66;
+const rankColumnWidth = 50;
+const barLeft = 68;
+const valueWidth = 154;
+const chartRightMargin = defaultDataShortsTemplate.chartRightPadding;
+const valueRight = VIDEO_WIDTH - chart.left - chartRightMargin;
+const valueLeft = valueRight - valueWidth;
+const barValueOverlap = 8;
+const barMaxWidth = valueLeft - barLeft + barValueOverlap;
+const barHeight = 74;
+const visibleChart = {
+  left: defaultDataShortsFrameInset.left,
+  right: defaultDataShortsFrameInset.right,
+};
+const yearRailLeftPadding = defaultDataShortsTemplate.timelineRailLeftPadding;
+const yearRailRightPadding = defaultDataShortsTemplate.timelineRailRightPadding;
 const flagWatermark = {
-  centerX: barLeft + 255,
-  opacity: 0.11,
-  size: 232,
+  centerX: barLeft + 266,
+  opacity: 0.08,
+  size: 236,
 };
 const yearRail = {
-  left: 118,
-  top: 332 + templateTopOffset,
-  width: 842,
+  left: visibleChart.left + yearRailLeftPadding,
+  top: defaultDataShortsTemplate.timelineRailTop,
+  width: VIDEO_WIDTH - visibleChart.left - visibleChart.right - yearRailLeftPadding - yearRailRightPadding,
 };
 const outroCopy = {
   accentColor: '#F5E829',
@@ -93,7 +108,6 @@ export const FootballMarketValueVideo = () => {
       <Background />
       <Header intro={intro} />
       <YearRail currentMonth={currentPeriod} intro={intro} progress={progress} />
-      <ValueLegend intro={intro} />
       <BarRaceChart intro={intro} state={state} />
       <Footer />
       <ShortsOutro copy={outroCopy} durationInFrames={durationInFrames} fps={fps} frame={frame} />
@@ -106,12 +120,8 @@ const Header = ({ intro }: { intro: number }) => {
 
   return (
     <div style={{ ...styles.header, opacity: intro, transform: `translateY(${y}px)` }}>
-      <div style={styles.headerTop}>
-        <div style={styles.title}>{marketValueVideoConfig.title}</div>
-        <div style={styles.channelTag}>{channelHandle}</div>
-      </div>
+      <div style={styles.title}>{marketValueVideoConfig.title}</div>
       <div style={styles.titleHook}>{marketValueVideoConfig.titleHook}</div>
-      <div style={styles.subtitle}>{marketValueVideoConfig.subtitle}</div>
     </div>
   );
 };
@@ -129,7 +139,10 @@ const YearRail = ({
 
   return (
     <div style={{ ...styles.yearRailBlock, opacity: intro }}>
-      <div style={styles.currentMonth}>{currentMonth}</div>
+      <div style={styles.yearRailHeader}>
+        <div style={styles.currentMonth}>{currentMonth}</div>
+        <div style={styles.yearRailTag}>{channelHandle}</div>
+      </div>
       <svg height={58} style={styles.yearRailSvg} viewBox={`0 0 ${yearRail.width} 58`} width={yearRail.width}>
         <line
           stroke="rgba(255,255,255,0.2)"
@@ -277,15 +290,22 @@ const ClubLogoOverlay = ({ state }: { state: MarketValueFrameState }) => (
 
       const top = chartRankToY(raceRow.animatedRank);
       const currentBarWidth = barWidthForValue(raceRow.value, state.maxValue);
+      const logoPulse = raceRow.clubChangePulse * raceRow.opacity;
 
       return (
         <div
           key={`club-logo-${raceRow.id}`}
           style={{
             ...styles.clubLogoFrame,
-            left: barLeft + Math.max(92, currentBarWidth) - 61,
+            backgroundColor: `rgba(255,255,255,${0.9 + logoPulse * 0.08})`,
+            boxShadow: [
+              '0 8px 14px rgba(0,0,0,0.36)',
+              'inset 0 0 0 1px rgba(255,255,255,0.72)',
+              logoPulse > 0.02 ? `0 0 ${18 + logoPulse * 18}px rgba(245,232,41,${0.28 + logoPulse * 0.22})` : '',
+            ].filter(Boolean).join(', '),
+            left: barLeft + Math.max(156, currentBarWidth) - 48,
             opacity: raceRow.opacity,
-            top: top + 12,
+            top: top + 17,
           }}
         >
           <Img src={staticFile(logoPath)} style={styles.clubLogo} />
@@ -367,18 +387,9 @@ const buildEChartsRowElement = ({
     ? String(raceRow.displayRank)
     : '';
   const rankColor = rankColorFor(raceRow.displayRank);
-  const nameFontSize = fontSizeForName(raceRow.name);
+  const nameFontSize = fontSizeForName(raceRow.name, currentBarWidth);
   const flag = flagForCountry(raceRow.country);
   const rowOpacity = raceRow.opacity;
-  const clubChangeOpacity = raceRow.clubChangePulse * rowOpacity;
-  const isClubChanging = clubChangeOpacity > 0.02;
-  const clubTransitionProgress = smootherStep(raceRow.clubChangeProgress);
-  const previousClubLabel = shortClubName(
-    raceRow.clubChangedFrom || raceRow.previousClub || raceRow.club,
-  );
-  const currentClubLabel = shortClubName(raceRow.clubChangedTo || raceRow.club);
-  const clubTextSize = 21;
-  const clubTextY = 60;
 
   return {
     type: 'group',
@@ -392,11 +403,11 @@ const buildEChartsRowElement = ({
         type: 'text',
         id: `rank-${raceRow.id}`,
         x: rankColumnWidth,
-        y: 37,
+        y: 41,
         style: {
           fill: colorWithOpacity(rankColor, rowOpacity),
           fontFamily: fontStack,
-          fontSize: 31,
+          fontSize: 34,
           fontWeight: 950,
           shadowBlur: raceRow.displayRank <= 3 ? 8 : 0,
           shadowColor: raceRow.displayRank <= 3 ? 'rgba(0,0,0,0.52)' : 'transparent',
@@ -410,13 +421,13 @@ const buildEChartsRowElement = ({
         id: `bar-${raceRow.id}`,
         shape: {
           height: barHeight,
-          r: 6,
+          r: 7,
           width: currentBarWidth,
           x: barLeft,
           y: 4,
         },
         style: {
-          fill: barColor,
+          fill: barGradientFor(barColor),
           opacity: rowOpacity,
           stroke: 'rgba(255,255,255,0.14)',
           lineWidth: 1,
@@ -427,9 +438,9 @@ const buildEChartsRowElement = ({
         type: 'rect',
         id: `avatar-bg-${raceRow.id}`,
         shape: {
-          height: 52,
+          height: 60,
           r: 6,
-          width: 52,
+          width: 60,
           x: barLeft + 8,
           y: 11,
         },
@@ -444,8 +455,8 @@ const buildEChartsRowElement = ({
         type: 'text',
         id: `name-${raceRow.id}`,
         z2: 8,
-        x: barLeft + 75,
-        y: 37,
+        x: barLeft + 82,
+        y: 41,
         style: {
           fill: `rgba(255,255,255,${rowOpacity})`,
           fontFamily: fontStack,
@@ -462,107 +473,18 @@ const buildEChartsRowElement = ({
       {
         type: 'text',
         id: `value-${raceRow.id}`,
-        x: valueLeft,
-        y: 21,
+        x: valueRight,
+        y: 41,
         style: {
           fill: colorWithOpacity(valueColor, rowOpacity),
           fontFamily: fontStack,
-          fontSize: 31,
+          fontSize: 38,
           fontWeight: 950,
           text: formatMarketValue(raceRow.value),
-          textAlign: 'left',
+          textAlign: 'right',
           textVerticalAlign: 'middle',
         },
       },
-      ...(isClubChanging ? [
-        {
-          type: 'rect',
-          id: `club-change-bg-${raceRow.id}`,
-          x: 0,
-          y: 0,
-          shape: {
-            height: 34,
-            r: 7,
-            width: valueWidth + 10,
-            x: valueLeft - 7,
-            y: 39,
-          },
-          style: {
-            fill: `rgba(245,232,41,${0.18 + clubChangeOpacity * 0.2})`,
-            opacity: clubChangeOpacity,
-            stroke: `rgba(245,232,41,${0.4 + clubChangeOpacity * 0.35})`,
-            lineWidth: 1.5,
-          },
-        },
-        {
-          type: 'line',
-          id: `club-change-line-${raceRow.id}`,
-          silent: true,
-          shape: {
-            x1: valueLeft - 3,
-            x2: valueLeft - 3 + valueWidth * (0.35 + 0.65 * (1 - raceRow.clubChangeProgress)),
-            y1: 73,
-            y2: 73,
-          },
-          style: {
-            opacity: clubChangeOpacity,
-            stroke: '#F5E829',
-            lineWidth: 3,
-          },
-        },
-      ] : []),
-      ...(isClubChanging ? [
-        {
-          type: 'text',
-          id: `club-old-${raceRow.id}`,
-          x: valueLeft + clubTransitionProgress * 32,
-          y: clubTextY,
-          style: {
-            fill: `rgba(255,255,255,${0.5 * (1 - clubTransitionProgress) * rowOpacity})`,
-            fontFamily: fontStack,
-            fontSize: clubTextSize,
-            fontWeight: 900,
-            overflow: 'truncate',
-            text: previousClubLabel,
-            textAlign: 'left',
-            textVerticalAlign: 'middle',
-            width: valueWidth,
-          },
-        },
-        {
-          type: 'text',
-          id: `club-new-${raceRow.id}`,
-          x: valueLeft - (1 - clubTransitionProgress) * 32,
-          y: clubTextY,
-          style: {
-            fill: `rgba(245,232,41,${Math.min(1, clubTransitionProgress * rowOpacity)})`,
-            fontFamily: fontStack,
-            fontSize: clubTextSize,
-            fontWeight: 950,
-            overflow: 'truncate',
-            text: currentClubLabel,
-            textAlign: 'left',
-            textVerticalAlign: 'middle',
-            width: valueWidth,
-          },
-        },
-      ] : [{
-        type: 'text',
-        id: `club-${raceRow.id}`,
-        x: valueLeft,
-        y: clubTextY,
-        style: {
-          fill: `rgba(255,255,255,${0.68 * rowOpacity})`,
-          fontFamily: fontStack,
-          fontSize: clubTextSize,
-          fontWeight: 900,
-          overflow: 'truncate',
-          text: currentClubLabel,
-          textAlign: 'left',
-          textVerticalAlign: 'middle',
-          width: valueWidth,
-        },
-      }]),
     ],
   };
 };
@@ -899,7 +821,6 @@ const drawVoronoiTreemap = (
 const Footer = () => (
   <div style={styles.footer}>
     <div style={styles.source}>{marketValueVideoConfig.source}</div>
-    <div style={styles.note}>Every player who appears in the source top 10 at least once is included in the tracked pool.</div>
   </div>
 );
 
@@ -918,31 +839,20 @@ const formatTimelineYear = (year: number) => String(year);
 
 const formatMarketValue = (value: number) => {
   const safeValue = Math.max(0, value);
+  const roundedValue = Math.round(safeValue);
 
-  if (safeValue >= 1) {
-    return `€${safeValue.toFixed(2)}M`;
+  if (Math.abs(safeValue - roundedValue) < 0.005) {
+    return `€${roundedValue}M`;
   }
 
-  return `€${safeValue.toFixed(3)}M`;
-};
-
-const valueColorFor = (raceRow: MarketValueRaceRow) => {
-  const from = trendColorFor(raceRow.previousValueTrend);
-  const to = trendColorFor(raceRow.valueTrend);
-  const progress = raceRow.valueTrendBlend;
-
-  if (
-    raceRow.previousValueTrend !== 0 &&
-    raceRow.valueTrend !== 0 &&
-    raceRow.previousValueTrend !== raceRow.valueTrend
-  ) {
-    return progress < 0.5
-      ? mixHexColors(from, trendColorFor(0), progress * 2)
-      : mixHexColors(trendColorFor(0), to, (progress - 0.5) * 2);
+  if (safeValue >= 10) {
+    return `€${safeValue.toFixed(1)}M`;
   }
 
-  return mixHexColors(from, to, progress);
+  return `€${safeValue.toFixed(2)}M`;
 };
+
+const valueColorFor = (raceRow: MarketValueRaceRow) => trendColorFor(raceRow.valueTrend);
 
 const trendColorFor = (trend: -1 | 0 | 1) => {
   if (trend > 0) {
@@ -978,6 +888,19 @@ const colorWithOpacity = (hexColor: string, opacity: number) => {
   return `rgba(${red},${green},${blue},${opacity})`;
 };
 
+const barGradientFor = (hexColor: string) => ({
+  type: 'linear',
+  x: 0,
+  x2: 1,
+  y: 0,
+  y2: 0,
+  colorStops: [
+    { offset: 0, color: mixHexColors(hexColor, '#FFFFFF', 0.12) },
+    { offset: 0.58, color: hexColor },
+    { offset: 1, color: mixHexColors(hexColor, '#000000', 0.12) },
+  ],
+});
+
 const mixHexColors = (fromColor: string, toColor: string, progress: number) => {
   const from = hexToRgb(fromColor);
   const to = hexToRgb(toColor);
@@ -989,17 +912,25 @@ const mixHexColors = (fromColor: string, toColor: string, progress: number) => {
   return `#${mixed.map((channel) => channel.toString(16).padStart(2, '0')).join('')}`;
 };
 
-const fontSizeForName = (name: string) => {
+const fontSizeForName = (name: string, currentBarWidth: number) => {
+  const availableNameWidth = Math.max(220, currentBarWidth - 154);
+  if (name.length > 22) {
+    return Math.min(34, fitFontSizeForText(name, availableNameWidth));
+  }
+
   if (name.length > 18) {
-    return 25;
+    return Math.min(36, fitFontSizeForText(name, availableNameWidth));
   }
 
   if (name.length > 14) {
-    return 28;
+    return Math.min(38, fitFontSizeForText(name, availableNameWidth));
   }
 
-  return 32;
+  return Math.min(40, fitFontSizeForText(name, availableNameWidth));
 };
+
+const fitFontSizeForText = (text: string, width: number) =>
+  Math.round(clamp((width / Math.max(8, text.length)) * 1.72, 32, 44));
 
 const initialsForName = (name: string) => name
   .split(/\s+/)
@@ -1361,10 +1292,11 @@ const styles = {
   },
   header: {
     position: 'absolute',
-    left: 112,
-    right: 70,
-    top: 166 + templateTopOffset,
+    left: visibleChart.left,
+    right: visibleChart.right,
+    top: defaultDataShortsTemplate.headerTop,
     zIndex: 5,
+    textAlign: 'center',
   },
   headerTop: {
     display: 'flex',
@@ -1372,41 +1304,44 @@ const styles = {
     gap: 22,
   },
   channelTag: {
-    flex: '0 0 auto',
-    marginTop: 11,
-    padding: '8px 13px',
+    display: 'inline-flex',
+    alignItems: 'center',
+    width: 'fit-content',
+    marginBottom: 12,
+    padding: '8px 14px',
     border: '1px solid rgba(255,255,255,0.22)',
     borderRadius: 999,
     background: 'rgba(2,8,6,0.48)',
     color: 'rgba(255,255,255,0.78)',
-    fontSize: 22,
+    fontSize: 21,
     fontWeight: 900,
     lineHeight: 1,
     letterSpacing: 0,
     boxShadow: '0 14px 34px rgba(0,0,0,0.26)',
   },
   title: {
-    color: '#F5E829',
-    fontSize: 68,
+    color: '#FFFFFF',
+    fontSize: 56,
     fontWeight: 950,
-    lineHeight: 0.94,
+    lineHeight: 1,
     letterSpacing: 0,
     whiteSpace: 'nowrap',
+    textShadow: '0 5px 18px rgba(0,0,0,0.64)',
   },
   titleHook: {
-    marginTop: 9,
-    color: '#FFFFFF',
-    fontSize: 32,
+    marginTop: 7,
+    color: '#F5E829',
+    fontSize: 64,
     fontWeight: 950,
-    lineHeight: 1.05,
+    lineHeight: 0.98,
     letterSpacing: 0,
     textShadow: '0 5px 18px rgba(0,0,0,0.64)',
     whiteSpace: 'nowrap',
   },
   subtitle: {
-    marginTop: 8,
+    marginTop: 9,
     color: 'rgba(255,255,255,0.86)',
-    fontSize: 23,
+    fontSize: 28,
     fontWeight: 800,
     lineHeight: 1.22,
   },
@@ -1417,15 +1352,35 @@ const styles = {
     width: yearRail.width,
     zIndex: 9,
   },
+  yearRailHeader: {
+    position: 'relative',
+    marginBottom: 7,
+  },
   currentMonth: {
-    marginBottom: 10,
     color: '#FFFFFF',
-    fontSize: 62,
+    fontSize: 76,
     fontWeight: 950,
     lineHeight: 0.9,
-    textAlign: 'right',
+    textAlign: 'left',
     fontStyle: 'italic',
     textShadow: '0 10px 26px rgba(0,0,0,0.38)',
+  },
+  yearRailTag: {
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    marginBottom: 7,
+    padding: '7px 13px',
+    border: '1px solid rgba(255,255,255,0.18)',
+    borderRadius: 999,
+    background: 'rgba(2,8,6,0.44)',
+    color: 'rgba(255,255,255,0.72)',
+    fontSize: 22,
+    fontWeight: 900,
+    lineHeight: 1,
+    letterSpacing: 0,
+    boxShadow: '0 12px 28px rgba(0,0,0,0.24)',
+    whiteSpace: 'nowrap',
   },
   yearRailSvg: {
     display: 'block',
@@ -1433,13 +1388,13 @@ const styles = {
   legend: {
     position: 'absolute',
     left: chart.left + barLeft,
-    top: chart.top - 46,
-    width: valueLeft + valueWidth - barLeft,
+    top: chart.top - 34,
+    width: valueLeft + 90 - barLeft,
     zIndex: 6,
     display: 'flex',
     justifyContent: 'space-between',
     color: 'rgba(255,255,255,0.54)',
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: 950,
     letterSpacing: 0,
   },
@@ -1596,9 +1551,11 @@ const styles = {
   },
   clubLogoFrame: {
     position: 'absolute',
-    width: 50,
-    height: 50,
-    borderRadius: 6,
+    width: 48,
+    height: 48,
+    boxSizing: 'border-box',
+    padding: 5,
+    borderRadius: 8,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -1614,24 +1571,22 @@ const styles = {
   profilePhotoFrame: {
     position: 'absolute',
     left: barLeft + 8,
-    width: 52,
-    height: 52,
+    width: 60,
+    height: 60,
     overflow: 'hidden',
-    borderRadius: 6,
+    borderRadius: 8,
     backgroundColor: 'rgba(0,0,0,0.45)',
-    boxShadow: 'inset 0 0 0 2px rgba(255,255,255,0.2), 0 10px 18px rgba(0,0,0,0.28)',
+    boxShadow: 'inset 0 0 0 2px rgba(255,255,255,0.24), 0 10px 18px rgba(0,0,0,0.28)',
     isolation: 'isolate',
   },
   profilePhoto: {
     display: 'block',
-    width: '112%',
-    height: '112%',
-    marginLeft: '-6%',
-    marginTop: '-6%',
-    filter: 'blur(2.2px) saturate(0.92) brightness(0.9)',
+    width: '100%',
+    height: '100%',
+    filter: 'saturate(1.05) brightness(1.02) contrast(1.04)',
     objectFit: 'cover',
     objectPosition: 'center top',
-    opacity: 0.84,
+    opacity: 1,
     transform: 'translateZ(0)',
   },
   profilePhotoSoftMask: {
@@ -1639,7 +1594,7 @@ const styles = {
     inset: 0,
     zIndex: 2,
     background:
-      'linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.28)), rgba(0,0,0,0.08)',
+      'linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.13))',
     boxShadow: 'inset 0 0 0 2px rgba(255,255,255,0.16)',
   },
   profileInitials: {
@@ -1649,7 +1604,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     color: 'rgba(255,255,255,0.82)',
-    fontSize: 17,
+    fontSize: 19,
     fontWeight: 950,
     lineHeight: 1,
     textShadow: '0 2px 7px rgba(0,0,0,0.85)',
@@ -1797,14 +1752,15 @@ const styles = {
   },
   footer: {
     position: 'absolute',
-    left: 112,
-    right: 76,
-    top: 1558,
+    left: chartSideMargin,
+    right: chartSideMargin,
+    top: defaultDataShortsTemplate.footerTop,
     zIndex: 7,
+    textAlign: 'right',
   },
   source: {
     color: 'rgba(255,255,255,0.52)',
-    fontSize: 24,
+    fontSize: 23,
     fontWeight: 800,
     lineHeight: 1.28,
   },

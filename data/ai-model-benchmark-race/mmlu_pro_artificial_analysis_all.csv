@@ -1,0 +1,346 @@
+release_date,organization,model,short_name,benchmark,score_percent,reasoning_model,deprecated,slug,source_url
+2022-11-30,OpenAI,GPT-3.5 Turbo,GPT-3.5 Turbo,MMLU-Pro (Artificial Analysis),46.185,False,True,gpt-35-turbo,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-03-14,Anthropic,Claude Instant,Claude Instant,MMLU-Pro (Artificial Analysis),43.442,False,True,claude-instant,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-07-11,Anthropic,Claude 2.0,Claude 2.0,MMLU-Pro (Artificial Analysis),48.57,False,True,claude-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-07-18,Meta,Llama 2 Chat 13B,Llama 2 Chat 13B,MMLU-Pro (Artificial Analysis),40.633,False,True,llama-2-chat-13b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-07-18,Meta,Llama 2 Chat 70B,Llama 2 Chat 70B,MMLU-Pro (Artificial Analysis),40.583,False,True,llama-2-chat-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-07-18,Meta,Llama 2 Chat 7B,Llama 2 Chat 7B,MMLU-Pro (Artificial Analysis),16.39,False,True,llama-2-chat-7b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-09-27,Mistral,Mistral 7B Instruct,Mistral 7B,MMLU-Pro (Artificial Analysis),24.526,False,True,mistral-7b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-11-06,OpenAI,GPT-4 Turbo,GPT-4 Turbo,MMLU-Pro (Artificial Analysis),69.373,False,True,gpt-4-turbo,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-11-21,Anthropic,Claude 2.1,Claude 2.1,MMLU-Pro (Artificial Analysis),49.476,False,True,claude-21,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-12-06,Google,Gemini 1.0 Pro,Gemini 1.0 Pro,MMLU-Pro (Artificial Analysis),43.085,False,True,gemini-1-0-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-12-11,Mistral,Mistral Medium,Mistral Medium,MMLU-Pro (Artificial Analysis),49.069,False,True,mistral-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-12-11,Mistral,Mixtral 8x7B Instruct,Mixtral 8x7B,MMLU-Pro (Artificial Analysis),38.688,False,True,mixtral-8x7b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2023-12-18,OpenChat,OpenChat 3.5 (1210),OpenChat 3.5,MMLU-Pro (Artificial Analysis),31.017,False,True,openchat-35,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-02-26,Mistral,Mistral Large (Feb '24),Mistral Large (Feb),MMLU-Pro (Artificial Analysis),51.546,False,True,mistral-large,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-02-26,Mistral,Mistral Small (Feb '24),Mistral Small (Feb),MMLU-Pro (Artificial Analysis),41.897,False,True,mistral-small-2402,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-02-26,Microsoft,Phi-4 Mini Instruct,Phi-4 Mini,MMLU-Pro (Artificial Analysis),46.484,False,False,phi-4-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-03-04,Anthropic,Claude 3 Opus,Claude 3 Opus,MMLU-Pro (Artificial Analysis),69.573,False,True,claude-3-opus,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-03-04,Anthropic,Claude 3 Sonnet,Claude 3 Sonnet,MMLU-Pro (Artificial Analysis),57.921,False,True,claude-3-sonnet,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-03-12,Cohere,Command-R (Mar '24),Command-R (Mar),MMLU-Pro (Artificial Analysis),33.843,False,True,command-r-03-2024,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-03-27,Databricks,DBRX Instruct,DBRX,MMLU-Pro (Artificial Analysis),39.711,False,True,dbrx,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-04-04,Cohere,Command-R+ (Apr '24),Command-R+ (Apr),MMLU-Pro (Artificial Analysis),43.177,False,True,command-r-plus-04-2024,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-04-17,Mistral,Mixtral 8x22B Instruct,Mixtral 8x22B,MMLU-Pro (Artificial Analysis),53.665,False,True,mistral-8x22b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-04-18,Meta,Llama 3 Instruct 70B,Llama 3 70B,MMLU-Pro (Artificial Analysis),57.447,False,True,llama-3-instruct-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-04-18,Meta,Llama 3 Instruct 8B,Llama 3 8B,MMLU-Pro (Artificial Analysis),40.475,False,True,llama-3-instruct-8b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-04-23,Microsoft,Phi-3 Mini Instruct 3.8B,Phi-3 Mini,MMLU-Pro (Artificial Analysis),43.509,False,True,phi-3-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-05-13,OpenAI,GPT-4o (May '24),GPT-4o (May),MMLU-Pro (Artificial Analysis),73.953,False,True,gpt-4o-2024-05-13,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-05-14,Google,Gemini 1.5 Flash (May '24),Gemini 1.5 Flash (May),MMLU-Pro (Artificial Analysis),57.405,False,True,gemini-1-5-flash-may-2024,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-05-15,Google,Gemini 1.5 Pro (May '24),Gemini 1.5 Pro (May),MMLU-Pro (Artificial Analysis),65.741,False,True,gemini-1-5-pro-may-2024,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-06-07,Alibaba,Qwen2 Instruct 72B,Qwen2 72B,MMLU-Pro (Artificial Analysis),62.176,False,True,qwen2-72b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-06-17,DeepSeek,DeepSeek Coder V2 Lite Instruct,DeepSeek Coder V2 Lite,MMLU-Pro (Artificial Analysis),42.919,False,True,deepseek-coder-v2-lite,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-06-21,Anthropic,Claude 3.5 Sonnet (June '24),Claude 3.5 Sonnet (June),MMLU-Pro (Artificial Analysis),75.108,False,True,claude-35-sonnet-june-24,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-07-18,OpenAI,GPT-4o mini,GPT-4o mini,MMLU-Pro (Artificial Analysis),64.777,False,True,gpt-4o-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-07-23,Meta,Llama 3.1 Instruct 405B,Llama 3.1 405B,MMLU-Pro (Artificial Analysis),73.172,False,False,llama-3-1-instruct-405b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-07-23,Meta,Llama 3.1 Instruct 70B,Llama 3.1 70B,MMLU-Pro (Artificial Analysis),67.611,False,True,llama-3-1-instruct-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-07-23,Meta,Llama 3.1 Instruct 8B,Llama 3.1 8B,MMLU-Pro (Artificial Analysis),47.631,False,True,llama-3-1-instruct-8b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-07-24,Mistral,Mistral Large 2 (Jul '24),Mistral Large 2 (Jul),MMLU-Pro (Artificial Analysis),68.26,False,True,mistral-large-2407,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-08-13,xAI,Grok Beta,Grok Beta,MMLU-Pro (Artificial Analysis),70.304,False,True,grok-beta,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-08-15,Nous Research,Hermes 3 - Llama-3.1 70B,Hermes 3 - Llama-3.1 70B,MMLU-Pro (Artificial Analysis),57.073,False,True,hermes-3-llama-3-1-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-08-22,AI21 Labs,Jamba 1.5 Large,Jamba 1.5 Large,MMLU-Pro (Artificial Analysis),57.239,False,True,jamba-1-5-large,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-08-22,AI21 Labs,Jamba 1.5 Mini,Jamba 1.5 Mini,MMLU-Pro (Artificial Analysis),37.051,False,True,jamba-1-5-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-12,OpenAI,o1-mini,o1-mini,MMLU-Pro (Artificial Analysis),74.235,True,True,o1-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-17,Mistral,Mistral Small (Sep '24),Mistral Small (Sep),MMLU-Pro (Artificial Analysis),52.926,False,True,mistral-small,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-19,Alibaba,Qwen2.5 Coder Instruct 7B ,Qwen2.5 Coder 7B ,MMLU-Pro (Artificial Analysis),47.332,False,True,qwen2-5-coder-7b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-19,Alibaba,Qwen2.5 Instruct 32B,Qwen2.5 Instruct 32B,MMLU-Pro (Artificial Analysis),69.656,False,True,qwen2.5-32b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-19,Alibaba,Qwen2.5 Instruct 72B,Qwen2.5 72B,MMLU-Pro (Artificial Analysis),72.033,False,True,qwen2-5-72b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-24,Google,Gemini 1.5 Flash (Sep '24),Gemini 1.5 Flash (Sep),MMLU-Pro (Artificial Analysis),67.994,False,True,gemini-1-5-flash,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-24,Google,Gemini 1.5 Pro (Sep '24),Gemini 1.5 Pro (Sep),MMLU-Pro (Artificial Analysis),75.017,False,True,gemini-1-5-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-25,Meta,Llama 3.2 Instruct 11B (Vision),Llama 3.2 11B (Vision),MMLU-Pro (Artificial Analysis),46.426,False,False,llama-3-2-instruct-11b-vision,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-25,Meta,Llama 3.2 Instruct 1B,Llama 3.2 1B,MMLU-Pro (Artificial Analysis),20.03,False,True,llama-3-2-instruct-1b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-25,Meta,Llama 3.2 Instruct 3B,Llama 3.2 3B,MMLU-Pro (Artificial Analysis),34.699,False,True,llama-3-2-instruct-3b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-25,Meta,Llama 3.2 Instruct 90B (Vision),Llama 3.2 90B (Vision),MMLU-Pro (Artificial Analysis),67.104,False,False,llama-3-2-instruct-90b-vision,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-25,Allen Institute for AI,Molmo 7B-D,Molmo 7B-D,MMLU-Pro (Artificial Analysis),37.143,False,False,molmo-7b-d,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-09-30,Liquid AI,LFM 40B,LFM 40B,MMLU-Pro (Artificial Analysis),42.528,False,True,lfm-40b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-10-03,Google,Gemini 1.5 Flash-8B,Gemini 1.5 Flash-8B,MMLU-Pro (Artificial Analysis),56.915,False,True,gemini-1-5-flash-8b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-10-15,NVIDIA,Llama 3.1 Nemotron Instruct 70B,Llama 3.1 Nemotron 70B,MMLU-Pro (Artificial Analysis),68.974,False,False,llama-3-1-nemotron-instruct-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-10-22,Anthropic,Claude 3.5 Haiku,Claude 3.5 Haiku,MMLU-Pro (Artificial Analysis),63.447,False,True,claude-3-5-haiku,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-10-22,Anthropic,Claude 3.5 Sonnet (Oct '24),Claude 3.5 Sonnet (Oct),MMLU-Pro (Artificial Analysis),77.244,False,True,claude-35-sonnet,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-11,Alibaba,Qwen2.5 Coder Instruct 32B,Qwen2.5 Coder 32B,MMLU-Pro (Artificial Analysis),63.472,False,True,qwen2-5-coder-32b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-18,Mistral,Mistral Large 2 (Nov '24),Mistral Large 2 (Nov),MMLU-Pro (Artificial Analysis),69.697,False,True,mistral-large-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-18,Mistral,Pixtral Large,Pixtral Large,MMLU-Pro (Artificial Analysis),70.113,False,True,pixtral-large-2411,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-18,Alibaba,Qwen2.5 Turbo,Qwen2.5 Turbo,MMLU-Pro (Artificial Analysis),63.306,False,True,qwen-turbo,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-20,OpenAI,GPT-4o (Nov '24),GPT-4o (Nov),MMLU-Pro (Artificial Analysis),74.767,False,True,gpt-4o,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-26,Allen Institute for AI,OLMo 2 7B,OLMo 2 7B,MMLU-Pro (Artificial Analysis),28.175,False,True,olmo-2-7b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-11-27,Alibaba,QwQ 32B-Preview,QwQ 32B-Preview,MMLU-Pro (Artificial Analysis),64.794,True,True,QwQ-32B-Preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-03,Amazon,Nova Lite,Nova Lite,MMLU-Pro (Artificial Analysis),58.959,False,True,nova-lite,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-03,Amazon,Nova Micro,Nova Micro,MMLU-Pro (Artificial Analysis),53.083,False,False,nova-micro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-03,Amazon,Nova Pro,Nova Pro,MMLU-Pro (Artificial Analysis),69.099,False,True,nova-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-05,OpenAI,o1,o1,MMLU-Pro (Artificial Analysis),84.059,True,True,o1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-06,Meta,Llama 3.3 Instruct 70B,Llama 3.3 70B,MMLU-Pro (Artificial Analysis),71.293,False,False,llama-3-3-instruct-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-11,Google,Gemini 2.0 Flash (experimental),Gemini 2.0 Flash (exp),MMLU-Pro (Artificial Analysis),78.158,False,True,gemini-2-0-flash-experimental,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-12,xAI,Grok 2 (Dec '24),Grok 2,MMLU-Pro (Artificial Analysis),70.878,False,True,grok-2-1212,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-12,Microsoft,Phi-4,Phi-4,MMLU-Pro (Artificial Analysis),71.443,False,False,phi-4,https://artificialanalysis.ai/evaluations/mmlu-pro
+2024-12-26,DeepSeek,DeepSeek V3 (Dec '24),DeepSeek V3 (Dec),MMLU-Pro (Artificial Analysis),75.224,False,True,deepseek-v3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-20,DeepSeek,DeepSeek R1 (Jan '25),DeepSeek R1 (Jan),MMLU-Pro (Artificial Analysis),84.45,True,True,deepseek-r1-0120,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-20,DeepSeek,DeepSeek R1 Distill Llama 70B,DeepSeek R1 Distill Llama 70B,MMLU-Pro (Artificial Analysis),79.48,True,True,deepseek-r1-distill-llama-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-20,DeepSeek,DeepSeek R1 Distill Llama 8B,DeepSeek R1 Distill Llama 8B,MMLU-Pro (Artificial Analysis),54.255,True,True,deepseek-r1-distill-llama-8b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-20,DeepSeek,DeepSeek R1 Distill Qwen 1.5B,DeepSeek R1 Distill Qwen 1.5B,MMLU-Pro (Artificial Analysis),26.92,True,True,deepseek-r1-distill-qwen-1-5b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-20,DeepSeek,DeepSeek R1 Distill Qwen 14B,DeepSeek R1 Distill Qwen 14B,MMLU-Pro (Artificial Analysis),74.003,True,True,deepseek-r1-distill-qwen-14b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-20,DeepSeek,DeepSeek R1 Distill Qwen 32B,DeepSeek R1 Distill Qwen 32B,MMLU-Pro (Artificial Analysis),73.936,True,True,deepseek-r1-distill-qwen-32b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-21,Google,Gemini 2.0 Flash Thinking Experimental (Jan '25),Gemini 2.0 Flash Thinking exp. (Jan),MMLU-Pro (Artificial Analysis),79.779,True,True,gemini-2-0-flash-thinking-exp-0121,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-21,Perplexity,Sonar,Sonar,MMLU-Pro (Artificial Analysis),68.916,False,True,sonar,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-21,Perplexity,Sonar Pro,Sonar Pro,MMLU-Pro (Artificial Analysis),75.515,False,True,sonar-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-28,Alibaba,Qwen2.5 Max,Qwen2.5 Max,MMLU-Pro (Artificial Analysis),76.238,False,True,qwen-2-5-max,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-30,Allen Institute for AI,Llama 3.1 Tulu3 405B,Tulu3 405B,MMLU-Pro (Artificial Analysis),71.617,False,True,tulu3-405b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-30,Mistral,Mistral Small 3,Mistral Small 3,MMLU-Pro (Artificial Analysis),65.16,False,True,mistral-small-3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-31,OpenAI,o3-mini,o3-mini,MMLU-Pro (Artificial Analysis),79.056,True,True,o3-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-01-31,OpenAI,o3-mini (high),o3-mini (high),MMLU-Pro (Artificial Analysis),80.194,True,True,o3-mini-high,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-05,Google,Gemini 2.0 Flash (Feb '25),Gemini 2.0 Flash,MMLU-Pro (Artificial Analysis),77.859,False,True,gemini-2-0-flash,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-05,Google,Gemini 2.0 Pro Experimental (Feb '25),Gemini 2.0 Pro Experimental,MMLU-Pro (Artificial Analysis),80.502,False,True,gemini-2-0-pro-experimental-02-05,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-13,Nous Research,DeepHermes 3 - Llama-3.1 8B Preview (Non-reasoning),DeepHermes 3 - Llama-3.1 8B,MMLU-Pro (Artificial Analysis),36.528,False,False,deephermes-3-llama-3-1-8b-preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-15,OpenAI,GPT-4o (ChatGPT),GPT-4o (ChatGPT),MMLU-Pro (Artificial Analysis),77.335,False,True,gpt-4o-chatgpt,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-17,Mistral,Mistral Saba,Mistral Saba,MMLU-Pro (Artificial Analysis),61.095,False,True,mistral-saba,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-19,xAI,Grok 3,Grok 3,MMLU-Pro (Artificial Analysis),79.87,False,True,grok-3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-19,xAI,Grok 3 mini Reasoning (high),Grok 3 mini Reasoning (high),MMLU-Pro (Artificial Analysis),82.779,True,True,grok-3-mini-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-24,Anthropic,Claude 3.7 Sonnet (Non-reasoning),Claude 3.7 Sonnet,MMLU-Pro (Artificial Analysis),80.327,False,True,claude-3-7-sonnet,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-24,Anthropic,Claude 3.7 Sonnet (Reasoning),Claude 3.7 Sonnet,MMLU-Pro (Artificial Analysis),83.693,True,True,claude-3-7-sonnet-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-25,Google,Gemini 2.0 Flash-Lite (Feb '25),Gemini 2.0 Flash-Lite (Feb),MMLU-Pro (Artificial Analysis),72.374,False,True,gemini-2-0-flash-lite-001,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-02-26,Microsoft,Phi-4 Multimodal Instruct,Phi-4 Multimodal,MMLU-Pro (Artificial Analysis),48.546,False,False,phi-4-multimodal,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-05,Alibaba,QwQ 32B,QwQ-32B,MMLU-Pro (Artificial Analysis),76.38,True,True,qwq-32b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-06,AI21 Labs,Jamba 1.6 Large,Jamba 1.6 Large,MMLU-Pro (Artificial Analysis),56.458,False,True,jamba-1-6-large,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-06,AI21 Labs,Jamba 1.6 Mini,Jamba 1.6 Mini,MMLU-Pro (Artificial Analysis),36.677,False,True,jamba-1-6-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-10,Reka AI,Reka Flash 3,Reka Flash 3,MMLU-Pro (Artificial Analysis),66.922,True,False,reka-flash-3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-12,Google,Gemma 3 12B Instruct,Gemma 3 12B,MMLU-Pro (Artificial Analysis),59.491,False,True,gemma-3-12b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-12,Google,Gemma 3 27B Instruct,Gemma 3 27B,MMLU-Pro (Artificial Analysis),66.863,False,True,gemma-3-27b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-12,Google,Gemma 3 4B Instruct,Gemma 3 4B,MMLU-Pro (Artificial Analysis),41.689,False,True,gemma-3-4b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-13,Cohere,Command A,Command A,MMLU-Pro (Artificial Analysis),71.185,False,False,command-a,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-13,Nous Research,DeepHermes 3 - Mistral 24B Preview (Non-reasoning),DeepHermes 3 - Mistral 24B,MMLU-Pro (Artificial Analysis),58.012,False,False,deephermes-3-mistral-24b-preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-13,Google,Gemma 3 1B Instruct,Gemma 3 1B,MMLU-Pro (Artificial Analysis),13.472,False,True,gemma-3-1b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-13,Allen Institute for AI,OLMo 2 32B,OLMo 2 32B,MMLU-Pro (Artificial Analysis),51.064,False,True,olmo-2-32b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-17,Mistral,Mistral Small 3.1,Mistral Small 3.1,MMLU-Pro (Artificial Analysis),65.933,False,True,mistral-small-3-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-18,NVIDIA,Llama 3.3 Nemotron Super 49B v1 (Non-reasoning),Llama 3.3 Nemotron Super 49B,MMLU-Pro (Artificial Analysis),69.772,False,True,llama-3-3-nemotron-super-49b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-18,NVIDIA,Llama 3.3 Nemotron Super 49B v1 (Reasoning),Llama 3.3 Nemotron Super 49B,MMLU-Pro (Artificial Analysis),78.457,True,True,llama-3-3-nemotron-super-49b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-25,DeepSeek,DeepSeek V3 0324,DeepSeek V3 0324,MMLU-Pro (Artificial Analysis),81.907,False,True,deepseek-v3-0324,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-25,Google,Gemini 2.5 Pro Preview (Mar' 25),Gemini 2.5 Pro (Mar),MMLU-Pro (Artificial Analysis),85.755,True,True,gemini-2-5-pro-03-25,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-03-27,OpenAI,"GPT-4o (March 2025, chatgpt-4o-latest)",GPT-4o (Mar),MMLU-Pro (Artificial Analysis),80.294,False,True,gpt-4o-chatgpt-03-25,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-05,Meta,Llama 4 Maverick,Llama 4 Maverick,MMLU-Pro (Artificial Analysis),80.851,False,False,llama-4-maverick,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-05,Meta,Llama 4 Scout,Llama 4 Scout,MMLU-Pro (Artificial Analysis),75.175,False,False,llama-4-scout,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-07,NVIDIA,Llama 3.1 Nemotron Ultra 253B v1 (Reasoning),Llama Nemotron Ultra,MMLU-Pro (Artificial Analysis),82.455,True,False,llama-3-1-nemotron-ultra-253b-v1-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-14,OpenAI,GPT-4.1,GPT-4.1,MMLU-Pro (Artificial Analysis),80.618,False,True,gpt-4-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-14,OpenAI,GPT-4.1 mini,GPT-4.1 mini,MMLU-Pro (Artificial Analysis),78.083,False,True,gpt-4-1-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-14,OpenAI,GPT-4.1 nano,GPT-4.1 nano,MMLU-Pro (Artificial Analysis),65.683,False,True,gpt-4-1-nano,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-16,IBM,Granite 3.3 8B (Non-reasoning),Granite 3.3 8B,MMLU-Pro (Artificial Analysis),46.784,False,True,granite-3-3-8b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-16,OpenAI,o3,o3,MMLU-Pro (Artificial Analysis),85.347,True,False,o3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-16,OpenAI,o4-mini (high),o4-mini (high),MMLU-Pro (Artificial Analysis),83.195,True,True,o4-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-17,Google,Gemini 2.5 Flash Preview (Non-reasoning),Gemini 2.5 Flash,MMLU-Pro (Artificial Analysis),78.308,False,True,gemini-2-5-flash-04-2025,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-17,Google,Gemini 2.5 Flash Preview (Reasoning),Gemini 2.5 Flash,MMLU-Pro (Artificial Analysis),79.978,True,True,gemini-2-5-flash-reasoning-04-2025,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 0.6B (Non-reasoning),Qwen3 0.6B,MMLU-Pro (Artificial Analysis),23.072,False,True,qwen3-0.6b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 0.6B (Reasoning),Qwen3 0.6B,MMLU-Pro (Artificial Analysis),34.683,True,True,qwen3-0.6b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 1.7B (Non-reasoning),Qwen3 1.7B,MMLU-Pro (Artificial Analysis),41.057,False,True,qwen3-1.7b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 1.7B (Reasoning),Qwen3 1.7B,MMLU-Pro (Artificial Analysis),56.973,True,True,qwen3-1.7b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 14B (Non-reasoning),Qwen3 14B,MMLU-Pro (Artificial Analysis),67.462,False,True,qwen3-14b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 14B (Reasoning),Qwen3 14B,MMLU-Pro (Artificial Analysis),77.377,True,True,qwen3-14b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 235B A22B (Non-reasoning),Qwen3 235B,MMLU-Pro (Artificial Analysis),76.213,False,True,qwen3-235b-a22b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 235B A22B (Reasoning),Qwen3 235B,MMLU-Pro (Artificial Analysis),82.796,True,True,qwen3-235b-a22b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 30B A3B (Non-reasoning),Qwen3 30B,MMLU-Pro (Artificial Analysis),71.044,False,True,qwen3-30b-a3b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 30B A3B (Reasoning),Qwen3 30B,MMLU-Pro (Artificial Analysis),77.676,True,True,qwen3-30b-a3b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 32B (Non-reasoning),Qwen3 32B,MMLU-Pro (Artificial Analysis),72.748,False,True,qwen3-32b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 32B (Reasoning),Qwen3 32B,MMLU-Pro (Artificial Analysis),79.845,True,True,qwen3-32b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 4B (Non-reasoning),Qwen3 4B,MMLU-Pro (Artificial Analysis),58.594,False,True,qwen3-4b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 4B (Reasoning),Qwen3 4B,MMLU-Pro (Artificial Analysis),69.564,True,True,qwen3-4b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 8B (Non-reasoning),Qwen3 8B,MMLU-Pro (Artificial Analysis),64.279,False,True,qwen3-8b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-28,Alibaba,Qwen3 8B (Reasoning),Qwen3 8B,MMLU-Pro (Artificial Analysis),74.302,True,True,qwen3-8b-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-04-30,Amazon,Nova Premier,Nova Premier,MMLU-Pro (Artificial Analysis),73.346,False,False,nova-premier,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-06,Google,Gemini 2.5 Pro Preview (May' 25),Gemini 2.5 Pro (May),MMLU-Pro (Artificial Analysis),83.727,True,True,gemini-2-5-pro-05-06,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-07,Mistral,Mistral Medium 3,Mistral Medium 3,MMLU-Pro (Artificial Analysis),75.972,False,True,mistral-medium-3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-20,Google,Gemini 2.5 Flash (Non-reasoning),Gemini 2.5 Flash,MMLU-Pro (Artificial Analysis),80.918,False,True,gemini-2-5-flash,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-20,Google,Gemini 2.5 Flash (Reasoning),Gemini 2.5 Flash,MMLU-Pro (Artificial Analysis),83.153,True,True,gemini-2-5-flash-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-20,Google,Gemma 3n E4B Instruct Preview (May '25),Gemma 3n E4B (May),MMLU-Pro (Artificial Analysis),48.288,False,True,gemma-3n-e4b-preview-0520,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-20,NVIDIA,Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning),Llama 3.1 Nemotron Nano 4B v1.1,MMLU-Pro (Artificial Analysis),55.602,True,True,llama-3-1-nemotron-nano-4b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-20,Upstage,Solar Pro 2 (Preview) (Non-reasoning),Solar Pro 2 ,MMLU-Pro (Artificial Analysis),72.54,False,True,solar-pro-2-preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-20,Upstage,Solar Pro 2 (Preview) (Reasoning),Solar Pro 2,MMLU-Pro (Artificial Analysis),76.77,True,True,solar-pro-2-preview-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-21,Mistral,Devstral Small (May '25),Devstral Small (May),MMLU-Pro (Artificial Analysis),63.173,False,True,devstral-small-2505,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-22,Anthropic,Claude 4 Opus (Non-reasoning),Claude 4 Opus,MMLU-Pro (Artificial Analysis),85.979,False,True,claude-4-opus,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-22,Anthropic,Claude 4 Opus (Reasoning),Claude 4 Opus,MMLU-Pro (Artificial Analysis),87.317,True,True,claude-4-opus-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-22,Anthropic,Claude 4 Sonnet (Non-reasoning),Claude 4 Sonnet,MMLU-Pro (Artificial Analysis),83.66,False,True,claude-4-sonnet,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-22,Anthropic,Claude 4 Sonnet (Reasoning),Claude 4 Sonnet,MMLU-Pro (Artificial Analysis),84.151,True,True,claude-4-sonnet-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-23,Sarvam,Sarvam M (Reasoning),Sarvam M,MMLU-Pro (Artificial Analysis),69.573,True,True,sarvam-m-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-28,DeepSeek,DeepSeek R1 0528 (May '25),DeepSeek R1 0528,MMLU-Pro (Artificial Analysis),84.857,True,True,deepseek-r1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-05-29,DeepSeek,DeepSeek R1 0528 Qwen3 8B,DeepSeek R1 0528 Qwen3 8B,MMLU-Pro (Artificial Analysis),73.878,True,True,deepseek-r1-qwen3-8b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-05,Google,Gemini 2.5 Pro,Gemini 2.5 Pro,MMLU-Pro (Artificial Analysis),86.187,True,False,gemini-2-5-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-10,Mistral,Magistral Medium 1,Magistral Medium 1,MMLU-Pro (Artificial Analysis),75.332,True,True,magistral-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-10,Mistral,Magistral Small 1,Magistral Small 1,MMLU-Pro (Artificial Analysis),74.634,True,True,magistral-small,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-17,Google,Gemini 2.5 Flash-Lite (Non-reasoning),Gemini 2.5 Flash-Lite,MMLU-Pro (Artificial Analysis),72.44,False,True,gemini-2-5-flash-lite,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-17,Google,Gemini 2.5 Flash-Lite (Reasoning),Gemini 2.5 Flash-Lite,MMLU-Pro (Artificial Analysis),75.914,True,True,gemini-2-5-flash-lite-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-17,MiniMax,MiniMax M1 40k,MiniMax M1 40k,MMLU-Pro (Artificial Analysis),80.826,True,True,minimax-m1-40k,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-17,MiniMax,MiniMax M1 80k,MiniMax M1 80k,MMLU-Pro (Artificial Analysis),81.624,True,True,minimax-m1-80k,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-20,Mistral,Mistral Small 3.2,Mistral Small 3.2,MMLU-Pro (Artificial Analysis),68.052,False,True,mistral-small-3-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-26,Google,Gemma 3n E2B Instruct,Gemma 3n E2B,MMLU-Pro (Artificial Analysis),37.816,False,True,gemma-3n-e2b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-26,Google,Gemma 3n E4B Instruct,Gemma 3n E4B,MMLU-Pro (Artificial Analysis),48.828,False,True,gemma-3n-e4b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-06-30,Baidu,ERNIE 4.5 300B A47B,ERNIE 4.5 300B A47B,MMLU-Pro (Artificial Analysis),77.61,False,False,ernie-4-5-300b-a47b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-07,AI21 Labs,Jamba 1.7 Large,Jamba 1.7 Large,MMLU-Pro (Artificial Analysis),57.655,False,False,jamba-1-7-large,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-07,AI21 Labs,Jamba 1.7 Mini,Jamba 1.7 Mini,MMLU-Pro (Artificial Analysis),38.821,False,False,jamba-1-7-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-09,Upstage,Solar Pro 2 (Non-reasoning),Solar Pro 2,MMLU-Pro (Artificial Analysis),75.042,False,False,solar-pro-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-09,Upstage,Solar Pro 2 (Reasoning),Solar Pro 2,MMLU-Pro (Artificial Analysis),80.519,True,False,solar-pro-2-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-10,Mistral,Devstral Medium,Devstral Medium,MMLU-Pro (Artificial Analysis),70.803,False,True,devstral-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-10,Mistral,Devstral Small (Jul '25),Devstral Small,MMLU-Pro (Artificial Analysis),62.234,False,True,devstral-small,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-10,xAI,Grok 4,Grok 4,MMLU-Pro (Artificial Analysis),86.577,True,True,grok-4,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-10,Liquid AI,LFM2 1.2B,LFM2 1.2B,MMLU-Pro (Artificial Analysis),25.698,False,True,lfm2-1-2b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-11,Kimi,Kimi K2,Kimi K2,MMLU-Pro (Artificial Analysis),82.38,False,True,kimi-k2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-15,LG AI Research,EXAONE 4.0 32B (Non-reasoning),EXAONE 4.0 32B,MMLU-Pro (Artificial Analysis),76.828,False,False,exaone-4-0-32b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-15,LG AI Research,EXAONE 4.0 32B (Reasoning),EXAONE 4.0 32B,MMLU-Pro (Artificial Analysis),81.757,True,False,exaone-4-0-32b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-15,LG AI Research,Exaone 4.0 1.2B (Non-reasoning),Exaone 4.0 1.2B,MMLU-Pro (Artificial Analysis),50.05,False,False,exaone-4-0-1-2b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-15,LG AI Research,Exaone 4.0 1.2B (Reasoning),Exaone 4.0 1.2B,MMLU-Pro (Artificial Analysis),58.768,True,False,exaone-4-0-1-2b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-21,Alibaba,Qwen3 235B A22B 2507 Instruct,Qwen3 235B 2507,MMLU-Pro (Artificial Analysis),82.788,False,True,qwen3-235b-a22b-instruct-2507,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-22,Alibaba,Qwen3 Coder 480B A35B Instruct,Qwen3 Coder 480B,MMLU-Pro (Artificial Analysis),78.79,False,True,qwen3-coder-480b-a35b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-25,NVIDIA,Llama Nemotron Super 49B v1.5 (Non-reasoning),Llama Nemotron Super 49B v1.5,MMLU-Pro (Artificial Analysis),69.157,False,False,llama-nemotron-super-49b-v1-5,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-25,NVIDIA,Llama Nemotron Super 49B v1.5 (Reasoning),Llama Nemotron Super 49B v1.5,MMLU-Pro (Artificial Analysis),81.383,True,False,llama-nemotron-super-49b-v1-5-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-25,Alibaba,Qwen3 235B A22B 2507 (Reasoning),Qwen3 235B A22B 2507,MMLU-Pro (Artificial Analysis),84.259,True,True,qwen3-235b-a22b-instruct-2507-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-28,Z AI,GLM-4.5 (Reasoning),GLM-4.5,MMLU-Pro (Artificial Analysis),83.511,True,True,glm-4.5,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-28,Z AI,GLM-4.5-Air,GLM-4.5-Air,MMLU-Pro (Artificial Analysis),81.466,True,True,glm-4-5-air,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-29,Alibaba,Qwen3 30B A3B 2507 Instruct,Qwen3 30B A3B 2507,MMLU-Pro (Artificial Analysis),77.718,False,True,qwen3-30b-a3b-2507,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-30,Alibaba,Qwen3 30B A3B 2507 (Reasoning),Qwen3 30B A3B 2507,MMLU-Pro (Artificial Analysis),80.502,True,True,qwen3-30b-a3b-2507-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-07-31,Alibaba,Qwen3 Coder 30B A3B Instruct,Qwen3 Coder 30B A3B,MMLU-Pro (Artificial Analysis),70.637,False,True,qwen3-coder-30b-a3b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-05,Anthropic,Claude 4.1 Opus (Reasoning),Claude 4.1 Opus,MMLU-Pro (Artificial Analysis),87.988,True,True,claude-4-1-opus-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-05,OpenAI,gpt-oss-120b (high),gpt-oss-120b (high),MMLU-Pro (Artificial Analysis),80.793,True,False,gpt-oss-120b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-05,OpenAI,gpt-oss-120b (low),gpt-oss-120b (low),MMLU-Pro (Artificial Analysis),77.477,True,False,gpt-oss-120b-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-05,OpenAI,gpt-oss-20B (high),gpt-oss-20B (high),MMLU-Pro (Artificial Analysis),74.767,True,False,gpt-oss-20b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-05,OpenAI,gpt-oss-20B (low),gpt-oss-20B (low),MMLU-Pro (Artificial Analysis),71.8,True,False,gpt-oss-20b-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-06,Alibaba,Qwen3 4B 2507 (Reasoning),Qwen3 4B 2507,MMLU-Pro (Artificial Analysis),74.31,True,True,qwen3-4b-2507-instruct-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-06,Alibaba,Qwen3 4B 2507 Instruct,Qwen3 4B 2507,MMLU-Pro (Artificial Analysis),67.237,False,True,qwen3-4b-2507-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 (ChatGPT),GPT-5 (ChatGPT),MMLU-Pro (Artificial Analysis),82.04,False,True,gpt-5-chatgpt,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 (high),GPT-5 (high),MMLU-Pro (Artificial Analysis),87.068,True,True,gpt-5,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 (low),GPT-5 (low),MMLU-Pro (Artificial Analysis),85.979,True,True,gpt-5-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 (medium),GPT-5 (medium),MMLU-Pro (Artificial Analysis),86.744,True,True,gpt-5-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 (minimal),GPT-5 (minimal),MMLU-Pro (Artificial Analysis),80.635,False,True,gpt-5-minimal,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 mini (high),GPT-5 mini (high),MMLU-Pro (Artificial Analysis),83.727,True,True,gpt-5-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 mini (medium),GPT-5 mini (medium),MMLU-Pro (Artificial Analysis),82.779,True,True,gpt-5-mini-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 mini (minimal),GPT-5 mini (minimal),MMLU-Pro (Artificial Analysis),77.452,False,True,gpt-5-mini-minimal,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 nano (high),GPT-5 nano (high),MMLU-Pro (Artificial Analysis),78.025,True,True,gpt-5-nano,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 nano (medium),GPT-5 nano (medium),MMLU-Pro (Artificial Analysis),77.236,True,True,gpt-5-nano-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-07,OpenAI,GPT-5 nano (minimal),GPT-5 nano (minimal),MMLU-Pro (Artificial Analysis),55.643,False,True,gpt-5-nano-minimal,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-11,Z AI,GLM-4.5V (Non-reasoning),GLM-4.5V,MMLU-Pro (Artificial Analysis),75.075,False,True,glm-4-5v,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-11,Z AI,GLM-4.5V (Reasoning),GLM-4.5V,MMLU-Pro (Artificial Analysis),78.823,True,True,glm-4-5v-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-12,Mistral,Mistral Medium 3.1,Mistral Medium 3.1,MMLU-Pro (Artificial Analysis),68.326,False,True,mistral-medium-3-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-14,Google,Gemma 3 270M,Gemma 3 270M,MMLU-Pro (Artificial Analysis),5.527,False,False,gemma-3-270m,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-18,NVIDIA,NVIDIA Nemotron Nano 9B V2 (Non-reasoning),NVIDIA Nemotron Nano 9B V2,MMLU-Pro (Artificial Analysis),73.936,False,False,nvidia-nemotron-nano-9b-v2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-18,NVIDIA,NVIDIA Nemotron Nano 9B V2 (Reasoning),NVIDIA Nemotron Nano 9B V2,MMLU-Pro (Artificial Analysis),74.227,True,False,nvidia-nemotron-nano-9b-v2-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-20,ByteDance Seed,Seed-OSS-36B-Instruct,Seed-OSS-36B-Instruct,MMLU-Pro (Artificial Analysis),81.541,True,True,seed-oss-36b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-21,DeepSeek,DeepSeek V3.1 (Non-reasoning),DeepSeek V3.1,MMLU-Pro (Artificial Analysis),83.278,False,True,deepseek-v3-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-21,DeepSeek,DeepSeek V3.1 (Reasoning),DeepSeek V3.1,MMLU-Pro (Artificial Analysis),85.057,True,True,deepseek-v3-1-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-27,Nous Research,Hermes 4 - Llama-3.1 405B (Non-reasoning),Hermes 4 405B,MMLU-Pro (Artificial Analysis),72.914,False,False,hermes-4-llama-3-1-405b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-27,Nous Research,Hermes 4 - Llama-3.1 405B (Reasoning),Hermes 4 405B,MMLU-Pro (Artificial Analysis),82.904,True,False,hermes-4-llama-3-1-405b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-27,Nous Research,Hermes 4 - Llama-3.1 70B (Non-reasoning),Hermes 4 70B,MMLU-Pro (Artificial Analysis),66.415,False,False,hermes-4-llama-3-1-70b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-27,Nous Research,Hermes 4 - Llama-3.1 70B (Reasoning),Hermes 4 70B,MMLU-Pro (Artificial Analysis),81.051,True,False,hermes-4-llama-3-1-70b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-08-28,xAI,Grok Code Fast 1,Grok Code Fast 1,MMLU-Pro (Artificial Analysis),79.322,True,True,grok-code-fast-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-05,Kimi,Kimi K2 0905,Kimi K2 0905,MMLU-Pro (Artificial Analysis),81.948,False,True,kimi-k2-0905,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-05,Alibaba,Qwen3 Max (Preview),Qwen3 Max (Preview),MMLU-Pro (Artificial Analysis),83.835,False,True,qwen3-max-preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-08,Google,Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning),Gemini 2.5 Flash-Lite (Sep),MMLU-Pro (Artificial Analysis),80.801,True,True,gemini-2-5-flash-lite-preview-09-2025-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-09,InclusionAI,Ling-mini-2.0,Ling-mini-2.0,MMLU-Pro (Artificial Analysis),67.129,False,False,ling-mini-2-0,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-11,Alibaba,Qwen3 Next 80B A3B (Reasoning),Qwen3 Next 80B A3B,MMLU-Pro (Artificial Analysis),82.38,True,False,qwen3-next-80b-a3b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-11,Alibaba,Qwen3 Next 80B A3B Instruct,Qwen3 Next 80B A3B,MMLU-Pro (Artificial Analysis),81.882,False,False,qwen3-next-80b-a3b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-17,InclusionAI,Ling-flash-2.0,Ling-flash-2.0,MMLU-Pro (Artificial Analysis),77.726,False,True,ling-flash-2-0,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-17,Mistral,Magistral Small 1.2,Magistral Small 1.2,MMLU-Pro (Artificial Analysis),76.845,True,False,magistral-small-2509,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-18,Mistral,Magistral Medium 1.2,Magistral Medium 1.2,MMLU-Pro (Artificial Analysis),81.508,True,False,magistral-medium-2509,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-19,xAI,Grok 4 Fast (Non-reasoning),Grok 4 Fast,MMLU-Pro (Artificial Analysis),72.997,False,True,grok-4-fast,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-19,xAI,Grok 4 Fast (Reasoning),Grok 4 Fast,MMLU-Pro (Artificial Analysis),85.04,True,True,grok-4-fast-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-19,InclusionAI,Ring-flash-2.0,Ring-flash-2.0,MMLU-Pro (Artificial Analysis),79.272,True,False,ring-flash-2-0,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-22,DeepSeek,DeepSeek V3.1 Terminus (Non-reasoning),DeepSeek V3.1 Terminus,MMLU-Pro (Artificial Analysis),83.602,False,True,deepseek-v3-1-terminus,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-22,DeepSeek,DeepSeek V3.1 Terminus (Reasoning),DeepSeek V3.1 Terminus,MMLU-Pro (Artificial Analysis),85.115,True,True,deepseek-v3-1-terminus-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-22,IBM,Granite 4.0 H Small,Granite 4.0 H Small,MMLU-Pro (Artificial Analysis),62.442,False,False,granite-4-0-h-small,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-22,IBM,Granite 4.0 Micro,Granite 4.0 Micro,MMLU-Pro (Artificial Analysis),44.673,False,False,granite-4-0-micro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-22,Alibaba,Qwen3 Omni 30B A3B (Reasoning),Qwen3 Omni 30B A3B,MMLU-Pro (Artificial Analysis),79.189,True,False,qwen3-omni-30b-a3b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-22,Alibaba,Qwen3 Omni 30B A3B Instruct,Qwen3 Omni 30B A3B,MMLU-Pro (Artificial Analysis),72.482,False,False,qwen3-omni-30b-a3b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-23,OpenAI,GPT-5 Codex (high),GPT-5 Codex (high),MMLU-Pro (Artificial Analysis),86.486,True,True,gpt-5-codex,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-23,Liquid AI,LFM2 2.6B,LFM2 2.6B,MMLU-Pro (Artificial Analysis),29.779,False,False,lfm2-2-6b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-23,Alibaba,Qwen3 Max,Qwen3 Max,MMLU-Pro (Artificial Analysis),84.117,False,True,qwen3-max,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-23,Alibaba,Qwen3 VL 235B A22B (Reasoning),Qwen3 VL 235B A22B,MMLU-Pro (Artificial Analysis),83.569,True,True,qwen3-vl-235b-a22b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-23,Alibaba,Qwen3 VL 235B A22B Instruct,Qwen3 VL 235B A22B,MMLU-Pro (Artificial Analysis),82.314,False,True,qwen3-vl-235b-a22b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-25,Google,Gemini 2.5 Flash Preview (Sep '25) (Non-reasoning),Gemini 2.5 Flash (Sep),MMLU-Pro (Artificial Analysis),83.61,False,True,gemini-2-5-flash-preview-09-2025,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-25,Google,Gemini 2.5 Flash Preview (Sep '25) (Reasoning),Gemini 2.5 Flash (Sep),MMLU-Pro (Artificial Analysis),84.242,True,True,gemini-2-5-flash-preview-09-2025-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-25,Google,Gemini 2.5 Flash-Lite Preview (Sep '25) (Non-reasoning),Gemini 2.5 Flash-Lite (Sep),MMLU-Pro (Artificial Analysis),79.563,False,True,gemini-2-5-flash-lite-preview-09-2025,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-29,Anthropic,Claude 4.5 Sonnet (Non-reasoning),Claude 4.5 Sonnet,MMLU-Pro (Artificial Analysis),85.987,False,True,claude-4-5-sonnet,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-29,Anthropic,Claude 4.5 Sonnet (Reasoning),Claude 4.5 Sonnet,MMLU-Pro (Artificial Analysis),87.45,True,True,claude-4-5-sonnet-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-29,DeepSeek,DeepSeek V3.2 Exp (Non-reasoning),DeepSeek V3.2 Exp,MMLU-Pro (Artificial Analysis),83.644,False,True,deepseek-v3-2-0925,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-29,DeepSeek,DeepSeek V3.2 Exp (Reasoning),DeepSeek V3.2 Exp,MMLU-Pro (Artificial Analysis),85.04,True,True,deepseek-v3-2-reasoning-0925,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-30,ServiceNow,Apriel-v1.5-15B-Thinker,Apriel-v1.5-15B-Thinker,MMLU-Pro (Artificial Analysis),77.335,True,True,apriel-v1-5-15b-thinker,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-30,Z AI,GLM-4.6 (Non-reasoning),GLM-4.6,MMLU-Pro (Artificial Analysis),78.408,False,True,glm-4-6,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-09-30,Z AI,GLM-4.6 (Reasoning),GLM-4.6,MMLU-Pro (Artificial Analysis),82.921,True,True,glm-4-6-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-03,Alibaba,Qwen3 VL 30B A3B (Reasoning),Qwen3 VL 30B A3B,MMLU-Pro (Artificial Analysis),80.668,True,True,qwen3-vl-30b-a3b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-03,Alibaba,Qwen3 VL 30B A3B Instruct,Qwen3 VL 30B A3B,MMLU-Pro (Artificial Analysis),76.446,False,True,qwen3-vl-30b-a3b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-07,Liquid AI,LFM2 8B A1B,LFM2 8B A1B,MMLU-Pro (Artificial Analysis),50.54,False,False,lfm2-8b-a1b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-08,AI21 Labs,Jamba Reasoning 3B,Jamba Reasoning 3B,MMLU-Pro (Artificial Analysis),57.746,True,False,jamba-reasoning-3b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-08,InclusionAI,Ling-1T,Ling-1T,MMLU-Pro (Artificial Analysis),82.197,False,True,ling-1t,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-13,InclusionAI,Ring-1T,Ring-1T,MMLU-Pro (Artificial Analysis),80.585,True,True,ring-1t,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-14,Alibaba,Qwen3 VL 4B (Reasoning),Qwen3 VL 4B,MMLU-Pro (Artificial Analysis),69.98,True,True,qwen3-vl-4b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-14,Alibaba,Qwen3 VL 4B Instruct,Qwen3 VL 4B,MMLU-Pro (Artificial Analysis),63.398,False,True,qwen3-vl-4b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-14,Alibaba,Qwen3 VL 8B (Reasoning),Qwen3 VL 8B,MMLU-Pro (Artificial Analysis),74.85,True,True,qwen3-vl-8b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-14,Alibaba,Qwen3 VL 8B Instruct,Qwen3 VL 8B,MMLU-Pro (Artificial Analysis),68.584,False,True,qwen3-vl-8b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-15,Anthropic,Claude 4.5 Haiku (Non-reasoning),Claude 4.5 Haiku,MMLU-Pro (Artificial Analysis),80.012,False,False,claude-4-5-haiku,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-15,Anthropic,Claude 4.5 Haiku (Reasoning),Claude 4.5 Haiku,MMLU-Pro (Artificial Analysis),75.989,True,False,claude-4-5-haiku-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-21,Alibaba,Qwen3 VL 32B (Reasoning),Qwen3 VL 32B,MMLU-Pro (Artificial Analysis),81.782,True,True,qwen3-vl-32b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-21,Alibaba,Qwen3 VL 32B Instruct,Qwen3 VL 32B,MMLU-Pro (Artificial Analysis),79.056,False,True,qwen3-vl-32b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-26,MiniMax,MiniMax-M2,MiniMax-M2,MMLU-Pro (Artificial Analysis),82.023,True,True,minimax-m2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-28,IBM,Granite 4.0 1B,Granite 4.0 1B,MMLU-Pro (Artificial Analysis),32.497,False,False,granite-4-0-nano-1b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-28,IBM,Granite 4.0 350M,Granite 4.0 350M,MMLU-Pro (Artificial Analysis),12.359,False,False,granite-4-0-350m,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-28,IBM,Granite 4.0 H 1B,Granite 4.0 H 1B,MMLU-Pro (Artificial Analysis),27.743,False,False,granite-4-0-h-nano-1b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-28,IBM,Granite 4.0 H 350M,Granite 4.0 H 350M,MMLU-Pro (Artificial Analysis),12.699,False,False,granite-4-0-h-350m,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-28,NVIDIA,NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning),NVIDIA Nemotron Nano 12B v2 VL,MMLU-Pro (Artificial Analysis),64.919,False,False,nvidia-nemotron-nano-12b-v2-vl,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-28,NVIDIA,NVIDIA Nemotron Nano 12B v2 VL (Reasoning),NVIDIA Nemotron Nano 12B v2 VL,MMLU-Pro (Artificial Analysis),75.931,True,False,nvidia-nemotron-nano-12b-v2-vl-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-29,Amazon,Nova 2.0 Lite (Non-reasoning),Nova 2.0 Lite,MMLU-Pro (Artificial Analysis),74.335,False,False,nova-2-0-lite,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-29,Amazon,Nova 2.0 Lite (high),Nova 2.0 Lite (high),MMLU-Pro (Artificial Analysis),81.823,True,False,nova-2-0-lite-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-29,Amazon,Nova 2.0 Lite (low),Nova 2.0 Lite (low),MMLU-Pro (Artificial Analysis),78.782,True,False,nova-2-0-lite-reasoning-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-29,Amazon,Nova 2.0 Lite (medium),Nova 2.0 Lite (medium),MMLU-Pro (Artificial Analysis),81.316,True,False,nova-2-0-lite-reasoning-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-10-30,Kimi,Kimi Linear 48B A3B Instruct,Kimi Linear 48B A3B Instruct,MMLU-Pro (Artificial Analysis),58.502,False,False,kimi-linear-48b-a3b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-03,Alibaba,Qwen3 Max Thinking (Preview),Qwen3 Max Thinking (Preview),MMLU-Pro (Artificial Analysis),82.447,True,True,qwen3-max-thinking-preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-06,Kimi,Kimi K2 Thinking,Kimi K2 Thinking,MMLU-Pro (Artificial Analysis),84.782,True,True,kimi-k2-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-11,ByteDance Seed,Doubao Seed Code,Doubao Seed Code,MMLU-Pro (Artificial Analysis),85.389,True,False,doubao-seed-code,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-11,KwaiKAT,KAT-Coder-Pro V1,KAT-Coder-Pro V1,MMLU-Pro (Artificial Analysis),81.275,False,False,kat-coder-pro-v1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-13,Baidu,ERNIE 5.0 Thinking Preview,ERNIE 5.0 Thinking Preview,MMLU-Pro (Artificial Analysis),83.029,True,False,ernie-5-0-thinking-preview,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-13,OpenAI,GPT-5.1 (Non-reasoning),GPT-5.1,MMLU-Pro (Artificial Analysis),80.128,False,True,gpt-5-1-non-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-13,OpenAI,GPT-5.1 (high),GPT-5.1 (high),MMLU-Pro (Artificial Analysis),87.043,True,True,gpt-5-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-13,OpenAI,GPT-5.1 Codex (high),GPT-5.1 Codex (high),MMLU-Pro (Artificial Analysis),86.012,True,True,gpt-5-1-codex,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-13,OpenAI,GPT-5.1 Codex mini (high),GPT-5.1 Codex mini (high),MMLU-Pro (Artificial Analysis),81.998,True,True,gpt-5-1-codex-mini,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-18,Deep Cogito,Cogito v2.1 (Reasoning),Cogito v2.1,MMLU-Pro (Artificial Analysis),84.89,True,False,cogito-v2-1-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-18,Google,Gemini 3 Pro Preview (high),Gemini 3 Pro Preview (high),MMLU-Pro (Artificial Analysis),89.761,True,True,gemini-3-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-18,Google,Gemini 3 Pro Preview (low),Gemini 3 Pro Preview (low),MMLU-Pro (Artificial Analysis),89.545,True,True,gemini-3-pro-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-19,xAI,Grok 4.1 Fast (Non-reasoning),Grok 4.1 Fast,MMLU-Pro (Artificial Analysis),74.343,False,True,grok-4-1-fast,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-19,xAI,Grok 4.1 Fast (Reasoning),Grok 4.1 Fast,MMLU-Pro (Artificial Analysis),85.372,True,True,grok-4-1-fast-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-20,Allen Institute for AI,Olmo 3 32B Think,Olmo 3 32B Think,MMLU-Pro (Artificial Analysis),75.939,True,True,olmo-3-32b-think,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-20,Allen Institute for AI,Olmo 3 7B Instruct,Olmo 3 7B,MMLU-Pro (Artificial Analysis),52.227,False,False,olmo-3-7b-instruct,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-20,Allen Institute for AI,Olmo 3 7B Think,Olmo 3 7B Think,MMLU-Pro (Artificial Analysis),65.534,True,False,olmo-3-7b-think,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-24,Anthropic,Claude Opus 4.5 (Non-reasoning),Claude Opus 4.5,MMLU-Pro (Artificial Analysis),88.921,False,True,claude-opus-4-5,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-24,Anthropic,Claude Opus 4.5 (Reasoning),Claude Opus 4.5,MMLU-Pro (Artificial Analysis),89.453,True,True,claude-opus-4-5-thinking,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-25,ServiceNow,Apriel-v1.6-15B-Thinker,Apriel-v1.6-15B-Thinker,MMLU-Pro (Artificial Analysis),78.973,True,False,apriel-v1-6-15b-thinker,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-26,Amazon,Nova 2.0 Omni (Non-reasoning),Nova 2.0 Omni,MMLU-Pro (Artificial Analysis),71.917,False,False,nova-2-0-omni,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-26,Amazon,Nova 2.0 Omni (low),Nova 2.0 Omni (low),MMLU-Pro (Artificial Analysis),79.762,True,False,nova-2-0-omni-reasoning-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-26,Amazon,Nova 2.0 Omni (medium),Nova 2.0 Omni (medium),MMLU-Pro (Artificial Analysis),80.859,True,False,nova-2-0-omni-reasoning-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-27,Prime Intellect,INTELLECT-3,INTELLECT-3,MMLU-Pro (Artificial Analysis),82.239,True,False,intellect-3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-27,Amazon,Nova 2.0 Pro Preview (Non-reasoning),Nova 2.0 Pro Preview,MMLU-Pro (Artificial Analysis),77.161,False,False,nova-2-0-pro,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-27,Amazon,Nova 2.0 Pro Preview (low),Nova 2.0 Pro Preview (low),MMLU-Pro (Artificial Analysis),82.164,True,False,nova-2-0-pro-reasoning-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-11-27,Amazon,Nova 2.0 Pro Preview (medium),Nova 2.0 Pro Preview (medium),MMLU-Pro (Artificial Analysis),82.954,True,False,nova-2-0-pro-reasoning-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-01,DeepSeek,DeepSeek V3.2 (Non-reasoning),DeepSeek V3.2,MMLU-Pro (Artificial Analysis),83.71,False,True,deepseek-v3-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-01,DeepSeek,DeepSeek V3.2 (Reasoning),DeepSeek V3.2,MMLU-Pro (Artificial Analysis),86.212,True,True,deepseek-v3-2-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-01,DeepSeek,DeepSeek V3.2 Speciale,DeepSeek V3.2 Speciale,MMLU-Pro (Artificial Analysis),86.312,True,True,deepseek-v3-2-speciale,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-02,Mistral,Ministral 3 14B,Ministral 3 14B,MMLU-Pro (Artificial Analysis),69.323,False,False,ministral-3-14b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-02,Mistral,Ministral 3 3B,Ministral 3 3B,MMLU-Pro (Artificial Analysis),52.352,False,False,ministral-3-3b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-02,Mistral,Ministral 3 8B,Ministral 3 8B,MMLU-Pro (Artificial Analysis),64.154,False,False,ministral-3-8b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-02,Mistral,Mistral Large 3,Mistral Large 3,MMLU-Pro (Artificial Analysis),80.652,False,False,mistral-large-3,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-04,Motif Technologies,Motif-2-12.7B-Reasoning,Motif-2-12.7B,MMLU-Pro (Artificial Analysis),79.629,True,False,motif-2-12-7b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-05,MBZUAI Institute of Foundation Models,K2-V2 (high),K2-V2 (high),MMLU-Pro (Artificial Analysis),78.59,True,False,k2-v2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-05,MBZUAI Institute of Foundation Models,K2-V2 (low),K2-V2 (low),MMLU-Pro (Artificial Analysis),71.293,True,False,k2-v2-low,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-05,MBZUAI Institute of Foundation Models,K2-V2 (medium),K2-V2 (medium),MMLU-Pro (Artificial Analysis),76.072,True,False,k2-v2-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-08,Z AI,GLM-4.6V (Non-reasoning),GLM-4.6V,MMLU-Pro (Artificial Analysis),75.158,False,True,glm-4-6v,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-08,Z AI,GLM-4.6V (Reasoning),GLM-4.6V,MMLU-Pro (Artificial Analysis),79.887,True,True,glm-4-6v-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-09,Mistral,Devstral 2,Devstral 2,MMLU-Pro (Artificial Analysis),76.164,False,False,devstral-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-09,Mistral,Devstral Small 2,Devstral Small 2,MMLU-Pro (Artificial Analysis),67.778,False,False,devstral-small-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-11,OpenAI,GPT-5.2 (Non-reasoning),GPT-5.2,MMLU-Pro (Artificial Analysis),81.358,False,True,gpt-5-2-non-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-11,OpenAI,GPT-5.2 (medium),GPT-5.2 (medium),MMLU-Pro (Artificial Analysis),85.854,True,True,gpt-5-2-medium,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-11,OpenAI,GPT-5.2 (xhigh),GPT-5.2 (xhigh),MMLU-Pro (Artificial Analysis),87.359,True,True,gpt-5-2,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-11,Korea Telecom,Mi:dm K 2.5 Pro,Mi:dm K 2.5 Pro,MMLU-Pro (Artificial Analysis),80.942,True,False,mi-dm-k-2-5-pro-dec28,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-11,Korea Telecom,Mi:dm K 2.5 Pro Preview,Mi:dm K 2.5 Pro Preview,MMLU-Pro (Artificial Analysis),81.275,True,False,midm-250-pro-rsnsft,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-12,Allen Institute for AI,Olmo 3.1 32B Think,Olmo 3.1 32B Think,MMLU-Pro (Artificial Analysis),76.255,True,False,olmo-3-1-32b-think,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-15,NVIDIA,NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning),NVIDIA Nemotron 3 Nano,MMLU-Pro (Artificial Analysis),57.896,False,False,nvidia-nemotron-3-nano-30b-a3b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-15,NVIDIA,NVIDIA Nemotron 3 Nano 30B A3B (Reasoning),NVIDIA Nemotron 3 Nano,MMLU-Pro (Artificial Analysis),79.38,True,False,nvidia-nemotron-3-nano-30b-a3b-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-16,Xiaomi,MiMo-V2-Flash (Non-reasoning),MiMo-V2-Flash,MMLU-Pro (Artificial Analysis),74.435,False,False,mimo-v2-flash,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-16,Xiaomi,MiMo-V2-Flash (Reasoning),MiMo-V2-Flash,MMLU-Pro (Artificial Analysis),84.342,True,True,mimo-v2-flash-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-17,Google,Gemini 3 Flash Preview (Non-reasoning),Gemini 3 Flash,MMLU-Pro (Artificial Analysis),88.223,False,True,gemini-3-flash,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-17,Google,Gemini 3 Flash Preview (Reasoning),Gemini 3 Flash,MMLU-Pro (Artificial Analysis),89.029,True,True,gemini-3-flash-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-22,Z AI,GLM-4.7 (Non-reasoning),GLM-4.7,MMLU-Pro (Artificial Analysis),79.43,False,True,glm-4-7-non-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-22,Z AI,GLM-4.7 (Reasoning),GLM-4.7,MMLU-Pro (Artificial Analysis),85.613,True,True,glm-4-7,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-23,MiniMax,MiniMax-M2.1,MiniMax-M2.1,MMLU-Pro (Artificial Analysis),87.492,True,True,minimax-m2-1,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-26,Naver,HyperCLOVA X SEED Think (32B),HyperCLOVA X SEED Think (32B),MMLU-Pro (Artificial Analysis),78.491,True,False,hyperclova-x-seed-think-32b,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-31,LG AI Research,K-EXAONE (Non-reasoning),K-EXAONE,MMLU-Pro (Artificial Analysis),80.976,False,False,k-exaone-non-reasoning,https://artificialanalysis.ai/evaluations/mmlu-pro
+2025-12-31,LG AI Research,K-EXAONE (Reasoning),K-EXAONE,MMLU-Pro (Artificial Analysis),83.752,True,False,k-exaone,https://artificialanalysis.ai/evaluations/mmlu-pro
+2026-01-04,TII UAE,Falcon-H1R-7B,Falcon-H1R-7B,MMLU-Pro (Artificial Analysis),72.54,True,False,falcon-h1r-7b,https://artificialanalysis.ai/evaluations/mmlu-pro

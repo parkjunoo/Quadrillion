@@ -568,9 +568,9 @@ export const getMarketValueFrameState = ({
     }))
     .sort((a, b) => a.animatedRank - b.animatedRank)
     .slice(0, topN + 2)
-    .map((row) => ({
+    .map((row, index) => ({
       ...row,
-      displayRank: row.liveRank,
+      displayRank: index + 1,
     }));
 
   return {

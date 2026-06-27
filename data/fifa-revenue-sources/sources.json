@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {
+      "label": "FIFA Financial Report 2010",
+      "url": "https://static.poder360.com.br/2022/11/relatorio-anual-fifa-2010.pdf"
+    },
+    {
+      "label": "FIFA Financial Report 2014",
+      "url": "https://web.archive.org/web/20150530072408id_/http://resources.fifa.com/mm/document/affederation/administration/02/56/80/39/fr2014weben_neutral.pdf"
+    },
+    {
+      "label": "FIFA Financial Report 2018",
+      "url": "https://digitalhub.fifa.com/m/337fab75839abc76/original/xzshsoe2ayttyquuxhq0-pdf.pdf"
+    },
+    {
+      "label": "FIFA Financial Report 2019",
+      "url": "https://digitalhub.fifa.com/m/6b641d4162be6ab4/original/ksndm8om7duu5h8qxlpn-pdf.pdf"
+    },
+    {
+      "label": "FIFA Annual Report 2020",
+      "url": "https://digitalhub.fifa.com/m/c01ac2121988dcf/original/FIFA_Annual-Report-2020.pdf"
+    },
+    {
+      "label": "FIFA Annual Report 2021",
+      "url": "https://digitalhub.fifa.com/m/7b8f2f002eb69403/original/FIFA-Annual-Report-21.pdf"
+    },
+    {
+      "label": "FIFA Annual Report 2022",
+      "url": "https://digitalhub.fifa.com/m/2252cd6dfdadad73/original/FIFA-Annual-Report-2022-Football-Unites-The-World.pdf"
+    },
+    {
+      "label": "FIFA Annual Report 2023 revenue",
+      "url": "https://inside.fifa.com/official-documents/annual-report/2023/financials/2023-financials-in-review/2023-revenue"
+    },
+    {
+      "label": "FIFA Annual Report 2024 revenue",
+      "url": "https://inside.fifa.com/official-documents/annual-report/2024/financials/2024-financials-in-review/2024-revenue"
+    },
+    {
+      "label": "FIFA Annual Report 2025 revenue",
+      "url": "https://inside.fifa.com/official-documents/annual-report/2025/financials/2025-financials-in-review/2025-revenue"
+    },
+    {
+      "label": "FIFA Annual Report 2024 revised 2023-2026 budget",
+      "url": "https://inside.fifa.com/official-documents/annual-report/2024/financials/revised-2023-2026-budget"
+    }
+  ],
+  "unit": "USD",
+  "generatedFromUnit": "TUSD"
+}

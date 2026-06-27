@@ -1,0 +1,32 @@
+{
+  "source": {
+    "name": "StatCounter GlobalStats mobile OS web usage share",
+    "chartPage": "https://gs.statcounter.com/os-market-share/mobile/worldwide/",
+    "downloadEndpoint": "https://gs.statcounter.com/download/os-country/?year={year}&month={month}&device=mobile",
+    "methodology": "https://gs.statcounter.com/faq",
+    "license": "StatCounter GlobalStats says its data is available under Creative Commons Attribution-Share Alike 3.0 Unported with credit."
+  },
+  "generatedAt": "2026-06-21T02:21:57.566Z",
+  "startMonth": "2009-01",
+  "endMonth": "2026-05",
+  "requestedMonthCount": 209,
+  "skippedMonths": [],
+  "countryCount": 238,
+  "monthlyRowCount": 49742,
+  "annualRowCount": 4284,
+  "yearlySummaryRowCount": 18,
+  "crossoverRowCount": 238,
+  "files": {
+    "monthly": "data/ios-vs-android/statcounter_mobile_os_country_monthly.csv",
+    "annual": "data/ios-vs-android/statcounter_mobile_os_country_annual.csv",
+    "yearlySummary": "data/ios-vs-android/statcounter_mobile_os_yearly_summary.csv",
+    "crossovers": "data/ios-vs-android/statcounter_mobile_os_country_crossovers.csv",
+    "generatedAnnualModule": "src/projects/ios-vs-android/generated/iosVsAndroidAnnualCsv.ts"
+  },
+  "method": "Downloaded monthly StatCounter country CSVs with device=mobile, extracted Android and iOS rows, treated all other OS rows as other_share, and computed annual rows as an unweighted mean of available monthly percentages for each country/year.",
+  "caveats": [
+    "Usage share is based on web page views observed by StatCounter, not device shipments, installed base, or unique users.",
+    "Annual values are simple averages of monthly percentage shares, not traffic-volume-weighted annual totals.",
+    "The final year can be partial when the latest completed month is before December."
+  ]
+}

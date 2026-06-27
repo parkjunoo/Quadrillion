@@ -26,6 +26,7 @@ export type MarketCapFrameRow = MarketCapEntity & {
   value: number;
   previousValue: number;
   targetValue: number;
+  animatedRank: number;
   liveRank: number;
   displayRank: number;
   previousRank: number;
@@ -138,6 +139,7 @@ export const getMarketCapFrameState = ({
       value,
       previousValue,
       targetValue,
+      animatedRank: topN + 1.35,
       liveRank: 0,
       displayRank: 0,
       previousRank,
@@ -155,6 +157,10 @@ export const getMarketCapFrameState = ({
     rankedRows[index].displayRank = index + 1;
   }
 
+  for (const row of rawRows) {
+    row.animatedRank = crossingAnimatedRank(row, rawRows, valueProgress, topN);
+  }
+
   const maxValue = Math.max(1, ...rankedRows.map((row) => row.value));
   const rows = rankedRows
     .filter((row) =>
@@ -166,7 +172,12 @@ export const getMarketCapFrameState = ({
       ...row,
       opacity:
         clamp(row.value / Math.max(1, maxValue * 0.018), 0.18, 1) *
-        clamp(row.topNPresence || (row.liveRank <= topN ? 1 : 0), 0, 1),
+        clamp(Math.max(row.topNPresence, row.liveRank <= topN ? 1 : 0), 0, 1),
+    }))
+    .sort((rowA, rowB) => rowA.animatedRank - rowB.animatedRank || rowA.liveRank - rowB.liveRank)
+    .map((row, index) => ({
+      ...row,
+      displayRank: index + 1,
     }));
 
   return {
@@ -282,4 +293,121 @@ const splitCsvLine = (line: string) => {
 const idForRow = (row: Pick<CsvRow, 'code' | 'name'>) =>
   `${row.code || row.name}:${row.name}`.toLowerCase();
 
+const crossingAnimatedRank = (
+  row: MarketCapFrameRow,
+  rows: MarketCapFrameRow[],
+  progress: number,
+  topN: number,
+) => {
+  if (row.previousValue <= 0.001 && row.targetValue <= 0.001) {
+    return topN + 1.35;
+  }
+
+  if (progress <= 0) {
+    return staticRankFor(row, rows, 'previousValue', topN);
+  }
+
+  if (progress >= 1) {
+    return staticRankFor(row, rows, 'targetValue', topN);
+  }
+
+  let rank = 1;
+
+  for (const other of rows) {
+    if (
+      other.id === row.id ||
+      (other.previousValue <= 0.001 && other.targetValue <= 0.001)
+    ) {
+      continue;
+    }
+
+    const startLead = compareByValue(
+      other.previousValue,
+      other.name,
+      row.previousValue,
+      row.name,
+    ) < 0;
+    const targetLead = compareByValue(
+      other.targetValue,
+      other.name,
+      row.targetValue,
+      row.name,
+    ) < 0;
+
+    if (startLead === targetLead) {
+      rank += startLead ? 1 : 0;
+      continue;
+    }
+
+    const crossingProgress = linearCrossingProgressFor(row, other);
+    const localProgress = clamp(
+      (progress - (crossingProgress - RANK_TRANSITION_DURATION / 2)) / RANK_TRANSITION_DURATION,
+      0,
+      1,
+    );
+    const easedProgress = smootherStep(localProgress);
+
+    rank += startLead
+      ? 1 - easedProgress
+      : easedProgress;
+  }
+
+  return clamp(rank, 1, topN + 1.35);
+};
+
+const staticRankFor = (
+  row: MarketCapFrameRow,
+  rows: MarketCapFrameRow[],
+  valueKey: 'previousValue' | 'targetValue',
+  topN: number,
+) => {
+  let rank = 1;
+
+  for (const other of rows) {
+    if (
+      other.id === row.id ||
+      (other.previousValue <= 0.001 && other.targetValue <= 0.001)
+    ) {
+      continue;
+    }
+
+    if (compareByValue(other[valueKey], other.name, row[valueKey], row.name) < 0) {
+      rank += 1;
+    }
+  }
+
+  return clamp(rank, 1, topN + 1.35);
+};
+
+const linearCrossingProgressFor = (
+  row: MarketCapFrameRow,
+  other: MarketCapFrameRow,
+) => {
+  const rowDelta = row.targetValue - row.previousValue;
+  const otherDelta = other.targetValue - other.previousValue;
+  const denominator = rowDelta - otherDelta;
+
+  if (Math.abs(denominator) < MIN_VALUE_GAP) {
+    return 0.5;
+  }
+
+  return clamp((other.previousValue - row.previousValue) / denominator, 0, 1);
+};
+
+const compareByValue = (
+  valueA: number,
+  nameA: string,
+  valueB: number,
+  nameB: string,
+) => valueB - valueA || nameA.localeCompare(nameB);
+
+const RANK_TRANSITION_DURATION = 0.08;
+const MIN_VALUE_GAP = 0.0001;
+
 const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
+
+const smootherStep = (value: number) => {
+  const t = clamp(value, 0, 1);
+
+  return t * t * t * (t * (t * 6 - 15) + 10);
+};

@@ -1,6 +1,9 @@
-import { useLayoutEffect, useMemo, useRef, type CSSProperties } from 'react';
+import { type CSSProperties } from 'react';
 import {
+  AbsoluteFill,
+  Audio,
   Img,
+  interpolate,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
@@ -10,759 +13,813 @@ import {
   getMarketCapFrameState,
   type MarketCapFrameRow,
   type MarketCapFrameState,
-  type MarketCapRaceData,
 } from './marketCapRace';
 import { globalMarketCapVideoConfig } from './config';
+import { VIDEO_WIDTH } from '../../shared/video';
 import {
-  globalMarketCapEventByYear,
-  type GlobalMarketCapEvent,
-} from './events';
-import { SHORTS_PLATFORM_TOP_CLEARANCE } from '../../shared/video';
-import {
-  createDataVideoFrameGeometry,
-  DataVideoBackground,
-  DataVideoChannelTag,
-  DataVideoChartFrame,
-  DataVideoChartTopBar,
-  DataVideoFooter,
-  DataVideoFooterNote,
-  DataVideoFooterSource,
-  dataVideoFontStack,
-  DataVideoFrameLayout,
-  DataVideoHeader,
-  DataVideoTimelineRail,
+  defaultDataShortsFooterInset,
+  defaultDataShortsFrameInset,
+  defaultDataShortsTemplate,
 } from '../../shared/dataVideoFrame';
+import { introVoiceoverAsset } from './generated/introVoiceoverAsset';
 
 const raceData = buildMarketCapRaceData(globalMarketCapVideoConfig.csv);
-const fontStack = dataVideoFontStack;
-const templateTopOffset = SHORTS_PLATFORM_TOP_CLEARANCE;
+const fontStack =
+  'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 const channelHandle = '@whoa-data';
-const frameInset = {
-  left: 76,
-  right: 76,
+const hookQuestion = 'where’s NVIDIA?';
+const introBlackSeconds = 1;
+const titleMoveSeconds = 0.8;
+const postTitleHoldSeconds = 0.5;
+const appleBoxDrawSeconds = 0.7;
+const appleBoxHoldSeconds = 1;
+const appleBoxFadeSeconds = 0.35;
+const appleFocusSeconds = appleBoxDrawSeconds + appleBoxHoldSeconds + appleBoxFadeSeconds;
+const raceStartDelaySeconds = introBlackSeconds + titleMoveSeconds + postTitleHoldSeconds + appleFocusSeconds;
+const nvidiaFocusYear = 2023;
+const nvidiaFocusSegmentProgress = 0.08;
+const nvidiaBoxDrawSeconds = 0.3;
+const nvidiaFocusHoldSeconds = 1.5;
+const nvidiaFocusFadeSeconds = 0.25;
+const nvidiaFocusSeconds = nvidiaBoxDrawSeconds + nvidiaFocusHoldSeconds + nvidiaFocusFadeSeconds;
+const finalWaitSeconds = 0.5;
+const chart = {
+  left: defaultDataShortsTemplate.chartLeft,
+  top: defaultDataShortsTemplate.chartTop,
+  width: defaultDataShortsTemplate.chartWidth,
+  height: defaultDataShortsTemplate.chartHeight,
 };
-const frameLayout = createDataVideoFrameGeometry({
-  chartHeight: 880,
-  chartTop: 575 + templateTopOffset,
-  footerTop: 1558,
-  frameInset,
-  headerTop: 166 + templateTopOffset,
-  timelineRailTop: 332 + templateTopOffset,
-});
-const chart = frameLayout.chart;
+const visibleChart = {
+  left: defaultDataShortsFrameInset.left,
+  right: defaultDataShortsFrameInset.right,
+};
+const yearRail = {
+  left: visibleChart.left + defaultDataShortsTemplate.timelineRailLeftPadding,
+  top: defaultDataShortsTemplate.timelineRailTop,
+  width: VIDEO_WIDTH -
+    visibleChart.left -
+    visibleChart.right -
+    defaultDataShortsTemplate.timelineRailLeftPadding -
+    defaultDataShortsTemplate.timelineRailRightPadding,
+};
+const row = {
+  height: 106,
+  gap: 16,
+};
+const rankColumnWidth = 52;
+const barLeft = 72;
+const valueWidth = 178;
+const valueRight = chart.width - defaultDataShortsTemplate.chartRightPadding + 52;
+const valueLeft = valueRight - valueWidth;
+const barValueOverlap = 8;
+const barMaxWidth = valueLeft - barLeft + barValueOverlap;
+const barHeight = 96;
+const logoSize = 66;
+const storyCompanies = new Set(['Apple', 'NVIDIA']);
+
 export const GlobalMarketCapVideo = () => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
-  const startHoldFrames = Math.round(globalMarketCapVideoConfig.startHoldSeconds * fps);
-  const endHoldFrames = Math.round(globalMarketCapVideoConfig.endHoldSeconds * fps);
-  const motionFrames = Math.max(1, durationInFrames - startHoldFrames - endHoldFrames);
-  const raceFrame = clamp(frame - startHoldFrames, 0, motionFrames - 1);
+  const raceStartFrame = Math.round(raceStartDelaySeconds * fps);
+  const finalWaitFrames = Math.round(finalWaitSeconds * fps);
+  const finalSpotlightFrames = Math.round(globalMarketCapVideoConfig.endHoldSeconds * fps);
+  const nvidiaFocusFrames = Math.round(nvidiaFocusSeconds * fps);
+  const motionFrames = Math.max(
+    1,
+    durationInFrames - raceStartFrame - nvidiaFocusFrames - finalWaitFrames - finalSpotlightFrames,
+  );
+  const nvidiaFocusRaceFrame = frameForYearProgress({
+    motionFrames,
+    segmentProgress: nvidiaFocusSegmentProgress,
+    year: nvidiaFocusYear,
+  });
+  const rawRaceFrame = frame - raceStartFrame;
+  const pausedRaceFrame = rawRaceFrame < nvidiaFocusRaceFrame
+    ? rawRaceFrame
+    : rawRaceFrame < nvidiaFocusRaceFrame + nvidiaFocusFrames
+      ? nvidiaFocusRaceFrame
+      : rawRaceFrame - nvidiaFocusFrames;
+  const raceFrame = clamp(pausedRaceFrame, 0, motionFrames - 1);
+  const nvidiaFocusStartFrame = raceStartFrame + nvidiaFocusRaceFrame;
+  const nvidiaFocusEndFrame = nvidiaFocusStartFrame + nvidiaFocusFrames;
+  const finalSpotlightStartFrame = raceStartFrame + nvidiaFocusFrames + motionFrames + finalWaitFrames;
+  const finalSpotlightProgress = interpolate(
+    frame,
+    [finalSpotlightStartFrame, finalSpotlightStartFrame + Math.round(0.34 * fps)],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const finalNameTagWiggleProgress = interpolate(
+    frame,
+    [finalSpotlightStartFrame, finalSpotlightStartFrame + finalSpotlightFrames],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const finalNvidiaReleaseProgress = interpolate(
+    frame,
+    [durationInFrames - Math.round(0.5 * fps), durationInFrames - 1],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
   const state = getMarketCapFrameState({
     data: raceData,
     durationInFrames: motionFrames,
     frame: raceFrame,
     topN: globalMarketCapVideoConfig.topN,
   });
-  const currentEvent = globalMarketCapEventByYear.get(state.year);
+  const chartIntro = interpolate(
+    frame,
+    [Math.round(introBlackSeconds * fps), Math.round((introBlackSeconds + 0.42) * fps)],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const headerIntro = interpolate(
+    frame,
+    [Math.round((introBlackSeconds + 0.2) * fps), Math.round((introBlackSeconds + titleMoveSeconds) * fps)],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const titleHookOpacity = interpolate(
+    frame,
+    [Math.round((introBlackSeconds + titleMoveSeconds - 0.08) * fps), Math.round((introBlackSeconds + titleMoveSeconds + 0.12) * fps)],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const pageBrightness = interpolate(frame, [raceStartFrame - Math.round(0.28 * fps), raceStartFrame], [0.72, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
 
   return (
-    <DataVideoFrameLayout>
-      <DataVideoBackground chart={chart} />
-      <DataVideoHeader
-        geometry={frameLayout}
-        intro={1}
-        subtitle={globalMarketCapVideoConfig.subtitle}
-        title={globalMarketCapVideoConfig.title}
-        titleHook={globalMarketCapVideoConfig.titleHook}
+    <AbsoluteFill style={styles.stage}>
+      {introVoiceoverAsset ? (
+        <Audio
+          src={staticFile(introVoiceoverAsset.path)}
+          volume={globalMarketCapVideoConfig.introVoiceoverVolume}
+        />
+      ) : null}
+      <div style={{ ...styles.videoContent, filter: `brightness(${pageBrightness})` }}>
+        <Background finalSpotlightProgress={finalSpotlightProgress} />
+        <Header frame={frame} fps={fps} intro={headerIntro} titleHookOpacity={titleHookOpacity} />
+        <YearRail
+          currentYear={state.year}
+          intro={chartIntro}
+          nameTagWiggleProgress={finalNameTagWiggleProgress}
+          progress={state.yearProgress}
+        />
+        <RaceBeatLegend intro={chartIntro} state={state} />
+        <BarRaceChart
+          finalNvidiaReleaseProgress={finalNvidiaReleaseProgress}
+          finalSpotlightProgress={finalSpotlightProgress}
+          intro={chartIntro}
+          state={state}
+        />
+        <Footer />
+      </div>
+      <AppleRowFocusOverlay fps={fps} frame={frame} state={state} />
+      <NvidiaRowFocusOverlay
+        endFrame={nvidiaFocusEndFrame}
+        fps={fps}
+        frame={frame}
+        startFrame={nvidiaFocusStartFrame}
+        state={state}
       />
-      <DataVideoTimelineRail
-        currentLabel={state.year}
-        geometry={frameLayout}
-        intro={1}
-        maxLabel={raceData.maxYear}
-        minLabel={raceData.minYear}
-        progress={state.yearProgress}
-      />
-      <CreatorLine event={currentEvent} intro={1} state={state} />
-      <MarketCapVoronoiChart intro={1} state={state} />
-      <Footer />
-    </DataVideoFrameLayout>
+      <HookIntroOverlay fps={fps} frame={frame} />
+    </AbsoluteFill>
   );
 };
 
-const CreatorLine = ({
-  event,
+const Header = ({
+  frame,
+  fps,
+  intro,
+  titleHookOpacity,
+}: {
+  frame: number;
+  fps: number;
+  intro: number;
+  titleHookOpacity: number;
+}) => {
+  const y = interpolate(intro, [0, 1], [-28, 0]);
+  const subtitleOpacity = interpolate(
+    frame,
+    [Math.round((introBlackSeconds + titleMoveSeconds + 0.02) * fps), Math.round((introBlackSeconds + titleMoveSeconds + 0.26) * fps)],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+
+  return (
+    <div style={{ ...styles.header, opacity: intro, transform: `translateY(${y}px)` }}>
+      <div style={{ ...styles.titleHook, opacity: titleHookOpacity }}>
+        {globalMarketCapVideoConfig.titleHook}
+      </div>
+      <div style={styles.title}>{globalMarketCapVideoConfig.title}</div>
+      <div style={{ ...styles.subtitle, opacity: subtitleOpacity }}>
+        {globalMarketCapVideoConfig.subtitle}
+      </div>
+    </div>
+  );
+};
+
+const YearRail = ({
+  currentYear,
+  intro,
+  nameTagWiggleProgress,
+  progress,
+}: {
+  currentYear: number;
+  intro: number;
+  nameTagWiggleProgress: number;
+  progress: number;
+}) => {
+  const fillWidth = clamp(progress, 0, 1) * yearRail.width;
+  const wiggleEnvelope = nameTagWiggleProgress <= 0 ? 0 : Math.sin(Math.PI * nameTagWiggleProgress);
+  const wiggleAngle = Math.sin(nameTagWiggleProgress * Math.PI * 13) * 4.2 * wiggleEnvelope;
+  const wiggleX = Math.sin(nameTagWiggleProgress * Math.PI * 13 + 0.7) * 2.2 * wiggleEnvelope;
+
+  return (
+    <div style={{ ...styles.yearRailBlock, opacity: intro }}>
+      <div style={styles.yearRailHeader}>
+        <div style={styles.currentYear}>{currentYear}</div>
+        <div
+          style={{
+            ...styles.yearRailTag,
+            transform: `translateX(${wiggleX}px) rotate(${wiggleAngle}deg)`,
+          }}
+        >
+          {channelHandle}
+        </div>
+      </div>
+      <svg height={58} style={styles.yearRailSvg} viewBox={`0 0 ${yearRail.width} 58`} width={yearRail.width}>
+        <line
+          stroke="rgba(255,255,255,0.2)"
+          strokeLinecap="round"
+          strokeWidth={6}
+          x1={0}
+          x2={yearRail.width}
+          y1={19}
+          y2={19}
+        />
+        <line
+          stroke="#F5E829"
+          strokeLinecap="round"
+          strokeWidth={6}
+          x1={0}
+          x2={fillWidth}
+          y1={19}
+          y2={19}
+        />
+        <text fill="rgba(255,255,255,0.52)" fontFamily={fontStack} fontSize={24} fontWeight={850} x={0} y={51}>
+          {raceData.minYear}
+        </text>
+        <text
+          fill="rgba(255,255,255,0.52)"
+          fontFamily={fontStack}
+          fontSize={24}
+          fontWeight={850}
+          textAnchor="end"
+          x={yearRail.width}
+          y={51}
+        >
+          {raceData.maxYear}
+        </text>
+      </svg>
+    </div>
+  );
+};
+
+const RaceBeatLegend = ({
   intro,
   state,
 }: {
-  event: GlobalMarketCapEvent | undefined;
+  intro: number;
+  state: MarketCapFrameState;
+}) => {
+  const beat = storyBeatForYear(state.year);
+  const accent = beat.companyName
+    ? brandColorByCompanyName[beat.companyName] ?? '#F5E829'
+    : '#F5E829';
+
+  return (
+    <div style={{ ...styles.legend, opacity: intro }}>
+      <div style={styles.legendLeft}>
+        <span style={{ ...styles.legendKicker, color: accent }}>{beat.kicker}</span>
+        <span style={styles.legendHeadline}>{beat.headline}</span>
+      </div>
+      <span style={styles.legendValue}>{globalMarketCapVideoConfig.valueColumnLabel}</span>
+    </div>
+  );
+};
+
+const BarRaceChart = ({
+  finalNvidiaReleaseProgress,
+  finalSpotlightProgress,
+  intro,
+  state,
+}: {
+  finalNvidiaReleaseProgress: number;
+  finalSpotlightProgress: number;
   intro: number;
   state: MarketCapFrameState;
 }) => (
-  <DataVideoChartTopBar chart={chart} intro={intro}>
-    <YearNewsStrip event={event} intro={intro} state={state} />
-    <DataVideoChannelTag>{channelHandle}</DataVideoChannelTag>
-  </DataVideoChartTopBar>
+  <div style={{ ...styles.chart, opacity: intro }}>
+    <GridLines />
+    <div style={styles.rowsLayer}>
+      {state.rows
+        .filter((raceRow) => raceRow.displayRank <= globalMarketCapVideoConfig.topN)
+        .map((raceRow) => (
+          <BarRaceRow
+            finalNvidiaReleaseProgress={finalNvidiaReleaseProgress}
+            finalSpotlightProgress={finalSpotlightProgress}
+            key={raceRow.id}
+            raceRow={raceRow}
+            state={state}
+          />
+        ))}
+    </div>
+  </div>
 );
 
-const YearNewsStrip = ({
-  event,
-  intro,
+const GridLines = () => (
+  <div style={styles.gridLayer}>
+    {Array.from({ length: 7 }, (_, index) => (
+      <div
+        key={`grid-v-${index}`}
+        style={{
+          ...styles.gridVerticalLine,
+          left: barLeft + Math.round((barMaxWidth / 6) * index),
+        }}
+      />
+    ))}
+    {Array.from({ length: globalMarketCapVideoConfig.topN + 1 }, (_, index) => (
+      <div
+        key={`grid-h-${index}`}
+        style={{
+          ...styles.gridHorizontalLine,
+          top: index * (row.height + row.gap),
+        }}
+      />
+    ))}
+  </div>
+);
+
+const BarRaceRow = ({
+  finalNvidiaReleaseProgress,
+  finalSpotlightProgress,
+  raceRow,
   state,
 }: {
-  event: GlobalMarketCapEvent | undefined;
-  intro: number;
+  finalNvidiaReleaseProgress: number;
+  finalSpotlightProgress: number;
+  raceRow: MarketCapFrameRow;
   state: MarketCapFrameState;
 }) => {
-  if (!event) {
+  const top = chartRankToY(raceRow.animatedRank);
+  const currentBarWidth = Math.max(122, barWidthForValue(raceRow.value, state.maxValue));
+  const color = colorForCompany(raceRow);
+  const rankColor = rankColorFor(raceRow.displayRank);
+  const rowOpacity = opacityForRow(raceRow, state.year, finalSpotlightProgress);
+  const nvidiaHighlightProgress = raceRow.name === 'NVIDIA'
+    ? finalSpotlightProgress * (1 - finalNvidiaReleaseProgress)
+    : finalSpotlightProgress;
+  const finalBrightness = raceRow.name === 'NVIDIA'
+    ? interpolate(nvidiaHighlightProgress, [0, 1], [1, 1.28])
+    : interpolate(finalSpotlightProgress, [0, 1], [1, 0.62]);
+  const finalSaturation = raceRow.name === 'NVIDIA'
+    ? interpolate(nvidiaHighlightProgress, [0, 1], [1, 1.18])
+    : interpolate(finalSpotlightProgress, [0, 1], [1, 0.74]);
+  const rowGlow = storyCompanies.has(raceRow.name)
+    ? `0 0 24px ${hexToRgba(color, 0.26)}`
+    : 'none';
+  const nameWidth = Math.max(250, Math.min(currentBarWidth - 124, valueLeft - barLeft - 112));
+  const nameText = companyDisplayName(raceRow.name);
+
+  return (
+    <div
+      style={{
+        ...styles.barRow,
+        filter: `brightness(${finalBrightness}) saturate(${finalSaturation})`,
+        opacity: rowOpacity,
+        top,
+        zIndex: raceRow.name === 'NVIDIA' && finalSpotlightProgress > 0
+          ? 140
+          : 100 - Math.min(80, raceRow.displayRank),
+      }}
+    >
+      <div style={{ ...styles.rank, color: rankColor }}>#{raceRow.displayRank}</div>
+      <div
+        style={{
+          ...styles.bar,
+          background: barGradientFor(color),
+          boxShadow: rowGlow,
+          width: currentBarWidth,
+        }}
+      />
+      <div
+        style={{
+          ...styles.logoShell,
+          borderColor: raceRow.displayRank === 1 ? '#F5E829' : 'rgba(255,255,255,0.22)',
+          boxShadow: raceRow.displayRank === 1
+            ? `0 9px 20px rgba(0,0,0,0.34), 0 0 0 3px #F5E829, 0 0 22px ${hexToRgba('#F5E829', 0.36)}`
+            : styles.logoShell.boxShadow,
+        }}
+      >
+        {raceRow.displayRank === 1 ? <CrownIcon size={logoSize} /> : null}
+        <CompanyLogoMark code={raceRow.code} name={raceRow.name} size={logoSize} />
+      </div>
+      <div
+        style={{
+          ...styles.companyName,
+          fontSize: fontSizeForCompanyName(nameText, nameWidth),
+          width: nameWidth,
+        }}
+      >
+        {nameText}
+      </div>
+      <div style={styles.companyMeta}>
+        <span style={{ ...styles.tickerPill, borderColor: hexToRgba(color, 0.54), color }}>
+          {tickerForLabel(raceRow.code)}
+        </span>
+        <span style={styles.countryText}>{countryDisplayName(raceRow.country)}</span>
+      </div>
+      <div style={{ ...styles.value, color: raceRow.name === 'NVIDIA' ? '#F5E829' : '#FFFFFF' }}>
+        {formatMarketCap(raceRow.value)}
+      </div>
+    </div>
+  );
+};
+
+const HookIntroOverlay = ({
+  fps,
+  frame,
+}: {
+  fps: number;
+  frame: number;
+}) => {
+  const blackEndFrame = Math.round(introBlackSeconds * fps);
+  const moveEndFrame = Math.round((introBlackSeconds + titleMoveSeconds) * fps);
+  const overlayEndFrame = moveEndFrame + Math.round(0.08 * fps);
+
+  if (frame > overlayEndFrame) {
     return null;
   }
 
-  const eventRow = state.rows.find((row) =>
-    row.code === event.code || row.name === event.companyName
+  const moveProgress = interpolate(frame, [blackEndFrame, moveEndFrame], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const blackOpacity = interpolate(frame, [blackEndFrame, moveEndFrame], [1, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const logoOpacity = interpolate(frame, [blackEndFrame - Math.round(0.04 * fps), blackEndFrame + Math.round(0.28 * fps)], [1, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const textOpacity = interpolate(frame, [moveEndFrame, overlayEndFrame], [1, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const textY = interpolate(moveProgress, [0, 1], [990, defaultDataShortsTemplate.headerTop]);
+  const fontSize = interpolate(moveProgress, [0, 1], [74, 62]);
+  const letterSpacing = interpolate(moveProgress, [0, 1], [0, 0]);
+  const logoY = interpolate(moveProgress, [0, 1], [820, 700]);
+  const logoScale = interpolate(moveProgress, [0, 1], [1, 0.72]);
+  const questionOpacity = interpolate(
+    frame,
+    [blackEndFrame, blackEndFrame + Math.round(0.26 * fps)],
+    [1, 0],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
   );
-  const brandAccent = brandColorByCompanyName[event.companyName] ??
-    (eventRow ? territoryColorFor(eventRow) : eventToneAccentByTone[event.tone]);
-  const toneAccent = event.tone === 'caution'
-    ? eventToneAccentByTone.caution
-    : brandAccent;
-  const fadeIn = clamp(state.segmentProgress / 0.12, 0.62, 1);
-  const fadeOut = clamp((1 - state.segmentProgress) / 0.08, 0.8, 1);
-  const stripOpacity = intro * fadeIn * fadeOut;
-  const y = Math.round((1 - fadeIn) * 5);
-  const rankText = eventRow ? `#${eventRow.displayRank}` : '';
+  const questionY = textY + interpolate(moveProgress, [0, 1], [88, 34]);
+  const questionFontSize = interpolate(moveProgress, [0, 1], [36, 24]);
 
   return (
-    <div
-      style={{
-        ...styles.newsCard,
-        borderColor: hexToRgba(toneAccent, 0.68),
-        boxShadow: `0 10px 22px rgba(0,0,0,0.28), 0 0 14px ${hexToRgba(toneAccent, 0.16)}, inset 0 0 0 1px rgba(255,255,255,0.06)`,
-        opacity: stripOpacity,
-        transform: `translateY(${y}px)`,
-      }}
-    >
+    <AbsoluteFill style={styles.hookOverlay}>
+      <div style={{ ...styles.hookBlack, opacity: blackOpacity }} />
       <div
         style={{
-          ...styles.newsAccentBar,
-          backgroundColor: toneAccent,
+          ...styles.hookLogoWrap,
+          opacity: logoOpacity,
+          top: logoY,
+          transform: `translate(-50%, -50%) scale(${logoScale})`,
         }}
-      />
-      <CompanyNewsLogo
-        code={event.code}
-        companyName={event.companyName}
-        color={toneAccent}
-      />
-      {rankText ? (
-        <span
-          style={{
-            ...styles.newsRank,
-            backgroundColor: hexToRgba(toneAccent, 0.18),
-            borderColor: hexToRgba(toneAccent, 0.66),
-            color: toneAccent,
-          }}
-        >
-          {rankText}
-        </span>
-      ) : null}
-      <span style={styles.newsHeadline}>{event.headline}</span>
-    </div>
+      >
+        <div style={styles.hookAppleBehind}>
+          <CompanyLogoMark code="NVDA" name="NVIDIA" size={116} />
+        </div>
+        <div style={styles.hookNvidiaFront}>
+          <CompanyLogoMark code="AAPL" name="Apple" size={154} />
+        </div>
+      </div>
+      <div
+        style={{
+          ...styles.movingHookText,
+          fontSize,
+          letterSpacing,
+          opacity: textOpacity,
+          top: textY,
+        }}
+      >
+        {globalMarketCapVideoConfig.titleHook}
+      </div>
+      <div
+        style={{
+          ...styles.movingHookQuestion,
+          fontSize: questionFontSize,
+          opacity: textOpacity * questionOpacity,
+          top: questionY,
+        }}
+      >
+        {hookQuestion}
+      </div>
+    </AbsoluteFill>
   );
 };
 
-const MarketCapVoronoiChart = ({
-  intro,
+const AppleRowFocusOverlay = ({
+  fps,
+  frame,
   state,
 }: {
-  intro: number;
+  fps: number;
+  frame: number;
   state: MarketCapFrameState;
 }) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const layout = useMemo(() => buildVoronoiTreemapLayout(state), [state]);
+  const focusStartFrame = Math.round((introBlackSeconds + titleMoveSeconds + postTitleHoldSeconds) * fps);
+  const focusEndFrame = Math.round(raceStartDelaySeconds * fps);
+  const drawEndFrame = focusStartFrame + Math.round(appleBoxDrawSeconds * fps);
+  const fadeOutStartFrame = focusEndFrame - Math.round(appleBoxFadeSeconds * fps);
+  const appleRow = state.rows.find((raceRow) => raceRow.name === 'Apple');
 
-  useLayoutEffect(() => {
-    drawVoronoiTreemap(canvasRef.current, layout);
-  }, [layout]);
+  if (!appleRow || frame < focusStartFrame || frame > focusEndFrame) {
+    return null;
+  }
+
+  const opacity = interpolate(
+    frame,
+    [focusStartFrame, focusStartFrame + Math.round(0.14 * fps), fadeOutStartFrame, focusEndFrame],
+    [0, 1, 1, 0],
+    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
+  );
+
+  if (opacity <= 0.01) {
+    return null;
+  }
+
+  const drawProgress = interpolate(
+    frame,
+    [focusStartFrame, drawEndFrame],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const rectTop = chart.top + chartRankToY(appleRow.animatedRank);
+  const rectLeft = chart.left;
+  const rectWidth = chart.width;
+  const rectHeight = row.height;
+  const dimOpacity = opacity * 0.68;
 
   return (
-    <DataVideoChartFrame chart={chart} intro={intro}>
-      <canvas
-        height={chart.height}
-        ref={canvasRef}
-        style={styles.territoryCanvas}
-        width={chart.width}
+    <AbsoluteFill style={styles.appleFocusOverlay}>
+      <div style={{ ...styles.focusDimTop, height: rectTop, opacity: dimOpacity }} />
+      <div style={{ ...styles.focusDimBottom, top: rectTop + rectHeight, opacity: dimOpacity }} />
+      <div style={{ ...styles.focusDimLeft, top: rectTop, width: rectLeft, height: rectHeight, opacity: dimOpacity }} />
+      <div
+        style={{
+          ...styles.focusDimRight,
+          left: rectLeft + rectWidth,
+          top: rectTop,
+          height: rectHeight,
+          opacity: dimOpacity,
+        }}
       />
-      <div style={styles.territoryShade} />
-      <div style={styles.territoryLabelLayer}>
-        {layout.sites
-          .filter((site) => site.cellCount > 0 && site.row.opacity > 0.025)
-          .map((site) => (
-            <TerritoryLabel key={`territory-label-${site.row.id}`} site={site} />
-          ))}
+      <div
+        style={{
+          ...styles.focusBoxClip,
+          height: rectHeight,
+          left: rectLeft,
+          opacity,
+          top: rectTop,
+          width: rectWidth * drawProgress,
+        }}
+      >
+        <div
+          style={{
+            ...styles.appleFocusBox,
+            height: rectHeight,
+            left: 0,
+            top: 0,
+            width: rectWidth,
+          }}
+        />
       </div>
-    </DataVideoChartFrame>
+    </AbsoluteFill>
   );
 };
 
-type VoronoiTreemapLayout = {
-  cells: TerritoryCell[];
-  sites: TerritorySite[];
-  tileSize: number;
-};
+const NvidiaRowFocusOverlay = ({
+  endFrame,
+  fps,
+  frame,
+  startFrame,
+  state,
+}: {
+  endFrame: number;
+  fps: number;
+  frame: number;
+  startFrame: number;
+  state: MarketCapFrameState;
+}) => {
+  const fadeOutStartFrame = endFrame - Math.round(nvidiaFocusFadeSeconds * fps);
+  const nvidiaRow = state.rows.find((raceRow) => raceRow.name === 'NVIDIA');
 
-type TerritoryCell = {
-  ownerIndex: number;
-  x: number;
-  y: number;
-};
+  if (!nvidiaRow || frame < startFrame || frame > endFrame) {
+    return null;
+  }
 
-type TerritorySite = {
-  anchorX: number;
-  anchorY: number;
-  cellCount: number;
-  cellShare: number;
-  color: string;
-  centroidX: number;
-  centroidY: number;
-  labelScale: number;
-  row: MarketCapFrameRow;
-  weightShare: number;
-};
-
-const territoryTileSize = 10;
-const territoryTileGap = 1;
-const territoryGridColor = 'rgba(255,255,255,0.16)';
-
-type CompanyAnchor = {
-  x: number;
-  y: number;
-};
-
-const fixedCompanyAnchors = [
-  { x: 0.55, y: 0.43 },
-  { x: 0.24, y: 0.73 },
-  { x: 0.84, y: 0.49 },
-  { x: 0.25, y: 0.28 },
-  { x: 0.51, y: 0.66 },
-  { x: 0.48, y: 0.17 },
-  { x: 0.69, y: 0.77 },
-  { x: 0.79, y: 0.22 },
-  { x: 0.15, y: 0.50 },
-  { x: 0.39, y: 0.84 },
-  { x: 0.91, y: 0.76 },
-  { x: 0.12, y: 0.18 },
-  { x: 0.68, y: 0.18 },
-  { x: 0.14, y: 0.37 },
-  { x: 0.73, y: 0.35 },
-  { x: 0.56, y: 0.85 },
-  { x: 0.34, y: 0.12 },
-  { x: 0.92, y: 0.33 },
-  { x: 0.10, y: 0.66 },
-  { x: 0.46, y: 0.55 },
-  { x: 0.74, y: 0.88 },
-  { x: 0.30, y: 0.47 },
-  { x: 0.61, y: 0.29 },
-  { x: 0.86, y: 0.65 },
-  { x: 0.18, y: 0.86 },
-  { x: 0.43, y: 0.24 },
-  { x: 0.65, y: 0.61 },
-  { x: 0.07, y: 0.24 },
-  { x: 0.96, y: 0.18 },
-  { x: 0.52, y: 0.08 },
-  { x: 0.36, y: 0.66 },
-  { x: 0.82, y: 0.08 },
-  { x: 0.20, y: 0.58 },
-  { x: 0.58, y: 0.74 },
-  { x: 0.04, y: 0.82 },
-  { x: 0.96, y: 0.91 },
-  { x: 0.27, y: 0.04 },
-  { x: 0.76, y: 0.44 },
-  { x: 0.49, y: 0.93 },
-  { x: 0.08, y: 0.08 },
-  { x: 0.94, y: 0.52 },
-  { x: 0.31, y: 0.92 },
-  { x: 0.63, y: 0.04 },
-  { x: 0.16, y: 0.28 },
-  { x: 0.70, y: 0.70 },
-  { x: 0.41, y: 0.38 },
-  { x: 0.88, y: 0.85 },
-  { x: 0.22, y: 0.12 },
-  { x: 0.79, y: 0.30 },
-  { x: 0.11, y: 0.75 },
-  { x: 0.54, y: 0.53 },
-] as const satisfies readonly CompanyAnchor[];
-
-const companyAnchorById = buildCompanyAnchorMap(raceData);
-const medalAccentByRank: Record<number, string> = {
-  1: '#FFD43B',
-  2: '#D8E3EE',
-  3: '#D88B45',
-};
-
-const TerritoryLabel = ({ site }: { site: TerritorySite }) => {
-  const row = site.row;
-  const labelWidth = Math.round(clamp(136 + site.cellShare * 720, 148, 252));
-  const labelBaseX = site.centroidX;
-  const labelBaseY = site.centroidY;
-  const labelX = clamp(labelBaseX, labelWidth / 2 + 12, chart.width - labelWidth / 2 - 12);
-  const labelY = clamp(labelBaseY, 118, chart.height - 128);
-  const logoSize = Math.round(clamp(48 + site.cellShare * 240, 54, 86));
-  const displayName = companyDisplayName(row.name);
-  const rankNameText = `#${row.displayRank} ${displayName}`;
-  const rankNameFontSize = Math.round(
-    clamp((labelWidth / Math.max(8, rankNameText.length)) * 1.5, 22, 34),
+  const opacity = interpolate(
+    frame,
+    [startFrame, startFrame + Math.round(0.12 * fps), fadeOutStartFrame, endFrame],
+    [0, 1, 1, 0],
+    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
   );
-  const showCountry = site.cellShare > 0.055;
-  const labelOpacity = clamp(row.opacity * 1.18, 0, 1);
-  const medalAccent = medalAccentForRank(row.displayRank);
-  const medalTextShadow = medalAccent
-    ? `0 3px 0 rgba(0,0,0,0.78), 2px 0 0 rgba(0,0,0,0.56), -2px 0 0 rgba(0,0,0,0.56), 0 0 18px ${hexToRgba(medalAccent, 0.45)}`
-    : undefined;
+
+  if (opacity <= 0.01) {
+    return null;
+  }
+
+  const drawProgress = interpolate(
+    frame,
+    [startFrame, startFrame + Math.round(nvidiaBoxDrawSeconds * fps)],
+    [0, 1],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    },
+  );
+  const rectTop = chart.top + chartRankToY(nvidiaRow.animatedRank);
+  const rectLeft = chart.left;
+  const rectWidth = chart.width;
+  const rectHeight = row.height;
+  const newsTop = Math.max(chart.top + 12, rectTop - 182);
+  const newsY = interpolate(
+    frame,
+    [startFrame, startFrame + Math.round(0.18 * fps)],
+    [10, 0],
+    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
+  );
+  const dimOpacity = opacity * 0.68;
 
   return (
-    <div
-      style={{
-        ...styles.territoryLabel,
-        left: labelX,
-        opacity: labelOpacity,
-        top: labelY,
-        transform: `translate(-50%, -50%) scale(${site.labelScale})`,
-        width: labelWidth,
-        zIndex: 80 - Math.min(70, row.displayRank),
-      }}
-    >
-      <CompanyLogoBadge row={row} size={logoSize} />
+    <AbsoluteFill style={styles.nvidiaFocusOverlay}>
+      <div style={{ ...styles.focusDimTop, height: rectTop, opacity: dimOpacity }} />
+      <div style={{ ...styles.focusDimBottom, top: rectTop + rectHeight, opacity: dimOpacity }} />
+      <div style={{ ...styles.focusDimLeft, top: rectTop, width: rectLeft, height: rectHeight, opacity: dimOpacity }} />
       <div
         style={{
-          ...styles.territoryRankName,
-          color: medalAccent ?? styles.territoryRankName.color,
-          fontSize: rankNameFontSize,
-          textShadow: medalTextShadow ?? styles.territoryRankName.textShadow,
+          ...styles.focusDimRight,
+          left: rectLeft + rectWidth,
+          top: rectTop,
+          height: rectHeight,
+          opacity: dimOpacity,
+        }}
+      />
+      <div
+        style={{
+          ...styles.nvidiaNewsCard,
+          opacity,
+          top: newsTop,
+          transform: `translateY(${newsY}px)`,
         }}
       >
-        {rankNameText}
+        <div style={styles.nvidiaNewsKicker}>WHY NVIDIA?</div>
+        <div style={styles.nvidiaNewsHeadline}>AI data centers needed its GPUs.</div>
+        <div style={styles.nvidiaNewsDetail}>Data Center revenue +142% to $115B.</div>
       </div>
       <div
         style={{
-          ...styles.territoryValue,
-          color: medalAccent ?? styles.territoryValue.color,
-          textShadow: medalTextShadow ?? styles.territoryValue.textShadow,
+          ...styles.focusBoxClip,
+          height: rectHeight,
+          left: rectLeft,
+          opacity,
+          top: rectTop,
+          width: rectWidth * drawProgress,
         }}
       >
-        {formatMarketCap(row.value)}
+        <div
+          style={{
+            ...styles.nvidiaFocusBox,
+            height: rectHeight,
+            left: 0,
+            top: 0,
+            width: rectWidth,
+          }}
+        />
       </div>
-      {showCountry ? (
-        <div style={styles.territoryCountry}>{row.country}</div>
-      ) : null}
-    </div>
+    </AbsoluteFill>
   );
-};
-
-const buildVoronoiTreemapLayout = (state: MarketCapFrameState): VoronoiTreemapLayout => {
-  const rows = state.rows
-    .filter((row) => row.value > 0.001 && row.topNPresence > 0.001);
-  const weightedValues = rows.map((row) =>
-    Math.max(row.value, state.maxValue * 0.004) * clamp(row.topNPresence, 0, 1)
-  );
-  const totalWeight = weightedValues.reduce((sum, value) => sum + value, 0) || 1;
-  const sites = rows.map((row, index) => {
-    const anchor = territoryAnchorForCompany(row);
-    const weightShare = weightedValues[index] / totalWeight;
-
-    return {
-      anchorX: anchor.x,
-      anchorY: anchor.y,
-      cellCount: 0,
-      cellShare: 0,
-      color: territoryColorFor(row),
-      centroidX: anchor.x,
-      centroidY: anchor.y,
-      labelScale: 1,
-      row,
-      weightShare,
-    };
-  });
-  const columns = Math.ceil(chart.width / territoryTileSize);
-  const rowsCount = Math.ceil(chart.height / territoryTileSize);
-  const cells: TerritoryCell[] = [];
-  const centroidSums = sites.map(() => ({ count: 0, x: 0, y: 0 }));
-
-  if (!sites.length) {
-    return { cells, sites, tileSize: territoryTileSize };
-  }
-
-  for (let gridY = 0; gridY < rowsCount; gridY += 1) {
-    for (let gridX = 0; gridX < columns; gridX += 1) {
-      const x = Math.min(chart.width - 0.5, gridX * territoryTileSize + territoryTileSize / 2);
-      const y = Math.min(chart.height - 0.5, gridY * territoryTileSize + territoryTileSize / 2);
-      const ownerIndex = territoryOwnerForPoint(x, y, sites);
-
-      cells.push({
-        ownerIndex,
-        x: gridX * territoryTileSize,
-        y: gridY * territoryTileSize,
-      });
-      centroidSums[ownerIndex].count += 1;
-      centroidSums[ownerIndex].x += x;
-      centroidSums[ownerIndex].y += y;
-    }
-  }
-
-  const cellTotal = Math.max(1, cells.length);
-
-  return {
-    cells,
-    sites: sites.map((site, index) => {
-      const centroid = centroidSums[index];
-      const cellShare = centroid.count / cellTotal;
-
-      return {
-        ...site,
-        cellCount: centroid.count,
-        cellShare,
-        centroidX: centroid.count ? centroid.x / centroid.count : site.anchorX,
-        centroidY: centroid.count ? centroid.y / centroid.count : site.anchorY,
-        labelScale: clamp(0.62 + Math.sqrt(Math.max(cellShare, site.weightShare)) * 1.44, 0.66, 1.08),
-      };
-    }),
-    tileSize: territoryTileSize,
-  };
-};
-
-const territoryOwnerForPoint = (x: number, y: number, sites: TerritorySite[]) => {
-  let bestIndex = 0;
-  let bestScore = Number.POSITIVE_INFINITY;
-
-  for (let index = 0; index < sites.length; index += 1) {
-    const site = sites[index];
-    const dx = x - site.anchorX;
-    const dy = y - site.anchorY;
-    const weightedDistance = dx * dx + dy * dy;
-    const score = weightedDistance / Math.max(0.0001, Math.pow(site.weightShare, 0.86));
-
-    if (score < bestScore) {
-      bestIndex = index;
-      bestScore = score;
-    }
-  }
-
-  return bestIndex;
-};
-
-function buildCompanyAnchorMap(data: MarketCapRaceData) {
-  const profiles = data.entities
-    .map((entity) => {
-      let bestRank = Number.POSITIVE_INFINITY;
-      let firstTopRank = Number.POSITIVE_INFINITY;
-      let firstTopYear = Number.POSITIVE_INFINITY;
-      let maxValue = 0;
-
-      for (const snapshot of data.snapshots) {
-        const rank = snapshot.ranks.get(entity.id) ?? Number.POSITIVE_INFINITY;
-        const value = snapshot.values.get(entity.id) ?? 0;
-
-        maxValue = Math.max(maxValue, value);
-        bestRank = Math.min(bestRank, rank);
-
-        if (rank <= globalMarketCapVideoConfig.topN && firstTopYear === Number.POSITIVE_INFINITY) {
-          firstTopRank = rank;
-          firstTopYear = snapshot.year;
-        }
-      }
-
-      return {
-        entity,
-        bestRank,
-        firstTopRank,
-        firstTopYear,
-        maxValue,
-      };
-    })
-    .sort((profileA, profileB) => {
-      const topA = Number.isFinite(profileA.firstTopYear) ? 0 : 1;
-      const topB = Number.isFinite(profileB.firstTopYear) ? 0 : 1;
-
-      return (
-        topA - topB ||
-        profileB.maxValue - profileA.maxValue ||
-        profileA.bestRank - profileB.bestRank ||
-        profileA.firstTopYear - profileB.firstTopYear ||
-        profileA.firstTopRank - profileB.firstTopRank ||
-        profileA.entity.name.localeCompare(profileB.entity.name)
-      );
-    });
-
-  return new Map(
-    profiles.map((profile, index) => [
-      profile.entity.id,
-      fixedCompanyAnchors[index] ?? spiralAnchorForIndex(index),
-    ]),
-  );
-}
-
-const territoryAnchorForCompany = (row: MarketCapFrameRow) => {
-  const id = row.id;
-  const anchor = companyAnchorById.get(id) ?? spiralAnchorForIndex(Math.abs(hashText(id)) % 120);
-  const jitterX = (hashUnit(`${id}:x`) - 0.5) * 18;
-  const jitterY = (hashUnit(`${id}:y`) - 0.5) * 18;
-  const baseX = clamp(anchor.x * chart.width + jitterX, 42, chart.width - 42);
-  const baseY = clamp(anchor.y * chart.height + jitterY, 42, chart.height - 42);
-
-  return {
-    x: baseX,
-    y: baseY,
-  };
-};
-
-function spiralAnchorForIndex(index: number): CompanyAnchor {
-  const angle = index * 2.399963229728653;
-  const ring = 0.18 + (index % 22) * 0.017 + Math.floor(index / 22) * 0.06;
-
-  return {
-    x: clamp(0.5 + Math.cos(angle) * ring, 0.05, 0.95),
-    y: clamp(0.5 + Math.sin(angle) * ring * 0.92, 0.05, 0.95),
-  };
-}
-
-const drawVoronoiTreemap = (
-  canvas: HTMLCanvasElement | null,
-  layout: VoronoiTreemapLayout,
-) => {
-  if (!canvas) {
-    return;
-  }
-
-  const context = canvas.getContext('2d');
-
-  if (!context) {
-    return;
-  }
-
-  context.clearRect(0, 0, chart.width, chart.height);
-  context.fillStyle = territoryGridColor;
-  context.fillRect(0, 0, chart.width, chart.height);
-
-  for (const cell of layout.cells) {
-    const site = layout.sites[cell.ownerIndex];
-
-    if (!site) {
-      continue;
-    }
-
-    const [red, green, blue] = hexToRgb(site.color);
-    const alpha = clamp(0.64 + site.row.opacity * 0.34, 0.16, 0.98);
-
-    context.fillStyle = `rgba(${red},${green},${blue},${alpha})`;
-    context.fillRect(
-      cell.x,
-      cell.y,
-      Math.max(1, layout.tileSize - territoryTileGap),
-      Math.max(1, layout.tileSize - territoryTileGap),
-    );
-  }
-
-  drawTerritoryBoundaries(context, layout);
-
-  context.globalCompositeOperation = 'screen';
-  for (const site of layout.sites) {
-    if (site.cellCount < 20) {
-      continue;
-    }
-
-    const [red, green, blue] = hexToRgb(site.color);
-    const radius = clamp(Math.sqrt(site.cellShare) * 700, 70, 260);
-    const glow = context.createRadialGradient(
-      site.centroidX,
-      site.centroidY,
-      0,
-      site.centroidX,
-      site.centroidY,
-      radius,
-    );
-
-    glow.addColorStop(0, `rgba(${red},${green},${blue},${0.16 * site.row.opacity})`);
-    glow.addColorStop(1, 'rgba(0,0,0,0)');
-    context.fillStyle = glow;
-    context.fillRect(0, 0, chart.width, chart.height);
-  }
-  context.globalCompositeOperation = 'source-over';
-  drawTerritoryBoundaries(context, layout);
-
-  context.strokeStyle = 'rgba(0,0,0,0.92)';
-  context.lineWidth = 4;
-  context.strokeRect(2, 2, chart.width - 4, chart.height - 4);
-};
-
-const drawTerritoryBoundaries = (
-  context: CanvasRenderingContext2D,
-  layout: VoronoiTreemapLayout,
-) => {
-  const columns = Math.ceil(chart.width / layout.tileSize);
-
-  context.save();
-  context.beginPath();
-  context.strokeStyle = 'rgba(0,0,0,0.82)';
-  context.lineCap = 'square';
-  context.lineWidth = 3;
-
-  for (let index = 0; index < layout.cells.length; index += 1) {
-    const cell = layout.cells[index];
-    const column = index % columns;
-    const rightCell = column < columns - 1 ? layout.cells[index + 1] : undefined;
-    const downCell = layout.cells[index + columns];
-
-    if (rightCell && rightCell.ownerIndex !== cell.ownerIndex) {
-      const x = cell.x + layout.tileSize - territoryTileGap / 2;
-
-      context.moveTo(x, cell.y);
-      context.lineTo(x, Math.min(chart.height, cell.y + layout.tileSize));
-    }
-
-    if (downCell && downCell.ownerIndex !== cell.ownerIndex) {
-      const y = cell.y + layout.tileSize - territoryTileGap / 2;
-
-      context.moveTo(cell.x, y);
-      context.lineTo(Math.min(chart.width, cell.x + layout.tileSize), y);
-    }
-  }
-
-  context.stroke();
-  context.restore();
 };
 
 const Footer = () => (
-  <DataVideoFooter geometry={frameLayout}>
-    <DataVideoFooterSource>{globalMarketCapVideoConfig.source}</DataVideoFooterSource>
-    <DataVideoFooterNote>Area = annual top 6 market cap share. Not financial advice.</DataVideoFooterNote>
-  </DataVideoFooter>
+  <div style={styles.footer}>
+    <div style={styles.source}>{globalMarketCapVideoConfig.source}</div>
+    <div style={styles.note}>USD billions at year end. Information visualization, not financial advice.</div>
+  </div>
 );
 
-const formatMarketCap = (value: number) => {
-  if (value >= 1000) {
-    return `$${(value / 1000).toFixed(2)}T`;
-  }
+const Background = ({
+  finalSpotlightProgress,
+}: {
+  finalSpotlightProgress: number;
+}) => (
+  <AbsoluteFill style={styles.background}>
+    <div
+      style={{
+        ...styles.finalNeutralBackground,
+        opacity: finalSpotlightProgress,
+      }}
+    />
+    <div style={styles.gridTexture} />
+    <div style={styles.topShadow} />
+    <div
+      style={{
+        ...styles.chartGlow,
+        opacity: interpolate(finalSpotlightProgress, [0, 1], [1, 0], {
+          extrapolateLeft: 'clamp',
+          extrapolateRight: 'clamp',
+        }),
+      }}
+    />
+  </AbsoluteFill>
+);
 
-  if (value >= 100) {
-    return `$${Math.round(value)}B`;
-  }
-
-  return `$${value.toFixed(1)}B`;
-};
-
-const companyDisplayName = (name: string) => {
-  const normalized = companyAliases[name] ?? name;
-
-  if (normalized.length <= 16) {
-    return normalized;
-  }
-
-  return `${normalized.slice(0, 15).trim()}...`;
-};
-
-const tickerForLabel = (code: string) => {
-  const cleaned = code.replace(/\.(SS|SZ|T|HK|DE|L|PA|AS|SW|KS)$/i, '');
-
-  if (cleaned.length <= 5) {
-    return cleaned;
-  }
-
-  return cleaned.slice(0, 5);
-};
-
-const CompanyLogoBadge = ({
-  row,
+const CompanyLogoMark = ({
+  code,
+  name,
   size,
 }: {
-  row: MarketCapFrameRow;
+  code: string;
+  name: string;
   size: number;
 }) => {
-  const logoFileName = logoFileNameForCode(row.code);
-  const logoZoom = logoZoomByCompanyName[row.name] ?? 1;
-  const medalAccent = medalAccentForRank(row.displayRank);
-  const badgeStyle = {
-    ...styles.logoBadge,
-    boxShadow: medalAccent
-      ? `0 10px 22px rgba(0,0,0,0.4), 0 0 0 4px ${medalAccent}, 0 0 24px ${hexToRgba(medalAccent, 0.55)}, inset 0 0 0 3px rgba(255,255,255,0.72)`
-      : styles.logoBadge.boxShadow,
-    height: size,
-    width: size,
-  };
-
-  const fallbackText = tickerForLabel(row.code);
-  const fallbackTextLength = Math.max(2, fallbackText.length);
-  const fallbackFontSize = Math.round(clamp(((size - 12) / fallbackTextLength) * 1.4, 9, 18));
+  const logoFileName = logoFileNameForCode(code);
+  const logoZoom = logoZoomByCompanyName[name] ?? 1;
+  const fallbackText = tickerForLabel(code);
+  const fallbackFontSize = Math.round(clamp(((size - 14) / Math.max(2, fallbackText.length)) * 1.42, 13, 22));
 
   return (
     <div
       style={{
-        ...styles.logoBadgeShell,
+        ...styles.logoMark,
         height: size,
         width: size,
-      }}
-    >
-      {row.displayRank === 1 ? <CrownIcon size={size} /> : null}
-      <div style={badgeStyle}>
-        {logoFileName ? (
-          <Img
-            src={staticFile(`projects/global-market-cap/logos/${logoFileName}`)}
-            style={{
-              ...styles.logoImage,
-              transform: `scale(${logoZoom})`,
-            }}
-          />
-        ) : (
-          <div
-            style={{
-              ...styles.logoText,
-              color: brandColorByCompanyName[row.name] ?? '#09111D',
-              fontSize: fallbackFontSize,
-            }}
-          >
-            {fallbackText}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-const CompanyNewsLogo = ({
-  code,
-  color,
-  companyName,
-}: {
-  code: string;
-  color: string;
-  companyName: string;
-}) => {
-  const logoFileName = logoFileNameForCode(code);
-  const logoZoom = logoZoomByCompanyName[companyName] ?? 1;
-  const fallbackText = tickerForLabel(code);
-
-  return (
-    <div
-      style={{
-        ...styles.newsLogoShell,
-        boxShadow: `0 6px 12px rgba(0,0,0,0.3), 0 0 0 1px ${hexToRgba(color, 0.72)}`,
       }}
     >
       {logoFileName ? (
         <Img
           src={staticFile(`projects/global-market-cap/logos/${logoFileName}`)}
           style={{
-            ...styles.newsLogoImage,
+            ...styles.logoImage,
             transform: `scale(${logoZoom})`,
           }}
         />
       ) : (
-        <div
+        <span
           style={{
-            ...styles.newsLogoText,
-            color,
+            ...styles.logoFallback,
+            color: brandColorByCompanyName[name] ?? '#07111C',
+            fontSize: fallbackFontSize,
           }}
         >
           {fallbackText}
-        </div>
+        </span>
       )}
     </div>
   );
@@ -804,13 +861,124 @@ const CrownIcon = ({ size }: { size: number }) => {
   );
 };
 
-const medalAccentForRank = (rank: number) => medalAccentByRank[rank];
+const chartRankToY = (rank: number) => {
+  const rowSpan = row.height + row.gap;
 
-const eventToneAccentByTone: Record<GlobalMarketCapEvent['tone'], string> = {
-  caution: '#FF6B57',
-  growth: '#00F5A0',
-  milestone: '#F5E829',
-  shift: '#7DD3FC',
+  return clamp((rank - 1) / (globalMarketCapVideoConfig.topN + 0.35), 0, 1.08) *
+    ((globalMarketCapVideoConfig.topN + 0.35) * rowSpan);
+};
+
+const frameForYearProgress = ({
+  motionFrames,
+  segmentProgress,
+  year,
+}: {
+  motionFrames: number;
+  segmentProgress: number;
+  year: number;
+}) => {
+  const segmentCount = Math.max(1, raceData.snapshots.length - 1);
+  const yearIndex = clamp(year - raceData.minYear + segmentProgress, 0, segmentCount);
+
+  return Math.round((yearIndex / segmentCount) * Math.max(1, motionFrames - 1));
+};
+
+const barWidthForValue = (value: number, maxValue: number) =>
+  clamp(value / Math.max(1, maxValue), 0, 1) * barMaxWidth;
+
+const opacityForRow = (
+  raceRow: MarketCapFrameRow,
+  year: number,
+  finalSpotlightProgress: number,
+) => {
+  const storyDim = year >= 2023 && !storyCompanies.has(raceRow.name) ? 0.74 : 1;
+  const finalDim = raceRow.name === 'NVIDIA'
+    ? interpolate(finalSpotlightProgress, [0, 1], [1, 1])
+    : interpolate(finalSpotlightProgress, [0, 1], [1, 0.52]);
+
+  return clamp(raceRow.opacity * storyDim * finalDim, 0, 1);
+};
+
+const storyBeatForYear = (year: number) => {
+  if (year <= 2011) {
+    return {
+      companyName: 'Apple',
+      headline: 'Apple enters the crown fight',
+      kicker: 'EARLY MONEY',
+    };
+  }
+
+  if (year <= 2017) {
+    return {
+      companyName: 'Apple',
+      headline: 'Apple turns the race into an iPhone era',
+      kicker: 'CROWN TAKEN',
+    };
+  }
+
+  if (year <= 2019) {
+    return {
+      companyName: 'Microsoft',
+      headline: 'Big tech bunches up at the top',
+      kicker: 'TECH WAR',
+    };
+  }
+
+  if (year <= 2022) {
+    return {
+      companyName: 'Saudi Aramco',
+      headline: 'Oil interrupts the tech throne',
+      kicker: 'POWER SHIFT',
+    };
+  }
+
+  if (year <= 2024) {
+    return {
+      companyName: 'NVIDIA',
+      headline: 'NVIDIA explodes into the top six',
+      kicker: 'WATCH GREEN',
+    };
+  }
+
+  return {
+    companyName: 'NVIDIA',
+    headline: 'AI takes the crown from Apple',
+    kicker: 'NEW KING',
+  };
+};
+
+const formatMarketCap = (value: number) => {
+  if (value >= 1000) {
+    return `$${(value / 1000).toFixed(2)}T`;
+  }
+
+  if (value >= 100) {
+    return `$${Math.round(value)}B`;
+  }
+
+  return `$${value.toFixed(1)}B`;
+};
+
+const companyDisplayName = (name: string) => {
+  const normalized = companyAliases[name] ?? name;
+
+  if (normalized.length <= 18) {
+    return normalized;
+  }
+
+  return `${normalized.slice(0, 17).trim()}...`;
+};
+
+const countryDisplayName = (country: string) => countryAliases[country] ?? country;
+
+const tickerForLabel = (code: string) => {
+  const cleaned = code.replace(/\.(SS|SZ|T|HK|DE|L|PA|AS|SW|KS|SR)$/i, '');
+
+  if (cleaned.length <= 5) {
+    return cleaned;
+  }
+
+  return cleaned.slice(0, 5);
 };
 
 const logoFileNameForCode = (code: string) => {
@@ -822,21 +990,54 @@ const logoFileNameForCode = (code: string) => {
   return normalized ? `${normalized}.png` : '';
 };
 
-const logoZoomByCompanyName: Record<string, number> = {
-  'Broadcom': 1.16,
-  'Meta Platforms (Facebook)': 1.08,
-  'Saudi Aramco': 1.18,
-  'SpaceX': 1.2,
-  'Tesla': 1.12,
+const colorForCompany = (row: MarketCapFrameRow) =>
+  brandColorByCompanyName[row.name] ??
+  fallbackPalette[Math.abs(hashText(row.id)) % fallbackPalette.length];
+
+const rankColorFor = (rank: number) => {
+  if (rank === 1) {
+    return '#F9D36B';
+  }
+
+  if (rank === 2) {
+    return '#D9E0EA';
+  }
+
+  if (rank === 3) {
+    return '#D38B4A';
+  }
+
+  return '#FFFFFF';
 };
 
-const territoryColorFor = (row: MarketCapFrameRow) =>
-  top10TerritoryColorByCompanyName[row.name] ??
-  brandColorByCompanyName[row.name] ??
-  fallbackColorFor(row);
+const fontSizeForCompanyName = (name: string, width: number) => {
+  if (name.length > 16) {
+    return Math.min(34, fitFontSizeForText(name, width));
+  }
 
-const fallbackColorFor = (row: MarketCapFrameRow) =>
-  fallbackTerritoryPalette[Math.abs(hashText(row.id)) % fallbackTerritoryPalette.length];
+  if (name.length > 12) {
+    return Math.min(38, fitFontSizeForText(name, width));
+  }
+
+  return Math.min(42, fitFontSizeForText(name, width));
+};
+
+const fitFontSizeForText = (text: string, width: number) =>
+  Math.round(clamp((width / Math.max(8, text.length)) * 1.72, 30, 44));
+
+const barGradientFor = (hexColor: string) =>
+  `linear-gradient(90deg, ${mixHexColors(hexColor, '#FFFFFF', 0.14)} 0%, ${hexColor} 58%, ${mixHexColors(hexColor, '#000000', 0.16)} 100%)`;
+
+const mixHexColors = (fromColor: string, toColor: string, progress: number) => {
+  const from = hexToRgb(fromColor);
+  const to = hexToRgb(toColor);
+  const t = clamp(progress, 0, 1);
+  const mixed = from.map((channel, index) =>
+    Math.round(channel + (to[index] - channel) * t)
+  );
+
+  return `#${mixed.map((channel) => channel.toString(16).padStart(2, '0')).join('')}`;
+};
 
 const hexToRgb = (hex: string) => [
   Number.parseInt(hex.slice(1, 3), 16),
@@ -860,139 +1061,44 @@ const hashText = (text: string) => {
   return hash;
 };
 
-const hashUnit = (text: string) => (Math.abs(hashText(text)) % 1000) / 1000;
+const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
 
-function clamp(value: number, min: number, max: number) {
-  return Math.min(max, Math.max(min, value));
-}
+const logoZoomByCompanyName: Record<string, number> = {
+  'Broadcom': 1.16,
+  'Meta Platforms (Facebook)': 1.08,
+  'Saudi Aramco': 1.18,
+  'SpaceX': 1.2,
+  'Tesla': 1.12,
+};
 
 const brandColorByCompanyName: Record<string, string> = {
   'Alphabet (Google)': '#4285F4',
-  'Alibaba': '#FF6A00',
-  'Altria Group': '#C4A661',
   'Amazon': '#FF9900',
-  'Ambev': '#0057B8',
-  'American International Group': '#0057A8',
-  'Apple': '#A2AAAD',
-  'AT&T': '#00A8E0',
-  'Bank of America': '#E31837',
-  'Berkshire Hathaway': '#005BAC',
-  'BHP Group': '#E35205',
-  'BP': '#009B00',
-  'Broadcom': '#CC092F',
-  'Chevron': '#0057B8',
-  'China Construction Bank': '#003B79',
-  'China Mobile': '#00843D',
-  'Cisco': '#8BFF00',
-  'Citigroup': '#004B8D',
-  'Coca-Cola': '#F40009',
-  'Eli Lilly': '#D52B1E',
-  'Exxon Mobil': '#ED1B2F',
-  'General Electric': '#3B73B9',
-  'HSBC': '#DB0011',
-  'IBM': '#0033FF',
-  'ICBC': '#C8102E',
-  'Intel': '#0071C5',
-  'Johnson & Johnson': '#D71920',
-  'JPMorgan Chase': '#005EB8',
-  'Lucent Technologies': '#EF3E42',
-  'Merck': '#007A73',
-  'Meta Platforms (Facebook)': '#0668E1',
-  'Microsoft': '#00A4EF',
-  'Mitsubishi UFJ Financial': '#E60012',
-  'Nestlé': '#8B5E3C',
-  'NVIDIA': '#76B900',
-  'NTT Docomo': '#E60012',
-  'Nokia': '#124191',
-  'Petrobras': '#008542',
-  'PetroChina': '#E60012',
-  'Pfizer': '#00F5A0',
-  'Procter & Gamble': '#003DA5',
-  'Roche': '#0072CE',
-  'Saudi Aramco': '#00A3A1',
-  'Shell': '#FFD500',
-  'Sinopec': '#E60012',
-  'SpaceX': '#A7A9AC',
-  'Tesla': '#E82127',
-  'Tencent': '#0052D9',
-  'Toyota': '#EB0A1E',
-  'TSMC': '#D5001C',
-  'Unilever': '#1F36C7',
-  'UnitedHealth': '#0057B8',
-  'Visa': '#1A1F71',
-  'Vodafone': '#E60000',
-  'Walmart': '#0071CE',
-  'Wells Fargo': '#D71E28',
-};
-
-const strongBrandTerritoryColorByCompanyName: Record<string, string> = {
-  'Alphabet (Google)': '#4285F4',
-  'Amazon': '#FF9900',
-  'Apple': '#C9CED6',
-  'Bank of America': '#E31837',
-  'BP': '#009B00',
-  'Cisco': '#8BFF00',
-  'Coca-Cola': '#F40009',
-  'IBM': '#0033FF',
-  'Intel': '#0071C5',
-  'Microsoft': '#00A4EF',
-  'NVIDIA': '#76B900',
-  'Pfizer': '#00F5A0',
-  'Saudi Aramco': '#00A3A1',
-  'Shell': '#FFD500',
-  'SpaceX': '#596675',
-  'Tesla': '#E82127',
-  'Visa': '#1A1F71',
-  'Walmart': '#FF7A00',
-};
-
-const highSeparationTerritoryColorByCompanyName: Record<string, string> = {
-  'Alibaba': '#FF5A1F',
-  'Altria Group': '#B68C00',
   'Ambev': '#FF2D95',
-  'American International Group': '#F72585',
-  'AT&T': '#00FFEA',
+  'Apple': '#C9CED6',
   'Berkshire Hathaway': '#A855F7',
   'BHP Group': '#00E5FF',
   'Broadcom': '#C0008B',
-  'Chevron': '#00FF66',
   'China Construction Bank': '#2937FF',
   'China Mobile': '#00C853',
+  'Cisco': '#8BFF00',
   'Citigroup': '#52FF00',
-  'Eli Lilly': '#00FFB3',
   'Exxon Mobil': '#FF3D00',
   'General Electric': '#6C63FF',
-  'HSBC': '#E6007A',
   'ICBC': '#D500F9',
-  'Johnson & Johnson': '#FF6EC7',
-  'JPMorgan Chase': '#00FFD1',
-  'Lucent Technologies': '#FF40A0',
-  'Merck': '#00BFA5',
   'Meta Platforms (Facebook)': '#FF00C8',
-  'Mitsubishi UFJ Financial': '#FF2E63',
-  'Nestlé': '#B000FF',
-  'NTT Docomo': '#FF006E',
-  'Nokia': '#124191',
-  'Petrobras': '#FF00A8',
+  'Microsoft': '#00A4EF',
+  'NVIDIA': '#76B900',
   'PetroChina': '#B5E61D',
-  'Procter & Gamble': '#FFEA00',
-  'Roche': '#FFE600',
-  'Sinopec': '#FFF100',
-  'Tencent': '#7B2FF7',
-  'Toyota': '#FF8C00',
+  'Pfizer': '#00F5A0',
+  'Saudi Aramco': '#00A3A1',
+  'SpaceX': '#596675',
+  'Tesla': '#E82127',
   'TSMC': '#8A1538',
-  'Unilever': '#6A00FF',
-  'UnitedHealth': '#39FF14',
-  'Vodafone': '#FF0054',
-  'Wells Fargo': '#FDE047',
+  'Walmart': '#FF7A00',
 };
 
-const top10TerritoryColorByCompanyName: Record<string, string> = {
-  ...strongBrandTerritoryColorByCompanyName,
-  ...highSeparationTerritoryColorByCompanyName,
-};
-
-const fallbackTerritoryPalette = [
+const fallbackPalette = [
   '#006CFF',
   '#FF3B30',
   '#00A86B',
@@ -1001,88 +1107,274 @@ const fallbackTerritoryPalette = [
   '#00C7BE',
   '#FF2D55',
   '#B5E61D',
-  '#FF6B00',
   '#5856D6',
   '#00B894',
   '#D81B60',
-  '#8E5A00',
-  '#0A84FF',
-  '#C21807',
-  '#40C8E0',
-  '#7D3CFF',
-  '#2E7D32',
-  '#B000F5',
   '#F4B400',
 ] as const;
 
 const companyAliases: Record<string, string> = {
+  'Alphabet (Google)': 'Alphabet',
   'Berkshire Hathaway': 'Berkshire',
   'China Construction Bank': 'China Const. Bank',
-  'Eli Lilly': 'Eli Lilly',
-  'JPMorgan Chase': 'JPMorgan',
-  'Mitsubishi UFJ Financial': 'Mitsubishi UFJ',
+  'Meta Platforms (Facebook)': 'Meta',
   'Procter & Gamble': 'P&G',
   'Saudi Aramco': 'Saudi Aramco',
   'Taiwan Semiconductor Manufacturing Company': 'TSMC',
 };
 
+const countryAliases: Record<string, string> = {
+  'S. Arabia': 'Saudi Arabia',
+  'S. Korea': 'South Korea',
+  UK: 'United Kingdom',
+  USA: 'United States',
+};
+
 const styles = {
-  territoryCanvas: {
+  stage: {
+    backgroundColor: '#020409',
+    color: '#FFFFFF',
+    fontFamily: fontStack,
+    overflow: 'hidden',
+  },
+  videoContent: {
     position: 'absolute',
     inset: 0,
+    willChange: 'filter',
+  },
+  background: {
+    backgroundColor: '#020409',
+    backgroundImage:
+      'radial-gradient(circle at 50% 58%, rgba(118,185,0,0.16) 0%, rgba(7,25,45,0.12) 36%, rgba(2,4,9,0) 68%), radial-gradient(circle at 15% 24%, rgba(245,232,41,0.08) 0%, rgba(245,232,41,0) 34%), radial-gradient(circle at 88% 16%, rgba(0,164,239,0.08) 0%, rgba(0,164,239,0) 36%), linear-gradient(180deg, #020409 0%, #06101B 52%, #020409 100%)',
+  },
+  gridTexture: {
+    position: 'absolute',
+    inset: 0,
+    opacity: 0.26,
+    backgroundImage:
+      'linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(180deg, rgba(255,255,255,0.026) 1px, transparent 1px)',
+    backgroundSize: '92px 92px',
+  },
+  finalNeutralBackground: {
+    position: 'absolute',
+    inset: 0,
+    backgroundImage:
+      'radial-gradient(circle at 54% 54%, rgba(36,46,56,0.2) 0%, rgba(10,15,22,0.16) 38%, rgba(2,4,9,0) 66%), linear-gradient(180deg, #020409 0%, #07101A 52%, #020409 100%)',
+    willChange: 'opacity',
+  },
+  topShadow: {
+    position: 'absolute',
+    inset: 0,
+    background:
+      'linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.12) 34%, rgba(0,0,0,0.72) 100%)',
+  },
+  chartGlow: {
+    position: 'absolute',
+    left: 70,
+    right: 70,
+    top: chart.top - 95,
+    height: chart.height + 260,
+    background:
+      'radial-gradient(ellipse at 54% 50%, rgba(118,185,0,0.1), rgba(7,28,44,0.22) 38%, rgba(0,0,0,0) 74%)',
+  },
+  header: {
+    position: 'absolute',
+    left: visibleChart.left,
+    right: visibleChart.right,
+    top: defaultDataShortsTemplate.headerTop,
+    zIndex: 5,
+    textAlign: 'center',
+  },
+  title: {
+    color: '#FFFFFF',
+    fontSize: 42,
+    fontWeight: 950,
+    letterSpacing: 0,
+    lineHeight: 1,
+    marginTop: 8,
+    textShadow: '0 5px 18px rgba(0,0,0,0.64)',
+    whiteSpace: 'nowrap',
+  },
+  titleHook: {
+    color: '#F5E829',
+    fontSize: 62,
+    fontWeight: 950,
+    letterSpacing: 0,
+    lineHeight: 1,
+    textShadow: '0 5px 18px rgba(0,0,0,0.64)',
+    whiteSpace: 'nowrap',
+  },
+  subtitle: {
+    color: 'rgba(255,255,255,0.82)',
+    fontSize: 27,
+    fontWeight: 800,
+    lineHeight: 1.2,
+    marginTop: 10,
+  },
+  yearRailBlock: {
+    position: 'absolute',
+    left: yearRail.left,
+    top: yearRail.top,
+    width: yearRail.width,
+    zIndex: 9,
+  },
+  yearRailHeader: {
+    marginBottom: 7,
+    position: 'relative',
+  },
+  currentYear: {
+    color: '#FFFFFF',
+    fontSize: 76,
+    fontStyle: 'italic',
+    fontWeight: 950,
+    lineHeight: 0.9,
+    textAlign: 'left',
+    textShadow: '0 10px 26px rgba(0,0,0,0.38)',
+  },
+  yearRailTag: {
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    marginBottom: 7,
+    padding: '7px 13px',
+    border: '1px solid rgba(255,255,255,0.18)',
+    borderRadius: 999,
+    background: 'rgba(2,8,14,0.48)',
+    color: 'rgba(255,255,255,0.72)',
+    fontSize: 22,
+    fontWeight: 900,
+    lineHeight: 1,
+    letterSpacing: 0,
+    boxShadow: '0 12px 28px rgba(0,0,0,0.24)',
+    transformOrigin: '50% -16px',
+    willChange: 'transform',
+    whiteSpace: 'nowrap',
+  },
+  yearRailSvg: {
     display: 'block',
+  },
+  legend: {
+    position: 'absolute',
+    left: chart.left + barLeft,
+    top: chart.top - 32,
+    width: valueRight - barLeft,
+    zIndex: 6,
+    display: 'flex',
+    justifyContent: 'space-between',
+    gap: 20,
+    color: 'rgba(255,255,255,0.58)',
+    fontSize: 20,
+    fontWeight: 950,
+    letterSpacing: 0,
+    overflow: 'hidden',
+  },
+  legendLeft: {
+    display: 'flex',
+    flex: '1 1 auto',
+    gap: 10,
+    minWidth: 0,
+    overflow: 'hidden',
+  },
+  legendKicker: {
+    flex: '0 0 auto',
+  },
+  legendHeadline: {
+    color: '#FFFFFF',
+    flex: '1 1 auto',
+    minWidth: 0,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  },
+  legendValue: {
+    flex: '0 0 auto',
+    textAlign: 'right',
+  },
+  chart: {
+    position: 'absolute',
+    left: chart.left,
+    top: chart.top,
     width: chart.width,
     height: chart.height,
-    pointerEvents: 'none',
+    zIndex: 6,
+    overflow: 'hidden',
+    transformOrigin: 'center top',
+    willChange: 'opacity',
   },
-  territoryShade: {
+  gridLayer: {
     position: 'absolute',
     inset: 0,
-    zIndex: 2,
-    background:
-      'linear-gradient(180deg, rgba(255,255,255,0.05), rgba(0,0,0,0.08) 42%, rgba(0,0,0,0.2)), radial-gradient(circle at 50% 44%, rgba(255,255,255,0.08), rgba(255,255,255,0) 58%)',
+    zIndex: 1,
     pointerEvents: 'none',
   },
-  territoryLabelLayer: {
+  gridVerticalLine: {
+    position: 'absolute',
+    top: 0,
+    width: 1,
+    height: chart.height,
+    backgroundColor: 'rgba(255,255,255,0.16)',
+    opacity: 0.13,
+  },
+  gridHorizontalLine: {
+    position: 'absolute',
+    left: barLeft,
+    width: barMaxWidth,
+    height: 1,
+    backgroundColor: 'rgba(255,255,255,0.12)',
+    opacity: 0.08,
+  },
+  rowsLayer: {
     position: 'absolute',
     inset: 0,
     zIndex: 3,
-    pointerEvents: 'none',
   },
-  territoryLabel: {
+  barRow: {
     position: 'absolute',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    transformOrigin: 'center center',
-    willChange: 'transform, opacity',
+    left: 0,
+    width: chart.width,
+    height: row.height,
+    willChange: 'filter, opacity, top',
   },
-  logoBadgeShell: {
-    position: 'relative',
-    flex: '0 0 auto',
-    marginBottom: 10,
-    overflow: 'visible',
+  rank: {
+    position: 'absolute',
+    left: 0,
+    top: 34,
+    width: rankColumnWidth,
+    fontSize: 33,
+    fontWeight: 950,
+    lineHeight: 1,
+    textAlign: 'right',
+    textShadow: '0 4px 10px rgba(0,0,0,0.48)',
   },
-  logoBadge: {
-    position: 'relative',
+  bar: {
+    position: 'absolute',
+    left: barLeft,
+    top: 5,
+    height: barHeight,
+    border: '1px solid rgba(255,255,255,0.15)',
+    borderRadius: 7,
+  },
+  logoShell: {
+    position: 'absolute',
+    left: barLeft + 10,
+    top: 20,
+    width: logoSize,
+    height: logoSize,
+    border: '2px solid rgba(255,255,255,0.22)',
     borderRadius: 8,
     backgroundColor: 'rgba(255,255,255,0.98)',
-    boxShadow:
-      '0 10px 22px rgba(0,0,0,0.38), inset 0 0 0 3px rgba(255,255,255,0.72)',
+    boxShadow: '0 9px 20px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(255,255,255,0.66)',
+  },
+  logoMark: {
+    position: 'relative',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 6,
+    borderRadius: 7,
     overflow: 'hidden',
-  },
-  crownIcon: {
-    position: 'absolute',
-    zIndex: 4,
-    display: 'block',
-    filter: 'drop-shadow(0 7px 9px rgba(0,0,0,0.5))',
-    pointerEvents: 'none',
+    padding: 7,
+    boxSizing: 'border-box',
+    backgroundColor: 'rgba(255,255,255,0.98)',
   },
   logoImage: {
     display: 'block',
@@ -1091,144 +1383,262 @@ const styles = {
     objectFit: 'contain',
     transformOrigin: 'center center',
   },
-  logoText: {
-    boxSizing: 'border-box',
-    color: '#09111D',
-    fontSize: 18,
-    fontWeight: 950,
-    lineHeight: 1,
-    padding: '0 2px',
-    width: '100%',
+  logoFallback: {
     maxWidth: '100%',
     overflow: 'hidden',
     textAlign: 'center',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
+    fontWeight: 950,
+    lineHeight: 1,
   },
-  territoryRankName: {
+  crownIcon: {
+    position: 'absolute',
+    zIndex: 4,
+    display: 'block',
+    filter: 'drop-shadow(0 7px 9px rgba(0,0,0,0.5))',
+    pointerEvents: 'none',
+  },
+  companyName: {
+    position: 'absolute',
+    left: barLeft + 90,
+    top: 21,
     color: '#FFFFFF',
     fontWeight: 950,
-    lineHeight: 1.02,
-    maxWidth: '100%',
+    lineHeight: 1,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    textShadow:
-      '0 3px 0 rgba(0,0,0,0.76), 2px 0 0 rgba(0,0,0,0.54), -2px 0 0 rgba(0,0,0,0.54), 0 10px 20px rgba(0,0,0,0.42)',
+    textShadow: '0 3px 0 rgba(0,0,0,0.72), 0 8px 18px rgba(0,0,0,0.38)',
     whiteSpace: 'nowrap',
   },
-  territoryValue: {
-    marginTop: 4,
-    color: '#F9D36B',
-    fontSize: 29,
+  companyMeta: {
+    position: 'absolute',
+    left: barLeft + 90,
+    top: 59,
+    display: 'flex',
+    alignItems: 'center',
+    gap: 9,
+    maxWidth: valueLeft - barLeft - 112,
+    overflow: 'hidden',
+  },
+  tickerPill: {
+    flex: '0 0 auto',
+    border: '1px solid rgba(255,255,255,0.34)',
+    borderRadius: 5,
+    backgroundColor: 'rgba(0,0,0,0.34)',
+    padding: '4px 7px',
+    fontSize: 17,
+    fontWeight: 950,
+    lineHeight: 1,
+  },
+  countryText: {
+    minWidth: 0,
+    overflow: 'hidden',
+    color: 'rgba(255,255,255,0.8)',
+    fontSize: 18,
+    fontWeight: 850,
+    lineHeight: 1,
+    textOverflow: 'ellipsis',
+    textShadow: '0 3px 9px rgba(0,0,0,0.56)',
+    whiteSpace: 'nowrap',
+  },
+  value: {
+    position: 'absolute',
+    left: valueLeft,
+    top: 32,
+    width: valueWidth,
+    fontSize: 37,
     fontVariantNumeric: 'tabular-nums',
     fontWeight: 950,
     lineHeight: 1,
-    textShadow:
-      '0 3px 0 rgba(0,0,0,0.76), 2px 0 0 rgba(0,0,0,0.48), -2px 0 0 rgba(0,0,0,0.48)',
+    textAlign: 'right',
+    textShadow: '0 4px 12px rgba(0,0,0,0.46)',
     whiteSpace: 'nowrap',
   },
-  territoryCountry: {
-    marginTop: 7,
-    color: 'rgba(255,255,255,0.8)',
-    fontSize: 17,
+  hookOverlay: {
+    position: 'absolute',
+    inset: 0,
+    zIndex: 40,
+    pointerEvents: 'none',
+  },
+  hookBlack: {
+    position: 'absolute',
+    inset: 0,
+    backgroundColor: '#000000',
+  },
+  hookLogoWrap: {
+    position: 'absolute',
+    left: '50%',
+    zIndex: 42,
+    width: 248,
+    height: 176,
+    filter: 'drop-shadow(0 18px 42px rgba(0,0,0,0.72))',
+    transformOrigin: 'center center',
+    willChange: 'opacity, top, transform',
+  },
+  hookAppleBehind: {
+    position: 'absolute',
+    left: 112,
+    top: 37,
+    zIndex: 1,
+    opacity: 0.94,
+    filter: 'brightness(0.9) drop-shadow(0 12px 24px rgba(0,0,0,0.58))',
+  },
+  hookNvidiaFront: {
+    position: 'absolute',
+    left: 18,
+    top: 9,
+    zIndex: 2,
+    filter: 'drop-shadow(0 16px 30px rgba(118,185,0,0.28))',
+  },
+  movingHookText: {
+    position: 'absolute',
+    left: '50%',
+    zIndex: 43,
+    width: 1040,
+    boxSizing: 'border-box',
+    color: '#F5E829',
+    fontWeight: 950,
+    lineHeight: 0.98,
+    textAlign: 'center',
+    textShadow: '0 5px 18px rgba(0,0,0,0.64)',
+    transform: 'translateX(-50%)',
+    whiteSpace: 'nowrap',
+    willChange: 'opacity, top, font-size',
+  },
+  movingHookQuestion: {
+    position: 'absolute',
+    left: '50%',
+    zIndex: 43,
+    width: 1040,
+    boxSizing: 'border-box',
+    color: '#FFFFFF',
     fontWeight: 900,
     lineHeight: 1,
-    maxWidth: '94%',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    textShadow: '0 3px 9px rgba(0,0,0,0.68)',
+    textAlign: 'center',
+    textShadow: '0 5px 18px rgba(0,0,0,0.64)',
+    transform: 'translateX(-50%)',
     whiteSpace: 'nowrap',
+    willChange: 'opacity, top, font-size',
   },
-  newsCard: {
-    flex: '1 1 auto',
-    minWidth: 0,
-    height: 62,
-    boxSizing: 'border-box',
-    display: 'flex',
-    alignItems: 'center',
-    gap: 11,
+  appleFocusOverlay: {
+    position: 'absolute',
+    inset: 0,
+    zIndex: 28,
+    pointerEvents: 'none',
+  },
+  focusDimTop: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    backgroundColor: '#000000',
+  },
+  focusDimBottom: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#000000',
+  },
+  focusDimLeft: {
+    position: 'absolute',
+    left: 0,
+    backgroundColor: '#000000',
+  },
+  focusDimRight: {
+    position: 'absolute',
+    right: 0,
+    backgroundColor: '#000000',
+  },
+  focusBoxClip: {
+    position: 'absolute',
+    zIndex: 2,
     overflow: 'hidden',
-    padding: '6px 15px 6px 10px',
-    border: '1px solid rgba(255,255,255,0.2)',
-    borderRadius: 8,
+    willChange: 'opacity, width',
+  },
+  appleFocusBox: {
+    position: 'absolute',
+    border: '4px solid #F5E829',
+    borderRadius: 0,
+    boxShadow:
+      '0 0 0 1px rgba(0,0,0,0.86), 0 0 28px rgba(245,232,41,0.5), inset 0 0 0 1px rgba(255,255,255,0.16)',
+    boxSizing: 'border-box',
+  },
+  nvidiaFocusOverlay: {
+    position: 'absolute',
+    inset: 0,
+    zIndex: 29,
+    pointerEvents: 'none',
+  },
+  nvidiaFocusBox: {
+    position: 'absolute',
+    border: '4px solid #76B900',
+    borderRadius: 0,
+    boxShadow:
+      '0 0 0 1px rgba(0,0,0,0.86), 0 0 30px rgba(118,185,0,0.66), inset 0 0 0 1px rgba(255,255,255,0.16)',
+    boxSizing: 'border-box',
+  },
+  nvidiaNewsCard: {
+    position: 'absolute',
+    left: chart.left + 68,
+    width: chart.width - 136,
+    zIndex: 3,
+    boxSizing: 'border-box',
+    border: '3px solid rgba(118,185,0,0.88)',
+    borderRadius: 7,
     background:
-      'linear-gradient(90deg, rgba(5,10,16,0.82) 0%, rgba(10,17,23,0.72) 62%, rgba(2,4,9,0.62) 100%)',
-    transformOrigin: 'center center',
+      'linear-gradient(90deg, rgba(6,13,9,0.94) 0%, rgba(12,31,14,0.9) 55%, rgba(4,8,7,0.9) 100%)',
+    boxShadow:
+      '0 18px 42px rgba(0,0,0,0.52), 0 0 30px rgba(118,185,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.1)',
+    padding: '18px 22px 20px',
     willChange: 'opacity, transform',
   },
-  newsAccentBar: {
-    flex: '0 0 auto',
-    width: 6,
-    height: 40,
-    borderRadius: 4,
-  },
-  newsLogoShell: {
-    flex: '0 0 auto',
-    width: 48,
-    height: 48,
-    boxSizing: 'border-box',
-    borderRadius: 5,
-    backgroundColor: 'rgba(255,255,255,0.98)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
-    padding: 7,
-  },
-  newsLogoImage: {
-    display: 'block',
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain',
-    transformOrigin: 'center center',
-  },
-  newsLogoText: {
-    maxWidth: '100%',
-    overflow: 'hidden',
-    textAlign: 'center',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-    fontSize: 16,
-    fontWeight: 950,
-    lineHeight: 1,
-  },
-  newsRank: {
-    flex: '0 0 auto',
-    border: '1px solid rgba(255,255,255,0.2)',
-    borderRadius: 5,
-    padding: '5px 9px',
+  nvidiaNewsKicker: {
+    color: '#76B900',
     fontSize: 27,
     fontWeight: 950,
     lineHeight: 1,
-  },
-  newsCompany: {
-    flex: '0 1 auto',
-    maxWidth: 210,
-    overflow: 'hidden',
-    color: 'rgba(255,255,255,0.86)',
-    fontSize: 32,
-    fontWeight: 950,
-    lineHeight: 1,
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-  },
-  newsDivider: {
-    flex: '0 0 auto',
-    color: 'rgba(255,255,255,0.36)',
-    fontSize: 28,
-    fontWeight: 950,
-    lineHeight: 1,
-  },
-  newsHeadline: {
-    minWidth: 0,
-    flex: '1 1 auto',
-    color: '#FFFFFF',
-    fontSize: 34,
-    fontWeight: 950,
-    lineHeight: 1,
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
+    marginBottom: 8,
     textShadow: '0 4px 12px rgba(0,0,0,0.5)',
     whiteSpace: 'nowrap',
+  },
+  nvidiaNewsHeadline: {
+    color: '#FFFFFF',
+    fontSize: 42,
+    fontWeight: 950,
+    lineHeight: 1.05,
+    textShadow: '0 5px 16px rgba(0,0,0,0.56)',
+    whiteSpace: 'nowrap',
+  },
+  nvidiaNewsDetail: {
+    color: 'rgba(255,255,255,0.82)',
+    fontSize: 28,
+    fontWeight: 850,
+    lineHeight: 1.12,
+    marginTop: 8,
+    whiteSpace: 'nowrap',
+  },
+  footer: {
+    position: 'absolute',
+    left: defaultDataShortsFooterInset.left,
+    right: defaultDataShortsFooterInset.right,
+    top: defaultDataShortsTemplate.footerTop,
+    zIndex: 7,
+  },
+  source: {
+    color: 'rgba(255,255,255,0.52)',
+    fontSize: 24,
+    fontWeight: 800,
+    lineHeight: 1.28,
+    textAlign: 'right',
+  },
+  note: {
+    marginTop: 9,
+    color: 'rgba(245,232,41,0.78)',
+    fontSize: 22,
+    fontWeight: 850,
+    lineHeight: 1.22,
+    textAlign: 'right',
   },
 } satisfies Record<string, CSSProperties>;

@@ -22,6 +22,24 @@ import { worldCupSquadMarketValueVideoConfig } from './projects/world-cup-squad-
 import { WorldCupSquadMarketValuesVideo } from './projects/world-cup-squad-market-values/WorldCupSquadMarketValuesVideo';
 import { worldCupRankTrackerConfig } from './projects/world-cup-rank-tracker/config';
 import { WorldCupRankTrackerVideo } from './projects/world-cup-rank-tracker/WorldCupRankTrackerVideo';
+import { iosAndroidUsageVideoConfig } from './projects/ios-vs-android/config';
+import { IosVsAndroidUsageVideo } from './projects/ios-vs-android/IosVsAndroidUsageVideo';
+import { onlineGameConcurrencyVideoConfig } from './projects/online-game-concurrency/config';
+import { OnlineGameConcurrencyVideo } from './projects/online-game-concurrency/OnlineGameConcurrencyVideo';
+import { timeUse24hVideoConfig } from './projects/time-use-24h/config';
+import { TimeUse24hVideo } from './projects/time-use-24h/TimeUse24hVideo';
+import { exchangeRateRaceVideoConfig } from './projects/exchange-rate-race/config';
+import { ExchangeRateRaceVideo } from './projects/exchange-rate-race/ExchangeRateRaceVideo';
+import { memeTrends2025VideoConfig } from './projects/meme-trends-2025/config';
+import { MemeTrends2025Video } from './projects/meme-trends-2025/MemeTrends2025Video';
+import { countryStockMarketCapVideoConfig } from './projects/country-stock-market-cap/config';
+import { CountryStockMarketCapVideo } from './projects/country-stock-market-cap/CountryStockMarketCapVideo';
+import { worldCupHostingCostsVideoConfig } from './projects/world-cup-hosting-costs/config';
+import { WorldCupHostingCostsVideo } from './projects/world-cup-hosting-costs/WorldCupHostingCostsVideo';
+import { fifaRevenueSourcesVideoConfig } from './projects/fifa-revenue-sources/config';
+import { FifaRevenueSourcesVideo } from './projects/fifa-revenue-sources/FifaRevenueSourcesVideo';
+import { aiModelBenchmarkVideoConfig } from './projects/ai-model-benchmark-race/config';
+import { AiCompanyBenchmarkLineRaceVideo } from './projects/ai-model-benchmark-race/AiCompanyBenchmarkLineRaceVideo';
 
 export const RemotionRoot = () => {
   return (
@@ -111,6 +129,78 @@ export const RemotionRoot = () => {
         component={WorldCupRankTrackerVideo}
         durationInFrames={worldCupRankTrackerConfig.durationInSeconds * worldCupRankTrackerConfig.fps}
         fps={worldCupRankTrackerConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="IosVsAndroidUsage"
+        component={IosVsAndroidUsageVideo}
+        durationInFrames={iosAndroidUsageVideoConfig.durationInSeconds * iosAndroidUsageVideoConfig.fps}
+        fps={iosAndroidUsageVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="OnlineGameConcurrency"
+        component={OnlineGameConcurrencyVideo}
+        durationInFrames={onlineGameConcurrencyVideoConfig.durationInSeconds * onlineGameConcurrencyVideoConfig.fps}
+        fps={onlineGameConcurrencyVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="TimeUse24h"
+        component={TimeUse24hVideo}
+        durationInFrames={timeUse24hVideoConfig.durationInSeconds * timeUse24hVideoConfig.fps}
+        fps={timeUse24hVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="ExchangeRateRace"
+        component={ExchangeRateRaceVideo}
+        durationInFrames={exchangeRateRaceVideoConfig.durationInSeconds * exchangeRateRaceVideoConfig.fps}
+        fps={exchangeRateRaceVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="MemeTrends2025"
+        component={MemeTrends2025Video}
+        durationInFrames={memeTrends2025VideoConfig.durationInSeconds * memeTrends2025VideoConfig.fps}
+        fps={memeTrends2025VideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="WorldCupHostingCosts"
+        component={WorldCupHostingCostsVideo}
+        durationInFrames={worldCupHostingCostsVideoConfig.durationInSeconds * worldCupHostingCostsVideoConfig.fps}
+        fps={worldCupHostingCostsVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="CountryStockMarketCap"
+        component={CountryStockMarketCapVideo}
+        durationInFrames={countryStockMarketCapVideoConfig.durationInSeconds * countryStockMarketCapVideoConfig.fps}
+        fps={countryStockMarketCapVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="FifaRevenueSources"
+        component={FifaRevenueSourcesVideo}
+        durationInFrames={fifaRevenueSourcesVideoConfig.durationInSeconds * fifaRevenueSourcesVideoConfig.fps}
+        fps={fifaRevenueSourcesVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="AIModelBenchmarkRace"
+        component={AiCompanyBenchmarkLineRaceVideo}
+        durationInFrames={aiModelBenchmarkVideoConfig.durationInSeconds * aiModelBenchmarkVideoConfig.fps}
+        fps={aiModelBenchmarkVideoConfig.fps}
         height={VIDEO_HEIGHT}
         width={VIDEO_WIDTH}
       />

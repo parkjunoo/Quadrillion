@@ -1,0 +1,101 @@
+year,name,code,region,value,color,totalValue,forecast
+2007,TV Rights,TV,Media,524524000,#38BDF8,846743000,false
+2007,Marketing Rights,MKT,Sponsorship,223398000,#FACC15,846743000,false
+2007,Tickets + Hospitality,TIX,Matchday,0,#22C55E,846743000,false
+2007,Licensing Rights,LIC,Licensing,19388000,#A78BFA,846743000,false
+2007,Other Revenue,OTH,Other,79433000,#94A3B8,846743000,false
+2008,TV Rights,TV,Media,555484000,#38BDF8,934682000,false
+2008,Marketing Rights,MKT,Sponsorship,253406000,#FACC15,934682000,false
+2008,Tickets + Hospitality,TIX,Matchday,40000000,#22C55E,934682000,false
+2008,Licensing Rights,LIC,Licensing,15105000,#A78BFA,934682000,false
+2008,Other Revenue,OTH,Other,70687000,#94A3B8,934682000,false
+2009,TV Rights,TV,Media,649957000,#38BDF8,1043820000,false
+2009,Marketing Rights,MKT,Sponsorship,277266000,#FACC15,1043820000,false
+2009,Tickets + Hospitality,TIX,Matchday,40500000,#22C55E,1043820000,false
+2009,Licensing Rights,LIC,Licensing,10184000,#A78BFA,1043820000,false
+2009,Other Revenue,OTH,Other,65913000,#94A3B8,1043820000,false
+2010,TV Rights,TV,Media,717978000,#38BDF8,1236910000,false
+2010,Marketing Rights,MKT,Sponsorship,342936000,#FACC15,1236910000,false
+2010,Tickets + Hospitality,TIX,Matchday,40000000,#22C55E,1236910000,false
+2010,Licensing Rights,LIC,Licensing,26100000,#A78BFA,1236910000,false
+2010,Other Revenue,OTH,Other,109896000,#94A3B8,1236910000,false
+2011,TV Rights,TV,Media,550286000,#38BDF8,1040400000,false
+2011,Marketing Rights,MKT,Sponsorship,381245000,#FACC15,1040400000,false
+2011,Tickets + Hospitality,TIX,Matchday,15111000,#22C55E,1040400000,false
+2011,Licensing Rights,LIC,Licensing,12475000,#A78BFA,1040400000,false
+2011,Other Revenue,OTH,Other,81283000,#94A3B8,1040400000,false
+2012,TV Rights,TV,Media,560852000,#38BDF8,1077463000,false
+2012,Marketing Rights,MKT,Sponsorship,370099000,#FACC15,1077463000,false
+2012,Tickets + Hospitality,TIX,Matchday,12000000,#22C55E,1077463000,false
+2012,Licensing Rights,LIC,Licensing,23061000,#A78BFA,1077463000,false
+2012,Other Revenue,OTH,Other,111451000,#94A3B8,1077463000,false
+2013,TV Rights,TV,Media,629980000,#38BDF8,1303145000,false
+2013,Marketing Rights,MKT,Sponsorship,412772000,#FACC15,1303145000,false
+2013,Tickets + Hospitality,TIX,Matchday,47163000,#22C55E,1303145000,false
+2013,Licensing Rights,LIC,Licensing,25696000,#A78BFA,1303145000,false
+2013,Other Revenue,OTH,Other,187534000,#94A3B8,1303145000,false
+2014,TV Rights,TV,Media,742638000,#38BDF8,1987785000,false
+2014,Marketing Rights,MKT,Sponsorship,465084000,#FACC15,1987785000,false
+2014,Tickets + Hospitality,TIX,Matchday,110637000,#22C55E,1987785000,false
+2014,Licensing Rights,LIC,Licensing,54230000,#A78BFA,1987785000,false
+2014,Other Revenue,OTH,Other,615196000,#94A3B8,1987785000,false
+2015,TV Rights,TV,Media,258496000,#38BDF8,544374000,false
+2015,Marketing Rights,MKT,Sponsorship,157244000,#FACC15,544374000,false
+2015,Tickets + Hospitality,TIX,Matchday,0,#22C55E,544374000,false
+2015,Licensing Rights,LIC,Licensing,50499000,#A78BFA,544374000,false
+2015,Other Revenue,OTH,Other,78135000,#94A3B8,544374000,false
+2016,TV Rights,TV,Media,95612000,#38BDF8,501696000,false
+2016,Marketing Rights,MKT,Sponsorship,114574000,#FACC15,501696000,false
+2016,Tickets + Hospitality,TIX,Matchday,0,#22C55E,501696000,false
+2016,Licensing Rights,LIC,Licensing,204485000,#A78BFA,501696000,false
+2016,Other Revenue,OTH,Other,87025000,#94A3B8,501696000,false
+2017,TV Rights,TV,Media,228645000,#38BDF8,734202000,false
+2017,Marketing Rights,MKT,Sponsorship,245277000,#FACC15,734202000,false
+2017,Tickets + Hospitality,TIX,Matchday,22368000,#22C55E,734202000,false
+2017,Licensing Rights,LIC,Licensing,160211000,#A78BFA,734202000,false
+2017,Other Revenue,OTH,Other,77701000,#94A3B8,734202000,false
+2018,TV Rights,TV,Media,2543968000,#38BDF8,4640954000,false
+2018,Marketing Rights,MKT,Sponsorship,1143312000,#FACC15,4640954000,false
+2018,Tickets + Hospitality,TIX,Matchday,689143000,#22C55E,4640954000,false
+2018,Licensing Rights,LIC,Licensing,184573000,#A78BFA,4640954000,false
+2018,Other Revenue,OTH,Other,79958000,#94A3B8,4640954000,false
+2019,TV Rights,TV,Media,342602000,#38BDF8,765674000,false
+2019,Marketing Rights,MKT,Sponsorship,164848000,#FACC15,765674000,false
+2019,Tickets + Hospitality,TIX,Matchday,7931000,#22C55E,765674000,false
+2019,Licensing Rights,LIC,Licensing,159527000,#A78BFA,765674000,false
+2019,Other Revenue,OTH,Other,90766000,#94A3B8,765674000,false
+2020,TV Rights,TV,Media,1724000,#38BDF8,266541000,false
+2020,Marketing Rights,MKT,Sponsorship,74450000,#FACC15,266541000,false
+2020,Tickets + Hospitality,TIX,Matchday,0,#22C55E,266541000,false
+2020,Licensing Rights,LIC,Licensing,158881000,#A78BFA,266541000,false
+2020,Other Revenue,OTH,Other,31486000,#94A3B8,266541000,false
+2021,TV Rights,TV,Media,123119000,#38BDF8,766488000,false
+2021,Marketing Rights,MKT,Sponsorship,131387000,#FACC15,766488000,false
+2021,Tickets + Hospitality,TIX,Matchday,12172000,#22C55E,766488000,false
+2021,Licensing Rights,LIC,Licensing,180202000,#A78BFA,766488000,false
+2021,Other Revenue,OTH,Other,319608000,#94A3B8,766488000,false
+2022,TV Rights,TV,Media,2958352000,#38BDF8,5769213000,false
+2022,Marketing Rights,MKT,Sponsorship,1424524000,#FACC15,5769213000,false
+2022,Tickets + Hospitality,TIX,Matchday,929016000,#22C55E,5769213000,false
+2022,Licensing Rights,LIC,Licensing,270397000,#A78BFA,5769213000,false
+2022,Other Revenue,OTH,Other,186924000,#94A3B8,5769213000,false
+2023,TV Rights,TV,Media,267220000,#38BDF8,1169649000,false
+2023,Marketing Rights,MKT,Sponsorship,455916000,#FACC15,1169649000,false
+2023,Tickets + Hospitality,TIX,Matchday,80157000,#22C55E,1169649000,false
+2023,Licensing Rights,LIC,Licensing,181177000,#A78BFA,1169649000,false
+2023,Other Revenue,OTH,Other,185179000,#94A3B8,1169649000,false
+2024,TV Rights,TV,Media,39141000,#38BDF8,482666000,false
+2024,Marketing Rights,MKT,Sponsorship,303856000,#FACC15,482666000,false
+2024,Tickets + Hospitality,TIX,Matchday,0,#22C55E,482666000,false
+2024,Licensing Rights,LIC,Licensing,47731000,#A78BFA,482666000,false
+2024,Other Revenue,OTH,Other,91938000,#94A3B8,482666000,false
+2025,TV Rights,TV,Media,1044451000,#38BDF8,2661404000,false
+2025,Marketing Rights,MKT,Sponsorship,964975000,#FACC15,2661404000,false
+2025,Tickets + Hospitality,TIX,Matchday,410496000,#22C55E,2661404000,false
+2025,Licensing Rights,LIC,Licensing,97380000,#A78BFA,2661404000,false
+2025,Other Revenue,OTH,Other,144102000,#94A3B8,2661404000,false
+2026,TV Rights,TV,Media,3925000000,#38BDF8,8911000000,true
+2026,Marketing Rights,MKT,Sponsorship,1786000000,#FACC15,8911000000,true
+2026,Tickets + Hospitality,TIX,Matchday,3017000000,#22C55E,8911000000,true
+2026,Licensing Rights,LIC,Licensing,111000000,#A78BFA,8911000000,true
+2026,Other Revenue,OTH,Other,72000000,#94A3B8,8911000000,true

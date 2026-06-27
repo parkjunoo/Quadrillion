@@ -10,6 +10,7 @@ export type GlobalMarketCapVideoConfig = {
   startHoldSeconds: number;
   endHoldSeconds: number;
   fps: number;
+  introVoiceoverVolume: number;
   topN: number;
   labelTopN: number;
   source: string;
@@ -17,20 +18,21 @@ export type GlobalMarketCapVideoConfig = {
 };
 
 export const globalMarketCapVideoConfig: GlobalMarketCapVideoConfig = {
-  title: 'World Market Cap Giants',
-  titleHook: 'Who owns the biggest piece of the market?',
-  subtitle: 'Top 6 territory race - companies by market cap - 2000-2026',
+  title: 'World Market Cap Race',
+  titleHook: 'No stock stays king forever',
+  subtitle: 'Top 7 companies by market cap - 2012-2026',
   dateLabel: 'YEAR',
   valueColumnLabel: 'MARKET CAP',
-  durationInSeconds: 59,
+  durationInSeconds: 27,
   startHoldSeconds: 1,
   endHoldSeconds: 2,
   fps: 60,
-  topN: 6,
-  labelTopN: 6,
+  introVoiceoverVolume: 1,
+  topN: 7,
+  labelTopN: 7,
   source:
-    'Source: CompaniesMarketCap, 2000-2026; SpaceX uses private valuation.',
-  csv: filterMarketCapCsvFromYear(globalMarketCapRaceCsv, 2000),
+    'Source: CompaniesMarketCap, 2012-2026; SpaceX uses private valuation.',
+  csv: filterMarketCapCsvFromYear(globalMarketCapRaceCsv, 2012),
 };
 
 function filterMarketCapCsvFromYear(csv: string, startYear: number) {

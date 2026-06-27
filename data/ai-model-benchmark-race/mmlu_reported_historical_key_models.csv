@@ -1,0 +1,20 @@
+release_date,organization,model,benchmark,score_percent,source_url,notes
+2020-05-28,OpenAI,GPT-3 175B,MMLU reported 5-shot,43.9,https://epoch.ai/benchmarks,Early pre-ChatGPT reference point; score aggregated by Epoch from later benchmark reports.
+2021-12-08,DeepMind,Gopher 280B,MMLU reported 5-shot,60.0,https://epoch.ai/benchmarks,Reported in DeepMind/Gopher benchmark literature.
+2022-03-29,DeepMind,Chinchilla 70B,MMLU reported 5-shot,67.5,https://epoch.ai/benchmarks,Reported 5-shot MMLU.
+2022-04-04,Google Research,PaLM 540B,MMLU reported 5-shot,69.3,https://epoch.ai/benchmarks,Reported 5-shot MMLU.
+2022-11-30,OpenAI,GPT-3.5,MMLU reported 5-shot,70.0,https://cdn.openai.com/papers/gpt-4.pdf,GPT-4 technical report comparison table.
+2023-02-24,Meta AI,LLaMA 65B,MMLU reported 5-shot,63.4,https://arxiv.org/abs/2302.13971,LLaMA paper.
+2023-03-14,OpenAI,GPT-4,MMLU reported 5-shot,86.4,https://cdn.openai.com/papers/gpt-4.pdf,GPT-4 technical report.
+2023-04-18,Anthropic,Claude 1.3,MMLU reported 5-shot,77.0,https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf,Anthropic Claude model card/evaluations.
+2023-05-10,Google,PaLM 2-L,MMLU reported 5-shot,78.3,https://arxiv.org/abs/2305.10403,PaLM 2 technical report; also commonly shown as Flan-PaLM 2-L 81.2 depending variant.
+2023-07-11,Anthropic,Claude 2,MMLU reported 5-shot,78.5,https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf,Anthropic Claude model card/evaluations.
+2023-07-18,Meta AI,Llama 2 70B,MMLU reported 5-shot,68.9,https://arxiv.org/abs/2307.09288,Llama 2 paper.
+2023-09-06,TII,Falcon 180B,MMLU reported 5-shot,70.6,https://epoch.ai/benchmarks,Epoch aggregated row from Falcon literature.
+2023-09-27,Mistral AI,Mistral 7B,MMLU reported 5-shot,62.5,https://arxiv.org/abs/2310.06825,Mistral/Mixtral literature reports vary slightly by prompt.
+2023-11-02,01.AI,Yi 34B,MMLU reported 5-shot,76.3,https://arxiv.org/abs/2403.04652,Yi technical report.
+2023-11-03,xAI,Grok-1,MMLU reported,73.0,https://x.ai/news/grok,xAI announced Grok-1 with MMLU benchmark comparison.
+2023-12-06,Google DeepMind,Gemini 1.0 Ultra,MMLU reported CoT@32,90.0,https://arxiv.org/abs/2312.11805,Not directly comparable to plain 5-shot MMLU; keep out of strict race or label separately.
+2023-12-11,Mistral AI,Mixtral 8x7B,MMLU reported 5-shot,70.6,https://arxiv.org/abs/2401.04088,Mixtral paper.
+2023-12-13,Google DeepMind,Gemini 1.0 Pro,MMLU 5-shot HELM/Epoch,70.0,https://epoch.ai/benchmarks,Use this instead of Ultra if strict 5-shot comparability matters.
+2024-03-28,xAI,Grok-1.5,MMLU reported,81.3,https://x.ai/news/grok-1.5,xAI Grok-1.5 benchmark table.

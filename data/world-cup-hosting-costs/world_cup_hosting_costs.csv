@@ -1,0 +1,16 @@
+year,host,code,nominalUsd,cpiPeriod,cpi,adjustedUsd2026,imagePath,note,source
+1970,Mexico,MEX70,70000000,1970-12,39.8,589412312,projects/world-cup-hosting-costs/hosts/1970.jpg,Pre-1994 estimate; basis varies,Public estimate / BLS CPI-U
+1974,West Germany,GER74,650000000,1974-12,51.9,4197108863,projects/world-cup-hosting-costs/hosts/1974.jpg,Pre-1994 estimate; basis varies,Public estimate / BLS CPI-U
+1978,Argentina,ARG78,521494931,1978-12,67.7,2581461533,projects/world-cup-hosting-costs/hosts/1978.jpg,Official estimate used; higher alternate estimates exist,Papelitos / public estimates / BLS CPI-U
+1982,Spain,ESP82,150000000,1982-12,97.6,515045594,projects/world-cup-hosting-costs/hosts/1982.jpg,Pre-1994 estimate; rounded from public reports,Estadios de Espana / BLS CPI-U
+1986,Mexico,MEX86,45000000,1986-12,110.5,136475430,projects/world-cup-hosting-costs/hosts/1986.jpg,Approximate user-specified estimate,User estimate / BLS CPI-U
+1990,Italy,ITA90,4390000000,1990-12,133.8,10995440732,projects/world-cup-hosting-costs/hosts/1990.jpg,Government spending estimate; basis varies,LA Times / BLS CPI-U
+1994,United States,USA,500000000,1994-12,149.7,1119315297,projects/world-cup-hosting-costs/hosts/1994.jpg,Existing stadium base kept costs low,Front Office Sports / BLS CPI-U
+1998,France,FRA,2300000000,1998-12,163.9,4702763270,projects/world-cup-hosting-costs/hosts/1998.jpg,Stadium and event upgrades,Front Office Sports / BLS CPI-U
+2002,South Korea / Japan,KOR/JPN,7000000000,2002-12,180.9,12967722499,projects/world-cup-hosting-costs/hosts/2002.jpg,First co-hosted World Cup,Front Office Sports / BLS CPI-U
+2006,Germany,GER,4300000000,2006-12,201.8,7140876611,projects/world-cup-hosting-costs/hosts/2006.jpg,Major stadium modernization,Front Office Sports / BLS CPI-U
+2010,South Africa,RSA,3600000000,2010-12,219.179,5504372225,projects/world-cup-hosting-costs/hosts/2010.jpg,First African World Cup,Front Office Sports / BLS CPI-U
+2014,Brazil,BRA,15000000000,2014-12,234.812,21407956152,projects/world-cup-hosting-costs/hosts/2014.jpg,Large stadium and host-city buildout,Front Office Sports / BLS CPI-U
+2018,Russia,RUS,11600000000,2018-12,251.233,15473392429,projects/world-cup-hosting-costs/hosts/2018.jpg,Stadiums plus transport upgrades,Front Office Sports / BLS CPI-U
+2022,Qatar,QAT,220000000000,2022-12,296.797,248409047261,projects/world-cup-hosting-costs/hosts/2022.jpg,Broad infrastructure estimate; direct cost disputed,Front Office Sports / Matheson / BLS CPI-U
+2026,Canada / Mexico / United States,CAN/MEX/USA,6450000000,2026-05,335.123,6450000000,projects/world-cup-hosting-costs/hosts/2026.jpg,6.4-6.5B USD range midpoint estimate; basis varies,User estimate / public basis / BLS CPI-U

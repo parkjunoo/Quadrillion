@@ -1,0 +1,37 @@
+{
+  "title": "StarCraft Brood War annual player prize winnings, global top 10 by year",
+  "game": "StarCraft: Brood War / StarCraft Remastered",
+  "metric": "Annual tournament prize winnings, USD, not salary or streaming/sponsorship income",
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "partial_years": [
+    2026
+  ],
+  "source": "Liquipedia StarCraft Brood War Wiki Winnings/YYYY pages; references note all amounts are in USD",
+  "source_urls": [
+    "https://liquipedia.net/starcraft/Winnings/2020",
+    "https://liquipedia.net/starcraft/Winnings/2021",
+    "https://liquipedia.net/starcraft/Winnings/2022",
+    "https://liquipedia.net/starcraft/Winnings/2023",
+    "https://liquipedia.net/starcraft/Winnings/2024",
+    "https://liquipedia.net/starcraft/Winnings/2025",
+    "https://liquipedia.net/starcraft/Winnings/2026"
+  ],
+  "generated_at_utc": "2026-06-24T13:25:46.436307+00:00",
+  "files": {
+    "top10_observed": "data/starcraft-broodwar-earnings/starcraft_broodwar_annual_winnings_top10_2020_2026_ytd.csv",
+    "race_video_zero_filled": "data/starcraft-broodwar-earnings/starcraft_broodwar_annual_winnings_race_2020_2026_ytd.csv"
+  },
+  "notes": [
+    "This dataset uses public tournament prize winnings as a salary proxy because player salaries and private contracts are not generally public.",
+    "Rows in the race-video file are zero-filled when a player is outside the global top 10 for that year; zero does not mean the player earned no prize money overall.",
+    "2026 is year-to-date / partial as of the source page fetch date."
+  ]
+}

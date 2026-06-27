@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="16" fill="url(#g)"/>
+  <path d="M13 58h14l9-20h47v11H48l-4 9h35v11H39l-6 13H19l6-13H13V58Z" fill="#FFFFFF"/>
+  <path d="M56 28h27v7H52l4-7Z" fill="#E0F2FE"/>
+  <text x="48" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF">HORIZON 6</text>
+</svg>

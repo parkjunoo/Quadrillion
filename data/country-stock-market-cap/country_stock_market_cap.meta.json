@@ -1,0 +1,53 @@
+{
+  "source": {
+    "name": "World Bank WDI via World Federation of Exchanges",
+    "indicator": "CM.MKT.LCAP.CD",
+    "indicatorName": "Market capitalization of listed domestic companies (current US$)",
+    "indicatorPage": "https://data.worldbank.org/indicator/CM.MKT.LCAP.CD",
+    "apiEndpoint": "https://api.worldbank.org/v2/country/all/indicator/CM.MKT.LCAP.CD?format=json",
+    "countryApiEndpoint": "https://api.worldbank.org/v2/country?format=json",
+    "license": "CC BY-4.0"
+  },
+  "generatedAt": "2026-06-23T04:37:57.665Z",
+  "worldBank": {
+    "countryMetadataLastUpdated": null,
+    "indicatorLastUpdated": "2026-04-08",
+    "sourceId": "2"
+  },
+  "yearRange": {
+    "start": 1975,
+    "end": 2025,
+    "count": 51
+  },
+  "countryCount": 217,
+  "fullPanelRowCount": 11067,
+  "observedRowCount": 2773,
+  "topVideoRowCount": 1763,
+  "topVideoLimitPerYear": 40,
+  "latestYearCoverage": {
+    "year": 2025,
+    "country_count": 217,
+    "observed_count": 68,
+    "missing_count": 149,
+    "coverage_pct": "31.34",
+    "total_value_usd": "138063223240000",
+    "total_value_trillion_usd": "138.063223",
+    "top_country": "United States",
+    "top_code": "USA",
+    "top_value_usd": "68937866210000",
+    "top_value_trillion_usd": "68.937866"
+  },
+  "files": {
+    "fullPanel": "data/country-stock-market-cap/country_stock_market_cap_annual_wdi.csv",
+    "observedOnly": "data/country-stock-market-cap/country_stock_market_cap_observed_wdi.csv",
+    "topVideo": "data/country-stock-market-cap/country_stock_market_cap_top40_video.csv",
+    "coverage": "data/country-stock-market-cap/country_stock_market_cap_coverage.csv"
+  },
+  "method": "Downloaded World Bank WDI CM.MKT.LCAP.CD for all economies, kept only country/economy rows whose World Bank region is not Aggregates, preserved missing values in the full panel, and ranked observed values within each year in descending current US dollars.",
+  "caveats": [
+    "Values are current US dollars and are not inflation adjusted.",
+    "Values are end-of-year market capitalization of listed domestic companies as reported through World Bank WDI/WFE.",
+    "No interpolation, forward fill, or manual correction is applied; missing World Bank observations remain blank.",
+    "The country filter follows World Bank economy metadata, so economies such as Hong Kong SAR can appear separately from sovereign states."
+  ]
+}
