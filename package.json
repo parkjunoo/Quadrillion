@@ -25,6 +25,7 @@
     "tts:ios-android": "node scripts/synthesize-ios-vs-android-tts.mjs",
     "tts:online-game-concurrency": "node scripts/synthesize-online-game-concurrency-tts.mjs",
     "tts:world-cup-hosting-costs": "node scripts/synthesize-world-cup-hosting-costs-tts.mjs",
+    "tts:world-cup-winners": "node scripts/synthesize-world-cup-winners-tts.mjs",
     "tts:country-stock-market-cap": "node scripts/synthesize-country-stock-market-cap-tts.mjs",
     "tts:global-market-cap": "node scripts/synthesize-global-market-cap-tts.mjs",
     "render:bitcoin": "mkdir -p out/bitcoin-history && remotion render src/index.ts BitcoinHistory out/bitcoin-history/bitcoin-history.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
@@ -52,12 +53,17 @@
     "poster:world-cup-squad-market-values": "mkdir -p out/world-cup-squad-market-values && remotion still src/index.ts WorldCupSquadMarketValues out/world-cup-squad-market-values/world-cup-squad-market-values.png --frame=1740",
     "render:world-cup-ranks": "mkdir -p out/world-cup-rank-tracker && remotion render src/index.ts WorldCupRankTracker out/world-cup-rank-tracker/world-cup-rank-tracker.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
     "poster:world-cup-ranks": "mkdir -p out/world-cup-rank-tracker && remotion still src/index.ts WorldCupRankTracker out/world-cup-rank-tracker/world-cup-rank-tracker.png --frame=1350",
+    "render:world-cup-winners": "mkdir -p out/world-cup-winners-race && remotion render src/index.ts WorldCupWinnersRace out/world-cup-winners-race/world-cup-winners-race.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p --gl=angle",
+    "render:world-cup-winners:4k": "mkdir -p out/world-cup-winners-race && remotion render src/index.ts WorldCupWinnersRace out/world-cup-winners-race/world-cup-winners-race-4k.mp4 --codec=h264 --crf=14 --x264-preset=slow --pixel-format=yuv420p --scale=2 --gl=angle",
+    "poster:world-cup-winners": "mkdir -p out/world-cup-winners-race && remotion still src/index.ts WorldCupWinnersRace out/world-cup-winners-race/world-cup-winners-race.png --frame=1440 --gl=angle",
     "render:ios-android": "mkdir -p out/ios-vs-android && remotion render src/index.ts IosVsAndroidUsage out/ios-vs-android/ios-vs-android-usage.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
     "render:ios-android:4k": "mkdir -p out/ios-vs-android && remotion render src/index.ts IosVsAndroidUsage out/ios-vs-android/ios-vs-android-usage-4k.mp4 --codec=h264 --crf=14 --x264-preset=slow --pixel-format=yuv420p --scale=2",
     "poster:ios-android": "mkdir -p out/ios-vs-android && remotion still src/index.ts IosVsAndroidUsage out/ios-vs-android/ios-vs-android-usage.png --frame=1350",
     "render:online-game-concurrency": "mkdir -p out/online-game-concurrency && remotion render src/index.ts OnlineGameConcurrency out/online-game-concurrency/online-game-concurrency.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
     "render:online-game-concurrency:4k": "mkdir -p out/online-game-concurrency && remotion render src/index.ts OnlineGameConcurrency out/online-game-concurrency/online-game-concurrency-4k.mp4 --codec=h264 --crf=14 --x264-preset=slow --pixel-format=yuv420p --scale=2",
     "poster:online-game-concurrency": "mkdir -p out/online-game-concurrency && remotion still src/index.ts OnlineGameConcurrency out/online-game-concurrency/online-game-concurrency.png --frame=2040",
+    "render:mobile-game-top10": "mkdir -p out/mobile-game-top10-race && remotion render src/index.ts MobileGameTop10Race out/mobile-game-top10-race/mobile-game-top10-race.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
+    "poster:mobile-game-top10": "mkdir -p out/mobile-game-top10-race && remotion still src/index.ts MobileGameTop10Race out/mobile-game-top10-race/mobile-game-top10-race.png --frame=1260",
     "render:time-use-24h": "mkdir -p out/time-use-24h && remotion render src/index.ts TimeUse24h out/time-use-24h/time-use-24h.mp4 --codec=h264 --crf=12 --x264-preset=slow --pixel-format=yuv420p",
     "render:time-use-24h:4k": "mkdir -p out/time-use-24h && remotion render src/index.ts TimeUse24h out/time-use-24h/time-use-24h-4k.mp4 --codec=h264 --crf=14 --x264-preset=slow --pixel-format=yuv420p --scale=2",
     "poster:time-use-24h": "mkdir -p out/time-use-24h && remotion still src/index.ts TimeUse24h out/time-use-24h/time-use-24h.png --frame=1080",
@@ -88,13 +94,15 @@
     "react-dom": "^19.2.7",
     "react-is": "^19.2.7",
     "recharts": "^3.8.1",
-    "remotion": "^4.0.477"
+    "remotion": "^4.0.477",
+    "three": "^0.185.0"
   },
   "devDependencies": {
     "@remotion/cli": "^4.0.477",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-is": "^19",
+    "@types/three": "^0",
     "typescript": "^6.0.3"
   }
 }

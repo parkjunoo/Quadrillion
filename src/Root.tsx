@@ -26,6 +26,8 @@ import { iosAndroidUsageVideoConfig } from './projects/ios-vs-android/config';
 import { IosVsAndroidUsageVideo } from './projects/ios-vs-android/IosVsAndroidUsageVideo';
 import { onlineGameConcurrencyVideoConfig } from './projects/online-game-concurrency/config';
 import { OnlineGameConcurrencyVideo } from './projects/online-game-concurrency/OnlineGameConcurrencyVideo';
+import { mobileGameTop10VideoConfig } from './projects/mobile-game-top10-race/config';
+import { MobileGameTop10RaceVideo } from './projects/mobile-game-top10-race/MobileGameTop10RaceVideo';
 import { timeUse24hVideoConfig } from './projects/time-use-24h/config';
 import { TimeUse24hVideo } from './projects/time-use-24h/TimeUse24hVideo';
 import { exchangeRateRaceVideoConfig } from './projects/exchange-rate-race/config';
@@ -34,6 +36,8 @@ import { memeTrends2025VideoConfig } from './projects/meme-trends-2025/config';
 import { MemeTrends2025Video } from './projects/meme-trends-2025/MemeTrends2025Video';
 import { countryStockMarketCapVideoConfig } from './projects/country-stock-market-cap/config';
 import { CountryStockMarketCapVideo } from './projects/country-stock-market-cap/CountryStockMarketCapVideo';
+import { worldCupWinnersRaceVideoConfig } from './projects/world-cup-winners-race/config';
+import { WorldCupWinnersRaceVideo } from './projects/world-cup-winners-race/WorldCupWinnersRaceVideo';
 import { worldCupHostingCostsVideoConfig } from './projects/world-cup-hosting-costs/config';
 import { WorldCupHostingCostsVideo } from './projects/world-cup-hosting-costs/WorldCupHostingCostsVideo';
 import { fifaRevenueSourcesVideoConfig } from './projects/fifa-revenue-sources/config';
@@ -149,6 +153,14 @@ export const RemotionRoot = () => {
         width={VIDEO_WIDTH}
       />
       <Composition
+        id="MobileGameTop10Race"
+        component={MobileGameTop10RaceVideo}
+        durationInFrames={mobileGameTop10VideoConfig.durationInSeconds * mobileGameTop10VideoConfig.fps}
+        fps={mobileGameTop10VideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
         id="TimeUse24h"
         component={TimeUse24hVideo}
         durationInFrames={timeUse24hVideoConfig.durationInSeconds * timeUse24hVideoConfig.fps}
@@ -177,6 +189,14 @@ export const RemotionRoot = () => {
         component={WorldCupHostingCostsVideo}
         durationInFrames={worldCupHostingCostsVideoConfig.durationInSeconds * worldCupHostingCostsVideoConfig.fps}
         fps={worldCupHostingCostsVideoConfig.fps}
+        height={VIDEO_HEIGHT}
+        width={VIDEO_WIDTH}
+      />
+      <Composition
+        id="WorldCupWinnersRace"
+        component={WorldCupWinnersRaceVideo}
+        durationInFrames={worldCupWinnersRaceVideoConfig.durationInSeconds * worldCupWinnersRaceVideoConfig.fps}
+        fps={worldCupWinnersRaceVideoConfig.fps}
         height={VIDEO_HEIGHT}
         width={VIDEO_WIDTH}
       />

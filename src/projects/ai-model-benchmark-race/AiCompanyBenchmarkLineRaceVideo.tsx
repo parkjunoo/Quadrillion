@@ -8,7 +8,6 @@ import {
 } from '../../shared/dataVideoFrame';
 import {
   buildAiModelBenchmarkRaceData,
-  formatMonthLabel,
   type AiModelEntry,
   type AiModelOrganization,
 } from './aiModelBenchmarkRace';
@@ -45,6 +44,7 @@ type CompanyFrameState = {
   minValue: number;
   month: number;
   monthProgress: number;
+  outroProgress: number;
   rows: CompanyRaceRow[];
   xMaxMonthIndex: number;
   xMinMonthIndex: number;
@@ -64,13 +64,13 @@ const topN = aiModelBenchmarkVideoConfig.topN;
 const linePlot = {
   bottom: 92,
   left: 84,
-  right: 330,
+  right: 54,
   top: 74,
 };
 const linePlotWidth = chart.width - linePlot.left - linePlot.right;
 const linePlotHeight = chart.height - linePlot.top - linePlot.bottom;
-const endpointLabelWidth = 316;
-const endpointLogoSize = 50;
+const endpointLabelWidth = 258;
+const endpointLogoSize = 46;
 const lineRaceStartMonthIndex = monthIndexFromYearMonth(2023, 1);
 const lineRaceEndMonthIndex = raceData.maxMonthIndex;
 const minMonthYear = Math.floor(lineRaceStartMonthIndex / 12);
@@ -78,7 +78,6 @@ const minMonth = lineRaceStartMonthIndex % 12 + 1;
 const maxDisplayMonthIndex = Math.round(lineRaceEndMonthIndex);
 const maxMonthYear = Math.floor(maxDisplayMonthIndex / 12);
 const maxMonth = maxDisplayMonthIndex % 12 + 1;
-
 const organizationLogoAssets: Record<AiModelOrganization, { fileName: string; scale: number }> = {
   Alibaba: { fileName: 'alibaba.svg', scale: 0.88 },
   Anthropic: { fileName: 'anthropic.svg', scale: 0.88 },
@@ -89,6 +88,30 @@ const organizationLogoAssets: Record<AiModelOrganization, { fileName: string; sc
   Mistral: { fileName: 'mistral.svg', scale: 0.92 },
   OpenAI: { fileName: 'openai.svg', scale: 0.9 },
   xAI: { fileName: 'xai.svg', scale: 0.88 },
+};
+
+const companyLineColors: Record<AiModelOrganization, string> = {
+  Alibaba: '#FF6A00',
+  Anthropic: '#D7A27E',
+  DeepSeek: '#2458FF',
+  Google: '#FBBC04',
+  Kimi: '#7C3AED',
+  Meta: '#0866FF',
+  Mistral: '#FA520F',
+  OpenAI: '#10A37F',
+  xAI: '#E5E7EB',
+};
+
+const milestoneLabelYOffsetByOrganization: Record<AiModelOrganization, number> = {
+  Alibaba: 10,
+  Anthropic: -13,
+  DeepSeek: 11,
+  Google: 9,
+  Kimi: 11,
+  Meta: -12,
+  Mistral: -12,
+  OpenAI: 10,
+  xAI: -13,
 };
 
 const allOrganizations = Array.from(new Set(raceData.entries.map((entry) => entry.organization)));
@@ -108,11 +131,17 @@ export const AiCompanyBenchmarkLineRaceVideo = () => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
   const startHoldFrames = Math.round(aiModelBenchmarkVideoConfig.startHoldSeconds * fps);
+  const postRaceHoldFrames = Math.round(aiModelBenchmarkVideoConfig.postRaceHoldSeconds * fps);
+  const zoomOutFrames = Math.round(aiModelBenchmarkVideoConfig.zoomOutSeconds * fps);
   const endHoldFrames = Math.round(aiModelBenchmarkVideoConfig.endHoldSeconds * fps);
-  const raceDurationInFrames = Math.max(1, durationInFrames - startHoldFrames - endHoldFrames);
+  const raceDurationInFrames = Math.max(
+    1,
+    durationInFrames - startHoldFrames - postRaceHoldFrames - zoomOutFrames - endHoldFrames,
+  );
   const raceFrame = clamp(frame - startHoldFrames, 0, raceDurationInFrames - 1);
+  const zoomOutStartFrame = startHoldFrames + raceDurationInFrames + postRaceHoldFrames;
   const outroProgress = smootherStep(
-    clamp((frame - startHoldFrames - raceDurationInFrames) / Math.max(1, endHoldFrames), 0, 1),
+    clamp((frame - zoomOutStartFrame) / Math.max(1, zoomOutFrames), 0, 1),
   );
   const intro = interpolate(frame, [0, Math.round(0.55 * fps)], [0, 1], {
     extrapolateLeft: 'clamp',
@@ -152,7 +181,7 @@ const MonthRail = ({ intro, state }: { intro: number; state: CompanyFrameState }
   return (
     <div style={{ ...styles.monthRailBlock, opacity: intro }}>
       <div style={styles.monthRailHeader}>
-        <div style={styles.currentMonth}>{formatMonthLabel(state.year, state.month)}</div>
+        <div style={styles.currentMonth}>{formatDisplayMonthLabel(state.year, state.month)}</div>
         <div style={styles.channelTag}>{channelHandle}</div>
       </div>
       <svg height={58} style={styles.monthRailSvg} viewBox={`0 0 ${yearRail.width} 58`} width={yearRail.width}>
@@ -175,7 +204,7 @@ const MonthRail = ({ intro, state }: { intro: number; state: CompanyFrameState }
           y2={19}
         />
         <text fill="rgba(255,255,255,0.58)" fontFamily={fontStack} fontSize={24} fontWeight={850} x={0} y={51}>
-          {formatMonthLabel(minMonthYear, minMonth)}
+          {formatDisplayMonthLabel(minMonthYear, minMonth)}
         </text>
         <text
           fill="rgba(255,255,255,0.58)"
@@ -186,7 +215,7 @@ const MonthRail = ({ intro, state }: { intro: number; state: CompanyFrameState }
           x={yearRail.width}
           y={51}
         >
-          {formatMonthLabel(maxMonthYear, maxMonth)}
+          {formatDisplayMonthLabel(maxMonthYear, maxMonth)}
         </text>
       </svg>
     </div>
@@ -239,10 +268,10 @@ const ModelMilestoneOverlay = ({ state }: { state: CompanyFrameState }) => {
     <div style={styles.milestoneOverlay}>
       {labels.map((label) => (
         <div
-          key={`${label.row.id}-${label.milestone.entry.id}`}
+          key={`${label.organization}-${label.milestone.entry.id}`}
           style={{
             ...styles.milestoneLabel,
-            color: colorWithOpacity(label.row.color, 0.88),
+            color: colorWithOpacity(label.color, 0.9),
             left: label.x,
             opacity: label.opacity,
             top: label.y,
@@ -257,6 +286,7 @@ const ModelMilestoneOverlay = ({ state }: { state: CompanyFrameState }) => {
 
 const EndpointOverlay = ({ state }: { state: CompanyFrameState }) => {
   const endpoints = buildEndpointLabels(state);
+  const overlayOpacity = 1 - state.outroProgress;
 
   return (
     <div style={styles.endpointOverlay}>
@@ -269,7 +299,7 @@ const EndpointOverlay = ({ state }: { state: CompanyFrameState }) => {
             style={{
               ...styles.endpointLabel,
               left: endpoint.x,
-              opacity: endpoint.row.opacity,
+              opacity: endpoint.row.opacity * overlayOpacity,
               top: endpoint.y,
               zIndex: 1000 - endpoint.row.displayRank,
             }}
@@ -291,7 +321,13 @@ const EndpointOverlay = ({ state }: { state: CompanyFrameState }) => {
             <div style={styles.endpointTextBlock}>
               <div style={styles.endpointTopLine}>
                 <span style={styles.endpointRank}>{endpoint.row.displayRank}</span>
-                <span style={styles.endpointName}>{formatEndpointModelName(endpoint.row.modelName)}</span>
+                <span
+                  style={{
+                    ...styles.endpointName,
+                  }}
+                >
+                  {formatEndpointModelName(endpoint.row.modelName)}
+                </span>
               </div>
               <div style={styles.endpointScore}>{formatScore(endpoint.row.value)}</div>
             </div>
@@ -304,6 +340,8 @@ const EndpointOverlay = ({ state }: { state: CompanyFrameState }) => {
 
 const buildEChartsLineRaceOption = (state: CompanyFrameState): EChartsOption => {
   const currentX = xForMonth(state.currentMonthIndex, state);
+  const milestoneDotSeries = buildMilestoneDotSeries(state);
+  const lineFade = 1 - state.outroProgress;
 
   return {
     animation: false,
@@ -331,28 +369,33 @@ const buildEChartsLineRaceOption = (state: CompanyFrameState): EChartsOption => 
           style: {
             lineDash: [10, 10],
             lineWidth: 2,
-            opacity: 0.38,
+            opacity: 0.38 * lineFade,
             stroke: 'rgba(255,255,255,0.66)',
           },
         },
       ],
     } as EChartsOption['graphic'],
-    series: state.rows.map((row) => ({
-      data: row.points.map((point) => [point.monthIndex, point.value]),
-      emphasis: {
-        disabled: true,
-      },
-      lineStyle: {
-        color: row.color,
-        shadowBlur: row.displayRank <= 3 ? 14 : 7,
-        shadowColor: colorWithOpacity(row.color, row.displayRank <= 3 ? 0.44 : 0.22),
-        width: row.displayRank <= 3 ? 8 : 5,
-      },
-      name: row.modelName,
-      showSymbol: false,
-      smooth: 0.32,
-      type: 'line',
-    })),
+    series: [
+      ...state.rows.map((row) => ({
+        data: row.points.map((point) => [point.monthIndex, point.value]),
+        emphasis: {
+          disabled: true,
+        },
+        lineStyle: {
+          color: row.color,
+          opacity: row.opacity * lineFade,
+          shadowBlur: 10,
+          shadowColor: colorWithOpacity(row.color, 0.32 * lineFade),
+          width: companyLineWidth,
+        },
+        name: row.modelName,
+        showSymbol: false,
+        smooth: 0.32,
+        type: 'line' as const,
+        z: 20 + topN - row.displayRank,
+      })),
+      ...milestoneDotSeries,
+    ],
     tooltip: {
       show: false,
     },
@@ -362,7 +405,13 @@ const buildEChartsLineRaceOption = (state: CompanyFrameState): EChartsOption => 
         fontFamily: fontStack,
         fontSize: 18,
         fontWeight: 800,
-        formatter: (value: number) => formatShortMonthLabel(value),
+        formatter: (value: number) => {
+          if (value > lineRaceEndMonthIndex + 0.35) {
+            return '';
+          }
+
+          return formatShortMonthLabel(value);
+        },
         hideOverlap: true,
       },
       axisLine: {
@@ -402,7 +451,7 @@ const buildEChartsLineRaceOption = (state: CompanyFrameState): EChartsOption => 
       },
       max: state.maxValue,
       min: state.minValue,
-      interval: 5,
+      interval: yAxisIntervalForState(state),
       splitLine: {
         lineStyle: {
           color: 'rgba(255,255,255,0.1)',
@@ -432,7 +481,7 @@ const getCompanyFrameState = ({
     const value = companyValueAtMonth(organization, currentMonthIndex);
     const displayModel = targetDisplayMilestoneAtMonth(organization, currentMonthIndex) ?? milestones[0];
     const releaseMonthIndex = firstReleaseMonthForOrganization(organization);
-    const color = displayModel?.entry.color ?? colorForOrganization(organization);
+    const color = colorForOrganization(organization);
     const points = linePointsForOrganization(organization, currentMonthIndex);
     const opacity = smootherStep(clamp(value / 8, 0, 1));
 
@@ -449,7 +498,7 @@ const getCompanyFrameState = ({
       value,
     };
   });
-  const rankedRows = allRows
+  const rankedRowsWithoutJoinOpacity = allRows
     .filter((row) => row.value > 0.05)
     .sort((a, b) =>
       b.value - a.value ||
@@ -461,7 +510,17 @@ const getCompanyFrameState = ({
       ...row,
       displayRank: index + 1,
   }));
-  const axis = axisRangeForRows(rankedRows);
+  const axis = axisRangeForRows(rankedRowsWithoutJoinOpacity, outroProgress);
+  const rankedRows = rankedRowsWithoutJoinOpacity.map((row) => {
+    const yJoinOpacity = smootherStep(
+      clamp((row.value - axis.minValue) / yAxisJoinFadeScoreRange, 0, 1),
+    );
+
+    return {
+      ...row,
+      opacity: row.opacity * yJoinOpacity,
+    };
+  });
   const displayMonthIndex = Math.round(clamp(currentMonthIndex, lineRaceStartMonthIndex, lineRaceEndMonthIndex));
 
   return {
@@ -475,6 +534,7 @@ const getCompanyFrameState = ({
       0,
       1,
     ),
+    outroProgress,
     rows: rankedRows,
     xMaxMonthIndex: xWindow.maxMonthIndex,
     xMinMonthIndex: xWindow.minMonthIndex,
@@ -484,88 +544,114 @@ const getCompanyFrameState = ({
 
 const buildEndpointLabels = (state: CompanyFrameState) => {
   const currentX = xForMonth(state.currentMonthIndex, state);
-  const labelX = clamp(
-    currentX + 18,
-    linePlot.left + 30,
-    chart.width - endpointLabelWidth - 6,
-  );
-  const rawLabels = state.rows.map((row) => ({
-    row,
-    x: labelX,
-    y: yForScore(row.value, state) - endpointLogoSize / 2,
-  })).sort((a, b) => a.y - b.y);
-  const minGap = 58;
+  const labelX = Math.max(linePlot.left + 28, currentX - endpointLogoSize / 2);
   const minY = linePlot.top - 6;
   const maxY = chart.height - linePlot.bottom - endpointLogoSize + 8;
 
-  for (let index = 1; index < rawLabels.length; index += 1) {
-    rawLabels[index].y = Math.max(rawLabels[index].y, rawLabels[index - 1].y + minGap);
-  }
-
-  const overflow = (rawLabels.at(-1)?.y ?? minY) - maxY;
-
-  if (overflow > 0) {
-    for (const label of rawLabels) {
-      label.y -= overflow;
-    }
-  }
-
-  for (let index = rawLabels.length - 2; index >= 0; index -= 1) {
-    rawLabels[index].y = Math.min(rawLabels[index].y, rawLabels[index + 1].y - minGap);
-  }
-
-  const underflow = minY - (rawLabels[0]?.y ?? minY);
-
-  if (underflow > 0) {
-    for (const label of rawLabels) {
-      label.y += underflow;
-    }
-  }
-
-  return rawLabels.map((label) => ({
-    ...label,
-    y: clamp(label.y, minY, maxY),
+  return state.rows.map((row) => ({
+    row,
+    x: labelX,
+    y: clamp(yForScore(row.value, state) - endpointLogoSize / 2, minY, maxY),
   }));
 };
 
 const buildMilestoneLabels = (state: CompanyFrameState) => {
-  const labels = state.rows.flatMap((row) =>
-    row.milestones
+  const visibleOrganizations = new Set(state.rows.map((row) => row.organization));
+  const labels = organizationOrder
+    .filter((organization) => visibleOrganizations.has(organization))
+    .flatMap((organization) => {
+    const color = colorForOrganization(organization);
+
+    return milestonesForOrganization(organization)
       .filter((milestone) => milestone.releaseMonthIndex <= state.currentMonthIndex)
       .filter((milestone) =>
         milestone.releaseMonthIndex >= state.xMinMonthIndex - 0.2 &&
         milestone.releaseMonthIndex <= state.xMaxMonthIndex + 0.2
       )
-      .filter((milestone) => milestone.score >= state.minValue - 0.8)
+      .filter((milestone) =>
+        milestone.score >= state.minValue - milestoneLabelYAxisMargin &&
+        milestone.score <= state.maxValue + milestoneLabelYAxisMargin
+      )
       .map((milestone, index) => {
         const fade = smootherStep(clamp((state.currentMonthIndex - milestone.releaseMonthIndex) / 0.7, 0, 1));
-        const rowOffset = ((row.displayRank + index) % 3 - 1) * 18;
-        const x = clamp(
-          xForMonth(milestone.releaseMonthIndex, state) + 9,
-          linePlot.left + 6,
-          chart.width - linePlot.right - 160,
-        );
-        const y = clamp(
-          yForScore(milestone.score, state) - 28 + rowOffset,
-          linePlot.top + 4,
-          chart.height - linePlot.bottom - 28,
+        const milestoneValue = companyValueAtMonth(organization, milestone.releaseMonthIndex);
+        const x = xForMonth(milestone.releaseMonthIndex, state) + milestoneLabelXOffset;
+        const y = yForScore(milestoneValue, state) + milestoneLabelYOffsetFor(
+          organization,
+          index,
+          state.outroProgress,
         );
 
         return {
+          color,
           milestone,
-          opacity: 0.12 + 0.26 * fade,
-          row,
+          opacity: milestoneLabelBaseOpacity + milestoneLabelFadeOpacity * fade,
+          organization,
           x,
           y,
         };
       })
-  );
+  });
 
   return labels.sort((a, b) =>
     a.milestone.releaseMonthIndex - b.milestone.releaseMonthIndex ||
     b.milestone.score - a.milestone.score ||
     a.milestone.entry.model.localeCompare(b.milestone.entry.model)
   );
+};
+
+const buildMilestoneDotSeries = (state: CompanyFrameState) =>
+  organizationOrder
+    .filter((organization) => state.rows.some((row) => row.organization === organization))
+    .map((organization) => {
+      const color = colorForOrganization(organization);
+      const data = milestonesForOrganization(organization)
+        .filter((milestone) => milestone.releaseMonthIndex <= state.currentMonthIndex)
+        .filter((milestone) =>
+          milestone.releaseMonthIndex >= state.xMinMonthIndex - 0.2 &&
+          milestone.releaseMonthIndex <= state.xMaxMonthIndex + 0.2
+        )
+        .filter((milestone) =>
+          milestone.score >= state.minValue - milestoneLabelYAxisMargin &&
+          milestone.score <= state.maxValue + milestoneLabelYAxisMargin
+        )
+        .map((milestone) => [
+          milestone.releaseMonthIndex,
+          companyValueAtMonth(organization, milestone.releaseMonthIndex),
+        ]);
+
+      return {
+        data,
+        emphasis: {
+          disabled: true,
+        },
+        itemStyle: {
+          borderColor: 'rgba(255,255,255,0.86)',
+          borderWidth: 2,
+          color,
+          opacity: milestoneDotOpacity,
+        },
+        name: `${organization} releases`,
+        symbol: 'circle',
+        symbolSize: milestoneDotSize,
+        tooltip: {
+          show: false,
+        },
+        type: 'scatter' as const,
+        z: 18,
+      };
+    })
+    .filter((series) => series.data.length > 0);
+
+const milestoneLabelYOffsetFor = (
+  organization: AiModelOrganization,
+  index: number,
+  outroProgress: number,
+) => {
+  const normalOffset = milestoneLabelYOffsetByOrganization[organization] + (index % 2) * 4;
+  const finalOffset = -milestoneLabelFontSize / 2;
+
+  return lerp(normalOffset, finalOffset, smootherStep(outroProgress));
 };
 
 const linePointsForOrganization = (
@@ -754,42 +840,55 @@ function firstReleaseMonthForOrganization(organization: AiModelOrganization) {
 }
 
 const colorForOrganization = (organization: AiModelOrganization) =>
-  raceData.entries.find((entry) => entry.organization === organization)?.color ?? '#45E3AE';
+  companyLineColors[organization] ?? raceData.entries.find((entry) => entry.organization === organization)?.color ?? '#45E3AE';
 
-const axisRangeForRows = (rows: CompanyRaceRow[]) => {
+const axisRangeForRows = (rows: CompanyRaceRow[], outroProgress: number) => {
   if (rows.length === 0) {
     return {
-      maxValue: 95,
-      minValue: 0,
+      maxValue: yAxisFullMaxValue,
+      minValue: yAxisFullMinValue,
     };
   }
 
   const values = rows.map((row) => row.value);
   const leader = Math.max(...values);
   const trailer = Math.min(...values);
-  const zoomSpan = clamp(leader - trailer + 11, 16, 48);
-  const maxValue = Math.min(100, leader + 3.2);
-  const minValue = Math.max(0, maxValue - zoomSpan);
+  const visibleSpan = clamp(
+    leader - trailer + yAxisValuePadding,
+    yAxisMinVisibleScoreSpan,
+    yAxisMaxVisibleScoreSpan,
+  );
+  const focusedMaxValue = Math.min(100, leader + yAxisTopPadding);
+  const focusedMinValue = Math.max(0, focusedMaxValue - visibleSpan);
+  const zoomOut = smootherStep(outroProgress);
 
   return {
-    maxValue,
-    minValue,
+    maxValue: lerp(focusedMaxValue, yAxisFullMaxValue, zoomOut),
+    minValue: lerp(focusedMinValue, yAxisFullMinValue, zoomOut),
   };
 };
 
 const xWindowForMonth = (currentMonthIndex: number, outroProgress: number) => {
-  const fullSpan = lineRaceEndMonthIndex - lineRaceStartMonthIndex;
-  const windowSpan = Math.min(xFollowWindowMonths, fullSpan);
+  const fullMaxMonthIndex = lineRaceEndMonthIndex + xAxisEndPaddingMonths;
+  const fullSpan = fullMaxMonthIndex - lineRaceStartMonthIndex;
+  const initialWindowSpan = xFollowWindowMonths * xInitialWindowScale;
+  const initialWindowProgress = smootherStep(
+    clamp((currentMonthIndex - lineRaceStartMonthIndex) / xInitialWindowBlendMonths, 0, 1),
+  );
+  const windowSpan = Math.min(
+    lerp(initialWindowSpan, xFollowWindowMonths, initialWindowProgress),
+    fullSpan,
+  );
   const followMin = clamp(
     currentMonthIndex - windowSpan * xFollowAnchorRatio,
     lineRaceStartMonthIndex,
-    lineRaceEndMonthIndex - windowSpan,
+    fullMaxMonthIndex - windowSpan,
   );
   const followMax = followMin + windowSpan;
   const zoomOut = smootherStep(outroProgress);
 
   return {
-    maxMonthIndex: lerp(followMax, lineRaceEndMonthIndex, zoomOut),
+    maxMonthIndex: lerp(followMax, fullMaxMonthIndex, zoomOut),
     minMonthIndex: lerp(followMin, lineRaceStartMonthIndex, zoomOut),
   };
 };
@@ -813,6 +912,20 @@ const xAxisIntervalForState = (state: CompanyFrameState) => {
   return 12;
 };
 
+const yAxisIntervalForState = (state: CompanyFrameState) => {
+  const span = state.maxValue - state.minValue;
+
+  if (span > 55) {
+    return 20;
+  }
+
+  if (span > 24) {
+    return 10;
+  }
+
+  return 5;
+};
+
 const yForScore = (score: number, state: CompanyFrameState) =>
   linePlot.top +
   (1 - clamp((score - state.minValue) / Math.max(1, state.maxValue - state.minValue), 0, 1)) *
@@ -822,8 +935,13 @@ const formatShortMonthLabel = (monthIndex: number) => {
   const year = yearFromMonthIndex(Math.round(monthIndex));
   const month = monthFromIndex(Math.round(monthIndex));
 
-  return `${String(year).slice(2)}.${String(month).padStart(2, '0')}`;
+  return `${formatTwoDigitMonth(month)}/${String(year).slice(2)}`;
 };
+
+const formatDisplayMonthLabel = (year: number, month: number) =>
+  `${formatTwoDigitMonth(month)}/${year}`;
+
+const formatTwoDigitMonth = (month: number) => String(month).padStart(2, '0');
 
 const formatEndpointModelName = (modelName: string) =>
   modelName
@@ -901,8 +1019,26 @@ const smootherStep = (value: number) => {
 };
 
 const firstModelBuildUpMonths = 1.05;
-const xFollowAnchorRatio = 0.78;
-const xFollowWindowMonths = 15.5;
+const companyLineWidth = 6.5;
+const milestoneDotOpacity = 0.84;
+const milestoneDotSize = 10;
+const milestoneLabelBaseOpacity = 0.24;
+const milestoneLabelFadeOpacity = 0.42;
+const milestoneLabelFontSize = 16;
+const milestoneLabelXOffset = 8;
+const milestoneLabelYAxisMargin = 0.7;
+const xAxisEndPaddingMonths = 10.5;
+const xFollowAnchorRatio = 0.72;
+const xFollowWindowMonths = 11.5;
+const xInitialWindowBlendMonths = 7.5;
+const xInitialWindowScale = 0.5;
+const yAxisFullMaxValue = raceData.maxValue;
+const yAxisFullMinValue = 0;
+const yAxisJoinFadeScoreRange = 0.95;
+const yAxisMaxVisibleScoreSpan = 12;
+const yAxisMinVisibleScoreSpan = 8.8;
+const yAxisTopPadding = 1.15;
+const yAxisValuePadding = 2.6;
 
 const styles = {
   background: {
@@ -929,7 +1065,7 @@ const styles = {
   chart: {
     height: chart.height,
     left: chart.left,
-    overflow: 'hidden',
+    overflow: 'visible',
     position: 'absolute',
     top: chart.top,
     width: chart.width,
@@ -951,9 +1087,9 @@ const styles = {
   },
   companyLogo: {
     display: 'block',
-    height: 36,
+    height: 33,
     objectFit: 'contain',
-    width: 36,
+    width: 33,
   },
   currentMonth: {
     color: '#FFFFFF',
@@ -984,9 +1120,10 @@ const styles = {
     display: 'flex',
     gap: 10,
     height: endpointLogoSize,
+    overflow: 'visible',
     pointerEvents: 'none',
     position: 'absolute',
-    width: endpointLabelWidth,
+    width: endpointLabelWidth + 130,
   },
   endpointLogo: {
     alignItems: 'center',
@@ -1004,13 +1141,10 @@ const styles = {
   endpointName: {
     color: '#FFFFFF',
     display: 'block',
-    fontSize: 21,
+    fontSize: 24,
     fontWeight: 950,
     lineHeight: 1,
-    maxWidth: 224,
-    overflow: 'hidden',
     textShadow: '0 4px 14px rgba(0,0,0,0.65)',
-    textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
   },
   endpointOverlay: {
@@ -1020,22 +1154,23 @@ const styles = {
   },
   endpointRank: {
     color: '#F5E829',
-    fontSize: 21,
+    fontSize: 20,
     fontWeight: 950,
     lineHeight: 1,
     minWidth: 22,
     textAlign: 'right',
   },
   endpointScore: {
-    color: '#67E8F9',
-    fontSize: 27,
+    color: '#F8FAFC',
+    fontSize: 18,
     fontWeight: 950,
     lineHeight: 1,
-    marginTop: 4,
+    marginTop: 3,
     textShadow: '0 4px 14px rgba(0,0,0,0.65)',
   },
   endpointTextBlock: {
     minWidth: 0,
+    overflow: 'visible',
   },
   endpointTopLine: {
     alignItems: 'center',
@@ -1076,15 +1211,12 @@ const styles = {
   },
   milestoneLabel: {
     fontFamily: fontStack,
-    fontSize: 16,
+    fontSize: milestoneLabelFontSize,
     fontWeight: 900,
     letterSpacing: 0,
     lineHeight: 1,
-    maxWidth: 148,
-    overflow: 'hidden',
     pointerEvents: 'none',
     position: 'absolute',
-    textOverflow: 'ellipsis',
     textShadow: '0 4px 14px rgba(0,0,0,0.72)',
     whiteSpace: 'nowrap',
   },
